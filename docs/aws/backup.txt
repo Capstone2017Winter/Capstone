@@ -1,0 +1,7 @@
+To create a backup of our AWS instance, we use volume snapshots through the AWS management console.
+
+1.) Log into the AWS management console and navigate to the EC2 Dashboard.
+2.) Make sure you set the region in the top right to US West (Oregon).
+3.) Select the "Volumes" subtab on the left hand side.
+4.) Right click on the "Capstone2017" volume and hit "Create Snapshot"
+5.) Note: any in progress writes to disk could be discarded by snapshot, to guaruntee correctness it is best to shut down the instance before creating the snapshot.
