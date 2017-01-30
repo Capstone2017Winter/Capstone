@@ -1,0 +1,2 @@
+1.) Install pip "sudo apt-get install python3-pip"
+2.) Install Django "pip3 install Django"
