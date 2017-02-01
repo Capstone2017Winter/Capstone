@@ -12,6 +12,8 @@ ADDRESS=0.0.0.0:8000
 
 cd $APPDIR
 
+echo "starting server..."
+
 exec gunicorn $APPNAME.wsgi:application \
 -w $NUM_WORKERS --bind=$ADDRESS \
 --log-level=debug \
