@@ -1,6 +1,7 @@
 #!/bin/bash
 APPNAME=schedu
-APPDIR=/home/ubuntu/Capstone/src/$APPNAME/
+#APPDIR=/home/ubuntu/Capstone/src/$APPNAME/
+APPDIR="$( cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
 LOGFILE=$APPDIR'gunicorn.log'
 ERRORFILE=$APPDIR'gunicorn-error.log'
