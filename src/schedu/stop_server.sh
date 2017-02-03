@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "stopping server..."
+echo "stopping gunicorn server..."
 `pkill gunicorn`

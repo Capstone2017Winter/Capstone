@@ -8,11 +8,11 @@ ERRORFILE=$APPDIR'gunicorn-error.log'
 
 NUM_WORKERS=3
 
-ADDRESS=0.0.0.0:8000
+ADDRESS=127.0.0.1:8000
 
 cd $APPDIR
 
-echo "starting server..."
+echo "starting gunicorn server..."
 
 exec gunicorn $APPNAME.wsgi:application \
 -w $NUM_WORKERS --bind=$ADDRESS \
