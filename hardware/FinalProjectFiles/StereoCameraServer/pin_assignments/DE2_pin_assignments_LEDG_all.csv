@@ -1,0 +1,16 @@
+# Quartus II Version 5.1 Internal Build 160 09/19/2005 TO Full Version,
+# File: D:\de2_pins\de2_pins.csv,
+# Generated on: Wed Sep 28 09:40:34 2005,
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.,
+
+To,Location
+LEDG[0],PIN_AE22
+LEDG[1],PIN_AF22
+LEDG[2],PIN_W19
+LEDG[3],PIN_V18
+LEDG[4],PIN_U18
+LEDG[5],PIN_U17
+LEDG[6],PIN_AA20
+LEDG[7],PIN_Y18
+LEDG[8],PIN_Y12

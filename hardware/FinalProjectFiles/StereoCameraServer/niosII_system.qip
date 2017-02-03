@@ -1,0 +1,34 @@
+# clk_0
+# cpu
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu.ocp]
+# memory
+# sysid
+# sys_clk_timer
+# jtag_uart
+# lcd_display
+# led_pio
+# switch
+# altpll_inst
+set_global_assignment -name TCL_FILE [file join $::quartus(ip_rootpath) altera/sopc_builder_ip/altera_avalon_altpll/altera_avalon_altpll_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) altpll_inst.vhd]
+# sdram
+# ext_flash
+# tri_state_bridge
+# seven_seg_pio
+# high_res_timer
+# dm9000a_inst
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) dm9000a_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dm9000a.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) dm9000a_inst.vhd]
+# uart_0
+# uart_1
+# tsb
+# null
+set_global_assignment -name SDC_FILE [file join $::quartus(ip_rootpath) altera/sopc_builder_ip/altera_avalon_clock_adapter/altera_avalon_clock_adapter.sdc]
+# sram_IF_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) sram_IF_hw.tcl]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) sram_IF.vhd]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) sram_IF_0.vhd]
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID 005056C000080000013DF5F65303 
+ 

@@ -1,0 +1,30 @@
+# Quartus II Version 5.1 Internal Build 160 09/19/2005 TO Full Version,
+# File: D:\de2_pins\de2_pins.csv,
+# Generated on: Wed Sep 28 09:40:34 2005,
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.,
+
+To,Location
+ENET_DATA[0],PIN_D17
+ENET_DATA[1],PIN_C17
+ENET_DATA[2],PIN_B18
+ENET_DATA[3],PIN_A18
+ENET_DATA[4],PIN_B17
+ENET_DATA[5],PIN_A17
+ENET_DATA[6],PIN_B16
+ENET_DATA[7],PIN_B15
+ENET_DATA[8],PIN_B20
+ENET_DATA[9],PIN_A20
+ENET_DATA[10],PIN_C19
+ENET_DATA[11],PIN_D19
+ENET_DATA[12],PIN_B19
+ENET_DATA[13],PIN_A19
+ENET_DATA[14],PIN_E18
+ENET_DATA[15],PIN_D18
+ENET_CLK,PIN_B24
+ENET_CMD,PIN_A21
+ENET_CS_N,PIN_A23
+ENET_INT,PIN_B21
+ENET_RD_N,PIN_A22
+ENET_WR_N,PIN_B22
+ENET_RST_N,PIN_B23

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="webServerFlashFinal">
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_ic_data_module:cpu_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_afd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_ic_tag_module:cpu_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_21g1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_mult_cell:the_cpu_mult_cell|altmult_add:the_altmult_add_part_2" CBX_FILE_NAME="mult_add_6cr2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_register_bank_b_module:cpu_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_q2f1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_bht_module:cpu_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_pkf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_dc_data_module:cpu_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_0ff1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_dc_tag_module:cpu_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_pcf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_dc_victim_module:cpu_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_9vc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_nios2_oci:the_cpu_nios2_oci|cpu_nios2_oci_im:the_cpu_nios2_oci_im|cpu_traceram_lpm_dram_bdp_component_module:cpu_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_e502.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_nios2_oci:the_cpu_nios2_oci|cpu_nios2_ocimem:the_cpu_nios2_ocimem|cpu_ociram_lpm_dram_bdp_component_module:cpu_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_t072.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_register_bank_a_module:cpu_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_p2f1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|cpu:the_cpu|cpu_mult_cell:the_cpu_mult_cell|altmult_add:the_altmult_add_part_1" CBX_FILE_NAME="mult_add_4cr2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|webServer|niosII_system:NIOSII|memory:the_memory|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_87b1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

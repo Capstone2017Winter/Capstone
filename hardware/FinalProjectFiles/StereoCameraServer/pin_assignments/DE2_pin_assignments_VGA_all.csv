@@ -1,0 +1,42 @@
+# Quartus II Version 5.1 Internal Build 160 09/19/2005 TO Full Version,
+# File: D:\de2_pins\de2_pins.csv,
+# Generated on: Wed Sep 28 09:40:34 2005,
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.,
+
+To,Location
+VGA_R[0],PIN_C8
+VGA_R[1],PIN_F10
+VGA_R[2],PIN_G10
+VGA_R[3],PIN_D9
+VGA_R[4],PIN_C9
+VGA_R[5],PIN_A8
+VGA_R[6],PIN_H11
+VGA_R[7],PIN_H12
+VGA_R[8],PIN_F11
+VGA_R[9],PIN_E10
+VGA_G[0],PIN_B9
+VGA_G[1],PIN_A9
+VGA_G[2],PIN_C10
+VGA_G[3],PIN_D10
+VGA_G[4],PIN_B10
+VGA_G[5],PIN_A10
+VGA_G[6],PIN_G11
+VGA_G[7],PIN_D11
+VGA_G[8],PIN_E12
+VGA_G[9],PIN_D12
+VGA_B[0],PIN_J13
+VGA_B[1],PIN_J14
+VGA_B[2],PIN_F12
+VGA_B[3],PIN_G12
+VGA_B[4],PIN_J10
+VGA_B[5],PIN_J11
+VGA_B[6],PIN_C11
+VGA_B[7],PIN_B11
+VGA_B[8],PIN_C12
+VGA_B[9],PIN_B12
+VGA_CLK,PIN_B8
+VGA_BLANK,PIN_D6
+VGA_HS,PIN_A7
+VGA_VS,PIN_D8
+VGA_SYNC,PIN_B7

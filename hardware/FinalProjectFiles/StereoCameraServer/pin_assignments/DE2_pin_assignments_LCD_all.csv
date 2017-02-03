@@ -1,0 +1,20 @@
+# Quartus II Version 5.1 Internal Build 160 09/19/2005 TO Full Version,
+# File: D:\de2_pins\de2_pins.csv,
+# Generated on: Wed Sep 28 09:40:34 2005,
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.,
+
+To,Location
+LCD_RW,PIN_K4
+LCD_EN,PIN_K3
+LCD_RS,PIN_K1
+LCD_DATA[0],PIN_J1
+LCD_DATA[1],PIN_J2
+LCD_DATA[2],PIN_H1
+LCD_DATA[3],PIN_H2
+LCD_DATA[4],PIN_J4
+LCD_DATA[5],PIN_J3
+LCD_DATA[6],PIN_H4
+LCD_DATA[7],PIN_H3
+LCD_ON,PIN_L4
+LCD_BLON,PIN_K2

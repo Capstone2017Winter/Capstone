@@ -1,0 +1,14 @@
+# Quartus II Version 5.1 Internal Build 160 09/19/2005 TO Full Version,
+# File: D:\de2_pins\de2_pins.csv,
+# Generated on: Wed Sep 28 09:40:34 2005,
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.,
+
+To,Location
+HEX5[0],PIN_T2
+HEX5[1],PIN_P6
+HEX5[2],PIN_P7
+HEX5[3],PIN_T9
+HEX5[4],PIN_R5
+HEX5[5],PIN_R4
+HEX5[6],PIN_R3
