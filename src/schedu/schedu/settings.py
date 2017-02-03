@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['localhost','ec2-35-163-43-117.us-west-2.compute.amazonaws.com'
 # Application definition
 
 INSTALLED_APPS = [
+    'schedule_builder.apps.ScheduleBuilderConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -117,4 +118,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'http://localhost:8001/static/'
