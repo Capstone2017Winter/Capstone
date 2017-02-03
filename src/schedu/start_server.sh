@@ -19,3 +19,4 @@ exec gunicorn $APPNAME.wsgi:application \
 --log-level=debug \
 --log-file=$LOGFILE 2>>$LOGFILE 1>>$ERRORFILE &
 
+exec sudo service nginx start
