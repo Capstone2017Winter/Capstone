@@ -9,4 +9,4 @@ def index(request):
 
 
 def image(request):
-	return render(request, 'schedule_builder/image.html')
+    return render(request, 'schedule_builder/image.html')

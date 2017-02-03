@@ -1,2 +1,4 @@
 1.) Install pip "sudo apt-get install python3-pip"
 2.) Install Django "pip3 install Django"
+3.) Install gunicorn "pip3 install gunicorn"
+4.) Install nginx "sudo apt-get install nginx"

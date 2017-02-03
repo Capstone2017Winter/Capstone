@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-	url(r'^builder/', include('schedule_builder.urls')),
+    url(r'^builder/', include('schedule_builder.urls')),
     url(r'^admin/', admin.site.urls),
 ]
