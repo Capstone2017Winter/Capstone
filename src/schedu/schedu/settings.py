@@ -119,3 +119,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = 'http://localhost:8001/static/'
+
+#define where we store our media (image) files
+ENV_PATH = os.path.abspath(os.path.dirname(__file__))
+MEDIA_ROOT = os.path.join(ENV_PATH, 'media/')
+
+#define relative broser URL to be used when accessing media files in browser
+MEDIA_URL = "media/"
