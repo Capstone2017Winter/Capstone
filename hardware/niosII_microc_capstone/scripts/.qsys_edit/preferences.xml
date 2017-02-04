@@ -9,12 +9,13 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="145" />
-   <clocksource preferredWidth="145" />
-   <frequency preferredWidth="139" />
+   <clockname preferredWidth="380" />
+   <clocksource preferredWidth="380" />
+   <frequency preferredWidth="374" />
   </columns>
  </clocktable>
- <library expandedCategories="Library,Project" />
- <window width="755" height="775" x="-9" y="20" />
+ <library
+   expandedCategories="Library/University Program/Audio &amp; Video/Video,Library,Library/University Program/Memory,Library/University Program/Generic IO,Library/Verification,Project,Library/University Program/Bridges,Library/University Program/Audio &amp; Video,Library/University Program,Library/University Program/Communications" />
+ <window width="1460" height="856" x="-9" y="20" />
  <hdlexample language="VHDL" />
 </preferences>
