@@ -1,0 +1,5 @@
+Info: Saving your IP search path in /afs/ualberta.ca/home/b/e/benkhale/.altera.quartus/ip/12.1sp1/ip_search_path/user_components.ipx
+Info: Using factories: CuspFactory, ImportFactory, DSPBuilderFactory, JarFactory, QvarFactory, TclModuleFactory, MegaVariationFactory, BeanElementFactory, LegacyFactory, DDRLegacyFactory, PresetFactory, EmbeddedSwTclDriverFactory, QsysFactory
+Progress: (0) searching /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/niosII_microc_capstone/scripts/12.1sp1 (command line switch)
+Info: /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/niosII_microc_capstone/scripts/12.1sp1 matched 1 files in 0.00 seconds
+Info: Found 0 components

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.version,sysinfo,,,"14.0-b16",1365717689991
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717691480
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717693133
+started,bundle,com.altera.sbtgui.core,10.1.0.153,"com.altera.sbtgui.core",1365717695819
+opened,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1365717695904
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717696188
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717724556
+started,bundle,org.eclipse.cdt.managedbuilder.core,6.0.0.200909110608,"org.eclipse.cdt.managedbuilder.core",1365717753486
+started,bundle,org.eclipse.cdt.make.core,6.0.0.200909110608,"org.eclipse.cdt.make.core",1365717753692
+started,bundle,org.eclipse.core.variables,3.2.200.v20090521,"org.eclipse.core.variables",1365717753700
+error,log,,,"Error",1365717757000
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717759758
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717759834
+activated,view,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.internal.introview",1365717767760
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1365717767762
+started,bundle,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search",1365717769396
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1365717769421
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717771899
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717798850
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717805931
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717848992
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717850166
+closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1365717851185
+error,log,,,"The proxied handler for 'com.altera.sbtgui.project.commands.SystemConsoleHandler' could not be loaded",1365717851707
+error,log,,,"The proxied handler for 'com.altera.sbtgui.project.commands.SystemConsoleHandler' could not be loaded",1365717851715

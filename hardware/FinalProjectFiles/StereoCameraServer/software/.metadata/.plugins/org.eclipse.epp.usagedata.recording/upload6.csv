@@ -1,0 +1,15 @@
+what,kind,bundleId,bundleVersion,description,time
+stopped,bundle,org.eclipse.mylyn.ide.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.ide.ui",1365717851848
+stopped,bundle,org.eclipse.mylyn.team.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.team.ui",1365717851848
+stopped,bundle,org.eclipse.mylyn.resources.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.resources.ui",1365717851849
+stopped,bundle,org.eclipse.mylyn.wikitext.tasks.ui,1.1.2.v20090912-0400-e3x,"org.eclipse.mylyn.wikitext.tasks.ui",1365717851850
+stopped,bundle,org.eclipse.mylyn.context.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.context.ui",1365717851850
+stopped,bundle,org.eclipse.mylyn.help.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.help.ui",1365717851850
+stopped,bundle,org.eclipse.mylyn.tasks.bugs,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.tasks.bugs",1365717851850
+stopped,bundle,org.eclipse.mylyn.tasks.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.tasks.ui",1365717851851
+stopped,bundle,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search",1365717851854
+stopped,bundle,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring",1365717851854
+stopped,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1365717851883
+stopped,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1365717851900
+stopped,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1365717851900
+stopped,bundle,org.eclipse.ui.externaltools,3.2.0.v20090504,"org.eclipse.ui.externaltools",1365717851900

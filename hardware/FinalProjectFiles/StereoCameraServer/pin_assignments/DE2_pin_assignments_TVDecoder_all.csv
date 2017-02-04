@@ -1,0 +1,20 @@
+# Quartus II Version 5.1 Internal Build 160 09/19/2005 TO Full Version,
+# File: D:\de2_pins\de2_pins.csv,
+# Generated on: Wed Sep 28 09:40:34 2005,
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.,
+
+To,Location
+TD_RESET,PIN_C4
+TD_DATA[0],PIN_J9
+TD_DATA[1],PIN_E8
+TD_DATA[2],PIN_H8
+TD_DATA[3],PIN_H10
+TD_DATA[4],PIN_G9
+TD_DATA[5],PIN_F9
+TD_DATA[6],PIN_D7
+TD_DATA[7],PIN_C7
+TD_HS,PIN_D5
+TD_VS,PIN_K9
+I2C_SCLK,PIN_A6
+I2C_SDAT,PIN_B6
