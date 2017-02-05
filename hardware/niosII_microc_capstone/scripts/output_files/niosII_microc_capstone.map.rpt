@@ -1,0 +1,584 @@
+Analysis & Synthesis report for niosII_microc_capstone
+Sat Feb  4 18:36:37 2017
+Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Sat Feb  4 18:36:37 2017              ;
+; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; niosII_microc_capstone                         ;
+; Top-level Entity Name              ; niosII_microc_capstone                         ;
+; Family                             ; Cyclone II                                     ;
+; Total logic elements               ; N/A until Partition Merge                      ;
+;     Total combinational functions  ; N/A until Partition Merge                      ;
+;     Dedicated logic registers      ; N/A until Partition Merge                      ;
+; Total registers                    ; N/A until Partition Merge                      ;
+; Total pins                         ; N/A until Partition Merge                      ;
+; Total virtual pins                 ; N/A until Partition Merge                      ;
+; Total memory bits                  ; N/A until Partition Merge                      ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
+; Total PLLs                         ; N/A until Partition Merge                      ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                ;
++----------------------------------------------------------------------------+------------------------+------------------------+
+; Option                                                                     ; Setting                ; Default Value          ;
++----------------------------------------------------------------------------+------------------------+------------------------+
+; Device                                                                     ; EP2C35F672C6           ;                        ;
+; Top-level entity name                                                      ; niosII_microc_capstone ; niosII_microc_capstone ;
+; Family name                                                                ; Cyclone II             ; Cyclone IV GX          ;
+; Use smart compilation                                                      ; Off                    ; Off                    ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                     ; On                     ;
+; Enable compact report table                                                ; Off                    ; Off                    ;
+; Restructure Multiplexers                                                   ; Auto                   ; Auto                   ;
+; Create Debugging Nodes for IP Cores                                        ; Off                    ; Off                    ;
+; Preserve fewer node names                                                  ; On                     ; On                     ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                    ; Off                    ;
+; Verilog Version                                                            ; Verilog_2001           ; Verilog_2001           ;
+; VHDL Version                                                               ; VHDL_1993              ; VHDL_1993              ;
+; State Machine Processing                                                   ; Auto                   ; Auto                   ;
+; Safe State Machine                                                         ; Off                    ; Off                    ;
+; Extract Verilog State Machines                                             ; On                     ; On                     ;
+; Extract VHDL State Machines                                                ; On                     ; On                     ;
+; Ignore Verilog initial constructs                                          ; Off                    ; Off                    ;
+; Iteration limit for constant Verilog loops                                 ; 5000                   ; 5000                   ;
+; Iteration limit for non-constant Verilog loops                             ; 250                    ; 250                    ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                     ; On                     ;
+; Infer RAMs from Raw Logic                                                  ; On                     ; On                     ;
+; Parallel Synthesis                                                         ; On                     ; On                     ;
+; DSP Block Balancing                                                        ; Auto                   ; Auto                   ;
+; NOT Gate Push-Back                                                         ; On                     ; On                     ;
+; Power-Up Don't Care                                                        ; On                     ; On                     ;
+; Remove Redundant Logic Cells                                               ; Off                    ; Off                    ;
+; Remove Duplicate Registers                                                 ; On                     ; On                     ;
+; Ignore CARRY Buffers                                                       ; Off                    ; Off                    ;
+; Ignore CASCADE Buffers                                                     ; Off                    ; Off                    ;
+; Ignore GLOBAL Buffers                                                      ; Off                    ; Off                    ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                    ; Off                    ;
+; Ignore LCELL Buffers                                                       ; Off                    ; Off                    ;
+; Ignore SOFT Buffers                                                        ; On                     ; On                     ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                    ; Off                    ;
+; Optimization Technique                                                     ; Balanced               ; Balanced               ;
+; Carry Chain Length                                                         ; 70                     ; 70                     ;
+; Auto Carry Chains                                                          ; On                     ; On                     ;
+; Auto Open-Drain Pins                                                       ; On                     ; On                     ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                    ; Off                    ;
+; Auto ROM Replacement                                                       ; On                     ; On                     ;
+; Auto RAM Replacement                                                       ; On                     ; On                     ;
+; Auto Shift Register Replacement                                            ; Auto                   ; Auto                   ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                   ; Auto                   ;
+; Auto Clock Enable Replacement                                              ; On                     ; On                     ;
+; Strict RAM Replacement                                                     ; Off                    ; Off                    ;
+; Allow Synchronous Control Signals                                          ; On                     ; On                     ;
+; Force Use of Synchronous Clear Signals                                     ; Off                    ; Off                    ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                    ; Off                    ;
+; Auto Resource Sharing                                                      ; Off                    ; Off                    ;
+; Allow Any RAM Size For Recognition                                         ; Off                    ; Off                    ;
+; Allow Any ROM Size For Recognition                                         ; Off                    ; Off                    ;
+; Allow Any Shift Register Size For Recognition                              ; Off                    ; Off                    ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                     ; On                     ;
+; Ignore translate_off and synthesis_off directives                          ; Off                    ; Off                    ;
+; Timing-Driven Synthesis                                                    ; Off                    ; Off                    ;
+; Report Parameter Settings                                                  ; On                     ; On                     ;
+; Report Source Assignments                                                  ; On                     ; On                     ;
+; Report Connectivity Checks                                                 ; On                     ; On                     ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                    ; Off                    ;
+; Synchronization Register Chain Length                                      ; 2                      ; 2                      ;
+; PowerPlay Power Optimization                                               ; Normal compilation     ; Normal compilation     ;
+; HDL message level                                                          ; Level2                 ; Level2                 ;
+; Suppress Register Optimization Related Messages                            ; Off                    ; Off                    ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                   ; 5000                   ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                   ; 5000                   ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                    ; 100                    ;
+; Clock MUX Protection                                                       ; On                     ; On                     ;
+; Auto Gated Clock Conversion                                                ; Off                    ; Off                    ;
+; Block Design Naming                                                        ; Auto                   ; Auto                   ;
+; SDC constraint protection                                                  ; Off                    ; Off                    ;
+; Synthesis Effort                                                           ; Auto                   ; Auto                   ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                     ; On                     ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                    ; Off                    ;
+; Analysis & Synthesis Message Level                                         ; Medium                 ; Medium                 ;
+; Disable Register Merging Across Hierarchies                                ; Auto                   ; Auto                   ;
+; Resource Aware Inference For Block RAM                                     ; On                     ; On                     ;
+; Synthesis Seed                                                             ; 1                      ; 1                      ;
++----------------------------------------------------------------------------+------------------------+------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-8 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Sat Feb  4 18:35:52 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off niosII_microc_capstone -c niosII_microc_capstone
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12248): Elaborating Qsys system entity "niosII_system.qsys"
+Info (12250): 2017.02.04.18:35:57 Progress: Loading scripts/niosII_system.qsys
+Info (12250): 2017.02.04.18:35:57 Progress: Reading input file
+Info (12250): 2017.02.04.18:35:57 Progress: Adding clk_0 [clock_source 12.1]
+Info (12250): 2017.02.04.18:35:58 Progress: Parameterizing module clk_0
+Info (12250): 2017.02.04.18:35:58 Progress: Adding nios2_qsys_0 [altera_nios2_qsys 12.1]
+Info (12250): 2017.02.04.18:35:58 Progress: Parameterizing module nios2_qsys_0
+Info (12250): 2017.02.04.18:35:58 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 12.1]
+Info (12250): 2017.02.04.18:35:58 Progress: Parameterizing module onchip_memory2_0
+Info (12250): 2017.02.04.18:35:58 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 12.1]
+Info (12250): 2017.02.04.18:35:58 Progress: Parameterizing module sysid_qsys_0
+Info (12250): 2017.02.04.18:35:58 Progress: Adding timer_0 [altera_avalon_timer 12.1]
+Info (12250): 2017.02.04.18:35:58 Progress: Parameterizing module timer_0
+Info (12250): 2017.02.04.18:35:58 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 12.1]
+Info (12250): 2017.02.04.18:35:58 Progress: Parameterizing module jtag_uart_0
+Info (12250): 2017.02.04.18:35:58 Progress: Adding character_lcd_0 [altera_up_avalon_character_lcd 12.0]
+Info (12250): 2017.02.04.18:35:58 Progress: Parameterizing module character_lcd_0
+Info (12250): 2017.02.04.18:35:58 Progress: Adding sram_0 [altera_up_avalon_sram 12.0]
+Info (12250): 2017.02.04.18:35:58 Progress: Parameterizing module sram_0
+Info (12250): 2017.02.04.18:35:58 Progress: Adding DM9000A_IF_0 [DM9000A_IF 1.0]
+Info (12250): 2017.02.04.18:36:01 Progress: Parameterizing module DM9000A_IF_0
+Info (12250): 2017.02.04.18:36:01 Progress: Adding up_clocks_0 [altera_up_clocks 12.0]
+Info (12250): 2017.02.04.18:36:01 Progress: Parameterizing module up_clocks_0
+Info (12250): 2017.02.04.18:36:01 Progress: Adding video_pixel_buffer_dma_0 [altera_up_avalon_video_pixel_buffer_dma 12.0]
+Info (12250): 2017.02.04.18:36:01 Progress: Parameterizing module video_pixel_buffer_dma_0
+Info (12250): 2017.02.04.18:36:01 Progress: Adding video_rgb_resampler_0 [altera_up_avalon_video_rgb_resampler 12.0]
+Info (12250): 2017.02.04.18:36:01 Progress: Parameterizing module video_rgb_resampler_0
+Info (12250): 2017.02.04.18:36:01 Progress: Adding video_scaler_0 [altera_up_avalon_video_scaler 12.0]
+Info (12250): 2017.02.04.18:36:01 Progress: Parameterizing module video_scaler_0
+Info (12250): 2017.02.04.18:36:01 Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 12.0]
+Info (12250): 2017.02.04.18:36:01 Progress: Parameterizing module video_vga_controller_0
+Info (12250): 2017.02.04.18:36:01 Progress: Adding Altera_UP_SD_Card_Avalon_Interface_0 [Altera_UP_SD_Card_Avalon_Interface 1.0]
+Info (12250): 2017.02.04.18:36:07 Progress: Parameterizing module Altera_UP_SD_Card_Avalon_Interface_0
+Info (12250): 2017.02.04.18:36:07 Progress: Building connections
+Info (12250): 2017.02.04.18:36:07 Progress: Parameterizing connections
+Info (12250): 2017.02.04.18:36:07 Progress: Validating
+Info (12250): 2017.02.04.18:36:08 Progress: Done reading input file
+Info (12250): NiosII_system.onchip_memory2_0: Memory will be initialized from onchip_memory2_0.hex
+Info (12250): NiosII_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info (12250): NiosII_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info (12250): NiosII_system.video_rgb_resampler_0: RGB Resampling: 8 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info (12250): NiosII_system.video_scaler_0: Change in Resolution: 640 x 240 -> 320 x 240
+Info (12250): NiosII_system.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Warning (12251): NiosII_system.video_pixel_buffer_dma_0: video_pixel_buffer_dma_0.avalon_pixel_dma_master must be connected to an Avalon-MM slave
+Warning (12251): NiosII_system.video_pixel_buffer_dma_0: video_pixel_buffer_dma_0.avalon_control_slave must be connected to an Avalon-MM master
+Warning (12251): NiosII_system.Altera_UP_SD_Card_Avalon_Interface_0: Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave must be connected to an Avalon-MM master
+Error (12252): NiosII_system.video_pixel_buffer_dma_0: video_pixel_buffer_dma_0.clock_reset must be connected to a clock output
+Error (12252): NiosII_system.video_rgb_resampler_0: video_rgb_resampler_0.clock_reset must be connected to a clock output
+Error (12252): NiosII_system.video_scaler_0: video_scaler_0.clock_reset must be connected to a clock output
+Error (12252): NiosII_system.video_vga_controller_0: video_vga_controller_0.clock_reset must be connected to a clock output
+Error (12252): NiosII_system.Altera_UP_SD_Card_Avalon_Interface_0: Altera_UP_SD_Card_Avalon_Interface_0.clock_sink must be connected to a clock output
+Warning (12251): NiosII_system.video_pixel_buffer_dma_0.avalon_pixel_source: video_pixel_buffer_dma_0.avalon_pixel_source must be connected to an Avalon-ST sink
+Warning (12251): NiosII_system.video_rgb_resampler_0.avalon_rgb_sink: video_rgb_resampler_0.avalon_rgb_sink must be connected to an Avalon-ST source
+Warning (12251): NiosII_system.video_rgb_resampler_0.avalon_rgb_source: video_rgb_resampler_0.avalon_rgb_source must be connected to an Avalon-ST sink
+Warning (12251): NiosII_system.video_scaler_0.avalon_scaler_sink: video_scaler_0.avalon_scaler_sink must be connected to an Avalon-ST source
+Warning (12251): NiosII_system.video_scaler_0.avalon_scaler_source: video_scaler_0.avalon_scaler_source must be connected to an Avalon-ST sink
+Warning (12251): NiosII_system.video_vga_controller_0.avalon_vga_sink: video_vga_controller_0.avalon_vga_sink must be connected to an Avalon-ST source
+Warning (12251): NiosII_system.video_vga_controller_0: video_vga_controller_0.external_interface must be exported, or connected to a matching conduit.
+Warning (12251): NiosII_system.Altera_UP_SD_Card_Avalon_Interface_0: Altera_UP_SD_Card_Avalon_Interface_0.conduit_end must be exported, or connected to a matching conduit.
+Error (12252): NiosII_system.video_pixel_buffer_dma_0: video_pixel_buffer_dma_0.clock_reset_reset must be connected to a reset source
+Error (12252): NiosII_system.video_rgb_resampler_0: video_rgb_resampler_0.clock_reset_reset must be connected to a reset source
+Error (12252): NiosII_system.video_scaler_0: video_scaler_0.clock_reset_reset must be connected to a reset source
+Error (12252): NiosII_system.video_vga_controller_0: video_vga_controller_0.clock_reset_reset must be connected to a reset source
+Error (12252): NiosII_system.Altera_UP_SD_Card_Avalon_Interface_0: Altera_UP_SD_Card_Avalon_Interface_0.clock_sink_reset must be connected to a reset source
+Info (12250): NiosII_system: Generating niosII_system "niosII_system" for QUARTUS_SYNTH
+Info (12250): Pipeline_bridge_swap_transform: After transform: 15 modules, 50 connections
+Info (12250): No custom instruction connections, skipping transform 
+Info (12250): Merlin_translator_transform: After transform: 25 modules, 100 connections
+Info (12250): Merlin_domain_transform: After transform: 45 modules, 260 connections
+Info (12250): Merlin_router_transform: After transform: 55 modules, 310 connections
+Info (12250): Merlin_traffic_limiter_transform: After transform: 57 modules, 322 connections
+Info (12250): Merlin_burst_transform: After transform: 65 modules, 362 connections
+Info (12250): Reset_adaptation_transform: After transform: 67 modules, 234 connections
+Info (12250): Merlin_network_to_switch_transform: After transform: 86 modules, 276 connections
+Info (12250): Merlin_width_transform: After transform: 90 modules, 288 connections
+Info (12250): Inserting clock-crossing logic between cmd_xbar_demux_001.src6 and cmd_xbar_mux_006.sink0
+Info (12250): Inserting clock-crossing logic between rsp_xbar_demux_006.src0 and rsp_xbar_mux_001.sink6
+Info (12250): Com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 92 modules, 298 connections
+Info (12250): Limiter_update_transform: After transform: 92 modules, 300 connections
+Info (12250): Merlin_interrupt_mapper_transform: After transform: 93 modules, 303 connections
+Info (12250): Merlin_interrupt_sync_transform: After transform: 94 modules, 308 connections
+Info (12250): Nios2_qsys_0: Starting RTL generation for module 'niosII_system_nios2_qsys_0'
+Info (12250): Nios2_qsys_0:   Generation command is [exec /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl -I /OPT/altera/12.1/quartus/common/ip/altera/common/perl/5.8.3 -I /OPT/altera/12.1/quartus/sopc_builder/bin/europa -I /OPT/altera/12.1/quartus/sopc_builder/bin/perl_lib -I /OPT/altera/12.1/quartus/sopc_builder/bin -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=niosII_system_nios2_qsys_0 --dir=/tmp/alt7202_4757550231407427601.dir/0004_nios2_qsys_0_gen/ --quartus_dir=/OPT/altera/12.1/quartus --verilog --config=/tmp/alt7202_4757550231407427601.dir/0004_nios2_qsys_0_gen//niosII_system_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:11 (*) Starting Nios II generation
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:11 (*)   Checking for plaintext license.
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:12 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:12 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:12 (*)   Plaintext license not found.
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:12 (*)   Checking for encrypted license (non-evaluation).
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)   Encrypted license found.  SOF will not be time-limited.
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)   Elaborating CPU configuration settings
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)   Creating all objects for CPU
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)     Testbench
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)     Instruction decoding
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)       Instruction fields
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:13 (*)       Instruction decodes
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:14 (*)       Signals for RTL simulation waveforms
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:14 (*)       Instruction controls
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:14 (*)     Pipeline frontend
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:14 (*)     Pipeline backend
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:16 (*)   Generating RTL from CPU objects
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:19 (*)   Creating encrypted RTL
+Info (12250): Nios2_qsys_0: # 2017.02.04 18:36:20 (*) Done Nios II generation
+Info (12250): Nios2_qsys_0: Done RTL generation for module 'niosII_system_nios2_qsys_0'
+Info (12250): Nios2_qsys_0: "niosII_system" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info (12250): Starting classic module elaboration.
+Info (12250): 2017.02.04.18:36:21 "/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_4757550231407427601.dir/0005_sopclgen  --no_splash --refresh /tmp/alt7202_4757550231407427601.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"
+Info (12250): 2017.02.04.18:36:21 (java:14616): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:21 (java:14616): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:21 Gtk-Message: Failed to load module "pk-gtk-module"
+Info (12250): 2017.02.04.18:36:21 Gtk-Message: Failed to load module "canberra-gtk-module"
+Info (12250): Finished elaborating classic module.
+Info (12250): 2017.02.04.18:36:22 Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_4757550231407427601.dir/0005_sopclgen/yysystem.ptf
+Info (12250): Running sopc_builder...
+Info (12250): 2017.02.04.18:36:22 "/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_4757550231407427601.dir/0005_sopclgen  --generate /tmp/alt7202_4757550231407427601.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"
+Info (12250): 2017.02.04.18:36:22 (java:14650): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:22 (java:14650): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:22 Gtk-Message: Failed to load module "pk-gtk-module"
+Info (12250): 2017.02.04.18:36:22 Gtk-Message: Failed to load module "canberra-gtk-module"
+Info (12250): 2017.02.04.18:36:23 .
+Info (12250): 2017.02.04.18:36:24 # 2017.02.04 18:36:24 (*) Success: sopc_builder finished.
+Info (12250): Onchip_memory2_0: "niosII_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info (12250): Sysid_qsys_0: "niosII_system" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info (12250): Starting classic module elaboration.
+Info (12250): 2017.02.04.18:36:25 "/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_4757550231407427601.dir/0007_sopclgen  --no_splash --refresh /tmp/alt7202_4757550231407427601.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"
+Info (12250): 2017.02.04.18:36:25 (java:14696): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:25 (java:14696): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:25 Gtk-Message: Failed to load module "pk-gtk-module"
+Info (12250): 2017.02.04.18:36:25 Gtk-Message: Failed to load module "canberra-gtk-module"
+Info (12250): Finished elaborating classic module.
+Info (12250): 2017.02.04.18:36:26 Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_4757550231407427601.dir/0007_sopclgen/yysystem.ptf
+Info (12250): Running sopc_builder...
+Info (12250): 2017.02.04.18:36:26 "/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_4757550231407427601.dir/0007_sopclgen  --generate /tmp/alt7202_4757550231407427601.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"
+Info (12250): 2017.02.04.18:36:26 (java:14739): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:26 (java:14739): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:26 Gtk-Message: Failed to load module "pk-gtk-module"
+Info (12250): 2017.02.04.18:36:26 Gtk-Message: Failed to load module "canberra-gtk-module"
+Info (12250): 2017.02.04.18:36:27 .
+Info (12250): 2017.02.04.18:36:28 # 2017.02.04 18:36:28 (*) Success: sopc_builder finished.
+Info (12250): Timer_0: "niosII_system" instantiated altera_avalon_timer "timer_0"
+Info (12250): Starting classic module elaboration.
+Info (12250): 2017.02.04.18:36:28 "/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_4757550231407427601.dir/0008_sopclgen  --no_splash --refresh /tmp/alt7202_4757550231407427601.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"
+Info (12250): 2017.02.04.18:36:29 (java:14796): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:29 (java:14796): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:29 Gtk-Message: Failed to load module "pk-gtk-module"
+Info (12250): 2017.02.04.18:36:29 Gtk-Message: Failed to load module "canberra-gtk-module"
+Info (12250): Finished elaborating classic module.
+Info (12250): 2017.02.04.18:36:29 Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_4757550231407427601.dir/0008_sopclgen/yysystem.ptf
+Info (12250): Running sopc_builder...
+Info (12250): 2017.02.04.18:36:30 "/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_4757550231407427601.dir/0008_sopclgen  --generate /tmp/alt7202_4757550231407427601.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"
+Info (12250): 2017.02.04.18:36:30 (java:14842): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:30 (java:14842): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+Info (12250): 2017.02.04.18:36:30 Gtk-Message: Failed to load module "pk-gtk-module"
+Info (12250): 2017.02.04.18:36:30 Gtk-Message: Failed to load module "canberra-gtk-module"
+Info (12250): 2017.02.04.18:36:31 .
+Info (12250): 2017.02.04.18:36:31 # 2017.02.04 18:36:31 (*) Success: sopc_builder finished.
+Info (12250): Jtag_uart_0: "niosII_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info (12250): Character_lcd_0: Starting Generation of Character LCD
+Info (12250): Character_lcd_0: "niosII_system" instantiated altera_up_avalon_character_lcd "character_lcd_0"
+Info (12250): Sram_0: Starting Generation of SRAM or SSRAM Controller
+Info (12250): Sram_0: "niosII_system" instantiated altera_up_avalon_sram "sram_0"
+Info (12250): DM9000A_IF_0: "niosII_system" instantiated DM9000A_IF "DM9000A_IF_0"
+Info (12250): Up_clocks_0: Starting Generation of Required Clocks for DE-Series Boards
+Info (12250): Up_clocks_0: "niosII_system" instantiated altera_up_clocks "up_clocks_0"
+Info (12250): Video_pixel_buffer_dma_0: Starting Generation of VGA Pixel Buffer
+Info (12250): Video_pixel_buffer_dma_0: "niosII_system" instantiated altera_up_avalon_video_pixel_buffer_dma "video_pixel_buffer_dma_0"
+Info (12250): Video_rgb_resampler_0: Starting Generation of Video RGB Resampler
+Info (12250): Video_rgb_resampler_0: "niosII_system" instantiated altera_up_avalon_video_rgb_resampler "video_rgb_resampler_0"
+Info (12250): Video_scaler_0: Starting Generation of Video Scaler
+Info (12250): Video_scaler_0: "niosII_system" instantiated altera_up_avalon_video_scaler "video_scaler_0"
+Info (12250): Video_vga_controller_0: Starting Generation of VGA Controller
+Info (12250): Video_vga_controller_0: "niosII_system" instantiated altera_up_avalon_video_vga_controller "video_vga_controller_0"
+Info (12250): Altera_UP_SD_Card_Avalon_Interface_0: "niosII_system" instantiated Altera_UP_SD_Card_Avalon_Interface "Altera_UP_SD_Card_Avalon_Interface_0"
+Info (12250): Nios2_qsys_0_instruction_master_translator: "niosII_system" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info (12250): Nios2_qsys_0_jtag_debug_module_translator: "niosII_system" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info (12250): Nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "niosII_system" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info (12250): Nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "niosII_system" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info (12250): Nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "niosII_system" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info (12250): Addr_router: "niosII_system" instantiated altera_merlin_router "addr_router"
+Info (12250): Addr_router_001: "niosII_system" instantiated altera_merlin_router "addr_router_001"
+Info (12250): Id_router: "niosII_system" instantiated altera_merlin_router "id_router"
+Info (12250): Id_router_002: "niosII_system" instantiated altera_merlin_router "id_router_002"
+Info (12250): Id_router_003: "niosII_system" instantiated altera_merlin_router "id_router_003"
+Info (12250): Id_router_007: "niosII_system" instantiated altera_merlin_router "id_router_007"
+Info (12250): Limiter: "niosII_system" instantiated altera_merlin_traffic_limiter "limiter"
+Info (12250): Burst_adapter: "niosII_system" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info (12250): Rst_controller: "niosII_system" instantiated altera_reset_controller "rst_controller"
+Info (12250): Cmd_xbar_demux: "niosII_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info (12250): Cmd_xbar_demux_001: "niosII_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info (12250): Cmd_xbar_mux: "niosII_system" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info (12250): Rsp_xbar_demux: "niosII_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info (12250): Rsp_xbar_demux_003: "niosII_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info (12250): Rsp_xbar_mux: "niosII_system" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info (12250): Reusing file /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/db/ip/niosII_system/submodules/altera_merlin_arbitrator.sv
+Info (12250): Rsp_xbar_mux_001: "niosII_system" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info (12250): Reusing file /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/db/ip/niosII_system/submodules/altera_merlin_arbitrator.sv
+Info (12250): Width_adapter: "niosII_system" instantiated altera_merlin_width_adapter "width_adapter"
+Info (12250): Reusing file /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/db/ip/niosII_system/submodules/altera_merlin_burst_uncompressor.sv
+Info (12250): Reusing file /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/db/ip/niosII_system/submodules/altera_merlin_address_alignment.sv
+Info (12250): Crosser: "niosII_system" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info (12250): Reusing file /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/db/ip/niosII_system/submodules/altera_avalon_st_pipeline_base.v
+Info (12250): Irq_mapper: "niosII_system" instantiated altera_irq_mapper "irq_mapper"
+Info (12250): Irq_synchronizer: "niosII_system" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info (12250): NiosII_system: Done niosII_system" with 40 modules, 160 files, 3177039 bytes
+Info (12249): Finished elaborating Qsys system entity "niosII_system.qsys"
+Info (12021): Found 3 design units, including 1 entities, in source file /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/niosII_microc_capstone.vhd
+    Info (12022): Found design unit 1: niosII_microc_capstone-structure
+    Info (12022): Found design unit 2: DE2_CONSTANTS
+    Info (12023): Found entity 1: niosII_microc_capstone
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/niosII_system.v
+    Info (12023): Found entity 1: niosII_system
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_CRC16_Generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_CRC16_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_CRC16_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_CRC7_Generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_CRC7_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_CRC7_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Card_48_bit_Command_Generator.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_48_bit_Command_Generator-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_48_bit_Command_Generator
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Card_Avalon_Interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Avalon_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Avalon_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Card_Buffer.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Buffer-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Buffer
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Card_Clock.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Clock-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Clock
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Card_Control_FSM.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Control_FSM-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Control_FSM
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Card_Interface.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Interface-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Interface
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Card_Memory_Block.vhd
+    Info (12022): Found design unit 1: altera_up_sd_card_memory_block-SYN
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Memory_Block
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Card_Response_Receiver.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Card_Response_Receiver-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Card_Response_Receiver
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/niosII_system/submodules/Altera_UP_SD_Signal_Trigger.vhd
+    Info (12022): Found design unit 1: Altera_UP_SD_Signal_Trigger-rtl
+    Info (12023): Found entity 1: Altera_UP_SD_Signal_Trigger
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/DM9000A_IF.v
+    Info (12023): Found entity 1: DM9000A_IF
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_avalon_sc_fifo.v
+    Info (12023): Found entity 1: altera_avalon_sc_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_avalon_st_clock_crosser.v
+    Info (12023): Found entity 1: altera_avalon_st_clock_crosser
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_avalon_st_handshake_clock_crosser.v
+    Info (12023): Found entity 1: altera_avalon_st_handshake_clock_crosser
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_avalon_st_pipeline_base.v
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_irq_clock_crosser.sv
+    Info (12023): Found entity 1: altera_irq_clock_crosser
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_merlin_address_alignment.sv
+    Info (12023): Found entity 1: altera_merlin_address_alignment
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/niosII_system/submodules/altera_merlin_arbitrator.sv
+    Info (12023): Found entity 1: altera_merlin_arbitrator
+    Info (12023): Found entity 2: altera_merlin_arb_adder
+Info (12021): Found 7 design units, including 7 entities, in source file db/ip/niosII_system/submodules/altera_merlin_burst_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min
+    Info (12023): Found entity 5: altera_merlin_burst_adapter
+    Info (12023): Found entity 6: altera_merlin_burst_adapter_uncompressed_only
+    Info (12023): Found entity 7: altera_merlin_burst_adapter_full
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_merlin_burst_uncompressor.sv
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_merlin_master_agent.sv
+    Info (12023): Found entity 1: altera_merlin_master_agent
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_merlin_master_translator.sv
+    Info (12023): Found entity 1: altera_merlin_master_translator
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_merlin_slave_agent.sv
+    Info (12023): Found entity 1: altera_merlin_slave_agent
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_merlin_slave_translator.sv
+    Info (12023): Found entity 1: altera_merlin_slave_translator
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_merlin_traffic_limiter.sv
+    Info (12023): Found entity 1: altera_merlin_traffic_limiter
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_merlin_width_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_width_adapter
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_up_avalon_video_vga_timing.v
+    Info (12023): Found entity 1: altera_up_avalon_video_vga_timing
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_up_character_lcd_communication.v
+    Info (12023): Found entity 1: altera_up_character_lcd_communication
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_up_character_lcd_initialization.v
+    Info (12023): Found entity 1: altera_up_character_lcd_initialization
+Warning (10275): Verilog HDL Module Instantiation warning at altera_up_video_scaler_multiply_height.v(307): ignored dangling comma in List of Port Connections
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_up_video_scaler_multiply_height.v
+    Info (12023): Found entity 1: altera_up_video_scaler_multiply_height
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_up_video_scaler_multiply_width.v
+    Info (12023): Found entity 1: altera_up_video_scaler_multiply_width
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/altera_up_video_scaler_shrink.v
+    Info (12023): Found entity 1: altera_up_video_scaler_shrink
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/niosII_system/submodules/niosII_system_addr_router.sv
+    Info (12023): Found entity 1: niosII_system_addr_router_default_decode
+    Info (12023): Found entity 2: niosII_system_addr_router
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/niosII_system/submodules/niosII_system_addr_router_001.sv
+    Info (12023): Found entity 1: niosII_system_addr_router_001_default_decode
+    Info (12023): Found entity 2: niosII_system_addr_router_001
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_character_lcd_0.v
+    Info (12023): Found entity 1: niosII_system_character_lcd_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_cmd_xbar_demux.sv
+    Info (12023): Found entity 1: niosII_system_cmd_xbar_demux
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_cmd_xbar_demux_001.sv
+    Info (12023): Found entity 1: niosII_system_cmd_xbar_demux_001
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_cmd_xbar_mux.sv
+    Info (12023): Found entity 1: niosII_system_cmd_xbar_mux
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/niosII_system/submodules/niosII_system_id_router.sv
+    Info (12023): Found entity 1: niosII_system_id_router_default_decode
+    Info (12023): Found entity 2: niosII_system_id_router
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/niosII_system/submodules/niosII_system_id_router_002.sv
+    Info (12023): Found entity 1: niosII_system_id_router_002_default_decode
+    Info (12023): Found entity 2: niosII_system_id_router_002
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/niosII_system/submodules/niosII_system_id_router_003.sv
+    Info (12023): Found entity 1: niosII_system_id_router_003_default_decode
+    Info (12023): Found entity 2: niosII_system_id_router_003
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/niosII_system/submodules/niosII_system_id_router_007.sv
+    Info (12023): Found entity 1: niosII_system_id_router_007_default_decode
+    Info (12023): Found entity 2: niosII_system_id_router_007
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_irq_mapper.sv
+    Info (12023): Found entity 1: niosII_system_irq_mapper
+Info (12021): Found 7 design units, including 7 entities, in source file db/ip/niosII_system/submodules/niosII_system_jtag_uart_0.v
+    Info (12023): Found entity 1: niosII_system_jtag_uart_0_log_module
+    Info (12023): Found entity 2: niosII_system_jtag_uart_0_sim_scfifo_w
+    Info (12023): Found entity 3: niosII_system_jtag_uart_0_scfifo_w
+    Info (12023): Found entity 4: niosII_system_jtag_uart_0_drom_module
+    Info (12023): Found entity 5: niosII_system_jtag_uart_0_sim_scfifo_r
+    Info (12023): Found entity 6: niosII_system_jtag_uart_0_scfifo_r
+    Info (12023): Found entity 7: niosII_system_jtag_uart_0
+Info (12021): Found 28 design units, including 28 entities, in source file db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0.v
+    Info (12023): Found entity 1: niosII_system_nios2_qsys_0_ic_data_module
+    Info (12023): Found entity 2: niosII_system_nios2_qsys_0_ic_tag_module
+    Info (12023): Found entity 3: niosII_system_nios2_qsys_0_bht_module
+    Info (12023): Found entity 4: niosII_system_nios2_qsys_0_register_bank_a_module
+    Info (12023): Found entity 5: niosII_system_nios2_qsys_0_register_bank_b_module
+    Info (12023): Found entity 6: niosII_system_nios2_qsys_0_dc_tag_module
+    Info (12023): Found entity 7: niosII_system_nios2_qsys_0_dc_data_module
+    Info (12023): Found entity 8: niosII_system_nios2_qsys_0_dc_victim_module
+    Info (12023): Found entity 9: niosII_system_nios2_qsys_0_nios2_oci_debug
+    Info (12023): Found entity 10: niosII_system_nios2_qsys_0_ociram_lpm_dram_bdp_component_module
+    Info (12023): Found entity 11: niosII_system_nios2_qsys_0_nios2_ocimem
+    Info (12023): Found entity 12: niosII_system_nios2_qsys_0_nios2_avalon_reg
+    Info (12023): Found entity 13: niosII_system_nios2_qsys_0_nios2_oci_break
+    Info (12023): Found entity 14: niosII_system_nios2_qsys_0_nios2_oci_xbrk
+    Info (12023): Found entity 15: niosII_system_nios2_qsys_0_nios2_oci_dbrk
+    Info (12023): Found entity 16: niosII_system_nios2_qsys_0_nios2_oci_itrace
+    Info (12023): Found entity 17: niosII_system_nios2_qsys_0_nios2_oci_td_mode
+    Info (12023): Found entity 18: niosII_system_nios2_qsys_0_nios2_oci_dtrace
+    Info (12023): Found entity 19: niosII_system_nios2_qsys_0_nios2_oci_compute_tm_count
+    Info (12023): Found entity 20: niosII_system_nios2_qsys_0_nios2_oci_fifowp_inc
+    Info (12023): Found entity 21: niosII_system_nios2_qsys_0_nios2_oci_fifocount_inc
+    Info (12023): Found entity 22: niosII_system_nios2_qsys_0_nios2_oci_fifo
+    Info (12023): Found entity 23: niosII_system_nios2_qsys_0_nios2_oci_pib
+    Info (12023): Found entity 24: niosII_system_nios2_qsys_0_traceram_lpm_dram_bdp_component_module
+    Info (12023): Found entity 25: niosII_system_nios2_qsys_0_nios2_oci_im
+    Info (12023): Found entity 26: niosII_system_nios2_qsys_0_nios2_performance_monitors
+    Info (12023): Found entity 27: niosII_system_nios2_qsys_0_nios2_oci
+    Info (12023): Found entity 28: niosII_system_nios2_qsys_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_jtag_debug_module_sysclk.v
+    Info (12023): Found entity 1: niosII_system_nios2_qsys_0_jtag_debug_module_sysclk
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_jtag_debug_module_tck.v
+    Info (12023): Found entity 1: niosII_system_nios2_qsys_0_jtag_debug_module_tck
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_jtag_debug_module_wrapper.v
+    Info (12023): Found entity 1: niosII_system_nios2_qsys_0_jtag_debug_module_wrapper
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_mult_cell.v
+    Info (12023): Found entity 1: niosII_system_nios2_qsys_0_mult_cell
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_oci_test_bench.v
+    Info (12023): Found entity 1: niosII_system_nios2_qsys_0_oci_test_bench
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_nios2_qsys_0_test_bench.v
+    Info (12023): Found entity 1: niosII_system_nios2_qsys_0_test_bench
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_onchip_memory2_0.v
+    Info (12023): Found entity 1: niosII_system_onchip_memory2_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_rsp_xbar_demux.sv
+    Info (12023): Found entity 1: niosII_system_rsp_xbar_demux
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_rsp_xbar_demux_003.sv
+    Info (12023): Found entity 1: niosII_system_rsp_xbar_demux_003
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_rsp_xbar_mux.sv
+    Info (12023): Found entity 1: niosII_system_rsp_xbar_mux
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_rsp_xbar_mux_001.sv
+    Info (12023): Found entity 1: niosII_system_rsp_xbar_mux_001
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_sram_0.v
+    Info (12023): Found entity 1: niosII_system_sram_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_sysid_qsys_0.v
+    Info (12023): Found entity 1: niosII_system_sysid_qsys_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_timer_0.v
+    Info (12023): Found entity 1: niosII_system_timer_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_up_clocks_0.v
+    Info (12023): Found entity 1: niosII_system_up_clocks_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_video_pixel_buffer_dma_0.v
+    Info (12023): Found entity 1: niosII_system_video_pixel_buffer_dma_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_video_rgb_resampler_0.v
+    Info (12023): Found entity 1: niosII_system_video_rgb_resampler_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_video_scaler_0.v
+    Info (12023): Found entity 1: niosII_system_video_scaler_0
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/niosII_system/submodules/niosII_system_video_vga_controller_0.v
+    Info (12023): Found entity 1: niosII_system_video_vga_controller_0
+Warning (10037): Verilog HDL or VHDL warning at niosII_system_nios2_qsys_0.v(2066): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at niosII_system_nios2_qsys_0.v(2068): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at niosII_system_nios2_qsys_0.v(2224): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at niosII_system_nios2_qsys_0.v(3143): conditional expression evaluates to a constant
+Info (12127): Elaborating entity "niosII_microc_capstone" for the top level hierarchy
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 11 errors, 16 warnings
+    Error: Peak virtual memory: 379 megabytes
+    Error: Processing ended: Sat Feb  4 18:36:38 2017
+    Error: Elapsed time: 00:00:46
+    Error: Total CPU time (on all processors): 00:00:57
+
+

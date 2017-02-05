@@ -1,3 +1,4 @@
+-- This file belongs to capstone group 5 of 2013, the Stereo Camera
 library ieee;
 use ieee.std_logic_1164.all;
 
