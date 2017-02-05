@@ -3,7 +3,12 @@ from __future__ import unicode_literals
 from django.db import models
 from django.contrib import admin
 
-# Create your models here.
+class Degree(models.Model):
+	name = models.CharField(max_length=50, unique=True)
+
+	def __str__(self):
+		return self.name
+
 class User(models.Model):
 	degree = models.ForeignKey(Degree)
 	name = models.CharField(max_length=100, unique=True)
@@ -21,9 +26,17 @@ class Schedule(models.Model):
 	def __str__(self):
 		return 'user:{}, year:{}, term:{}'.format(self.user, self.year, self.term)
 
+class MyClass(models.Model):
+	degree = models.ManyToManyField(Degree)
+	class_code = models.CharField(max_length=10, unique=True)
+	class_description = models.CharField(max_length=500)
+
+	def __str__(self):
+		return self.class_code
+
 class ClassSection(models.Model):
 	schedule = models.ManyToManyField(Schedule)
-	myclass = models.ForeignKey(MyClass, on_delte=models.CASCADE)
+	myclass = models.ForeignKey(MyClass, on_delete=models.CASCADE)
 	section_number = models.CharField(max_length=10) #eg EB2
 
 	def __str__(self):
@@ -37,20 +50,6 @@ class TimeSlot(models.Model):
 
 	def __str__(self):
 		return 'time:{}, day:{}, duration:{}'.format(self.time, self.day, self.duration)
-
-class Degree(models.Model):
-	name = models.CharField(max_length=50, unique=True)
-
-	def __str__(self):
-		return self.name
-
-class MyClass(models.Model):
-	degree = models.ManyToManyField(Degree)
-	class_code = models.CharField(max_length=10, unique=True)
-	class_description = models.CharField(max_length=500)
-
-	def __str__(self):
-		return self.class_code
 
 class ScheduleImage(models.Model):
 	schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE) #warning, if image is stored on file system, it must be manually deleted
