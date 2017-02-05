@@ -15,7 +15,7 @@
   </columns>
  </clocktable>
  <library
-   expandedCategories="Project,Library/University Program/Audio &amp; Video/Video,Library/Memories and Memory Controllers,Library,Library/Memories and Memory Controllers/On-Chip,Library/University Program,Library/University Program/Audio &amp; Video" />
+   expandedCategories="Library/University Program,Library,Library/University Program/Audio &amp; Video,Library/University Program/Audio &amp; Video/Video,Project" />
  <window width="1440" height="855" x="-9" y="20" />
  <hdlexample language="VHDL" />
 </preferences>

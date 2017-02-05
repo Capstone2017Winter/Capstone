@@ -34,12 +34,12 @@ module niosII_system_id_router_002_default_decode
      parameter DEFAULT_CHANNEL = 0,
                DEFAULT_DESTID = 0 
    )
-  (output [77 - 74 : 0] default_destination_id,
+  (output [84 - 81 : 0] default_destination_id,
    output [10-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
-    DEFAULT_DESTID[77 - 74 : 0];
+    DEFAULT_DESTID[84 - 81 : 0];
   generate begin : default_decode
     if (DEFAULT_CHANNEL == -1)
       assign default_src_channel = '0;
@@ -63,7 +63,7 @@ module niosII_system_id_router_002
     // Command Sink (Input)
     // -------------------
     input                       sink_valid,
-    input  [88-1 : 0]    sink_data,
+    input  [95-1 : 0]    sink_data,
     input                       sink_startofpacket,
     input                       sink_endofpacket,
     output                      sink_ready,
@@ -72,7 +72,7 @@ module niosII_system_id_router_002
     // Command Source (Output)
     // -------------------
     output                          src_valid,
-    output reg [88-1    : 0] src_data,
+    output reg [95-1    : 0] src_data,
     output reg [10-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
@@ -82,16 +82,16 @@ module niosII_system_id_router_002
     // -------------------------------------------------------
     // Local parameters and variables
     // -------------------------------------------------------
-    localparam PKT_ADDR_H = 42;
+    localparam PKT_ADDR_H = 49;
     localparam PKT_ADDR_L = 18;
-    localparam PKT_DEST_ID_H = 77;
-    localparam PKT_DEST_ID_L = 74;
-    localparam ST_DATA_W = 88;
+    localparam PKT_DEST_ID_H = 84;
+    localparam PKT_DEST_ID_L = 81;
+    localparam ST_DATA_W = 95;
     localparam ST_CHANNEL_W = 10;
     localparam DECODER_TYPE = 1;
 
-    localparam PKT_TRANS_WRITE = 45;
-    localparam PKT_TRANS_READ  = 46;
+    localparam PKT_TRANS_WRITE = 52;
+    localparam PKT_TRANS_READ  = 53;
 
     localparam PKT_ADDR_W = PKT_ADDR_H-PKT_ADDR_L + 1;
     localparam PKT_DEST_ID_W = PKT_DEST_ID_H-PKT_DEST_ID_L + 1;
@@ -149,10 +149,13 @@ module niosII_system_id_router_002
 
 
         if (destid == 0 ) begin
-            src_channel = 10'b01;
+            src_channel = 10'b001;
         end
         if (destid == 1 ) begin
-            src_channel = 10'b10;
+            src_channel = 10'b010;
+        end
+        if (destid == 2 ) begin
+            src_channel = 10'b100;
         end
 
 
