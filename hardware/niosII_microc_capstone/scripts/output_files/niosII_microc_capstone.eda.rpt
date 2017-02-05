@@ -1,5 +1,5 @@
 EDA Netlist Writer report for niosII_microc_capstone
-Sat Feb  4 20:10:05 2017
+Sun Feb  5 12:56:07 2017
 Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Feb  4 20:10:05 2017 ;
+; EDA Netlist Writer Status ; Successful - Sun Feb  5 12:56:07 2017 ;
 ; Revision Name             ; niosII_microc_capstone                ;
 ; Top-level Entity Name     ; niosII_microc_capstone                ;
 ; Family                    ; Cyclone II                            ;
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                                          ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                                     ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; /afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/niosII_microc_capstone.vho          ;
-; /afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/niosII_microc_capstone_fast.vho     ;
-; /afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/niosII_microc_capstone_vhd.sdo      ;
-; /afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/niosII_microc_capstone_vhd_fast.sdo ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                                    ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                               ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/niosII_microc_capstone.vho          ;
+; /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/niosII_microc_capstone_fast.vho     ;
+; /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/niosII_microc_capstone_vhd.sdo      ;
+; /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/niosII_microc_capstone_vhd_fast.sdo ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Feb  4 20:09:56 2017
+    Info: Processing started: Sun Feb  5 12:55:54 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off niosII_microc_capstone -c niosII_microc_capstone
-Info (204026): Generated files "niosII_microc_capstone.vho", "niosII_microc_capstone_fast.vho", "niosII_microc_capstone_vhd.sdo" and "niosII_microc_capstone_vhd_fast.sdo" in directory "/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "niosII_microc_capstone.vho", "niosII_microc_capstone_fast.vho", "niosII_microc_capstone_vhd.sdo" and "niosII_microc_capstone_vhd_fast.sdo" in directory "/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE 492/Capstone/hardware/niosII_microc_capstone/scripts/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 386 megabytes
-    Info: Processing ended: Sat Feb  4 20:10:05 2017
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 388 megabytes
+    Info: Processing ended: Sun Feb  5 12:56:08 2017
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:07
 
 

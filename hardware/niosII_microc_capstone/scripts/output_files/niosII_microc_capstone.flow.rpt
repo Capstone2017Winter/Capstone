@@ -1,5 +1,5 @@
 Flow report for niosII_microc_capstone
-Sat Feb  4 20:10:05 2017
+Sun Feb  5 12:56:07 2017
 Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
 
 
@@ -38,20 +38,20 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sat Feb  4 20:10:05 2017          ;
+; Flow Status                        ; Successful - Sun Feb  5 12:56:07 2017          ;
 ; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; niosII_microc_capstone                         ;
 ; Top-level Entity Name              ; niosII_microc_capstone                         ;
 ; Family                             ; Cyclone II                                     ;
 ; Device                             ; EP2C35F672C6                                   ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 7,392 / 33,216 ( 22 % )                        ;
-;     Total combinational functions  ; 6,638 / 33,216 ( 20 % )                        ;
-;     Dedicated logic registers      ; 4,601 / 33,216 ( 14 % )                        ;
-; Total registers                    ; 4725                                           ;
-; Total pins                         ; 117 / 475 ( 25 % )                             ;
+; Total logic elements               ; 8,416 / 33,216 ( 25 % )                        ;
+;     Total combinational functions  ; 7,549 / 33,216 ( 23 % )                        ;
+;     Dedicated logic registers      ; 5,186 / 33,216 ( 16 % )                        ;
+; Total registers                    ; 5374                                           ;
+; Total pins                         ; 155 / 475 ( 33 % )                             ;
 ; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 290,048 / 483,840 ( 60 % )                     ;
+; Total memory bits                  ; 292,096 / 483,840 ( 60 % )                     ;
 ; Embedded Multiplier 9-bit elements ; 4 / 70 ( 6 % )                                 ;
 ; Total PLLs                         ; 1 / 4 ( 25 % )                                 ;
 +------------------------------------+------------------------------------------------+
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 02/04/2017 20:07:30    ;
+; Start date & time ; 02/05/2017 12:53:21    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; niosII_microc_capstone ;
 +-------------------+------------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.148626405011972                     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.148632439810287                     ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -92,12 +92,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:24     ; 1.0                     ; 471 MB              ; 00:01:32                           ;
-; Fitter                    ; 00:00:38     ; 1.8                     ; 580 MB              ; 00:00:49                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 352 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 391 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:09     ; 1.0                     ; 386 MB              ; 00:00:05                           ;
-; Total                     ; 00:02:18     ; --                      ; --                  ; 00:02:32                           ;
+; Analysis & Synthesis      ; 00:01:30     ; 1.0                     ; 492 MB              ; 00:01:42                           ;
+; Fitter                    ; 00:00:41     ; 2.3                     ; 579 MB              ; 00:00:54                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 360 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 405 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:13     ; 1.0                     ; 388 MB              ; 00:00:07                           ;
+; Total                     ; 00:02:32     ; --                      ; --                  ; 00:02:49                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

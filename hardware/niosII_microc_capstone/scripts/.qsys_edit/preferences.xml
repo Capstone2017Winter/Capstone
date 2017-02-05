@@ -15,7 +15,7 @@
   </columns>
  </clocktable>
  <library
-   expandedCategories="Library/University Program,Library,Library/University Program/Audio &amp; Video,Library/University Program/Audio &amp; Video/Video,Project" />
+   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces,Library/SLS/Communication,Library/Memories and Memory Controllers/External Memory Interfaces/DDR Interfaces,Library/Memories and Memory Controllers/External Memory Interfaces/DDR3 Interfaces,Library/Memories and Memory Controllers/External Memory Interfaces/LPDDR2 Interfaces,Library/University Program,Library/Memories and Memory Controllers,Library/Memories and Memory Controllers/External Memory Interfaces/DDR2 Interfaces,Project,Library/University Program/Memory,Library/Interface Protocols,Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/Memories and Memory Controllers/External Memory Interfaces/SDRAM Interfaces,Library/SLS/Communication/USB,Library/Interface Protocols/Serial,Library/SLS,Library" />
  <window width="1440" height="855" x="-9" y="20" />
  <hdlexample language="VHDL" />
 </preferences>

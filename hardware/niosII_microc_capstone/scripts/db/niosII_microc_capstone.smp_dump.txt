@@ -1,4 +1,11 @@
 
+State Machine - |niosII_microc_capstone|niosII_system:u0|altera_merlin_burst_adapter:burst_adapter_010|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
 State Machine - |niosII_microc_capstone|niosII_system:u0|altera_merlin_burst_adapter:burst_adapter_009|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
 Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
 state.ST_IDLE 0 0 0 0 
@@ -68,6 +75,41 @@ state.ST_IDLE 0 0 0 0
 state.ST_COMP_TRANS 1 0 0 1 
 state.ST_UNCOMP_TRANS 1 0 1 0 
 state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |niosII_microc_capstone|niosII_system:u0|niosII_system_sdram_0:sdram_0|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |niosII_microc_capstone|niosII_system:u0|niosII_system_sdram_0:sdram_0|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |niosII_microc_capstone|niosII_system:u0|niosII_system_sdram_0:sdram_0|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |niosII_microc_capstone|niosII_system:u0|niosII_system_sdram_0:sdram_0|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
 
 State Machine - |niosII_microc_capstone|niosII_system:u0|Altera_UP_SD_Card_Avalon_Interface:altera_up_sd_card_avalon_interface_0|current_cmd_state
 Name current_cmd_state.s_UPDATE_AUX_SR current_cmd_state.s_WAIT_RESPONSE current_cmd_state.s_WAIT_COMMAND current_cmd_state.s_RESET_CMD 

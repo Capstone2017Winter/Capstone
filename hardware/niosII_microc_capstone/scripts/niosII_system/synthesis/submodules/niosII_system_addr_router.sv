@@ -31,11 +31,11 @@
 
 module niosII_system_addr_router_default_decode
   #(
-     parameter DEFAULT_CHANNEL = 2,
-               DEFAULT_DESTID = 2 
+     parameter DEFAULT_CHANNEL = 3,
+               DEFAULT_DESTID = 3 
    )
   (output [102 - 99 : 0] default_destination_id,
-   output [10-1 : 0] default_src_channel
+   output [11-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
@@ -44,7 +44,7 @@ module niosII_system_addr_router_default_decode
     if (DEFAULT_CHANNEL == -1)
       assign default_src_channel = '0;
     else
-      assign default_src_channel = 10'b1 << DEFAULT_CHANNEL;
+      assign default_src_channel = 11'b1 << DEFAULT_CHANNEL;
   end
   endgenerate
 
@@ -73,7 +73,7 @@ module niosII_system_addr_router
     // -------------------
     output                          src_valid,
     output reg [113-1    : 0] src_data,
-    output reg [10-1 : 0] src_channel,
+    output reg [11-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
     input                           src_ready
@@ -87,7 +87,7 @@ module niosII_system_addr_router
     localparam PKT_DEST_ID_H = 102;
     localparam PKT_DEST_ID_L = 99;
     localparam ST_DATA_W = 113;
-    localparam ST_CHANNEL_W = 10;
+    localparam ST_CHANNEL_W = 11;
     localparam DECODER_TYPE = 0;
 
     localparam PKT_TRANS_WRITE = 70;
@@ -103,15 +103,16 @@ module niosII_system_addr_router
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h100000 - 64'h80000);
-    localparam PAD1 = log2ceil(64'h108000 - 64'h104000);
-    localparam PAD2 = log2ceil(64'h109000 - 64'h108800);
+    localparam PAD0 = log2ceil(64'h1000000 - 64'h800000);
+    localparam PAD1 = log2ceil(64'h1100000 - 64'h1080000);
+    localparam PAD2 = log2ceil(64'h1108000 - 64'h1104000);
+    localparam PAD3 = log2ceil(64'h1109000 - 64'h1108800);
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h109000;
+    localparam ADDR_RANGE = 64'h1109000;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -130,7 +131,7 @@ module niosII_system_addr_router
     assign src_endofpacket   = sink_endofpacket;
 
     wire [PKT_DEST_ID_W-1:0] default_destid;
-    wire [10-1 : 0] default_src_channel;
+    wire [11-1 : 0] default_src_channel;
 
 
 
@@ -150,21 +151,27 @@ module niosII_system_addr_router
         // Sets the channel and destination ID based on the address
         // --------------------------------------------------
 
-        // ( 0x80000 .. 0x100000 )
-        if ( {address[RG:PAD0],{PAD0{1'b0}}} == 21'h80000 ) begin
-            src_channel = 10'b100;
+        // ( 0x800000 .. 0x1000000 )
+        if ( {address[RG:PAD0],{PAD0{1'b0}}} == 25'h800000 ) begin
+            src_channel = 11'b1000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
+        end
+
+        // ( 0x1080000 .. 0x1100000 )
+        if ( {address[RG:PAD1],{PAD1{1'b0}}} == 25'h1080000 ) begin
+            src_channel = 11'b0100;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
         end
 
-        // ( 0x104000 .. 0x108000 )
-        if ( {address[RG:PAD1],{PAD1{1'b0}}} == 21'h104000 ) begin
-            src_channel = 10'b010;
+        // ( 0x1104000 .. 0x1108000 )
+        if ( {address[RG:PAD2],{PAD2{1'b0}}} == 25'h1104000 ) begin
+            src_channel = 11'b0010;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
         end
 
-        // ( 0x108800 .. 0x109000 )
-        if ( {address[RG:PAD2],{PAD2{1'b0}}} == 21'h108800 ) begin
-            src_channel = 10'b001;
+        // ( 0x1108800 .. 0x1109000 )
+        if ( {address[RG:PAD3],{PAD3{1'b0}}} == 25'h1108800 ) begin
+            src_channel = 11'b0001;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 0;
         end
 
