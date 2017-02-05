@@ -4,14 +4,14 @@ from django.db import models
 from django.contrib import admin
 
 class Degree(models.Model):
-	name = models.CharField(max_length=50, unique=True)
+	name = models.CharField(max_length=50, primary_key=True)
 
 	def __str__(self):
 		return self.name
 
 class User(models.Model):
 	degree = models.ForeignKey(Degree)
-	name = models.CharField(max_length=100, unique=True)
+	name = models.CharField(max_length=100, primary_key=True)
 
 	def __str__(self):
 		return self.name
@@ -28,7 +28,7 @@ class Schedule(models.Model):
 
 class MyClass(models.Model):
 	degree = models.ManyToManyField(Degree)
-	class_code = models.CharField(max_length=10, unique=True)
+	class_code = models.CharField(max_length=10, primary_key=True)
 	class_description = models.CharField(max_length=500)
 
 	def __str__(self):
