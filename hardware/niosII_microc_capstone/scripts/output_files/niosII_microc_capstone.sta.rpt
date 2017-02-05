@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for niosII_microc_capstone
-Sat Feb  4 18:18:30 2017
+Sat Feb  4 20:09:54 2017
 Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
 
 
@@ -146,20 +146,20 @@ No paths to report.
 
 +----------------------------------------------------+
 ; Propagation Delay                                  ;
-+------------+-------------+-------+----+----+-------+
-; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
-+------------+-------------+-------+----+----+-------+
-; CLOCK_50   ; DRAM_CLK    ; 1.154 ;    ;    ; 1.154 ;
-+------------+-------------+-------+----+----+-------+
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; CLOCK_50   ; VGA_CLK     ;    ; 3.389 ; 3.389 ;    ;
++------------+-------------+----+-------+-------+----+
 
 
 +----------------------------------------------------+
 ; Minimum Propagation Delay                          ;
-+------------+-------------+-------+----+----+-------+
-; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
-+------------+-------------+-------+----+----+-------+
-; CLOCK_50   ; DRAM_CLK    ; 1.154 ;    ;    ; 1.154 ;
-+------------+-------------+-------+----+----+-------+
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; CLOCK_50   ; VGA_CLK     ;    ; 3.389 ; 3.389 ;    ;
++------------+-------------+----+-------+-------+----+
 
 
 ----------------------------
@@ -206,20 +206,20 @@ No paths to report.
 
 +----------------------------------------------------+
 ; Propagation Delay                                  ;
-+------------+-------------+-------+----+----+-------+
-; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
-+------------+-------------+-------+----+----+-------+
-; CLOCK_50   ; DRAM_CLK    ; 0.404 ;    ;    ; 0.404 ;
-+------------+-------------+-------+----+----+-------+
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; CLOCK_50   ; VGA_CLK     ;    ; 1.794 ; 1.794 ;    ;
++------------+-------------+----+-------+-------+----+
 
 
 +----------------------------------------------------+
 ; Minimum Propagation Delay                          ;
-+------------+-------------+-------+----+----+-------+
-; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
-+------------+-------------+-------+----+----+-------+
-; CLOCK_50   ; DRAM_CLK    ; 0.404 ;    ;    ; 0.404 ;
-+------------+-------------+-------+----+----+-------+
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; CLOCK_50   ; VGA_CLK     ;    ; 1.794 ; 1.794 ;    ;
++------------+-------------+----+-------+-------+----+
 
 
 +--------------------------------------------------------------------------------+
@@ -236,20 +236,20 @@ No paths to report.
 
 +----------------------------------------------------+
 ; Progagation Delay                                  ;
-+------------+-------------+-------+----+----+-------+
-; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
-+------------+-------------+-------+----+----+-------+
-; CLOCK_50   ; DRAM_CLK    ; 1.154 ;    ;    ; 1.154 ;
-+------------+-------------+-------+----+----+-------+
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; CLOCK_50   ; VGA_CLK     ;    ; 3.389 ; 3.389 ;    ;
++------------+-------------+----+-------+-------+----+
 
 
 +----------------------------------------------------+
 ; Minimum Progagation Delay                          ;
-+------------+-------------+-------+----+----+-------+
-; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
-+------------+-------------+-------+----+----+-------+
-; CLOCK_50   ; DRAM_CLK    ; 0.404 ;    ;    ; 0.404 ;
-+------------+-------------+-------+----+----+-------+
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; CLOCK_50   ; VGA_CLK     ;    ; 1.794 ; 1.794 ;    ;
++------------+-------------+----+-------+-------+----+
 
 
 -------------------
@@ -277,10 +277,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 1     ; 1    ;
-; Unconstrained Input Ports       ; 58    ; 58   ;
-; Unconstrained Input Port Paths  ; 64    ; 64   ;
+; Unconstrained Input Ports       ; 44    ; 44   ;
+; Unconstrained Input Port Paths  ; 201   ; 201  ;
 ; Unconstrained Output Ports      ; 111   ; 111  ;
-; Unconstrained Output Port Paths ; 278   ; 278  ;
+; Unconstrained Output Port Paths ; 270   ; 270  ;
 +---------------------------------+-------+------+
 
 
@@ -290,7 +290,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Feb  4 18:18:26 2017
+    Info: Processing started: Sat Feb  4 20:09:50 2017
 Info: Command: quartus_sta niosII_microc_capstone -c niosII_microc_capstone
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -442,8 +442,19 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
         Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
         Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
+        Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
+        Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
+        Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
+        Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
+        Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
+        Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
+        Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
+        Info (332166): set_false_path -from [get_registers *altera_avalon_st_clock_crosser:*|in_data_buffer*] -to [get_registers *altera_avalon_st_clock_crosser:*|out_data_buffer*]
     Info (332165): Entity altera_std_synchronizer
         Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
+    Info (332165): Entity dcfifo_5oj1
+        Info (332166): set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_2v8:dffpipe20|dffe21a* 
+        Info (332166): set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_1v8:dffpipe16|dffe17a* 
     Info (332165): Entity sld_jtag_hub
         Info (332166): create_clock -period 10MHz -name altera_reserved_tck [get_ports {altera_reserved_tck}]
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
@@ -451,7 +462,7 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'nio
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
-    Warning (332056): Node: u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Node: u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[2] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
@@ -468,7 +479,7 @@ Info: Analyzing Fast Model
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
-    Warning (332056): Node: u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Node: u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[2] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -481,8 +492,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 382 megabytes
-    Info: Processing ended: Sat Feb  4 18:18:30 2017
+    Info: Peak virtual memory: 391 megabytes
+    Info: Processing ended: Sat Feb  4 20:09:54 2017
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 

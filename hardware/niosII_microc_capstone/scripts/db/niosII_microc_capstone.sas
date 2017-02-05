@@ -1,1 +1,1 @@
-niosII_microc_capstone/SOURCE
+niosII_microc_capstone/FIT
