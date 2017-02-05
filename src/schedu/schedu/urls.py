@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from schedule_builder import views
 
 urlpatterns = [
+    url(r'^$', views.home, name='home'),
     url(r'^builder/', include('schedule_builder.urls')),
     url(r'^admin/', admin.site.urls),
 ]

@@ -7,7 +7,6 @@ from .models import Image
 def index(request):
     return render(request, 'schedule_builder/index.html')
 
-
 def image(request):
     return render(request, 'schedule_builder/image.html')
 
@@ -16,3 +15,6 @@ def user(request, username):
 
 def schedule(request, username,  schedule_id):
     return HttpResponse('You are looking at the schedule for user: {} with id: {}'.format(username, schedule_id))
+
+def home(request):
+    return HttpResponse('You are at the home page!')
