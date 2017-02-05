@@ -4,14 +4,14 @@ from django.db import models
 from django.contrib import admin
 
 # Create your models here.
-class User(models.Model)
+class User(models.Model):
 	degree = models.ForeignKey(Degree)
 	name = models.CharField(max_length=100, unique=True)
 
 	def __str__(self):
 		return self.name
 
-class Schedule(models.Model)
+class Schedule(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	creation_date = models.DateTimeField('date created', auto_now_add=True)
 	modified_date = models.DateTimeField('date modified', auto_now=True)
@@ -21,7 +21,7 @@ class Schedule(models.Model)
 	def __str__(self):
 		return 'user:{}, year:{}, term:{}'.format(self.user, self.year, self.term)
 
-class ClassSection(models.Model)
+class ClassSection(models.Model):
 	schedule = models.ManyToManyField(Schedule)
 	myclass = models.ForeignKey(MyClass, on_delte=models.CASCADE)
 	section_number = models.CharField(max_length=10) #eg EB2
@@ -29,7 +29,7 @@ class ClassSection(models.Model)
 	def __str__(self):
 		return 'class:{}, section:{}'.format(self.myclass, self.section_number)
 
-class TimeSlot
+class TimeSlot(models.Model):
 	class_section = models.ManyToManyField(ClassSection)
 	time = models.TimeField()
 	day = models.CharField(max_length=20)
@@ -38,13 +38,13 @@ class TimeSlot
 	def __str__(self):
 		return 'time:{}, day:{}, duration:{}'.format(self.time, self.day, self.duration)
 
-class Degree
+class Degree(models.Model):
 	name = models.CharField(max_length=50, unique=True)
 
 	def __str__(self):
 		return self.name
 
-class MyClass
+class MyClass(models.Model):
 	degree = models.ManyToManyField(Degree)
 	class_code = models.CharField(max_length=10, unique=True)
 	class_description = models.CharField(max_length=500)
@@ -52,7 +52,7 @@ class MyClass
 	def __str__(self):
 		return self.class_code
 
-class ScheduleImage(models.Model)
+class ScheduleImage(models.Model):
 	schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE) #warning, if image is stored on file system, it must be manually deleted
 	creation_date = models.DateTimeField('date created', auto_now_add=True)
 
