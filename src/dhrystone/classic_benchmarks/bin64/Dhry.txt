@@ -1,0 +1,20 @@
+ #####################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code BFEBFBFF, Model Code 000306D4 
+  Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz 
+  Measured - Minimum 2195 MHz, Maximum 2195 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size  7.70 GB, Page Size 4096 Bytes 
+  uname() - Linux, elias-XPS-13, 4.9.0-040900-generic 
+  #201612111631 SMP Sun Dec 11 21:33:00 UTC 2016, x86_64 
+
+ #####################################################
+
+ Dhrystone Benchmark 2.1 Opt 3 64 Bit via C/C++ Sun Feb  5 20:10:37 2017
+
+ VAX MIPS rating:          16335.37
+
+ Numeric results were correct
+
