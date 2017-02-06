@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include <curl/curl.h>
-#include <stdlib.h>
-#include <limits.h> // UINT_MAX
+#include <stdlib.h> // exit
 #include <sys/time.h> // gettimeofday
+
+#include <curl/curl.h>
+
 
 void usage()
 {
@@ -66,6 +67,7 @@ int main(int argc, char **args)
 
 			/* do request */ 
 			res = curl_easy_perform(curl);
+
 			/* Check for errors */ 
 			if(res != CURLE_OK) {
 				fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
