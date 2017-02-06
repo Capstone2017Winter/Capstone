@@ -2,6 +2,7 @@
 #include <curl/curl.h>
 #include <stdlib.h>
 #include <limits.h> // UINT_MAX
+#include <time.h> // clock
 
 void usage()
 {
@@ -17,6 +18,17 @@ size_t dummy_write(char *ptr, size_t size, size_t nmemb, void *userdata)
 	return size * nmemb;
 }
 
+/*get process time in ms*/
+long long clock_ms()
+{
+	clock_t clock_time;
+	int CLOCKS_PER_MS; 
+	
+	CLOCKS_PER_MS = CLOCKS_PER_SEC / 1000;
+	clock_time = clock();
+	return clock_time / CLOCKS_PER_MS;
+}
+
 int main(int argc, char **args)
 {
  	CURL *curl;
@@ -24,6 +36,7 @@ int main(int argc, char **args)
  	const char *target_url;
 	char *endptr;
 	unsigned int iterations;
+	long long start_time, end_time;
 
  	if (argc != 3) usage();
  	target_url = args[1];
@@ -35,6 +48,7 @@ int main(int argc, char **args)
 
 	curl = curl_easy_init();
 	if(curl) {
+		start_time = clock_ms();
 		while(iterations--) {
 			curl_easy_setopt(curl, CURLOPT_URL, target_url);
 
@@ -51,7 +65,12 @@ int main(int argc, char **args)
 				fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
 			} 
 		}
+		end_time = clock_ms();
+	} else {
+		printf("Error initializing curl: curl_easy_init");
 	}
 	curl_easy_cleanup(curl);
+	
+	printf("Total Duration: %lld ms\n", end_time - start_time);
 	return 0;
 }
