@@ -15,7 +15,14 @@ def image(request):
 
 def user(request, username):
     user = get_object_or_404(User, pk=username)
-    return HttpResponse('You are looking at the page for user: {}'.format(user.name))
+    if request.method == "GET":
+        return render(request, 'schedule_builder/user.html', {
+            'user':user,
+        })
+    else:
+        for schedule in user.schedule_set.all:
+            if schedule._id in request.POST:
+                return HTTPResponseRedirect(revers('schedule', args=(schedule.id,)))    
 
 def schedule(request, username, schedule_id):
     schedule = get_object_or_404(Schedule, user__name=username, id=schedule_id)

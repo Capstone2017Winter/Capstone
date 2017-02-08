@@ -1,0 +1,11 @@
+<h1>User: {{ user.name }}</h1>
+
+<form action="{% url 'user' user.name %}" method="post">
+{% csrf_token %}
+{% for schedule in user.schedule_set.all %}
+    <input type="submit" value="{{ schedule.term }} {{ schedule.year }}" name="{{ schedule.id }}" />
+    <br/>
+{% endfor %}
+</form>
+
+<!-- todo add another form for adding users -->
