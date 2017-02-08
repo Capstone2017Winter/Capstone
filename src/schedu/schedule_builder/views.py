@@ -20,9 +20,9 @@ def user(request, username):
             'user':user,
         })
     else:
-        for schedule in user.schedule_set.all:
-            if schedule._id in request.POST:
-                return HTTPResponseRedirect(revers('schedule', args=(schedule.id,)))    
+        for schedule in user.schedule_set.all():
+            if str(schedule.id) in request.POST:
+                return HttpResponseRedirect(reverse('schedule', args=(user.name, schedule.id,)))    
 
 def schedule(request, username, schedule_id):
     schedule = get_object_or_404(Schedule, user__name=username, id=schedule_id)
