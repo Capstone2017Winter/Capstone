@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+from django.urls import reverse
 
 from .models import * 
 # Create your views here.
@@ -19,4 +20,13 @@ def schedule(request, username, schedule_id):
     return HttpResponse('You are looking at the schedule for user: {} with id: {}'.format(schedule.user.name, schedule.id))
 
 def home(request):
-    return HttpResponse('You are at the home page!')
+    user = None
+    try:
+        user = User.objects.get(pk=request.POST['user'])
+    except (KeyError):
+        return render(request, 'schedule_builder/home.html')
+    except (User.DoesNotExist):
+        #todo, validate username is valid characters
+        user = User(name=request.POST['user'], degree=None)
+        user.save()
+    return HttpResponseRedirect(reverse('user', args=(user.name,)))

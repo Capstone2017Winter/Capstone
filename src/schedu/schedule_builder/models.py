@@ -10,7 +10,7 @@ class Degree(models.Model):
 		return self.name
 
 class User(models.Model):
-	degree = models.ForeignKey(Degree)
+	degree = models.ForeignKey(Degree, null=True)
 	name = models.CharField(max_length=100, primary_key=True)
 
 	def __str__(self):
