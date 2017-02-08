@@ -3,6 +3,8 @@ from __future__ import unicode_literals
 from django.db import models
 from django.contrib import admin
 
+import re #regex
+
 class Degree(models.Model):
 	name = models.CharField(max_length=50, primary_key=True)
 
@@ -11,10 +13,14 @@ class Degree(models.Model):
 
 class User(models.Model):
 	degree = models.ForeignKey(Degree, null=True)
+	name_regex = r'[a-zA-Z0-9]+'
 	name = models.CharField(max_length=100, primary_key=True)
 
 	def __str__(self):
 		return self.name
+
+	def is_valid_name(s):
+		return re.match(r'^' + name_regex + r'$', s)
 
 class Schedule(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
