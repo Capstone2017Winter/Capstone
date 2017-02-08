@@ -1,6 +1,7 @@
 <h1>Welcome to schedu</h1>
 
-<!-- TODO, show error here if username is invalid -->
+<!-- show error here if username is invalid -->
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 <form action="{% url 'home' %}" method="post">
 {% csrf_token %}

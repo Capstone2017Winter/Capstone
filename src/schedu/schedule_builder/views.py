@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 
+import re #regex
+
 from .models import * 
 # Create your views here.
 
@@ -26,7 +28,10 @@ def home(request):
     except (KeyError):
         return render(request, 'schedule_builder/home.html')
     except (User.DoesNotExist):
-        #todo, validate username is valid characters
+        if not User.is_valid_name(request.POST['user']):
+            return render(request, 'schedule_builder/home.html', {
+                'error_message': "Invalid user name. User names can only contain letters and numbers",
+            })
         user = User(name=request.POST['user'], degree=None)
         user.save()
     return HttpResponseRedirect(reverse('user', args=(user.name,)))

@@ -20,7 +20,7 @@ class User(models.Model):
 		return self.name
 
 	def is_valid_name(s):
-		return re.match(r'^' + name_regex + r'$', s)
+		return re.match(r'^' + User.name_regex + r'$', s)
 
 class Schedule(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
