@@ -1,19 +1,5 @@
-{% load static %}
+{% extends "schedule_builder/base.html" %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'schedule_builder/style.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'schedule_builder/bootstrap.css' %}" />
-
-<body>
-  <header class="row">
-    <div class="wrap">
-    <div class="header-title col-lg-4">Sched<span class="u-span">U</span></div>
-    <nav class="col-lg-8">
-      <ul>
-       <li><a>Our Projects</a></li>
-       <li><a>Our Projects</a></li>
-       <li><a>Our Projects</a></li>
-      </ul>
-    </nav>
-      </div>
-  </header>
-</body>
+{% block content %}
+<h1>Content goes here</h1>
+{% endblock %}
