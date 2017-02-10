@@ -2,7 +2,7 @@
 2.) Install Django "pip3 install Django"
 3.) Install gunicorn "pip3 install gunicorn"
 4.) Install nginx "sudo apt-get install nginx"
-5.) Configure nginx, create the file /etc/nginx/sites-enabled/schedu and then paste this into it:
+5.) Configure nginx, create the file /etc/nginx/sites-enabled/schedu and then paste this into it (you need to modify the static path to point towards the project):
 server {
         listen localhost:8001;
 
@@ -12,6 +12,6 @@ server {
 
         location /static/ {
                 autoindex on;
-                alias /home/elias/Capstone/src/schedu/schedule_builder/static/;
+                alias [path to project]/Capstone/src/schedu/schedule_builder/static/;
         }
 }
