@@ -20,9 +20,17 @@ def user(request, username):
             'user':user,
         })
     else:
-        for schedule in user.schedule_set.all():
-            if str(schedule.id) in request.POST:
-                return HttpResponseRedirect(reverse('schedule', args=(user.name, schedule.id,)))    
+        sched_id = None
+        if 'year' in request.POST and 'term' in request.POST:
+            new_sched = user.schedule_set.create(year=request.POST['year'], term=request.POST['term'])
+            new_sched.save()
+            sched_id = new_sched.id
+        else:
+            for schedule in user.schedule_set.all():
+                _id = str(schedule.id)
+                if _id in request.POST:
+                    sched_id = _id
+        return HttpResponseRedirect(reverse('schedule', args=(user.name, sched_id,))) 
 
 def schedule(request, username, schedule_id):
     schedule = get_object_or_404(Schedule, user__name=username, id=schedule_id)

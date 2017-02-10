@@ -8,4 +8,13 @@
 {% endfor %}
 </form>
 
-<!-- todo add another form for adding users -->
+<form action="{% url 'user' user.name %}" method="post">
+{% csrf_token %}
+    <label for="yearid">Year</label>
+    <input type="number" id="yearid" name="year" min="2000" max="2100" value="2017"/><br>
+    <input type="radio" name="term" value="FALL" checked>FALL<br>
+    <input type="radio" name="term" value="WINTER">WINTER<br>
+    <input type="radio" name="term" value="SPRING">SPRING<br>
+    <input type="radio" name="term" value="SUMMER">SUMMER<br>
+    <input type="submit" value="Create New Schedule"/>
+</form>
