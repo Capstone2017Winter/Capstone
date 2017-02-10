@@ -1,8 +1,10 @@
 {% load static %}
-
+<html>
+<head>
 <link rel="stylesheet" type="text/css" href="{% static 'schedule_builder/bootstrap.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'schedule_builder/style.css' %}" />
-
+<script type="text/javascript" src="{% static 'schedule_builder/jquery-3.1.1.js' %}"></script>
+</head>
 <header class="row">
     <div class="wrap">
     <div class="header-title col-lg-4">Sched<span class="u-span">U</span></div>
@@ -17,3 +19,4 @@
 </header>
 {% block content %}{% endblock %}
 <footer></footer>
+</html>
