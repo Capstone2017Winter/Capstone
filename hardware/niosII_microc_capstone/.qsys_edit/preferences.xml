@@ -9,11 +9,12 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="265" />
-   <clocksource preferredWidth="264" />
-   <frequency preferredWidth="245" />
+   <clockname preferredWidth="385" />
+   <clocksource preferredWidth="384" />
+   <frequency preferredWidth="365" />
   </columns>
  </clocktable>
- <library expandedCategories="Library,Project" />
- <window width="1100" height="800" x="-9" y="20" />
+ <library
+   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces,Library,Library/University Program,Library/Memories and Memory Controllers/External Memory Interfaces/QDR II Interfaces,Library/Memories and Memory Controllers,Project,Library/University Program/Memory" />
+ <window width="1460" height="856" x="-41" y="20" />
 </preferences>

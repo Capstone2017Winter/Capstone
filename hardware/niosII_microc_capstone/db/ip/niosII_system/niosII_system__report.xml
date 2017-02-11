@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2017.02.05.15:16:06"
+ date="2017.02.11.13:14:44"
  outputDirectory="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/db/ip/niosII_system/">
  <perimeter>
   <parameter
@@ -275,7 +275,7 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="niosII_system:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP2C35F672C6,AUTO_DEVICE_FAMILY=Cyclone II,AUTO_GENERATION_ID=1486332933,AUTO_UNIQUE_ID=(clock_source:12.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_nios2_qsys:12.1:bht_ramBlockType=Automatic,breakAbsoluteAddr=17860640,breakOffset=32,breakSlave=nios2_qsys_0.jtag_debug_module,clockFrequency=50000000,cpuID=0,cpuID_stored=0,cpuReset=false,customInstSlavesSystemInfo=&lt;info/&gt;,dataAddrWidth=25,dataSlaveMapParam=&lt;address-map&gt;&lt;slave name=&apos;sdram_0.s1&apos; start=&apos;0x800000&apos; end=&apos;0x1000000&apos; /&gt;&lt;slave name=&apos;sram_0.avalon_sram_slave&apos; start=&apos;0x1080000&apos; end=&apos;0x1100000&apos; /&gt;&lt;slave name=&apos;onchip_memory2_0.s1&apos; start=&apos;0x1104000&apos; end=&apos;0x1108000&apos; /&gt;&lt;slave name=&apos;nios2_qsys_0.jtag_debug_module&apos; start=&apos;0x1108800&apos; end=&apos;0x1109000&apos; /&gt;&lt;slave name=&apos;Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave&apos; start=&apos;0x1109000&apos; end=&apos;0x1109400&apos; /&gt;&lt;slave name=&apos;timer_0.s1&apos; start=&apos;0x1109400&apos; end=&apos;0x1109420&apos; /&gt;&lt;slave name=&apos;video_pixel_buffer_dma_0.avalon_control_slave&apos; start=&apos;0x1109420&apos; end=&apos;0x1109430&apos; /&gt;&lt;slave name=&apos;DM9000A_IF_0.s1&apos; start=&apos;0x1109430&apos; end=&apos;0x1109438&apos; /&gt;&lt;slave name=&apos;jtag_uart_0.avalon_jtag_slave&apos; start=&apos;0x1109438&apos; end=&apos;0x1109440&apos; /&gt;&lt;slave name=&apos;sysid_qsys_0.control_slave&apos; start=&apos;0x1109440&apos; end=&apos;0x1109448&apos; /&gt;&lt;slave name=&apos;character_lcd_0.avalon_lcd_slave&apos; start=&apos;0x1109448&apos; end=&apos;0x110944A&apos; /&gt;&lt;/address-map&gt;,dcache_bursts=true,dcache_lineSize=32,dcache_numTCDM=0,dcache_omitDataMaster=false,dcache_ramBlockType=Automatic,dcache_size=8192,debug_OCIOnchipTrace=_128,debug_assignJtagInstanceID=false,debug_debugReqSignals=false,debug_embeddedPLL=true,debug_jtagInstanceID=0,debug_level=Level1,debug_triggerArming=true,deviceFamilyName=Cyclone II,deviceFeaturesSystemInfo=NOT_LISTED 0 INSTALLED 1 IS_DEFAULT_FAMILY 0 ADDRESS_STALL 1 CELL_LEVEL_BACK_ANNOTATION_DISABLED 0 COMPILER_SUPPORT 1 DSP 0 DSP_SHIFTER_BLOCK 0 DUMP_ASM_LAB_BITS_FOR_POWER 1 EMUL 1 ENABLE_ADVANCED_IO_ANALYSIS_GUI_FEATURES 0 EPCS 1 ESB 0 FAKE1 0 FAKE2 0 FAKE3 0 FITTER_USE_FALLING_EDGE_DELAY 0 GENERATE_DC_ON_CURRENT_WARNING_FOR_INTERNAL_CLAMPING_DIODE 0 HARDCOPY 0 HAS_18_BIT_MULTS 0 HAS_ACE_SUPPORT 1 HAS_ADJUSTABLE_OUTPUT_IO_TIMING_MEAS_POINT 0 HAS_ADVANCED_IO_INVERTED_CORNER 0 HAS_ADVANCED_IO_POWER_SUPPORT 0 HAS_ADVANCED_IO_TIMING_SUPPORT 0 HAS_ALM_SUPPORT 0 HAS_ATOM_AND_ROUTING_POWER_MODELED_TOGETHER 0 HAS_AUTO_DERIVE_CLOCK_UNCERTAINTY_SUPPORT 0 HAS_AUTO_FIT_SUPPORT 1 HAS_BALANCED_OPT_TECHNIQUE_SUPPORT 1 HAS_BENEFICIAL_SKEW_SUPPORT 0 HAS_BITLEVEL_DRIVE_STRENGTH_CONTROL 0 HAS_BSDL_FILE_GENERATION 0 HAS_CGA_SUPPORT 1 HAS_CHECK_NETLIST_SUPPORT 1 HAS_CLOCK_REGION_CHECKER_ENABLED 1 HAS_CORE_JUNCTION_TEMP_DERATING 1 HAS_CROSSTALK_SUPPORT 0 HAS_CUSTOM_REGION_SUPPORT 1 HAS_DAP_JTAG_FROM_HPS 0 HAS_DATA_DRIVEN_ACVQ_HSSI_SUPPORT 0 HAS_DDB_FDI_SUPPORT 0 HAS_DESIGN_ANALYZER_SUPPORT 1 HAS_DETAILED_IO_RAIL_POWER_MODEL 1 HAS_DETAILED_LEIM_STATIC_POWER_MODEL 0 HAS_DETAILED_LE_POWER_MODEL 1 HAS_DETAILED_ROUTING_MUX_STATIC_POWER_MODEL 0 HAS_DETAILED_THERMAL_CIRCUIT_PARAMETER_SUPPORT 1 HAS_DEVICE_MIGRATION_SUPPORT 1 HAS_DIAGONAL_MIGRATION_SUPPORT 0 HAS_EMIF_TOOLKIT_SUPPORT 0 HAS_ERROR_DETECTION_SUPPORT 0 HAS_FAMILY_VARIANT_MIGRATION_SUPPORT 0 HAS_FANOUT_FREE_NODE_SUPPORT 1 HAS_FAST_FIT_SUPPORT 1 HAS_FITTER_EARLY_TIMING_ESTIMATE_SUPPORT 1 HAS_FITTER_ECO_SUPPORT 1 HAS_FIT_NETLIST_OPT_RETIME_SUPPORT 1 HAS_FIT_NETLIST_OPT_SUPPORT 1 HAS_FORMAL_VERIFICATION_SUPPORT 1 HAS_FPGA_XCHANGE_SUPPORT 1 HAS_FSAC_LUTRAM_REGISTER_PACKING_SUPPORT 0 HAS_FULL_DAT_MIN_TIMING_SUPPORT 1 HAS_FULL_INCREMENTAL_DESIGN_SUPPORT 1 HAS_FUNCTIONAL_SIMULATION_SUPPORT 1 HAS_FUNCTIONAL_VERILOG_SIMULATION_SUPPORT 0 HAS_FUNCTIONAL_VHDL_SIMULATION_SUPPORT 0 HAS_GLITCH_FILTERING_SUPPORT 1 HAS_HC_READY_SUPPORT 0 HAS_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 0 HAS_HOLD_TIME_AVOIDANCE_ACROSS_CLOCK_SPINE_SUPPORT 1 HAS_HSPICE_WRITER_SUPPORT 0 HAS_HSSI_POWER_CALCULATOR 0 HAS_IBISO_WRITER_SUPPORT 1 HAS_INCREMENTAL_DAT_SUPPORT 0 HAS_INCREMENTAL_SYNTHESIS_SUPPORT 1 HAS_IO_ASSIGNMENT_ANALYSIS_SUPPORT 1 HAS_IO_DECODER 0 HAS_IO_PLACEMENT_OPTIMIZATION_SUPPORT 1 HAS_IO_SMART_RECOMPILE_SUPPORT 1 HAS_JITTER_SUPPORT 0 HAS_JTAG_SLD_HUB_SUPPORT 1 HAS_LOGIC_LOCK_SUPPORT 1 HAS_MICROPROCESSOR 0 HAS_MIF_SMART_COMPILE_SUPPORT 1 HAS_MINMAX_TIMING_MODELING_SUPPORT 0 HAS_MIN_TIMING_ANALYSIS_SUPPORT 1 HAS_MUX_RESTRUCTURE_SUPPORT 1 HAS_NEW_HC_FLOW_SUPPORT 0 HAS_NEW_SERDES_MAX_RESOURCE_COUNT_REPORTING_SUPPORT 0 HAS_NEW_VPR_SUPPORT 1 HAS_NONSOCKET_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_NO_JTAG_USERCODE_SUPPORT 0 HAS_OPERATING_SETTINGS_AND_CONDITIONS_REPORTING_SUPPORT 1 HAS_PAD_LOCATION_ASSIGNMENT_SUPPORT 1 HAS_PARTIAL_RECONFIG_SUPPORT 0 HAS_PHYSICAL_NETLIST_OUTPUT 0 HAS_PHYSICAL_ROUTING_SUPPORT 0 HAS_PIN_SPECIFIC_VOLTAGE_SUPPORT 0 HAS_PLDM_REF_SUPPORT 1 HAS_POWER_ESTIMATION_SUPPORT 1 HAS_PRELIMINARY_CLOCK_UNCERTAINTY_NUMBERS 0 HAS_PRE_FITTER_FPP_SUPPORT 0 HAS_PRE_FITTER_LUTRAM_NETLIST_CHECKER_ENABLED 0 HAS_PVA_SUPPORT 1 HAS_RCF_SUPPORT 1 HAS_RCF_SUPPORT_FOR_DEBUGGING 0 HAS_RED_BLACK_SEPARATION_SUPPORT 0 HAS_RE_LEVEL_TIMING_GRAPH_SUPPORT 0 HAS_RISEFALL_DELAY_SUPPORT 1 HAS_SIGNAL_PROBE_SUPPORT 1 HAS_SIGNAL_TAP_SUPPORT 1 HAS_SIMULATOR_SUPPORT 1 HAS_SPLIT_IO_SUPPORT 0 HAS_SPLIT_LC_SUPPORT 1 HAS_SYNTH_FSYN_NETLIST_OPT_SUPPORT 0 HAS_SYNTH_NETLIST_OPT_RETIME_SUPPORT 1 HAS_SYNTH_NETLIST_OPT_SUPPORT 1 HAS_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_TEMPLATED_REGISTER_PACKING_SUPPORT 1 HAS_TIME_BORROWING_SUPPORT 0 HAS_TIMING_DRIVEN_SYNTHESIS_SUPPORT 1 HAS_TIMING_INFO_SUPPORT 1 HAS_TIMING_OPERATING_CONDITIONS 0 HAS_TIMING_SIMULATION_SUPPORT 1 HAS_TITAN_BASED_MAC_REGISTER_PACKER_SUPPORT 0 HAS_USER_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 0 HAS_USE_FITTER_INFO_SUPPORT 1 HAS_VCCPD_POWER_RAIL 0 HAS_VERTICAL_MIGRATION_SUPPORT 1 HAS_VIEWDRAW_SYMBOL_SUPPORT 1 HAS_VIO_SUPPORT 1 HAS_VIRTUAL_DEVICES 0 HAS_WYSIWYG_DFFEAS_SUPPORT 0 HAS_XIBISO_WRITER_SUPPORT 0 INCREMENTAL_DESIGN_SUPPORTS_COMPATIBLE_CONSTRAINTS 0 IS_CONFIG_ROM 0 IS_HARDCOPY_FAMILY 0 LVDS_IO 0 M10K_MEMORY 0 M144K_MEMORY 0 M20K_MEMORY 0 M4K_MEMORY 1 M512_MEMORY 0 M9K_MEMORY 0 MLAB_MEMORY 0 MRAM_MEMORY 0 NO_RPE_SUPPORT 0 NO_SUPPORT_FOR_LOGICLOCK_CONTENT_BACK_ANNOTATION 0 NO_SUPPORT_FOR_STA_CLOCK_UNCERTAINTY_CHECK 1 NO_TDC_SUPPORT 0 POSTFIT_BAK_DATABASE_EXPORT_ENABLED 1 POSTMAP_BAK_DATABASE_EXPORT_ENABLED 1 PROGRAMMER_SUPPORT 1 QFIT_IN_DEVELOPMENT 0 QMAP_IN_DEVELOPMENT 0 RAM_LOGICAL_NAME_CHECKING_IN_CUT_ENABLED 1 REPORTS_METASTABILITY_MTBF 0 REQUIRES_INSTALLATION_PATCH 0 REQUIRES_LIST_OF_TEMPERATURE_AND_VOLTAGE_OPERATING_CONDITIONS 0 RESERVES_SIGNAL_PROBE_PINS 0 RESOLVE_MAX_FANOUT_EARLY 1 RESOLVE_MAX_FANOUT_LATE 0 RESPECTS_FIXED_SIZED_LOCKED_LOCATION_LOGICLOCK 1 RESTRICTED_USER_SELECTION 0 RISEFALL_SUPPORT_IS_HIDDEN 1 STRICT_TIMING_DB_CHECKS 0 SUPPORTS_ADDITIONAL_OPTIONS_FOR_UNUSED_IO 1 SUPPORTS_CRC 1 SUPPORTS_DIFFERENTIAL_AIOT_BOARD_TRACE_MODEL 0 SUPPORTS_DSP_BALANCING_BACK_ANNOTATION 0 SUPPORTS_GENERATION_OF_EARLY_POWER_ESTIMATOR_FILE 1 SUPPORTS_GLOBAL_SIGNAL_BACK_ANNOTATION 0 SUPPORTS_MAC_CHAIN_OUT_ADDER 0 SUPPORTS_RAM_PACKING_BACK_ANNOTATION 0 SUPPORTS_REG_PACKING_BACK_ANNOTATION 0 SUPPORTS_SIGNALPROBE_REGISTER_PIPELINING 1 SUPPORTS_SINGLE_ENDED_AIOT_BOARD_TRACE_MODEL 0 SUPPORTS_USER_MANUAL_LOGIC_DUPLICATION 1 TMV_RUN_CUSTOMIZABLE_VIEWER 1 TMV_RUN_INTERNAL_DETAILS 1 TMV_RUN_INTERNAL_DETAILS_ON_IO 1 TMV_RUN_INTERNAL_DETAILS_ON_IOBUF 0 TMV_RUN_INTERNAL_DETAILS_ON_LCELL 0 TMV_RUN_INTERNAL_DETAILS_ON_LRAM 0 TRANSCEIVER_3G_BLOCK 0 TRANSCEIVER_6G_BLOCK 0 USES_ACV_FOR_FLED 1 USES_ADB_FOR_BACK_ANNOTATION 0 USES_ALTERA_LNSIM 0 USES_ASIC_ROUTING_POWER_CALCULATOR 0 USES_DATA_DRIVEN_PLL_COMPUTATION_UTIL 1 USES_DEV 1 USES_ICP_FOR_ECO_FITTER 0 USES_LIBERTY_TIMING 0 USES_POWER_SIGNAL_ACTIVITIES 1 USES_THIRD_GENERATION_TIMING_MODELS_TIS 0 USE_ADVANCED_IO_POWER_BY_DEFAULT 0 USE_ADVANCED_IO_TIMING_BY_DEFAULT 0 USE_BASE_FAMILY_DDB_PATH 0 USE_OCT_AUTO_CALIBRATION 0 USE_RELAX_IO_ASSIGNMENT_RULES 1 USE_RISEFALL_ONLY 0 USE_SEPARATE_LIST_FOR_TECH_MIGRATION 0 USE_SINGLE_COMPILER_PASS_PLL_MIF_FILE_WRITER 0 USE_TITAN_IO_BASED_IO_REGISTER_PACKER_UTIL 0 WYSIWYG_BUS_WIDTH_CHECKING_IN_CUT_ENABLED 0,exceptionAbsoluteAddr=17842208,exceptionOffset=32,exceptionSlave=onchip_memory2_0.s1,icache_burstType=Sequential,icache_numTCIM=0,icache_ramBlockType=Automatic,icache_size=8192,impl=Fast,instAddrWidth=25,instSlaveMapParam=&lt;address-map&gt;&lt;slave name=&apos;sdram_0.s1&apos; start=&apos;0x800000&apos; end=&apos;0x1000000&apos; /&gt;&lt;slave name=&apos;sram_0.avalon_sram_slave&apos; start=&apos;0x1080000&apos; end=&apos;0x1100000&apos; /&gt;&lt;slave name=&apos;onchip_memory2_0.s1&apos; start=&apos;0x1104000&apos; end=&apos;0x1108000&apos; /&gt;&lt;slave name=&apos;nios2_qsys_0.jtag_debug_module&apos; start=&apos;0x1108800&apos; end=&apos;0x1109000&apos; /&gt;&lt;/address-map&gt;,internalIrqMaskSystemInfo=7,is_hardcopy_compatible=false,manuallyAssignCpuID=true,mmu_TLBMissExcAbsAddr=0,mmu_TLBMissExcOffset=0,mmu_TLBMissExcSlave=,mmu_autoAssignTlbPtrSz=true,mmu_enabled=false,mmu_processIDNumBits=8,mmu_ramBlockType=Automatic,mmu_tlbNumWays=16,mmu_tlbPtrSz=7,mmu_udtlbNumEntries=6,mmu_uitlbNumEntries=4,mpu_enabled=false,mpu_minDataRegionSize=12,mpu_minInstRegionSize=12,mpu_numOfDataRegion=8,mpu_numOfInstRegion=8,mpu_useLimit=false,muldiv_divider=false,muldiv_multiplierType=EmbeddedMulFast,regfile_ramBlockType=Automatic,resetAbsoluteAddr=17842176,resetOffset=0,resetSlave=onchip_memory2_0.s1,setting_HBreakTest=false,setting_HDLSimCachesCleared=true,setting_activateModelChecker=false,setting_activateMonitors=true,setting_activateTestEndChecker=false,setting_activateTrace=true,setting_allowFullAddressRange=false,setting_alwaysEncrypt=true,setting_asic_enabled=false,setting_asic_synopsys_translate_on_off=false,setting_avalonDebugPortPresent=false,setting_bhtIndexPcOnly=false,setting_bhtPtrSz=8,setting_bigEndian=false,setting_bit31BypassDCache=true,setting_branchPredictionType=Automatic,setting_clearXBitsLDNonBypass=true,setting_debugSimGen=false,setting_exportPCB=false,setting_export_large_RAMs=false,setting_extraExceptionInfo=false,setting_fullWaveformSignals=false,setting_illegalInstructionsTrap=false,setting_illegalMemAccessDetection=false,setting_interruptControllerType=Internal,setting_oci_export_jtag_signals=false,setting_perfCounterWidth=32,setting_performanceCounter=false,setting_preciseDivisionErrorException=false,setting_preciseIllegalMemAccessException=false,setting_preciseSlaveAccessErrorException=false,setting_shadowRegisterSets=0,setting_showInternalSettings=false,setting_showUnpublishedSettings=false,tightlyCoupledDataMaster0AddrWidth=1,tightlyCoupledDataMaster0MapParam=,tightlyCoupledDataMaster1AddrWidth=1,tightlyCoupledDataMaster1MapParam=,tightlyCoupledDataMaster2AddrWidth=1,tightlyCoupledDataMaster2MapParam=,tightlyCoupledDataMaster3AddrWidth=1,tightlyCoupledDataMaster3MapParam=,tightlyCoupledInstructionMaster0AddrWidth=1,tightlyCoupledInstructionMaster0MapParam=,tightlyCoupledInstructionMaster1AddrWidth=1,tightlyCoupledInstructionMaster1MapParam=,tightlyCoupledInstructionMaster2AddrWidth=1,tightlyCoupledInstructionMaster2MapParam=,tightlyCoupledInstructionMaster3AddrWidth=1,tightlyCoupledInstructionMaster3MapParam=,translate_off= &quot;synthesis translate_off&quot; ,translate_on= &quot;synthesis translate_on&quot;  ,userDefinedSettings=)(altera_avalon_onchip_memory2:12.1:allowInSystemMemoryContentEditor=false,autoInitializationFileName=niosII_system_onchip_memory2_0,blockType=AUTO,dataWidth=32,deviceFamily=Cyclone II,dualPort=false,initMemContent=true,initializationFileName=onchip_memory2_0,instanceID=NONE,memorySize=16384,readDuringWriteMode=DONT_CARE,simAllowMRAMContentsFile=false,simMemInitOnlyFilename=0,singleClockOperation=false,slave1Latency=1,slave2Latency=1,useNonDefaultInitFile=false,useShallowMemBlocks=false,writable=true)(altera_avalon_sysid_qsys:12.1:AUTO_CLK_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,id=0,timestamp=1486332933)(altera_avalon_timer:12.1:alwaysRun=false,counterSize=32,fixedPeriod=false,period=1,periodUnits=MSEC,resetOutput=false,snapshot=true,systemFrequency=50000000,timeoutPulseOutput=false,timerPreset=CUSTOM)(altera_avalon_jtag_uart:12.1:allowMultipleConnections=false,avalonSpec=2.0,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=INTERACTIVE_INPUT_OUTPUT,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=64,writeIRQThreshold=8)(altera_up_avalon_character_lcd:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,cursor=Normal)(altera_up_avalon_sram:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,board=DE2,pixel_buffer=true)(DM9000A_IF:1.0:AUTO_S1_CLOCK_CLOCK_RATE=50000000)(altera_up_clocks:12.0:AUTO_CLK_IN_PRIMARY_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,audio_clk=false,audio_clk_freq=12.288,board=DE2,sdram_clk=true,sys_clk_freq=50,vga_clk=true)(altera_up_avalon_video_pixel_buffer_dma:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,addr_mode=X-Y,back_start_address=0,color_space=8-bit RGB,image_height=480,image_width=640,start_address=0)(altera_up_avalon_video_rgb_resampler:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,alpha=1023,input_bits=8,input_planes=1,input_type=8-bit RGB,output_bits=10,output_planes=3,output_type=30-bit RGB)(altera_up_avalon_video_scaler:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,color_bits=10,color_planes=3,height_in=240,height_out=240,height_scaling=1,width_in=640,width_out=320,width_scaling=0.5)(altera_up_avalon_video_vga_controller:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=25000000,AUTO_DEVICE_FAMILY=Cyclone II,board=DE2,device=VGA Connector,underflow_flag=false)(Altera_UP_SD_Card_Avalon_Interface:1.0:AUTO_CLOCK_SINK_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II)(altera_up_avalon_video_dual_clock_buffer:12.0:AUTO_CLOCK_STREAM_IN_CLOCK_RATE=50000000,AUTO_CLOCK_STREAM_OUT_CLOCK_RATE=25000000,AUTO_DEVICE_FAMILY=Cyclone II,color_bits=10,color_planes=3)(altera_avalon_new_sdram_controller:12.1:TAC=5.5,TMRD=3,TRCD=20.0,TRFC=70.0,TRP=20.0,TWR=14.0,casLatency=3,clockRate=50000000,columnWidth=8,dataWidth=16,generateSimulationModel=false,initNOPDelay=0.0,initRefreshCommands=2,masteredTristateBridgeSlave=,model=custom,numberOfBanks=4,numberOfChipSelects=1,pinsSharedViaTriState=false,powerUpDelay=100.0,refreshPeriod=15.625,registerDataIn=true,rowWidth=12,size=8388608)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01108800)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01108800)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(clock:12.1:)(reset:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01104000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01080000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01080000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01104000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109440)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109400)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109438)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109430)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109448)(interrupt:12.1:irqNumber=0)(interrupt:12.1:irqNumber=1)(interrupt:12.1:irqNumber=2)(clock:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01080000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109420)(avalon_streaming:12.1:)(clock:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon_streaming:12.1:)(clock:12.1:)(avalon_streaming:12.1:)(clock:12.1:)(clock:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon_streaming:12.1:)(clock:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109000)(clock:12.1:)(clock:12.1:)(clock:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x00800000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x00800000)"
+   parameterizationKey="niosII_system:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP2C35F672C6,AUTO_DEVICE_FAMILY=Cyclone II,AUTO_GENERATION_ID=1486844050,AUTO_UNIQUE_ID=(clock_source:12.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_nios2_qsys:12.1:bht_ramBlockType=Automatic,breakAbsoluteAddr=17860640,breakOffset=32,breakSlave=nios2_qsys_0.jtag_debug_module,clockFrequency=50000000,cpuID=0,cpuID_stored=0,cpuReset=false,customInstSlavesSystemInfo=&lt;info/&gt;,dataAddrWidth=25,dataSlaveMapParam=&lt;address-map&gt;&lt;slave name=&apos;sdram_0.s1&apos; start=&apos;0x800000&apos; end=&apos;0x1000000&apos; /&gt;&lt;slave name=&apos;sram_0.avalon_sram_slave&apos; start=&apos;0x1080000&apos; end=&apos;0x1100000&apos; /&gt;&lt;slave name=&apos;onchip_memory2_0.s1&apos; start=&apos;0x1104000&apos; end=&apos;0x1108000&apos; /&gt;&lt;slave name=&apos;nios2_qsys_0.jtag_debug_module&apos; start=&apos;0x1108800&apos; end=&apos;0x1109000&apos; /&gt;&lt;slave name=&apos;Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave&apos; start=&apos;0x1109000&apos; end=&apos;0x1109400&apos; /&gt;&lt;slave name=&apos;timer_0.s1&apos; start=&apos;0x1109400&apos; end=&apos;0x1109420&apos; /&gt;&lt;slave name=&apos;video_pixel_buffer_dma_0.avalon_control_slave&apos; start=&apos;0x1109420&apos; end=&apos;0x1109430&apos; /&gt;&lt;slave name=&apos;DM9000A_IF_0.s1&apos; start=&apos;0x1109430&apos; end=&apos;0x1109438&apos; /&gt;&lt;slave name=&apos;jtag_uart_0.avalon_jtag_slave&apos; start=&apos;0x1109438&apos; end=&apos;0x1109440&apos; /&gt;&lt;slave name=&apos;sysid_qsys_0.control_slave&apos; start=&apos;0x1109440&apos; end=&apos;0x1109448&apos; /&gt;&lt;slave name=&apos;character_lcd_0.avalon_lcd_slave&apos; start=&apos;0x1109448&apos; end=&apos;0x110944A&apos; /&gt;&lt;/address-map&gt;,dcache_bursts=true,dcache_lineSize=32,dcache_numTCDM=0,dcache_omitDataMaster=false,dcache_ramBlockType=Automatic,dcache_size=8192,debug_OCIOnchipTrace=_128,debug_assignJtagInstanceID=false,debug_debugReqSignals=false,debug_embeddedPLL=true,debug_jtagInstanceID=0,debug_level=Level1,debug_triggerArming=true,deviceFamilyName=Cyclone II,deviceFeaturesSystemInfo=NOT_LISTED 0 INSTALLED 1 IS_DEFAULT_FAMILY 0 ADDRESS_STALL 1 CELL_LEVEL_BACK_ANNOTATION_DISABLED 0 COMPILER_SUPPORT 1 DSP 0 DSP_SHIFTER_BLOCK 0 DUMP_ASM_LAB_BITS_FOR_POWER 1 EMUL 1 ENABLE_ADVANCED_IO_ANALYSIS_GUI_FEATURES 0 EPCS 1 ESB 0 FAKE1 0 FAKE2 0 FAKE3 0 FITTER_USE_FALLING_EDGE_DELAY 0 GENERATE_DC_ON_CURRENT_WARNING_FOR_INTERNAL_CLAMPING_DIODE 0 HARDCOPY 0 HAS_18_BIT_MULTS 0 HAS_ACE_SUPPORT 1 HAS_ADJUSTABLE_OUTPUT_IO_TIMING_MEAS_POINT 0 HAS_ADVANCED_IO_INVERTED_CORNER 0 HAS_ADVANCED_IO_POWER_SUPPORT 0 HAS_ADVANCED_IO_TIMING_SUPPORT 0 HAS_ALM_SUPPORT 0 HAS_ATOM_AND_ROUTING_POWER_MODELED_TOGETHER 0 HAS_AUTO_DERIVE_CLOCK_UNCERTAINTY_SUPPORT 0 HAS_AUTO_FIT_SUPPORT 1 HAS_BALANCED_OPT_TECHNIQUE_SUPPORT 1 HAS_BENEFICIAL_SKEW_SUPPORT 0 HAS_BITLEVEL_DRIVE_STRENGTH_CONTROL 0 HAS_BSDL_FILE_GENERATION 0 HAS_CGA_SUPPORT 1 HAS_CHECK_NETLIST_SUPPORT 1 HAS_CLOCK_REGION_CHECKER_ENABLED 1 HAS_CORE_JUNCTION_TEMP_DERATING 1 HAS_CROSSTALK_SUPPORT 0 HAS_CUSTOM_REGION_SUPPORT 1 HAS_DAP_JTAG_FROM_HPS 0 HAS_DATA_DRIVEN_ACVQ_HSSI_SUPPORT 0 HAS_DDB_FDI_SUPPORT 0 HAS_DESIGN_ANALYZER_SUPPORT 1 HAS_DETAILED_IO_RAIL_POWER_MODEL 1 HAS_DETAILED_LEIM_STATIC_POWER_MODEL 0 HAS_DETAILED_LE_POWER_MODEL 1 HAS_DETAILED_ROUTING_MUX_STATIC_POWER_MODEL 0 HAS_DETAILED_THERMAL_CIRCUIT_PARAMETER_SUPPORT 1 HAS_DEVICE_MIGRATION_SUPPORT 1 HAS_DIAGONAL_MIGRATION_SUPPORT 0 HAS_EMIF_TOOLKIT_SUPPORT 0 HAS_ERROR_DETECTION_SUPPORT 0 HAS_FAMILY_VARIANT_MIGRATION_SUPPORT 0 HAS_FANOUT_FREE_NODE_SUPPORT 1 HAS_FAST_FIT_SUPPORT 1 HAS_FITTER_EARLY_TIMING_ESTIMATE_SUPPORT 1 HAS_FITTER_ECO_SUPPORT 1 HAS_FIT_NETLIST_OPT_RETIME_SUPPORT 1 HAS_FIT_NETLIST_OPT_SUPPORT 1 HAS_FORMAL_VERIFICATION_SUPPORT 1 HAS_FPGA_XCHANGE_SUPPORT 1 HAS_FSAC_LUTRAM_REGISTER_PACKING_SUPPORT 0 HAS_FULL_DAT_MIN_TIMING_SUPPORT 1 HAS_FULL_INCREMENTAL_DESIGN_SUPPORT 1 HAS_FUNCTIONAL_SIMULATION_SUPPORT 1 HAS_FUNCTIONAL_VERILOG_SIMULATION_SUPPORT 0 HAS_FUNCTIONAL_VHDL_SIMULATION_SUPPORT 0 HAS_GLITCH_FILTERING_SUPPORT 1 HAS_HC_READY_SUPPORT 0 HAS_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 0 HAS_HOLD_TIME_AVOIDANCE_ACROSS_CLOCK_SPINE_SUPPORT 1 HAS_HSPICE_WRITER_SUPPORT 0 HAS_HSSI_POWER_CALCULATOR 0 HAS_IBISO_WRITER_SUPPORT 1 HAS_INCREMENTAL_DAT_SUPPORT 0 HAS_INCREMENTAL_SYNTHESIS_SUPPORT 1 HAS_IO_ASSIGNMENT_ANALYSIS_SUPPORT 1 HAS_IO_DECODER 0 HAS_IO_PLACEMENT_OPTIMIZATION_SUPPORT 1 HAS_IO_SMART_RECOMPILE_SUPPORT 1 HAS_JITTER_SUPPORT 0 HAS_JTAG_SLD_HUB_SUPPORT 1 HAS_LOGIC_LOCK_SUPPORT 1 HAS_MICROPROCESSOR 0 HAS_MIF_SMART_COMPILE_SUPPORT 1 HAS_MINMAX_TIMING_MODELING_SUPPORT 0 HAS_MIN_TIMING_ANALYSIS_SUPPORT 1 HAS_MUX_RESTRUCTURE_SUPPORT 1 HAS_NEW_HC_FLOW_SUPPORT 0 HAS_NEW_SERDES_MAX_RESOURCE_COUNT_REPORTING_SUPPORT 0 HAS_NEW_VPR_SUPPORT 1 HAS_NONSOCKET_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_NO_JTAG_USERCODE_SUPPORT 0 HAS_OPERATING_SETTINGS_AND_CONDITIONS_REPORTING_SUPPORT 1 HAS_PAD_LOCATION_ASSIGNMENT_SUPPORT 1 HAS_PARTIAL_RECONFIG_SUPPORT 0 HAS_PHYSICAL_NETLIST_OUTPUT 0 HAS_PHYSICAL_ROUTING_SUPPORT 0 HAS_PIN_SPECIFIC_VOLTAGE_SUPPORT 0 HAS_PLDM_REF_SUPPORT 1 HAS_POWER_ESTIMATION_SUPPORT 1 HAS_PRELIMINARY_CLOCK_UNCERTAINTY_NUMBERS 0 HAS_PRE_FITTER_FPP_SUPPORT 0 HAS_PRE_FITTER_LUTRAM_NETLIST_CHECKER_ENABLED 0 HAS_PVA_SUPPORT 1 HAS_RCF_SUPPORT 1 HAS_RCF_SUPPORT_FOR_DEBUGGING 0 HAS_RED_BLACK_SEPARATION_SUPPORT 0 HAS_RE_LEVEL_TIMING_GRAPH_SUPPORT 0 HAS_RISEFALL_DELAY_SUPPORT 1 HAS_SIGNAL_PROBE_SUPPORT 1 HAS_SIGNAL_TAP_SUPPORT 1 HAS_SIMULATOR_SUPPORT 1 HAS_SPLIT_IO_SUPPORT 0 HAS_SPLIT_LC_SUPPORT 1 HAS_SYNTH_FSYN_NETLIST_OPT_SUPPORT 0 HAS_SYNTH_NETLIST_OPT_RETIME_SUPPORT 1 HAS_SYNTH_NETLIST_OPT_SUPPORT 1 HAS_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_TEMPLATED_REGISTER_PACKING_SUPPORT 1 HAS_TIME_BORROWING_SUPPORT 0 HAS_TIMING_DRIVEN_SYNTHESIS_SUPPORT 1 HAS_TIMING_INFO_SUPPORT 1 HAS_TIMING_OPERATING_CONDITIONS 0 HAS_TIMING_SIMULATION_SUPPORT 1 HAS_TITAN_BASED_MAC_REGISTER_PACKER_SUPPORT 0 HAS_USER_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 0 HAS_USE_FITTER_INFO_SUPPORT 1 HAS_VCCPD_POWER_RAIL 0 HAS_VERTICAL_MIGRATION_SUPPORT 1 HAS_VIEWDRAW_SYMBOL_SUPPORT 1 HAS_VIO_SUPPORT 1 HAS_VIRTUAL_DEVICES 0 HAS_WYSIWYG_DFFEAS_SUPPORT 0 HAS_XIBISO_WRITER_SUPPORT 0 INCREMENTAL_DESIGN_SUPPORTS_COMPATIBLE_CONSTRAINTS 0 IS_CONFIG_ROM 0 IS_HARDCOPY_FAMILY 0 LVDS_IO 0 M10K_MEMORY 0 M144K_MEMORY 0 M20K_MEMORY 0 M4K_MEMORY 1 M512_MEMORY 0 M9K_MEMORY 0 MLAB_MEMORY 0 MRAM_MEMORY 0 NO_RPE_SUPPORT 0 NO_SUPPORT_FOR_LOGICLOCK_CONTENT_BACK_ANNOTATION 0 NO_SUPPORT_FOR_STA_CLOCK_UNCERTAINTY_CHECK 1 NO_TDC_SUPPORT 0 POSTFIT_BAK_DATABASE_EXPORT_ENABLED 1 POSTMAP_BAK_DATABASE_EXPORT_ENABLED 1 PROGRAMMER_SUPPORT 1 QFIT_IN_DEVELOPMENT 0 QMAP_IN_DEVELOPMENT 0 RAM_LOGICAL_NAME_CHECKING_IN_CUT_ENABLED 1 REPORTS_METASTABILITY_MTBF 0 REQUIRES_INSTALLATION_PATCH 0 REQUIRES_LIST_OF_TEMPERATURE_AND_VOLTAGE_OPERATING_CONDITIONS 0 RESERVES_SIGNAL_PROBE_PINS 0 RESOLVE_MAX_FANOUT_EARLY 1 RESOLVE_MAX_FANOUT_LATE 0 RESPECTS_FIXED_SIZED_LOCKED_LOCATION_LOGICLOCK 1 RESTRICTED_USER_SELECTION 0 RISEFALL_SUPPORT_IS_HIDDEN 1 STRICT_TIMING_DB_CHECKS 0 SUPPORTS_ADDITIONAL_OPTIONS_FOR_UNUSED_IO 1 SUPPORTS_CRC 1 SUPPORTS_DIFFERENTIAL_AIOT_BOARD_TRACE_MODEL 0 SUPPORTS_DSP_BALANCING_BACK_ANNOTATION 0 SUPPORTS_GENERATION_OF_EARLY_POWER_ESTIMATOR_FILE 1 SUPPORTS_GLOBAL_SIGNAL_BACK_ANNOTATION 0 SUPPORTS_MAC_CHAIN_OUT_ADDER 0 SUPPORTS_RAM_PACKING_BACK_ANNOTATION 0 SUPPORTS_REG_PACKING_BACK_ANNOTATION 0 SUPPORTS_SIGNALPROBE_REGISTER_PIPELINING 1 SUPPORTS_SINGLE_ENDED_AIOT_BOARD_TRACE_MODEL 0 SUPPORTS_USER_MANUAL_LOGIC_DUPLICATION 1 TMV_RUN_CUSTOMIZABLE_VIEWER 1 TMV_RUN_INTERNAL_DETAILS 1 TMV_RUN_INTERNAL_DETAILS_ON_IO 1 TMV_RUN_INTERNAL_DETAILS_ON_IOBUF 0 TMV_RUN_INTERNAL_DETAILS_ON_LCELL 0 TMV_RUN_INTERNAL_DETAILS_ON_LRAM 0 TRANSCEIVER_3G_BLOCK 0 TRANSCEIVER_6G_BLOCK 0 USES_ACV_FOR_FLED 1 USES_ADB_FOR_BACK_ANNOTATION 0 USES_ALTERA_LNSIM 0 USES_ASIC_ROUTING_POWER_CALCULATOR 0 USES_DATA_DRIVEN_PLL_COMPUTATION_UTIL 1 USES_DEV 1 USES_ICP_FOR_ECO_FITTER 0 USES_LIBERTY_TIMING 0 USES_POWER_SIGNAL_ACTIVITIES 1 USES_THIRD_GENERATION_TIMING_MODELS_TIS 0 USE_ADVANCED_IO_POWER_BY_DEFAULT 0 USE_ADVANCED_IO_TIMING_BY_DEFAULT 0 USE_BASE_FAMILY_DDB_PATH 0 USE_OCT_AUTO_CALIBRATION 0 USE_RELAX_IO_ASSIGNMENT_RULES 1 USE_RISEFALL_ONLY 0 USE_SEPARATE_LIST_FOR_TECH_MIGRATION 0 USE_SINGLE_COMPILER_PASS_PLL_MIF_FILE_WRITER 0 USE_TITAN_IO_BASED_IO_REGISTER_PACKER_UTIL 0 WYSIWYG_BUS_WIDTH_CHECKING_IN_CUT_ENABLED 0,exceptionAbsoluteAddr=17842208,exceptionOffset=32,exceptionSlave=onchip_memory2_0.s1,icache_burstType=Sequential,icache_numTCIM=0,icache_ramBlockType=Automatic,icache_size=8192,impl=Fast,instAddrWidth=25,instSlaveMapParam=&lt;address-map&gt;&lt;slave name=&apos;sdram_0.s1&apos; start=&apos;0x800000&apos; end=&apos;0x1000000&apos; /&gt;&lt;slave name=&apos;sram_0.avalon_sram_slave&apos; start=&apos;0x1080000&apos; end=&apos;0x1100000&apos; /&gt;&lt;slave name=&apos;onchip_memory2_0.s1&apos; start=&apos;0x1104000&apos; end=&apos;0x1108000&apos; /&gt;&lt;slave name=&apos;nios2_qsys_0.jtag_debug_module&apos; start=&apos;0x1108800&apos; end=&apos;0x1109000&apos; /&gt;&lt;/address-map&gt;,internalIrqMaskSystemInfo=7,is_hardcopy_compatible=false,manuallyAssignCpuID=true,mmu_TLBMissExcAbsAddr=0,mmu_TLBMissExcOffset=0,mmu_TLBMissExcSlave=,mmu_autoAssignTlbPtrSz=true,mmu_enabled=false,mmu_processIDNumBits=8,mmu_ramBlockType=Automatic,mmu_tlbNumWays=16,mmu_tlbPtrSz=7,mmu_udtlbNumEntries=6,mmu_uitlbNumEntries=4,mpu_enabled=false,mpu_minDataRegionSize=12,mpu_minInstRegionSize=12,mpu_numOfDataRegion=8,mpu_numOfInstRegion=8,mpu_useLimit=false,muldiv_divider=false,muldiv_multiplierType=EmbeddedMulFast,regfile_ramBlockType=Automatic,resetAbsoluteAddr=17842176,resetOffset=0,resetSlave=onchip_memory2_0.s1,setting_HBreakTest=false,setting_HDLSimCachesCleared=true,setting_activateModelChecker=false,setting_activateMonitors=true,setting_activateTestEndChecker=false,setting_activateTrace=true,setting_allowFullAddressRange=false,setting_alwaysEncrypt=true,setting_asic_enabled=false,setting_asic_synopsys_translate_on_off=false,setting_avalonDebugPortPresent=false,setting_bhtIndexPcOnly=false,setting_bhtPtrSz=8,setting_bigEndian=false,setting_bit31BypassDCache=true,setting_branchPredictionType=Automatic,setting_clearXBitsLDNonBypass=true,setting_debugSimGen=false,setting_exportPCB=false,setting_export_large_RAMs=false,setting_extraExceptionInfo=false,setting_fullWaveformSignals=false,setting_illegalInstructionsTrap=false,setting_illegalMemAccessDetection=false,setting_interruptControllerType=Internal,setting_oci_export_jtag_signals=false,setting_perfCounterWidth=32,setting_performanceCounter=false,setting_preciseDivisionErrorException=false,setting_preciseIllegalMemAccessException=false,setting_preciseSlaveAccessErrorException=false,setting_shadowRegisterSets=0,setting_showInternalSettings=false,setting_showUnpublishedSettings=false,tightlyCoupledDataMaster0AddrWidth=1,tightlyCoupledDataMaster0MapParam=,tightlyCoupledDataMaster1AddrWidth=1,tightlyCoupledDataMaster1MapParam=,tightlyCoupledDataMaster2AddrWidth=1,tightlyCoupledDataMaster2MapParam=,tightlyCoupledDataMaster3AddrWidth=1,tightlyCoupledDataMaster3MapParam=,tightlyCoupledInstructionMaster0AddrWidth=1,tightlyCoupledInstructionMaster0MapParam=,tightlyCoupledInstructionMaster1AddrWidth=1,tightlyCoupledInstructionMaster1MapParam=,tightlyCoupledInstructionMaster2AddrWidth=1,tightlyCoupledInstructionMaster2MapParam=,tightlyCoupledInstructionMaster3AddrWidth=1,tightlyCoupledInstructionMaster3MapParam=,translate_off= &quot;synthesis translate_off&quot; ,translate_on= &quot;synthesis translate_on&quot;  ,userDefinedSettings=)(altera_avalon_onchip_memory2:12.1:allowInSystemMemoryContentEditor=false,autoInitializationFileName=niosII_system_onchip_memory2_0,blockType=AUTO,dataWidth=32,deviceFamily=Cyclone II,dualPort=false,initMemContent=true,initializationFileName=onchip_memory2_0,instanceID=NONE,memorySize=16384,readDuringWriteMode=DONT_CARE,simAllowMRAMContentsFile=false,simMemInitOnlyFilename=0,singleClockOperation=false,slave1Latency=1,slave2Latency=1,useNonDefaultInitFile=false,useShallowMemBlocks=false,writable=true)(altera_avalon_sysid_qsys:12.1:AUTO_CLK_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,id=0,timestamp=1486844050)(altera_avalon_timer:12.1:alwaysRun=false,counterSize=32,fixedPeriod=false,period=1,periodUnits=MSEC,resetOutput=false,snapshot=true,systemFrequency=50000000,timeoutPulseOutput=false,timerPreset=CUSTOM)(altera_avalon_jtag_uart:12.1:allowMultipleConnections=false,avalonSpec=2.0,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=INTERACTIVE_INPUT_OUTPUT,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=64,writeIRQThreshold=8)(altera_up_avalon_character_lcd:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,cursor=Normal)(altera_up_avalon_sram:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,board=DE2,pixel_buffer=true)(DM9000A_IF:1.0:AUTO_S1_CLOCK_CLOCK_RATE=50000000)(altera_up_clocks:12.0:AUTO_CLK_IN_PRIMARY_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,audio_clk=false,audio_clk_freq=12.288,board=DE2,sdram_clk=true,sys_clk_freq=50,vga_clk=true)(altera_up_avalon_video_pixel_buffer_dma:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,addr_mode=X-Y,back_start_address=0,color_space=8-bit RGB,image_height=480,image_width=640,start_address=0)(altera_up_avalon_video_rgb_resampler:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,alpha=1023,input_bits=8,input_planes=1,input_type=8-bit RGB,output_bits=10,output_planes=3,output_type=30-bit RGB)(altera_up_avalon_video_scaler:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,color_bits=10,color_planes=3,height_in=240,height_out=240,height_scaling=1,width_in=640,width_out=320,width_scaling=0.5)(altera_up_avalon_video_vga_controller:12.0:AUTO_CLOCK_RESET_CLOCK_RATE=25000000,AUTO_DEVICE_FAMILY=Cyclone II,board=DE2,device=VGA Connector,underflow_flag=false)(Altera_UP_SD_Card_Avalon_Interface:1.0:AUTO_CLOCK_SINK_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II)(altera_up_avalon_video_dual_clock_buffer:12.0:AUTO_CLOCK_STREAM_IN_CLOCK_RATE=50000000,AUTO_CLOCK_STREAM_OUT_CLOCK_RATE=25000000,AUTO_DEVICE_FAMILY=Cyclone II,color_bits=10,color_planes=3)(altera_avalon_new_sdram_controller:12.1:TAC=5.5,TMRD=3,TRCD=20.0,TRFC=70.0,TRP=20.0,TWR=14.0,casLatency=3,clockRate=50000000,columnWidth=8,dataWidth=16,generateSimulationModel=false,initNOPDelay=0.0,initRefreshCommands=2,masteredTristateBridgeSlave=,model=custom,numberOfBanks=4,numberOfChipSelects=1,pinsSharedViaTriState=false,powerUpDelay=100.0,refreshPeriod=15.625,registerDataIn=true,rowWidth=12,size=8388608)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01108800)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01108800)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(clock:12.1:)(reset:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01104000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01080000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01080000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01104000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109440)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109400)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109438)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109430)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109448)(interrupt:12.1:irqNumber=0)(interrupt:12.1:irqNumber=1)(interrupt:12.1:irqNumber=2)(clock:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01080000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109420)(avalon_streaming:12.1:)(clock:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon_streaming:12.1:)(clock:12.1:)(avalon_streaming:12.1:)(clock:12.1:)(clock:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon_streaming:12.1:)(clock:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x01109000)(clock:12.1:)(clock:12.1:)(clock:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x00800000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x00800000)"
    instancePathKey="niosII_system"
    kind="niosII_system"
    version="1.0"
@@ -285,7 +285,7 @@
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_DEVICE" value="EP2C35F672C6" />
-  <parameter name="AUTO_GENERATION_ID" value="1486332933" />
+  <parameter name="AUTO_GENERATION_ID" value="1486844050" />
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
   <generatedFiles>
    <file
@@ -1542,158 +1542,158 @@
    <message level="Debug" culprit="niosII_system"><![CDATA["<b>niosII_system</b>" reuses <b>altera_irq_clock_crosser</b> "<b>submodules/altera_irq_clock_crosser</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 126 starting:altera_nios2_qsys "submodules/niosII_system_nios2_qsys_0"</message>
    <message level="Info" culprit="nios2_qsys_0">Starting RTL generation for module 'niosII_system_nios2_qsys_0'</message>
-   <message level="Info" culprit="nios2_qsys_0">  Generation command is [exec /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl -I /OPT/altera/12.1/quartus/common/ip/altera/common/perl/5.8.3 -I /OPT/altera/12.1/quartus/sopc_builder/bin/europa -I /OPT/altera/12.1/quartus/sopc_builder/bin/perl_lib -I /OPT/altera/12.1/quartus/sopc_builder/bin -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=niosII_system_nios2_qsys_0 --dir=/tmp/alt7202_7454973320362540511.dir/0004_nios2_qsys_0_gen/ --quartus_dir=/OPT/altera/12.1/quartus --verilog --config=/tmp/alt7202_7454973320362540511.dir/0004_nios2_qsys_0_gen//niosII_system_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:37 (*) Starting Nios II generation</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:37 (*)   Checking for plaintext license.</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:38 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:38 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:38 (*)   Plaintext license not found.</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:38 (*)   Checking for encrypted license (non-evaluation).</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Encrypted license found.  SOF will not be time-limited.</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Elaborating CPU configuration settings</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Creating all objects for CPU</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)     Testbench</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)     Instruction decoding</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)       Instruction fields</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)       Instruction decodes</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:40 (*)       Signals for RTL simulation waveforms</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:40 (*)       Instruction controls</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:40 (*)     Pipeline frontend</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:40 (*)     Pipeline backend</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:42 (*)   Generating RTL from CPU objects</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:45 (*)   Creating encrypted RTL</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:46 (*) Done Nios II generation</message>
+   <message level="Info" culprit="nios2_qsys_0">  Generation command is [exec /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl -I /OPT/altera/12.1/quartus/common/ip/altera/common/perl/5.8.3 -I /OPT/altera/12.1/quartus/sopc_builder/bin/europa -I /OPT/altera/12.1/quartus/sopc_builder/bin/perl_lib -I /OPT/altera/12.1/quartus/sopc_builder/bin -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=niosII_system_nios2_qsys_0 --dir=/tmp/alt7208_3018687393986178349.dir/0004_nios2_qsys_0_gen/ --quartus_dir=/OPT/altera/12.1/quartus --verilog --config=/tmp/alt7208_3018687393986178349.dir/0004_nios2_qsys_0_gen//niosII_system_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:14 (*) Starting Nios II generation</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:14 (*)   Checking for plaintext license.</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:15 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:15 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:15 (*)   Plaintext license not found.</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:15 (*)   Checking for encrypted license (non-evaluation).</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Encrypted license found.  SOF will not be time-limited.</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Elaborating CPU configuration settings</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Creating all objects for CPU</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)     Testbench</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)     Instruction decoding</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)       Instruction fields</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)       Instruction decodes</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:17 (*)       Signals for RTL simulation waveforms</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:17 (*)       Instruction controls</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:17 (*)     Pipeline frontend</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:17 (*)     Pipeline backend</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:20 (*)   Generating RTL from CPU objects</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:23 (*)   Creating encrypted RTL</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:24 (*) Done Nios II generation</message>
    <message level="Info" culprit="nios2_qsys_0">Done RTL generation for module 'niosII_system_nios2_qsys_0'</message>
    <message level="Info" culprit="nios2_qsys_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_nios2_qsys</b> "<b>nios2_qsys_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 125 starting:altera_avalon_onchip_memory2 "submodules/niosII_system_onchip_memory2_0"</message>
    <message level="Info">Starting module elaboration.</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0005_sopclgen  --no_splash --refresh /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:24816): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:24816): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0005_sopclgen  --no_splash --refresh /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13277): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13277): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0005_sopclgen  --generate /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:24895): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:24895): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0005_sopclgen  --generate /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13320): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13320): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Reading project /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Finding all CPUs</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Finding all peripherals</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Finding software components</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Reading project /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Finding all CPUs</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Finding all peripherals</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Finding software components</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Running Generator Program for niosII_system_onchip_memory2_0</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Generating Symbol /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Creating command-line system-generation script: /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2017.02.05 15:15:50 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Running Generator Program for niosII_system_onchip_memory2_0</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Generating Symbol /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Creating command-line system-generation script: /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2017.02.11 13:14:27 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="onchip_memory2_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_onchip_memory2</b> "<b>onchip_memory2_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 124 starting:altera_avalon_sysid_qsys "submodules/niosII_system_sysid_qsys_0"</message>
    <message level="Info" culprit="sysid_qsys_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_sysid_qsys</b> "<b>sysid_qsys_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 123 starting:altera_avalon_timer "submodules/niosII_system_timer_0"</message>
    <message level="Info">Starting module elaboration.</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0007_sopclgen  --no_splash --refresh /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:24987): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:24987): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0007_sopclgen  --no_splash --refresh /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13374): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13374): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0007_sopclgen  --generate /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25056): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25056): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0007_sopclgen  --generate /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13417): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13417): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Reading project /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Finding all CPUs</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Finding all peripherals</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Finding software components</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Reading project /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Finding all CPUs</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Finding all peripherals</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Finding software components</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Running Generator Program for niosII_system_timer_0</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Generating Symbol /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Creating command-line system-generation script: /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2017.02.05 15:15:54 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Running Generator Program for niosII_system_timer_0</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Generating Symbol /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Creating command-line system-generation script: /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2017.02.11 13:14:31 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="timer_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_timer</b> "<b>timer_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 122 starting:altera_avalon_jtag_uart "submodules/niosII_system_jtag_uart_0"</message>
    <message level="Info">Starting module elaboration.</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0008_sopclgen  --no_splash --refresh /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25145): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25145): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0008_sopclgen  --no_splash --refresh /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13463): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13463): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0008_sopclgen  --generate /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25179): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25179): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0008_sopclgen  --generate /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13497): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13497): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Reading project /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Finding all CPUs</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Finding all peripherals</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Finding software components</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Reading project /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Finding all CPUs</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Finding all peripherals</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Finding software components</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Running Generator Program for niosII_system_jtag_uart_0</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Generating Symbol /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Creating command-line system-generation script: /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2017.02.05 15:15:58 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Running Generator Program for niosII_system_jtag_uart_0</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) Generating Symbol /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) Creating command-line system-generation script: /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2017.02.11 13:14:35 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="jtag_uart_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>jtag_uart_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 121 starting:altera_up_avalon_character_lcd "submodules/niosII_system_character_lcd_0"</message>
    <message level="Info" culprit="character_lcd_0">Starting Generation of Character LCD</message>
@@ -1703,8 +1703,8 @@
    <message level="Info" culprit="sram_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_up_avalon_sram</b> "<b>sram_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 119 starting:DM9000A_IF "submodules/DM9000A_IF"</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_map not_a_project --generate_hdl_interface=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/hardware/DM9000A_IF.v --source=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/hardware/DM9000A_IF.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt7202_7454973320362540511.dir/0001_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 2.091s</message>
+   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_map not_a_project --generate_hdl_interface=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/hardware/DM9000A_IF.v --source=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/hardware/DM9000A_IF.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt7208_3018687393986178349.dir/0001_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 2.081s</message>
    <message level="Info" culprit="DM9000A_IF_0"><![CDATA["<b>niosII_system</b>" instantiated <b>DM9000A_IF</b> "<b>DM9000A_IF_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 118 starting:altera_up_clocks "submodules/niosII_system_up_clocks_0"</message>
    <message level="Info" culprit="up_clocks_0">Starting Generation of Required Clocks for DE-Series Boards</message>
@@ -1723,57 +1723,57 @@
    <message level="Info" culprit="video_vga_controller_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_up_avalon_video_vga_controller</b> "<b>video_vga_controller_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 113 starting:Altera_UP_SD_Card_Avalon_Interface "submodules/Altera_UP_SD_Card_Avalon_Interface"</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_sh -t /tmp/alt7202_7454973320362540511.dir/0003_sopcqmap/not_a_project_setup.tcl</message>
-   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_map not_a_project --generate_hdl_interface=/OPT/altera/12.1/ip/University_Program/Memory/altera_up_sd_card_avalon_interface/hdl/Altera_UP_SD_Card_Avalon_Interface.vhd --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt7202_7454973320362540511.dir/0003_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 0.959s</message>
-   <message level="Debug">Command took 2.479s</message>
+   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_sh -t /tmp/alt7208_3018687393986178349.dir/0003_sopcqmap/not_a_project_setup.tcl</message>
+   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_map not_a_project --generate_hdl_interface=/OPT/altera/12.1/ip/University_Program/Memory/altera_up_sd_card_avalon_interface/hdl/Altera_UP_SD_Card_Avalon_Interface.vhd --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt7208_3018687393986178349.dir/0003_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 0.988s</message>
+   <message level="Debug">Command took 2.388s</message>
    <message level="Info" culprit="Altera_UP_SD_Card_Avalon_Interface_0"><![CDATA["<b>niosII_system</b>" instantiated <b>Altera_UP_SD_Card_Avalon_Interface</b> "<b>Altera_UP_SD_Card_Avalon_Interface_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 112 starting:altera_up_avalon_video_dual_clock_buffer "submodules/niosII_system_video_dual_clock_buffer_0"</message>
    <message level="Info" culprit="video_dual_clock_buffer_0">Starting Generation of the Dual Clock Buffer</message>
    <message level="Info" culprit="video_dual_clock_buffer_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_up_avalon_video_dual_clock_buffer</b> "<b>video_dual_clock_buffer_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 111 starting:altera_avalon_new_sdram_controller "submodules/niosII_system_sdram_0"</message>
    <message level="Info">Starting module elaboration.</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0017_sopclgen  --no_splash --refresh /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25234): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25234): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0017_sopclgen  --no_splash --refresh /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13552): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13552): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0017_sopclgen  --generate /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25277): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25277): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0017_sopclgen  --generate /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13595): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13595): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Reading project /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Finding all CPUs</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Finding all peripherals</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Finding software components</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Reading project /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Finding all CPUs</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Finding all peripherals</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Finding software components</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:16:03 (*) Running Generator Program for niosII_system_sdram_0</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Running Generator Program for niosII_system_sdram_0</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:16:03 (*) Running Test Generator Program for niosII_system_sdram_0</message>
-   <message level="Progress"># 2017.02.05 15:16:03 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) Generating Symbol /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) Creating command-line system-generation script: /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2017.02.05 15:16:04 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Running Test Generator Program for niosII_system_sdram_0</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Generating Symbol /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Creating command-line system-generation script: /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2017.02.11 13:14:41 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="sdram_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_new_sdram_controller</b> "<b>sdram_0</b>"]]></message>
    <message level="Debug" culprit="niosII_system">queue size: 110 starting:altera_merlin_master_translator "submodules/altera_merlin_master_translator"</message>
    <message level="Info" culprit="nios2_qsys_0_instruction_master_translator"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_merlin_master_translator</b> "<b>nios2_qsys_0_instruction_master_translator</b>"]]></message>
@@ -2062,29 +2062,29 @@
   <messages>
    <message level="Debug" culprit="niosII_system">queue size: 126 starting:altera_nios2_qsys "submodules/niosII_system_nios2_qsys_0"</message>
    <message level="Info" culprit="nios2_qsys_0">Starting RTL generation for module 'niosII_system_nios2_qsys_0'</message>
-   <message level="Info" culprit="nios2_qsys_0">  Generation command is [exec /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl -I /OPT/altera/12.1/quartus/common/ip/altera/common/perl/5.8.3 -I /OPT/altera/12.1/quartus/sopc_builder/bin/europa -I /OPT/altera/12.1/quartus/sopc_builder/bin/perl_lib -I /OPT/altera/12.1/quartus/sopc_builder/bin -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=niosII_system_nios2_qsys_0 --dir=/tmp/alt7202_7454973320362540511.dir/0004_nios2_qsys_0_gen/ --quartus_dir=/OPT/altera/12.1/quartus --verilog --config=/tmp/alt7202_7454973320362540511.dir/0004_nios2_qsys_0_gen//niosII_system_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:37 (*) Starting Nios II generation</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:37 (*)   Checking for plaintext license.</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:38 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:38 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:38 (*)   Plaintext license not found.</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:38 (*)   Checking for encrypted license (non-evaluation).</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Encrypted license found.  SOF will not be time-limited.</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Elaborating CPU configuration settings</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)   Creating all objects for CPU</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)     Testbench</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)     Instruction decoding</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)       Instruction fields</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:39 (*)       Instruction decodes</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:40 (*)       Signals for RTL simulation waveforms</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:40 (*)       Instruction controls</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:40 (*)     Pipeline frontend</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:40 (*)     Pipeline backend</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:42 (*)   Generating RTL from CPU objects</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:45 (*)   Creating encrypted RTL</message>
-   <message level="Info" culprit="nios2_qsys_0"># 2017.02.05 15:15:46 (*) Done Nios II generation</message>
+   <message level="Info" culprit="nios2_qsys_0">  Generation command is [exec /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl -I /OPT/altera/12.1/quartus/common/ip/altera/common/perl/5.8.3 -I /OPT/altera/12.1/quartus/sopc_builder/bin/europa -I /OPT/altera/12.1/quartus/sopc_builder/bin/perl_lib -I /OPT/altera/12.1/quartus/sopc_builder/bin -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /OPT/altera/12.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=niosII_system_nios2_qsys_0 --dir=/tmp/alt7208_3018687393986178349.dir/0004_nios2_qsys_0_gen/ --quartus_dir=/OPT/altera/12.1/quartus --verilog --config=/tmp/alt7208_3018687393986178349.dir/0004_nios2_qsys_0_gen//niosII_system_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:14 (*) Starting Nios II generation</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:14 (*)   Checking for plaintext license.</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:15 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:15 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:15 (*)   Plaintext license not found.</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:15 (*)   Checking for encrypted license (non-evaluation).</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Couldn't query license setup in Quartus directory /OPT/altera/12.1/quartus</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Encrypted license found.  SOF will not be time-limited.</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Elaborating CPU configuration settings</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)   Creating all objects for CPU</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)     Testbench</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)     Instruction decoding</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)       Instruction fields</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:16 (*)       Instruction decodes</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:17 (*)       Signals for RTL simulation waveforms</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:17 (*)       Instruction controls</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:17 (*)     Pipeline frontend</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:17 (*)     Pipeline backend</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:20 (*)   Generating RTL from CPU objects</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:23 (*)   Creating encrypted RTL</message>
+   <message level="Info" culprit="nios2_qsys_0"># 2017.02.11 13:14:24 (*) Done Nios II generation</message>
    <message level="Info" culprit="nios2_qsys_0">Done RTL generation for module 'niosII_system_nios2_qsys_0'</message>
    <message level="Info" culprit="nios2_qsys_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_nios2_qsys</b> "<b>nios2_qsys_0</b>"]]></message>
   </messages>
@@ -2134,56 +2134,56 @@
   <messages>
    <message level="Debug" culprit="niosII_system">queue size: 125 starting:altera_avalon_onchip_memory2 "submodules/niosII_system_onchip_memory2_0"</message>
    <message level="Info">Starting module elaboration.</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0005_sopclgen  --no_splash --refresh /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:24816): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:24816): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0005_sopclgen  --no_splash --refresh /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13277): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13277): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0005_sopclgen  --generate /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:24895): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:24895): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0005_sopclgen  --generate /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13320): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13320): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Reading project /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Finding all CPUs</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Finding all peripherals</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Finding software components</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Reading project /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Finding all CPUs</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Finding all peripherals</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Finding software components</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:15:49 (*) Running Generator Program for niosII_system_onchip_memory2_0</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Generating Symbol /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Creating command-line system-generation script: /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2017.02.05 15:15:50 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : /tmp/alt7202_7454973320362540511.dir/0005_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2017.02.05 15:15:50 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Running Generator Program for niosII_system_onchip_memory2_0</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Generating Symbol /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Creating command-line system-generation script: /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2017.02.11 13:14:27 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : /tmp/alt7208_3018687393986178349.dir/0005_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2017.02.11 13:14:27 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="onchip_memory2_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_onchip_memory2</b> "<b>onchip_memory2_0</b>"]]></message>
   </messages>
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_avalon_sysid_qsys:12.1:AUTO_CLK_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,id=0,timestamp=1486332933"
+   parameterizationKey="altera_avalon_sysid_qsys:12.1:AUTO_CLK_CLOCK_RATE=50000000,AUTO_DEVICE_FAMILY=Cyclone II,id=0,timestamp=1486844050"
    instancePathKey="niosII_system:.:sysid_qsys_0"
    kind="altera_avalon_sysid_qsys"
    version="12.1"
    name="niosII_system_sysid_qsys_0">
-  <parameter name="timestamp" value="1486332933" />
+  <parameter name="timestamp" value="1486844050" />
   <parameter name="id" value="0" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
@@ -2236,45 +2236,45 @@
   <messages>
    <message level="Debug" culprit="niosII_system">queue size: 123 starting:altera_avalon_timer "submodules/niosII_system_timer_0"</message>
    <message level="Info">Starting module elaboration.</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0007_sopclgen  --no_splash --refresh /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:24987): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:24987): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0007_sopclgen  --no_splash --refresh /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13374): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13374): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0007_sopclgen  --generate /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25056): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25056): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0007_sopclgen  --generate /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13417): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13417): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Reading project /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Finding all CPUs</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Finding all peripherals</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Finding software components</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Reading project /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Finding all CPUs</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Finding all peripherals</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Finding software components</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2017.02.11 13:14:30 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:15:53 (*) Running Generator Program for niosII_system_timer_0</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Generating Symbol /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Creating command-line system-generation script: /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2017.02.05 15:15:54 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : /tmp/alt7202_7454973320362540511.dir/0007_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2017.02.05 15:15:54 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Running Generator Program for niosII_system_timer_0</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Generating Symbol /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Creating command-line system-generation script: /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2017.02.11 13:14:31 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : /tmp/alt7208_3018687393986178349.dir/0007_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2017.02.11 13:14:31 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="timer_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_timer</b> "<b>timer_0</b>"]]></message>
   </messages>
  </entity>
@@ -2323,45 +2323,45 @@
   <messages>
    <message level="Debug" culprit="niosII_system">queue size: 122 starting:altera_avalon_jtag_uart "submodules/niosII_system_jtag_uart_0"</message>
    <message level="Info">Starting module elaboration.</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0008_sopclgen  --no_splash --refresh /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25145): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25145): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0008_sopclgen  --no_splash --refresh /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13463): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13463): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0008_sopclgen  --generate /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25179): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25179): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0008_sopclgen  --generate /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13497): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13497): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Reading project /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Finding all CPUs</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Finding all peripherals</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Finding software components</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Reading project /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Finding all CPUs</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Finding all peripherals</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Finding software components</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:15:57 (*) Running Generator Program for niosII_system_jtag_uart_0</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Generating Symbol /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Creating command-line system-generation script: /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2017.02.05 15:15:58 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : /tmp/alt7202_7454973320362540511.dir/0008_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2017.02.05 15:15:58 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Running Generator Program for niosII_system_jtag_uart_0</message>
+   <message level="Progress"># 2017.02.11 13:14:34 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) Generating Symbol /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) Creating command-line system-generation script: /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2017.02.11 13:14:35 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : /tmp/alt7208_3018687393986178349.dir/0008_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2017.02.11 13:14:35 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="jtag_uart_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>jtag_uart_0</b>"]]></message>
   </messages>
  </entity>
@@ -2468,8 +2468,8 @@
   <messages>
    <message level="Debug" culprit="niosII_system">queue size: 119 starting:DM9000A_IF "submodules/DM9000A_IF"</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_map not_a_project --generate_hdl_interface=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/hardware/DM9000A_IF.v --source=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/hardware/DM9000A_IF.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt7202_7454973320362540511.dir/0001_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 2.091s</message>
+   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_map not_a_project --generate_hdl_interface=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/hardware/DM9000A_IF.v --source=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/hardware/DM9000A_IF.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt7208_3018687393986178349.dir/0001_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 2.081s</message>
    <message level="Info" culprit="DM9000A_IF_0"><![CDATA["<b>niosII_system</b>" instantiated <b>DM9000A_IF</b> "<b>DM9000A_IF_0</b>"]]></message>
   </messages>
  </entity>
@@ -2798,10 +2798,10 @@
   <messages>
    <message level="Debug" culprit="niosII_system">queue size: 113 starting:Altera_UP_SD_Card_Avalon_Interface "submodules/Altera_UP_SD_Card_Avalon_Interface"</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_sh -t /tmp/alt7202_7454973320362540511.dir/0003_sopcqmap/not_a_project_setup.tcl</message>
-   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_map not_a_project --generate_hdl_interface=/OPT/altera/12.1/ip/University_Program/Memory/altera_up_sd_card_avalon_interface/hdl/Altera_UP_SD_Card_Avalon_Interface.vhd --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt7202_7454973320362540511.dir/0003_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 0.959s</message>
-   <message level="Debug">Command took 2.479s</message>
+   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_sh -t /tmp/alt7208_3018687393986178349.dir/0003_sopcqmap/not_a_project_setup.tcl</message>
+   <message level="Debug">Command: /OPT/altera/12.1/quartus/bin/quartus_map not_a_project --generate_hdl_interface=/OPT/altera/12.1/ip/University_Program/Memory/altera_up_sd_card_avalon_interface/hdl/Altera_UP_SD_Card_Avalon_Interface.vhd --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt7208_3018687393986178349.dir/0003_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 0.988s</message>
+   <message level="Debug">Command took 2.388s</message>
    <message level="Info" culprit="Altera_UP_SD_Card_Avalon_Interface_0"><![CDATA["<b>niosII_system</b>" instantiated <b>Altera_UP_SD_Card_Avalon_Interface</b> "<b>Altera_UP_SD_Card_Avalon_Interface_0</b>"]]></message>
   </messages>
  </entity>
@@ -2880,47 +2880,47 @@
   <messages>
    <message level="Debug" culprit="niosII_system">queue size: 111 starting:altera_avalon_new_sdram_controller "submodules/niosII_system_sdram_0"</message>
    <message level="Info">Starting module elaboration.</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0017_sopclgen  --no_splash --refresh /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25234): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25234): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus/linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0017_sopclgen  --no_splash --refresh /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus" --sopc_perl="/OPT/altera/12.1/quartus/linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus/../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13552): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13552): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: /OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder --classic --generate /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
-   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7202_7454973320362540511.dir/0017_sopclgen  --generate /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
-   <message level="Progress">(java:25277): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
-   <message level="Progress">(java:25277): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">"/OPT/altera/12.1/quartus//linux/jre/bin/java" -Xmx512M -classpath "/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_builder.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/PinAssigner.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/sopc_wizard.jar:/OPT/altera/12.1/quartus//sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"/OPT/altera/12.1/quartus//sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpath/tmp/alt7208_3018687393986178349.dir/0017_sopclgen  --generate /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.v --quartus_dir="/OPT/altera/12.1/quartus/" --sopc_perl="/OPT/altera/12.1/quartus//linux/perl" --sopc_lib_path="++/OPT/altera/12.1/quartus//../ip/altera/sopc_builder_ip+/OPT/altera/12.1/quartus//../ip/altera/nios2_ip"</message>
+   <message level="Progress">(java:13595): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
+   <message level="Progress">(java:13595): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",</message>
    <message level="Progress">Gtk-Message: Failed to load module "pk-gtk-module"</message>
    <message level="Progress">Gtk-Message: Failed to load module "canberra-gtk-module"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Reading project /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Finding all CPUs</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Finding all peripherals</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Finding software components</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2017.02.05 15:16:02 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Reading project /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Finding all CPUs</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Finding all peripherals</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Finding software components</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:16:03 (*) Running Generator Program for niosII_system_sdram_0</message>
+   <message level="Progress"># 2017.02.11 13:14:40 (*) Running Generator Program for niosII_system_sdram_0</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2017.02.05 15:16:03 (*) Running Test Generator Program for niosII_system_sdram_0</message>
-   <message level="Progress"># 2017.02.05 15:16:03 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) Generating Symbol /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) Creating command-line system-generation script: /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2017.02.05 15:16:04 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : /tmp/alt7202_7454973320362540511.dir/0017_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2017.02.05 15:16:04 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Running Test Generator Program for niosII_system_sdram_0</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Generating Symbol /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Creating command-line system-generation script: /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2017.02.11 13:14:41 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : /tmp/alt7208_3018687393986178349.dir/0017_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2017.02.11 13:14:41 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="sdram_0"><![CDATA["<b>niosII_system</b>" instantiated <b>altera_avalon_new_sdram_controller</b> "<b>sdram_0</b>"]]></message>
   </messages>
  </entity>

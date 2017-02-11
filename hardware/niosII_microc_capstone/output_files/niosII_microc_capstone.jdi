@@ -1,10 +1,10 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="a7b8239a41b63dceb09d"/>
+    <hash md5_digest_80b="ada052a9e3358d27bc90"/>
   </project>
   <file_info>
-    <file checksum="0x0093F96B" device="EP2C35F672C6" path="niosII_microc_capstone.sof" usercode="0xFFFFFFFF"/>
-    <file checksum="0x1BCFF976" device="EPCS16" path="niosII_microc_capstone.pof" usercode="0x00000000"/>
+    <file checksum="0x00943BA2" device="EP2C35F672C6" path="niosII_microc_capstone.sof" usercode="0xFFFFFFFF"/>
+    <file checksum="0x1BD906F8" device="EPCS16" path="niosII_microc_capstone.pof" usercode="0x00000000"/>
   </file_info>
   <hub_info ir_width="2" node_count="2"/>
   <node_info>

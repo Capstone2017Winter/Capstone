@@ -156,6 +156,11 @@ architecture structure of niosII_microc_capstone is
 	 
 
 begin
+	DRAM_BA_1 <= BA(1);
+	DRAM_BA_0 <= BA(0);
+	
+	DRAM_UDQM <= DQM(1);
+	DRAM_LDQM <= DQM(0);
 
 	--need to create proccess that will generate a 25 mhz clock for ethernet
 	process(CLOCK_50)
