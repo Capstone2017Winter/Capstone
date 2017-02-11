@@ -6,7 +6,13 @@
 
 {% block content %}
 
-<button id='btnclickme' type='button'>Click Me</button>
+<label for="classSearchTextId">Class Name:</label>
+<input type="text" id="classSearchTextId"/>
+<br/>
+<button id="addClassButton" type="button">Add Class</button>
+
+<br/>
+<ul id="classListId"/>
 
 <script type="text/javascript" src="{% static 'schedule_builder/schedule.js' %}"></script>
 {% endblock %}

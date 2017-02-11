@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	$('#btnclickme').click(function(){
-		alert("JQuery Running!");
+	$('#addClassButton').click(function(){
+		var classNameInput = $("#classSearchTextId").val();
+		$('#classListId').append('<li><p>' + classNameInput + "</p></li>");
 	});
 });
