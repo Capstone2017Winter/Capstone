@@ -5,7 +5,8 @@ import json
 
 import re #regex
 
-from .models import * 
+from .models import *
+from .class_fetcher import * 
 # Create your views here.
 
 def index(request):
@@ -57,10 +58,11 @@ def class_query(request):
 		post = request.POST.copy()
 		if 'className' in post:
 			className = post['className']
-			response_data = {}
-			response_data['a'] = "this is a!"
-			response_data['b'] = "this is b!"
-			return HttpResponse(json.dumps(response_data),
+			params = get_class(className)
+			
+			#create class and do stuff with params
+	
+			return HttpResponse(json.dumps(params),
 						content_type="application/json")
 
 
