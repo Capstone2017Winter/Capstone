@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+import json
 
 import re #regex
 
@@ -50,3 +51,16 @@ def home(request):
         user = User(name=request.POST['user'], degree=None)
         user.save()
     return HttpResponseRedirect(reverse('user', args=(user.name,)))
+
+def class_query(request):
+	if request.method == "POST":
+		post = request.POST.copy()
+		if 'className' in post:
+			className = post['className']
+			response_data = {}
+			response_data['a'] = "this is a!"
+			response_data['b'] = "this is b!"
+			return HttpResponse(json.dumps(response_data),
+						content_type="application/json")
+
+

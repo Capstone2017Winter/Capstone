@@ -1,12 +1,21 @@
 $(document).ready(function(){
 	classes = new Array();
 	$('#addClassButton').click(function(){
-		var classNameInput = $("#classSearchTextId").val();
-		if (classes.indexOf(classNameInput) != -1) {
+		var className = $("#classSearchTextId").val();
+		if (classes.indexOf(className) != -1) {
 			alert("This class is already in your list");
 			return;
 		}
-		classes.push(classNameInput);
-		$('#classListId').append('<li><p>' + classNameInput + "</p></li>");
+		var data = { className:className, csrfmiddlewaretoken:window.CSRF_TOKEN};
+		var args = { type:"POST", url:"/builder/class/", data:data, complete:addClassCallback };
+		$.ajax(args);
+		classes.push(className);
+		$('#classListId').append('<li><p>' + className + "</p></li>");
 	});
 });
+
+function addClassCallback(response, status) {
+	var json = response.responseJSON;
+	var a = json.a;
+	var b = json.b;
+}

@@ -7,6 +7,7 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^class/$', views.class_query),
     url(r'^(?P<username>' + models.User.name_regex + r')/$', views.user, name='user'),
     url(r'^(?P<username>' + models.User.name_regex + r')/(?P<schedule_id>[0-9]+)/$', views.schedule, name='schedule'),
     url(r'^image/$', views.image, name='image'),
