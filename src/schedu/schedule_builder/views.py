@@ -36,7 +36,7 @@ def user(request, username):
 
 def schedule(request, username, schedule_id):
     schedule = get_object_or_404(Schedule, user__name=username, id=schedule_id)
-    return render(request, 'schedule_builder/schedule.html')
+    return render(request, 'schedule_builder/schedule.html', {'schedule':schedule,})
 
 def home(request):
     user = None

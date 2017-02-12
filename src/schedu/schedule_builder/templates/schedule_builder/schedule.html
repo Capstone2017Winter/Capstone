@@ -5,6 +5,8 @@
 </head>
 
 {% block content %}
+<h1>"{{ schedule.term }} - {{ schedule.year }}"</h1> 
+
 
 <label for="classSearchTextId">Class Name:</label>
 <input type="text" id="classSearchTextId"/>
@@ -14,6 +16,13 @@
 <br/>
 <ul id="classListId"/>
 
-<script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>
+<script type="text/javascript"> 
+window.CSRF_TOKEN = "{{ csrf_token }}"; 
+
+username = "{{ schedule.user.name }}";
+year = "{{ schedule.year }}";
+term = "{{ schedule.term }}";
+
+</script>
 <script type="text/javascript" src="{% static 'schedule_builder/schedule.js' %}"></script>
 {% endblock %}
