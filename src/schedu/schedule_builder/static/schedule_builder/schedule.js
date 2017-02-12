@@ -9,13 +9,18 @@ $(document).ready(function(){
 		var data = { className:className, csrfmiddlewaretoken:window.CSRF_TOKEN};
 		var args = { type:"POST", url:"/builder/class/", data:data, complete:addClassCallback };
 		$.ajax(args);
-		classes.push(className);
-		$('#classListId').append('<li><p>' + className + "</p></li>");
 	});
 });
 
 function addClassCallback(response, status) {
 	var json = response.responseJSON;
-	var a = json.a;
-	var b = json.b;
+	var first = json.objects[0];
+	var name = first.asString;
+	var description = first.courseDescription;
+	var courseTitle = first.courseTitle;
+
+	var myClass = {name:name, description:description, title:courseTitle};
+	classes.push(myClass);
+
+	$('#classListId').append('<li><p>' + name +'</p><ul></li><li><p>'+courseTitle+'</p></li><li><p>'+description+'</p></li></ul></li>')
 }
