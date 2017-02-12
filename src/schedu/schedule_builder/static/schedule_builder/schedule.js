@@ -7,7 +7,7 @@ $(document).ready(function(){
 			return;
 		}
 		var data = { className:className, csrfmiddlewaretoken:window.CSRF_TOKEN};
-		var args = { type:"POST", url:"/builder/class/", data:data, complete:addClassCallback };
+		var args = { type:"GET", url:"/builder/class/", data:data, complete:addClassCallback };
 		$.ajax(args);
 	});
 });

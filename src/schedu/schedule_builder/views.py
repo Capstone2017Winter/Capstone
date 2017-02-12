@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, HttpResponseBadRequest
 from django.urls import reverse
 import json
 
@@ -38,6 +38,15 @@ def schedule(request, username, schedule_id):
     schedule = get_object_or_404(Schedule, user__name=username, id=schedule_id)
     return render(request, 'schedule_builder/schedule.html', {'schedule':schedule,})
 
+#work in progress, this will reload a saved schedule
+def load_schedule(request):
+    get = request.GET.copy()
+    if 'username' in get and 'year' in get and 'term' in get:
+        schedule = get_object_or_404(Schedule, user__name=get['username'], year='year', term='term')
+        
+    else:
+        raise HttpResponseBadRequest('Invalid GET Parameters')
+
 def home(request):
     user = None
     try:
@@ -53,16 +62,13 @@ def home(request):
         user.save()
     return HttpResponseRedirect(reverse('user', args=(user.name,)))
 
-def class_query(request):
-	if request.method == "POST":
-		post = request.POST.copy()
-		if 'className' in post:
-			className = post['className']
-			params = get_class(className)
-			
-			#create class and do stuff with params
-	
-			return HttpResponse(json.dumps(params),
-						content_type="application/json")
-
-
+def course_info(request):
+    if request.method == "GET":
+        get = request.GET.copy()
+        if 'className' in get:
+            className = get['className']
+            params = get_class(className)
+            #create class and do stuff with params
+            return HttpResponse(json.dumps(params),
+                                content_type="application/json")
+    return HttpResponseBadRequest('Invalid GET Parmeters')
