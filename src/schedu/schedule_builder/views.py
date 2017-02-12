@@ -1,10 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+import json
 
 import re #regex
 
-from .models import * 
+from .models import *
+from .class_fetcher import * 
 # Create your views here.
 
 def index(request):
@@ -50,3 +52,17 @@ def home(request):
         user = User(name=request.POST['user'], degree=None)
         user.save()
     return HttpResponseRedirect(reverse('user', args=(user.name,)))
+
+def class_query(request):
+	if request.method == "POST":
+		post = request.POST.copy()
+		if 'className' in post:
+			className = post['className']
+			params = get_class(className)
+			
+			#create class and do stuff with params
+	
+			return HttpResponse(json.dumps(params),
+						content_type="application/json")
+
+
