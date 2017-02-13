@@ -25,7 +25,7 @@ SECRET_KEY = 'dydii@sq(&s@!ex!won(19584btu6d%69&2xu%jh-w_-$o+k-1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','ec2-35-163-43-117.us-west-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['localhost','ec2-35-163-43-117.us-west-2.compute.amazonaws.com', '127.0.0.1']
 
 
 # Application definition
@@ -118,7 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = 'http://localhost:8001/static/'
+STATIC_URL = 'http://localhost:80/static/'
 
 #define where we store our media (image) files
 ENV_PATH = os.path.abspath(os.path.dirname(__file__))
