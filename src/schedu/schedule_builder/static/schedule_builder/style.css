@@ -1,11 +1,13 @@
 body {
-  width: 100%;
-  font-family: sans-serif;
-  min-height: 100%;
+  background: #333;
+  font-family: Raleway, sans-serif;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 body header {
   background: #ff8080;
@@ -21,7 +23,7 @@ body header .wrap .header-title {
   text-align: center;
 }
 body header .wrap .header-title .u-span {
-  color: #007C41;
+  color: #007c41;
   font-size: 62px;
 }
 body header .wrap nav {
@@ -35,7 +37,7 @@ body header .wrap nav ul {
   list-style: none;
 }
 body header .wrap nav ul li {
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 body header .wrap nav ul li a {
   text-decoration: none;
@@ -43,6 +45,61 @@ body header .wrap nav ul li a {
 }
 body header .wrap nav ul li a:hover {
   text-decoration: none;
-  color: #007C41;
+  color: #007c41;
   cursor: pointer;
+}
+body .body-content {
+  width: 100%;
+}
+body .body-content .home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .body-content .home .welcome {
+  background: #ff8080;
+  margin: 20px 0px;
+  padding: 40px 0px;
+  border-radius: 10px;
+  width: 50%;
+  min-width: 350px;
+}
+body .body-content .home .welcome .fancy-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20px 40px;
+  width: 100%;
+}
+body .body-content .home .welcome .fancy-background h1 {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+body .body-content .home .welcome .fancy-background .error {
+  display: none;
+}
+body .body-content .home .welcome .fancy-background .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .body-content .home .welcome .fancy-background .login input {
+  margin: 0px 0px 15px 0px;
+  border: none;
+  border-radius: .125rem;
+}
+body .body-content .home .welcome .fancy-background .login .input-field {
+  border: solid 1px #333;
+  color: #333;
+}
+body .body-content .home .welcome .fancy-background .login .button {
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-left: .5rem;
+  padding: 6px 10px;
+  padding: .375rem .625rem;
 }

@@ -1,11 +1,19 @@
-<h1>Welcome to schedu</h1>
+{% extends "schedule_builder/base.html" %}
 
-<!-- show error here if username is invalid -->
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-
-<form action="{% url 'home' %}" method="post">
-{% csrf_token %}
-    <input type="text" name="user" id="userid"/>
-    <label for="userid">Enter Your Username</label><br/>
-    <input type="submit" value="Submit"/>
-</form>
+{% block content %}
+<div class="body-content">
+  <div class="home">
+    <div class="welcome row">
+      <div class="fancy-background">
+        <h1>Welcome!</h1>
+        {% if error_message %}<p class="error"><strong>{{ error_message }}</strong></p>{% endif %}
+        <form action="{% url 'home' %}" method="post" class="login">
+        {% csrf_token %}
+          <input type="text" name="user" class="input-field" id="userid" placeholder="username" />
+          <input type="submit" value="Submit" class="button" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
