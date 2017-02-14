@@ -3,6 +3,7 @@
 
 
 {% block content %}
+<script type="text/javascript" src="{% static 'schedule_builder/schedule.js' %}"></script>
 <div class="body-content">
 	<div class="schedule">
 		<h1>{{ schedule.term }} - {{ schedule.year }}</h1>
@@ -15,7 +16,6 @@
         </form>
 
         <div class="search-returns" id="search-returns"></div>
-<!---<ul id="classListId"/> -->
 		<script type="text/javascript"> 
 			window.CSRF_TOKEN = "{{ csrf_token }}"; 
 			username = "{{ schedule.user.name }}";
