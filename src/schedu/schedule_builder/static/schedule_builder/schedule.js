@@ -38,7 +38,7 @@ function addClassCallback(response, status) {
             			'<p class="return-field short-desc">' + courseTitle + '</p>' +
             			'<p class="return-field long-desc"><span>Description: </span>' + description + '</p>' +
             			'<p class="return-field section"><span>Section: </span>' + section.section + '</p>' +
-            			'<p class="return-field time "><span>Time: </span>' + section.startTime + '-' + section.endTime + '</p>' +
+            			'<p class="return-field time "><span>Time: </span>' + section.startTime +    ' - ' + section.endTime + '</p>' +
             			'<p class="return-field days"><span>Days: </span>' + section.day + '</p>' +
             			'<p class="return-field location"><span>Location: </span>' + section.location + '</p>' +
           			'</div>' +
