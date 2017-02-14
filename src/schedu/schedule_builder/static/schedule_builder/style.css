@@ -1,9 +1,10 @@
+/*Base Document*/
 html {
   height: 100%;
 }
 html body {
   background: #fff;
-  font-family: Raleway, sans-serif;
+  font-family: sans-serif;
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -22,6 +23,7 @@ html body .page-wrap {
   /* equal to footer height */
   margin-bottom: -75px;
 }
+/*Header*/
 html body .page-wrap header {
   background: #ff8080;
   color: #fff;
@@ -61,9 +63,11 @@ html body .page-wrap header .wrap nav ul li a:hover {
   color: #007c41;
   cursor: pointer;
 }
+/*Body Content*/
 html body .page-wrap .body-content {
   width: 100%;
 }
+/*CSS for home.html*/
 html body .page-wrap .body-content .home {
   width: 100%;
   display: flex;
@@ -117,6 +121,7 @@ html body .page-wrap .body-content .home .welcome .fancy-background .login .butt
   padding: 6px 10px;
   padding: .375rem .625rem;
 }
+/*CSS for user.html*/
 html body .page-wrap .body-content .user {
   width: 100%;
   display: flex;
@@ -155,6 +160,105 @@ html body .page-wrap .body-content .user .schedule-row .form-div form .button {
   padding: 6px 10px;
   padding: .375rem .625rem;
 }
+/*CSS for schedule.html*/
+html body .page-wrap .body-content .schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .search {
+  background-color: #42454e;
+  border-radius: .125rem;
+  font-size: 12px;
+  font-size: .75rem;
+  padding: 8px;
+  padding: .5rem;
+  width: 350px;
+  margin: 0px 0px 20px 0px;
+}
+html body .page-wrap .body-content .schedule .search .form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 30px;
+}
+html body .page-wrap .body-content .schedule .search .form-div .search-bar {
+  border: none;
+  border-radius: .125rem;
+  background-color: #fff;
+  color: #007c41;
+  font-size: 20px;
+  padding: 6px 8px;
+  padding: .375rem .5rem;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+html body .page-wrap .body-content .schedule .search .form-div ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search .form-div ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search .form-div :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search .form-div :-moz-placeholder {
+  /* Firefox 18- */
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search .form-div .button {
+  border: none;
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-left: .5rem;
+  padding: 6px 10px;
+  padding: .375rem .625rem;
+  font-size: 12px;
+}
+html body .page-wrap .body-content .schedule .search .form-div .button:hover {
+  background-color: #00994f;
+}
+html body .page-wrap .body-content .schedule .search-returns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .search-returns .search-return {
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  border-radius: .125rem;
+  background: #fff;
+  border: solid 1px #333;
+  max-width: 50%;
+  border-radius: 5px;
+}
+html body .page-wrap .body-content .schedule .search-returns .search-return .return-field {
+  margin: 0px 0px 5px 0px;
+}
+html body .page-wrap .body-content .schedule .search-returns .search-return .return-field span {
+  color: #007c41;
+  font-weight: bold;
+}
+html body .page-wrap .body-content .schedule .search-returns .search-return .class-title {
+  margin: 0px;
+  font-size: 24px;
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search-returns .search-return .short-desc {
+  font-size: 16px;
+  color: #333;
+}
+/*Footer*/
 html body footer {
   height: 75px;
   background: #ff8080;

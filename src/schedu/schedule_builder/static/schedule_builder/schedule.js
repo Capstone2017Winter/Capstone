@@ -31,10 +31,20 @@ function addClassCallback(response, status) {
 		// add class related stuff here
 		sections.forEach(function(section) {
 			//add section related stuff here
-			$('#classListId').append('<li><p>' + name +'</p><ul><li><p>'+courseTitle+'</p></li><li><p>'+description+'</p></li><li><p>'+ section.section+'</p></li><li><p>'+section.startTime+'</p></li><li><p>'+section.endTime+'</p></li><li><p>'+section.day+'</p></li><li><p>'+section.location+'</p></li></ul></li>');
-	
-
-		});
+			$('#search-returns').append(
+				'<div class="search-returns">' +
+          			'<div class="search-return">' +
+            			'<p class="return-field class-title">' + name + '</p>' +
+            			'<p class="return-field short-desc">' + courseTitle + '</p>' +
+            			'<p class="return-field long-desc"><span>Description: </span>' + description + '</p>' +
+            			'<p class="return-field section"><span>Section: </span>' + section.section + '</p>' +
+            			'<p class="return-field time "><span>Time: </span>' + section.startTime + '-' + section.endTime + '</p>' +
+            			'<p class="return-field days"><span>Days: </span>' + section.day + '</p>' +
+            			'<p class="return-field location"><span>Location: </span>' + section.location + '</p>' +
+          			'</div>' +
+        		'</div>'
+        		)
+			});
 		// add to class list
 	}}
 	$.ajax(args);
