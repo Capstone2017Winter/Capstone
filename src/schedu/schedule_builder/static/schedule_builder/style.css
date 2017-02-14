@@ -9,6 +9,19 @@ body {
   padding: 0;
   margin: 0;
 }
+
+body .schedule {
+  background: #FFFFFF;
+  font-family: Raleway, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body header {
   background: #ff8080;
   color: #fff;
