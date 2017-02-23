@@ -4,6 +4,10 @@
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.417203923;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.417203923.;cdt.managedbuild.tool.gnu.cpp.compiler.base.1349787000;cdt.managedbuild.tool.gnu.cpp.compiler.input.2123476850">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/UCOSII/inc"/>
+<includePath path="/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/HAL/inc"/>
+<includePath path="/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/"/>
+<includePath path="/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/drivers/inc"/>
 <includePath path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/UCOSII/inc"/>
 <includePath path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/HAL/inc"/>
 <includePath path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/"/>
@@ -314,6 +318,10 @@
 </instance>
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.417203923;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.417203923.;cdt.managedbuild.tool.gnu.c.compiler.base.233340515;cdt.managedbuild.tool.gnu.c.compiler.input.1503619940">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/UCOSII/inc"/>
+<includePath path="/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/HAL/inc"/>
+<includePath path="/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/"/>
+<includePath path="/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/drivers/inc"/>
 <includePath path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/UCOSII/inc"/>
 <includePath path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/HAL/inc"/>
 <includePath path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp/"/>
