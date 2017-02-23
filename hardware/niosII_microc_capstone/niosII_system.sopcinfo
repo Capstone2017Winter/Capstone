@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="niosII_system" kind="niosII_system" version="1.0" fabric="QSYS">
  <!-- Format version 12.1sp1 243 (Future versions may contain additional information.) -->
- <!-- 2017.02.11.13:14:10 -->
+ <!-- 2017.02.15.12:37:36 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1486844050</value>
+  <value>1487187455</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -400,7 +400,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.BREAK_ADDR</name>
-   <value>0x01108820</value>
+   <value>0x01088820</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.CPU_FREQ</name>
@@ -436,7 +436,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.EXCEPTION_ADDR</name>
-   <value>0x01104020</value>
+   <value>0x01084020</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FLUSHDA_SUPPORTED</name>
@@ -492,7 +492,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.RESET_ADDR</name>
-   <value>0x01104000</value>
+   <value>0x01084000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.HDLSimCachesCleared</name>
@@ -1200,7 +1200,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetAbsoluteAddr">
    <type>int</type>
-   <value>17842176</value>
+   <value>17317888</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1208,7 +1208,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="exceptionAbsoluteAddr">
    <type>int</type>
-   <value>17842208</value>
+   <value>17317920</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1216,7 +1216,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="breakAbsoluteAddr">
    <type>int</type>
-   <value>17860640</value>
+   <value>17336352</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1328,7 +1328,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='sdram_0.s1' start='0x800000' end='0x1000000' /><slave name='sram_0.avalon_sram_slave' start='0x1080000' end='0x1100000' /><slave name='onchip_memory2_0.s1' start='0x1104000' end='0x1108000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x1108800' end='0x1109000' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='sdram_0.s1' start='0x800000' end='0x1000000' /><slave name='onchip_memory2_0.s1' start='0x1084000' end='0x1088000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x1088800' end='0x1089000' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1336,7 +1336,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='sdram_0.s1' start='0x800000' end='0x1000000' /><slave name='sram_0.avalon_sram_slave' start='0x1080000' end='0x1100000' /><slave name='onchip_memory2_0.s1' start='0x1104000' end='0x1108000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x1108800' end='0x1109000' /><slave name='Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave' start='0x1109000' end='0x1109400' /><slave name='timer_0.s1' start='0x1109400' end='0x1109420' /><slave name='video_pixel_buffer_dma_0.avalon_control_slave' start='0x1109420' end='0x1109430' /><slave name='DM9000A_IF_0.s1' start='0x1109430' end='0x1109438' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x1109438' end='0x1109440' /><slave name='sysid_qsys_0.control_slave' start='0x1109440' end='0x1109448' /><slave name='character_lcd_0.avalon_lcd_slave' start='0x1109448' end='0x110944A' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='sdram_0.s1' start='0x800000' end='0x1000000' /><slave name='sram_0.avalon_sram_slave' start='0x1000000' end='0x1080000' /><slave name='onchip_memory2_0.s1' start='0x1084000' end='0x1088000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x1088800' end='0x1089000' /><slave name='Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave' start='0x1089000' end='0x1089400' /><slave name='timer_0.s1' start='0x1089400' end='0x1089420' /><slave name='video_pixel_buffer_dma_0.avalon_control_slave' start='0x1089420' end='0x1089430' /><slave name='DM9000A_IF_0.s1' start='0x1089430' end='0x1089438' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x1089438' end='0x1089440' /><slave name='sysid_qsys_0.control_slave' start='0x1089440' end='0x1089448' /><slave name='character_lcd_0.avalon_lcd_slave' start='0x1089448' end='0x108944A' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -1891,7 +1891,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>nios2_qsys_0</moduleName>
     <slaveName>jtag_debug_module</slaveName>
     <name>nios2_qsys_0.jtag_debug_module</name>
-    <baseAddress>17860608</baseAddress>
+    <baseAddress>17336320</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
@@ -1899,7 +1899,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>sram_0</moduleName>
     <slaveName>avalon_sram_slave</slaveName>
     <name>sram_0.avalon_sram_slave</name>
-    <baseAddress>17301504</baseAddress>
+    <baseAddress>16777216</baseAddress>
     <span>524288</span>
    </memoryBlock>
    <memoryBlock>
@@ -1907,7 +1907,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>onchip_memory2_0</moduleName>
     <slaveName>s1</slaveName>
     <name>onchip_memory2_0.s1</name>
-    <baseAddress>17842176</baseAddress>
+    <baseAddress>17317888</baseAddress>
     <span>16384</span>
    </memoryBlock>
    <memoryBlock>
@@ -1915,7 +1915,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>sysid_qsys_0</moduleName>
     <slaveName>control_slave</slaveName>
     <name>sysid_qsys_0.control_slave</name>
-    <baseAddress>17863744</baseAddress>
+    <baseAddress>17339456</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -1923,7 +1923,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>timer_0</moduleName>
     <slaveName>s1</slaveName>
     <name>timer_0.s1</name>
-    <baseAddress>17863680</baseAddress>
+    <baseAddress>17339392</baseAddress>
     <span>32</span>
    </memoryBlock>
    <memoryBlock>
@@ -1931,7 +1931,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>jtag_uart_0</moduleName>
     <slaveName>avalon_jtag_slave</slaveName>
     <name>jtag_uart_0.avalon_jtag_slave</name>
-    <baseAddress>17863736</baseAddress>
+    <baseAddress>17339448</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -1939,7 +1939,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>DM9000A_IF_0</moduleName>
     <slaveName>s1</slaveName>
     <name>DM9000A_IF_0.s1</name>
-    <baseAddress>17863728</baseAddress>
+    <baseAddress>17339440</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -1947,7 +1947,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>character_lcd_0</moduleName>
     <slaveName>avalon_lcd_slave</slaveName>
     <name>character_lcd_0.avalon_lcd_slave</name>
-    <baseAddress>17863752</baseAddress>
+    <baseAddress>17339464</baseAddress>
     <span>2</span>
    </memoryBlock>
    <memoryBlock>
@@ -1955,7 +1955,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>video_pixel_buffer_dma_0</moduleName>
     <slaveName>avalon_control_slave</slaveName>
     <name>video_pixel_buffer_dma_0.avalon_control_slave</name>
-    <baseAddress>17863712</baseAddress>
+    <baseAddress>17339424</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -1963,7 +1963,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>Altera_UP_SD_Card_Avalon_Interface_0</moduleName>
     <slaveName>avalon_sdcard_slave</slaveName>
     <name>Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave</name>
-    <baseAddress>17862656</baseAddress>
+    <baseAddress>17338368</baseAddress>
     <span>1024</span>
    </memoryBlock>
    <memoryBlock>
@@ -2270,7 +2270,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>nios2_qsys_0</moduleName>
     <slaveName>jtag_debug_module</slaveName>
     <name>nios2_qsys_0.jtag_debug_module</name>
-    <baseAddress>17860608</baseAddress>
+    <baseAddress>17336320</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
@@ -2278,16 +2278,8 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>onchip_memory2_0</moduleName>
     <slaveName>s1</slaveName>
     <name>onchip_memory2_0.s1</name>
-    <baseAddress>17842176</baseAddress>
+    <baseAddress>17317888</baseAddress>
     <span>16384</span>
-   </memoryBlock>
-   <memoryBlock>
-    <isBridge>false</isBridge>
-    <moduleName>sram_0</moduleName>
-    <slaveName>avalon_sram_slave</slaveName>
-    <name>sram_0.avalon_sram_slave</name>
-    <baseAddress>17301504</baseAddress>
-    <span>524288</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
@@ -3625,7 +3617,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1486844050</value>
+   <value>1487187455</value>
   </assignment>
   <parameter name="id">
    <type>int</type>
@@ -3637,7 +3629,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1486844050</value>
+   <value>1487187455</value>
    <derived>false</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -7817,7 +7809,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="start_address">
    <type>int</type>
-   <value>0</value>
+   <value>16777216</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -7825,7 +7817,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="back_start_address">
    <type>int</type>
-   <value>0</value>
+   <value>16777216</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8288,16 +8280,8 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>sram_0</moduleName>
     <slaveName>avalon_sram_slave</slaveName>
     <name>sram_0.avalon_sram_slave</name>
-    <baseAddress>17301504</baseAddress>
+    <baseAddress>16777216</baseAddress>
     <span>524288</span>
-   </memoryBlock>
-   <memoryBlock>
-    <isBridge>false</isBridge>
-    <moduleName>Altera_UP_SD_Card_Avalon_Interface_0</moduleName>
-    <slaveName>avalon_sdcard_slave</slaveName>
-    <name>Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave</name>
-    <baseAddress>17862656</baseAddress>
-    <span>1024</span>
    </memoryBlock>
   </interface>
   <interface name="avalon_control_slave" kind="avalon_slave" version="12.1">
@@ -12280,7 +12264,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01108800</value>
+   <value>0x01088800</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -12323,7 +12307,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01108800</value>
+   <value>0x01088800</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13026,276 +13010,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="up_clocks_0.sys_clk_reset/nios2_qsys_0.reset_n"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="nios2_qsys_0.reset_n">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>nios2_qsys_0</endModule>
-  <endConnectionPoint>reset_n</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/onchip_memory2_0.reset1"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="onchip_memory2_0.reset1">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>onchip_memory2_0</endModule>
-  <endConnectionPoint>reset1</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/sysid_qsys_0.reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="sysid_qsys_0.reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>sysid_qsys_0</endModule>
-  <endConnectionPoint>reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/timer_0.reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="timer_0.reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>timer_0</endModule>
-  <endConnectionPoint>reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/jtag_uart_0.reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="jtag_uart_0.reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>jtag_uart_0</endModule>
-  <endConnectionPoint>reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/character_lcd_0.clock_reset_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="character_lcd_0.clock_reset_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>character_lcd_0</endModule>
-  <endConnectionPoint>clock_reset_reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/sram_0.clock_reset_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="sram_0.clock_reset_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>sram_0</endModule>
-  <endConnectionPoint>clock_reset_reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/DM9000A_IF_0.s1_clock_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="DM9000A_IF_0.s1_clock_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>DM9000A_IF_0</endModule>
-  <endConnectionPoint>s1_clock_reset</endConnectionPoint>
- </connection>
- <connection
-   name="nios2_qsys_0.jtag_debug_module_reset/up_clocks_0.clk_in_primary_reset"
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="up_clocks_0.clk_in_primary_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>nios2_qsys_0</startModule>
-  <startConnectionPoint>jtag_debug_module_reset</startConnectionPoint>
-  <endModule>up_clocks_0</endModule>
-  <endConnectionPoint>clk_in_primary_reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/up_clocks_0.clk_in_primary_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="up_clocks_0.clk_in_primary_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>up_clocks_0</endModule>
-  <endConnectionPoint>clk_in_primary_reset</endConnectionPoint>
- </connection>
- <connection
    name="nios2_qsys_0.instruction_master/onchip_memory2_0.s1"
    kind="avalon"
    version="12.1"
@@ -13311,7 +13025,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01104000</value>
+   <value>0x01084000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13339,49 +13053,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="nios2_qsys_0.instruction_master/sram_0.avalon_sram_slave"
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.instruction_master"
-   end="sram_0.avalon_sram_slave">
-  <parameter name="arbitrationPriority">
-   <type>int</type>
-   <value>1</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="baseAddress">
-   <type>java.math.BigInteger</type>
-   <value>0x01080000</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>nios2_qsys_0</startModule>
-  <startConnectionPoint>instruction_master</startConnectionPoint>
-  <endModule>sram_0</endModule>
-  <endConnectionPoint>avalon_sram_slave</endConnectionPoint>
- </connection>
- <connection
    name="nios2_qsys_0.data_master/sram_0.avalon_sram_slave"
    kind="avalon"
    version="12.1"
@@ -13397,7 +13068,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01080000</value>
+   <value>0x01000000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13440,7 +13111,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01104000</value>
+   <value>0x01084000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13483,7 +13154,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01109440</value>
+   <value>0x01089440</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13526,7 +13197,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01109400</value>
+   <value>0x01089400</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13569,7 +13240,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01109438</value>
+   <value>0x01089438</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13612,7 +13283,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01109430</value>
+   <value>0x01089430</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13655,7 +13326,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01109448</value>
+   <value>0x01089448</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13857,7 +13528,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01080000</value>
+   <value>0x01000000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13900,7 +13571,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01109420</value>
+   <value>0x01089420</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -13980,33 +13651,6 @@ parameters are a RESULT of the module parameters. -->
   <startConnectionPoint>sys_clk</startConnectionPoint>
   <endModule>video_rgb_resampler_0</endModule>
   <endConnectionPoint>clock_reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/video_pixel_buffer_dma_0.clock_reset_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="video_pixel_buffer_dma_0.clock_reset_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>video_pixel_buffer_dma_0</endModule>
-  <endConnectionPoint>clock_reset_reset</endConnectionPoint>
  </connection>
  <connection
    name="nios2_qsys_0.jtag_debug_module_reset/video_pixel_buffer_dma_0.clock_reset_reset"
@@ -14090,33 +13734,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clock_reset_reset</endConnectionPoint>
  </connection>
  <connection
-   name="up_clocks_0.sys_clk_reset/video_rgb_resampler_0.clock_reset_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="video_rgb_resampler_0.clock_reset_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>video_rgb_resampler_0</endModule>
-  <endConnectionPoint>clock_reset_reset</endConnectionPoint>
- </connection>
- <connection
    name="clk_0.clk_reset/video_scaler_0.clock_reset_reset"
    kind="reset"
    version="12.1"
@@ -14167,33 +13784,6 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>nios2_qsys_0</startModule>
   <startConnectionPoint>jtag_debug_module_reset</startConnectionPoint>
-  <endModule>video_scaler_0</endModule>
-  <endConnectionPoint>clock_reset_reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/video_scaler_0.clock_reset_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="video_scaler_0.clock_reset_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
   <endModule>video_scaler_0</endModule>
   <endConnectionPoint>clock_reset_reset</endConnectionPoint>
  </connection>
@@ -14252,33 +13842,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clock_reset_reset</endConnectionPoint>
  </connection>
  <connection
-   name="up_clocks_0.sys_clk_reset/video_vga_controller_0.clock_reset_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="video_vga_controller_0.clock_reset_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>video_vga_controller_0</endModule>
-  <endConnectionPoint>clock_reset_reset</endConnectionPoint>
- </connection>
- <connection
    name="clk_0.clk_reset/Altera_UP_SD_Card_Avalon_Interface_0.clock_sink_reset"
    kind="reset"
    version="12.1"
@@ -14329,33 +13892,6 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>nios2_qsys_0</startModule>
   <startConnectionPoint>jtag_debug_module_reset</startConnectionPoint>
-  <endModule>Altera_UP_SD_Card_Avalon_Interface_0</endModule>
-  <endConnectionPoint>clock_sink_reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/Altera_UP_SD_Card_Avalon_Interface_0.clock_sink_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="Altera_UP_SD_Card_Avalon_Interface_0.clock_sink_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
   <endModule>Altera_UP_SD_Card_Avalon_Interface_0</endModule>
   <endConnectionPoint>clock_sink_reset</endConnectionPoint>
  </connection>
@@ -14549,33 +14085,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clock_stream_in_reset</endConnectionPoint>
  </connection>
  <connection
-   name="up_clocks_0.sys_clk_reset/video_dual_clock_buffer_0.clock_stream_in_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="video_dual_clock_buffer_0.clock_stream_in_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>video_dual_clock_buffer_0</endModule>
-  <endConnectionPoint>clock_stream_in_reset</endConnectionPoint>
- </connection>
- <connection
    name="clk_0.clk_reset/video_dual_clock_buffer_0.clock_stream_out_reset"
    kind="reset"
    version="12.1"
@@ -14626,33 +14135,6 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>nios2_qsys_0</startModule>
   <startConnectionPoint>jtag_debug_module_reset</startConnectionPoint>
-  <endModule>video_dual_clock_buffer_0</endModule>
-  <endConnectionPoint>clock_stream_out_reset</endConnectionPoint>
- </connection>
- <connection
-   name="up_clocks_0.sys_clk_reset/video_dual_clock_buffer_0.clock_stream_out_reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="video_dual_clock_buffer_0.clock_stream_out_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
   <endModule>video_dual_clock_buffer_0</endModule>
   <endConnectionPoint>clock_stream_out_reset</endConnectionPoint>
  </connection>
@@ -14711,49 +14193,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clock_reset</endConnectionPoint>
  </connection>
  <connection
-   name="video_pixel_buffer_dma_0.avalon_pixel_dma_master/Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave"
-   kind="avalon"
-   version="12.1"
-   start="video_pixel_buffer_dma_0.avalon_pixel_dma_master"
-   end="Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave">
-  <parameter name="arbitrationPriority">
-   <type>int</type>
-   <value>1</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="baseAddress">
-   <type>java.math.BigInteger</type>
-   <value>0x01109000</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>video_pixel_buffer_dma_0</startModule>
-  <startConnectionPoint>avalon_pixel_dma_master</startConnectionPoint>
-  <endModule>Altera_UP_SD_Card_Avalon_Interface_0</endModule>
-  <endConnectionPoint>avalon_sdcard_slave</endConnectionPoint>
- </connection>
- <connection
    name="nios2_qsys_0.data_master/Altera_UP_SD_Card_Avalon_Interface_0.avalon_sdcard_slave"
    kind="avalon"
    version="12.1"
@@ -14769,7 +14208,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x01109000</value>
+   <value>0x01089000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -14932,33 +14371,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="up_clocks_0.sys_clk_reset/sdram_0.reset"
-   kind="reset"
-   version="12.1"
-   start="up_clocks_0.sys_clk_reset"
-   end="sdram_0.reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>up_clocks_0</startModule>
-  <startConnectionPoint>sys_clk_reset</startConnectionPoint>
-  <endModule>sdram_0</endModule>
-  <endConnectionPoint>reset</endConnectionPoint>
- </connection>
- <connection
    name="nios2_qsys_0.instruction_master/sdram_0.s1"
    kind="avalon"
    version="12.1"
@@ -15044,8 +14456,83 @@ parameters are a RESULT of the module parameters. -->
   <endModule>sdram_0</endModule>
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
+ <connection
+   name="nios2_qsys_0.jtag_debug_module_reset/up_clocks_0.clk_in_primary_reset"
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="up_clocks_0.clk_in_primary_reset">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>nios2_qsys_0</startModule>
+  <startConnectionPoint>jtag_debug_module_reset</startConnectionPoint>
+  <endModule>up_clocks_0</endModule>
+  <endConnectionPoint>clk_in_primary_reset</endConnectionPoint>
+ </connection>
  <plugin>
   <instanceCount>1</instanceCount>
+  <name>altera_avalon_new_sdram_controller</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>SDRAM Controller</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>5</instanceCount>
+  <name>conduit_end</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Conduit</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_avalon_onchip_memory2</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>On-Chip Memory (RAM or ROM)</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>13</instanceCount>
+  <name>reset_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Input</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_sram</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>SRAM/SSRAM Controller</displayName>
+  <version>12.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_avalon_jtag_uart</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>JTAG UART</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>3</instanceCount>
   <name>clock_source</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
@@ -15053,28 +14540,28 @@ parameters are a RESULT of the module parameters. -->
   <version>12.1</version>
  </plugin>
  <plugin>
-  <instanceCount>4</instanceCount>
-  <name>avalon_streaming_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Streaming Source</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
   <instanceCount>1</instanceCount>
-  <name>nios_custom_instruction_master</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Custom Instruction Master</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>Altera_UP_SD_Card_Avalon_Interface</name>
+  <name>altera_up_avalon_video_vga_controller</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>SD Card Interface</displayName>
-  <version>1.0</version>
+  <displayName>VGA Controller</displayName>
+  <version>12.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>reset_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Output</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_nios2_qsys</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Nios II Processor</displayName>
+  <version>12.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -15086,35 +14573,35 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_avalon_new_sdram_controller</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>SDRAM Controller</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_avalon_jtag_uart</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>JTAG UART</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>interrupt_sender</name>
+  <name>reset_source</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Interrupt Sender</displayName>
+  <displayName>Reset Output</displayName>
   <version>12.1</version>
  </plugin>
  <plugin>
-  <instanceCount>17</instanceCount>
-  <name>avalon</name>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_rgb_resampler</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Avalon Memory Mapped Connection</displayName>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>RGB Resampler</displayName>
+  <version>12.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_avalon_timer</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Interval Timer</displayName>
   <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_clocks</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Clock Signals for DE-series Board Peripherals</displayName>
+  <version>12.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -15133,59 +14620,43 @@ parameters are a RESULT of the module parameters. -->
   <version>12.1</version>
  </plugin>
  <plugin>
-  <instanceCount>7</instanceCount>
-  <name>avalon_slave</name>
+  <instanceCount>1</instanceCount>
+  <name>conduit_end</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Memory Mapped Slave</displayName>
+  <displayName>Conduit</displayName>
   <version>12.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_sram</name>
+  <name>nios_custom_instruction_master</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Custom Instruction Master</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_dual_clock_buffer</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>SRAM/SSRAM Controller</displayName>
+  <displayName>Dual-Clock FIFO</displayName>
   <version>12.0</version>
  </plugin>
  <plugin>
-  <instanceCount>1</instanceCount>
-  <name>DM9000A_IF</name>
+  <instanceCount>15</instanceCount>
+  <name>avalon</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>DM9000A_IF</displayName>
-  <version>1.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_vga_controller</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>VGA Controller</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>reset_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Output</displayName>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Avalon Memory Mapped Connection</displayName>
   <version>12.1</version>
  </plugin>
  <plugin>
-  <instanceCount>5</instanceCount>
-  <name>reset_sink</name>
+  <instanceCount>34</instanceCount>
+  <name>reset</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Input</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_nios2_qsys</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Nios II Processor</displayName>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Reset Connection</displayName>
   <version>12.1</version>
  </plugin>
  <plugin>
@@ -15206,59 +14677,11 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_rgb_resampler</name>
+  <name>DM9000A_IF</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>RGB Resampler</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>13</instanceCount>
-  <name>reset_sink</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Input</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_avalon_sysid_qsys</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>System ID Peripheral</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>4</instanceCount>
-  <name>avalon_streaming</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Avalon Streaming Connection</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>4</instanceCount>
-  <name>avalon_slave</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Memory Mapped Slave</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_pixel_buffer_dma</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Pixel Buffer DMA Controller</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>3</instanceCount>
-  <name>avalon_master</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Memory Mapped Master</displayName>
-  <version>12.1</version>
+  <displayName>DM9000A_IF</displayName>
+  <version>1.0</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -15270,14 +14693,30 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_character_lcd</name>
+  <name>altera_avalon_sysid_qsys</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>16x2 Character Display</displayName>
+  <displayName>System ID Peripheral</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>interrupt_sender</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Interrupt Sender</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_pixel_buffer_dma</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Pixel Buffer DMA Controller</displayName>
   <version>12.0</version>
  </plugin>
  <plugin>
-  <instanceCount>3</instanceCount>
+  <instanceCount>1</instanceCount>
   <name>clock_source</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
@@ -15285,11 +14724,19 @@ parameters are a RESULT of the module parameters. -->
   <version>12.1</version>
  </plugin>
  <plugin>
-  <instanceCount>51</instanceCount>
-  <name>reset</name>
+  <instanceCount>4</instanceCount>
+  <name>avalon_streaming_source</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Reset Connection</displayName>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Streaming Source</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>7</instanceCount>
+  <name>avalon_slave</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Memory Mapped Slave</displayName>
   <version>12.1</version>
  </plugin>
  <plugin>
@@ -15301,12 +14748,36 @@ parameters are a RESULT of the module parameters. -->
   <version>12.1</version>
  </plugin>
  <plugin>
+  <instanceCount>4</instanceCount>
+  <name>avalon_slave</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Memory Mapped Slave</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
   <instanceCount>5</instanceCount>
   <name>clock_sink</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Input</displayName>
   <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>3</instanceCount>
+  <name>avalon_master</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Memory Mapped Master</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>Altera_UP_SD_Card_Avalon_Interface</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>SD Card Interface</displayName>
+  <version>1.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -15317,60 +14788,28 @@ parameters are a RESULT of the module parameters. -->
   <version>12.1</version>
  </plugin>
  <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_clocks</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Clock Signals for DE-series Board Peripherals</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
   <instanceCount>5</instanceCount>
-  <name>conduit_end</name>
+  <name>reset_sink</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Conduit</displayName>
+  <displayName>Reset Input</displayName>
+  <version>12.1</version>
+ </plugin>
+ <plugin>
+  <instanceCount>4</instanceCount>
+  <name>avalon_streaming</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Avalon Streaming Connection</displayName>
   <version>12.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>conduit_end</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Conduit</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_dual_clock_buffer</name>
+  <name>altera_up_avalon_character_lcd</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Dual-Clock FIFO</displayName>
+  <displayName>16x2 Character Display</displayName>
   <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>reset_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Output</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_avalon_onchip_memory2</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>On-Chip Memory (RAM or ROM)</displayName>
-  <version>12.1</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_avalon_timer</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Interval Timer</displayName>
-  <version>12.1</version>
  </plugin>
  <reportVersion>12.1sp1 243</reportVersion>
  <uniqueIdentifier></uniqueIdentifier>

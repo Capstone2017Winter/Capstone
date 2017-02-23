@@ -30,8 +30,8 @@
 //   output_name:         niosII_system_cmd_xbar_demux_002
 //   ST_DATA_W:           86
 //   ST_CHANNEL_W:        11
-//   NUM_OUTPUTS:         2
-//   VALID_WIDTH:         11
+//   NUM_OUTPUTS:         1
+//   VALID_WIDTH:         1
 // ------------------------------------------
 
 //------------------------------------------
@@ -45,7 +45,7 @@ module niosII_system_cmd_xbar_demux_002
     // -------------------
     // Sink
     // -------------------
-    input  [11-1      : 0]   sink_valid,
+    input  [1-1      : 0]   sink_valid,
     input  [86-1    : 0]   sink_data, // ST_DATA_W=86
     input  [11-1 : 0]   sink_channel, // ST_CHANNEL_W=11
     input                         sink_startofpacket,
@@ -62,13 +62,6 @@ module niosII_system_cmd_xbar_demux_002
     output reg                      src0_endofpacket,
     input                           src0_ready,
 
-    output reg                      src1_valid,
-    output reg [86-1    : 0] src1_data, // ST_DATA_W=86
-    output reg [11-1 : 0] src1_channel, // ST_CHANNEL_W=11
-    output reg                      src1_startofpacket,
-    output reg                      src1_endofpacket,
-    input                           src1_ready,
-
 
     // -------------------
     // Clock & Reset
@@ -80,7 +73,7 @@ module niosII_system_cmd_xbar_demux_002
 
 );
 
-    localparam NUM_OUTPUTS = 2;
+    localparam NUM_OUTPUTS = 1;
     wire [NUM_OUTPUTS - 1 : 0] ready_vector;
 
     // -------------------
@@ -92,14 +85,7 @@ module niosII_system_cmd_xbar_demux_002
         src0_endofpacket   = sink_endofpacket;
         src0_channel       = sink_channel >> NUM_OUTPUTS;
 
-        src0_valid         = sink_channel[0] && sink_valid[0];
-
-        src1_data          = sink_data;
-        src1_startofpacket = sink_startofpacket;
-        src1_endofpacket   = sink_endofpacket;
-        src1_channel       = sink_channel >> NUM_OUTPUTS;
-
-        src1_valid         = sink_channel[1] && sink_valid[1];
+        src0_valid         = sink_channel[0] && sink_valid;
 
     end
 
@@ -107,9 +93,8 @@ module niosII_system_cmd_xbar_demux_002
     // Backpressure
     // -------------------
     assign ready_vector[0] = src0_ready;
-    assign ready_vector[1] = src1_ready;
 
-    assign sink_ready = |(sink_channel & {{9{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{10{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 
