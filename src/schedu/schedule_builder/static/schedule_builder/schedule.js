@@ -5,7 +5,10 @@ $(document).ready(function(){
 
 	classes = new Array();
 	$('#addClassButton').click(function(){
+		//set up for a new search
 		window.searched_courses = {}
+		$(".search-returns").empty();
+		
 		var className = $("#classSearchTextId").val();
 		if (classes.indexOf(className) != -1) {
 			alert("This class is already in your list");
