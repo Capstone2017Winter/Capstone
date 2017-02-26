@@ -161,57 +161,68 @@ html body .page-wrap .body-content .user .schedule-row .form-div form .button {
 }
 /*CSS for schedule.html*/
 html body .page-wrap .body-content .schedule {
+  min-height: 800px;
+  display: flex;
+  flex-direction: row;
+}
+html body .page-wrap .body-content .schedule .search-column {
+  width: 25%;
+  padding: 5px;
+  background: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-html body .page-wrap .body-content .schedule .search {
+html body .page-wrap .body-content .schedule .search-column h1 {
+  color: #fff;
+}
+html body .page-wrap .body-content .schedule .search-column .search {
   background-color: #42454e;
   border-radius: .125rem;
   font-size: 12px;
   font-size: .75rem;
-  padding: 8px;
+  padding: 5px;
   padding: .5rem;
-  width: 350px;
-  margin: 0px 0px 20px 0px;
+  width: 100%;
+  margin: 0px 5px 20px 5px;
 }
-html body .page-wrap .body-content .schedule .search .form-div {
+html body .page-wrap .body-content .schedule .search-column .search .form-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   height: 30px;
 }
-html body .page-wrap .body-content .schedule .search .form-div .search-bar {
+html body .page-wrap .body-content .schedule .search-column .search .form-div .search-bar {
   border: none;
   border-radius: .125rem;
   background-color: #fff;
   color: #007c41;
   font-size: 20px;
+  min-width: 20%;
   padding: 6px 8px;
   padding: .375rem .5rem;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  flex-shrink: 1;
 }
-html body .page-wrap .body-content .schedule .search .form-div ::-webkit-input-placeholder {
+html body .page-wrap .body-content .schedule .search-column .search .form-div ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #007c41;
 }
-html body .page-wrap .body-content .schedule .search .form-div ::-moz-placeholder {
+html body .page-wrap .body-content .schedule .search-column .search .form-div ::-moz-placeholder {
   /* Firefox 19+ */
   color: #007c41;
 }
-html body .page-wrap .body-content .schedule .search .form-div :-ms-input-placeholder {
+html body .page-wrap .body-content .schedule .search-column .search .form-div :-ms-input-placeholder {
   /* IE 10+ */
   color: #007c41;
 }
-html body .page-wrap .body-content .schedule .search .form-div :-moz-placeholder {
+html body .page-wrap .body-content .schedule .search-column .search .form-div :-moz-placeholder {
   /* Firefox 18- */
   color: #007c41;
 }
-html body .page-wrap .body-content .schedule .search .form-div .button {
+html body .page-wrap .body-content .schedule .search-column .search .form-div .button {
   border: none;
   background-color: #007c41;
   color: #fff;
@@ -222,40 +233,195 @@ html body .page-wrap .body-content .schedule .search .form-div .button {
   padding: .375rem .625rem;
   font-size: 12px;
 }
-html body .page-wrap .body-content .schedule .search .form-div .button:hover {
+html body .page-wrap .body-content .schedule .search-column .search .form-div .button:hover {
   background-color: #00994f;
 }
-html body .page-wrap .body-content .schedule .search-returns {
+html body .page-wrap .body-content .schedule .search-column .search-returns {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
-html body .page-wrap .body-content .schedule .search-returns .search-return {
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return {
   padding: 10px;
-  margin: 5px;
+  margin: 0px 0px 5px 0px;
   display: flex;
   flex-direction: column;
   border-radius: .125rem;
   background: #fff;
   border: solid 1px #333;
-  max-width: 50%;
+  width: 100%;
   border-radius: 5px;
 }
-html body .page-wrap .body-content .schedule .search-returns .search-return .return-field {
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return div .return-field {
   margin: 0px 0px 5px 0px;
 }
-html body .page-wrap .body-content .schedule .search-returns .search-return .return-field span {
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return div .return-field span {
   color: #007c41;
   font-weight: bold;
 }
-html body .page-wrap .body-content .schedule .search-returns .search-return .class-title {
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div {
+  display: flex;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div .class-title {
   margin: 0px;
   font-size: 24px;
   color: #007c41;
 }
-html body .page-wrap .body-content .schedule .search-returns .search-return .short-desc {
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div div {
+  margin-left: auto;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div div .button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: .125rem;
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div div .button:hover {
+  background-color: #00994f;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top .short-desc {
   font-size: 16px;
   color: #333;
+}
+html body .page-wrap .body-content .schedule .class-column {
+  width: 25%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class {
+  padding: 10px;
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: .125rem;
+  background: #fff;
+  border: solid 5px #ff8080;
+  width: 100%;
+  border-radius: 5px;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class div .return-field {
+  margin: 0px 0px 5px 0px;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class div .return-field span {
+  color: #007c41;
+  font-weight: bold;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div {
+  display: flex;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div .class-title {
+  margin: 0px;
+  font-size: 24px;
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div div {
+  margin-left: auto;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div div .button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: .125rem;
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div div .button:hover {
+  background-color: #00994f;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .short-desc {
+  font-size: 16px;
+  color: #333;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0px;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice p {
+  padding-top: 10px;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 10px;
+  font-size: .7em;
+  /* demo only */
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown select {
+  background-color: #007c41;
+  color: #fff;
+  font-size: inherit;
+  padding: .5em;
+  padding-right: 2.5em;
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button;
+  /* hide default arrow in chrome OSX */
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::before,
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::after {
+  /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::before {
+  /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown select[disabled] {
+  color: rgba(0, 0, 0, 0.3);
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown select[disabled]::after {
+  color: rgba(0, 0, 0, 0.1);
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::after {
+  color: rgba(0, 0, 0, 0.4);
 }
 /*Footer*/
 html body footer {
