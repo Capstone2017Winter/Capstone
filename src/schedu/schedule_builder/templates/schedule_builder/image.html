@@ -1,1 +1,17 @@
-<img src="http://www.ece.rice.edu/~wakin/images/lena512.bmp">
+<html>
+	<head>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" >
+			function socketConnection(){
+				alert("Function started");
+				var socket = navigator.mozTCPSocket.open("127.0.0.1", "3000");
+				socket.onopen = alert("Socket Connection Established");
+				socket.send(System.IO.File.ReadAllBytes("http://www.ece.rice.edu/~wakin/images/lena512.bmp"));
+			}
+		</script>
+	</head>
+	<h1	onload = "socketConnection();">
+		<img src="http://www.ece.rice.edu/~wakin/images/lena512.bmp"> 
+
+	</h1>
+
+</html>
