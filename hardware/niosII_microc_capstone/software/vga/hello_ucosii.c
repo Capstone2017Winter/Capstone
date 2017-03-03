@@ -27,32 +27,11 @@
 *     minutes per iteration.                                             *
 **************************************************************************/
 
-
-
-  /**************************************************************************
-   * bitmap.c                                                               *
-   * written by David Brackeen                                              *
-   * http://www.brackeen.com/home/vga/                                      *
-   *                                                                        *
-   * Tab stops are set to 2.                                                *
-   * This program compiles with DJGPP! (www.delorie.com)                    *
-   * To compile in DJGPP: gcc bitmap.c -o bitmap.exe                        *
-   *                                                                        *
-   * This program will only work on DOS- or Windows-based systems with a    *
-   * VGA, SuperVGA, or compatible video adapter.                            *
-   *                                                                        *
-   * Please feel free to copy this source code.                             *
-   *                                                                        *
-   * DESCRIPTION: This program demostrates drawing bitmaps, including       *
-   * transparent bitmaps.                                                   *
-   **************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include "includes.h"
 #include "altera_up_sd_card_avalon_interface.h"
 #include "altera_up_avalon_video_pixel_buffer_dma.h"
-//#include <curl/curl.h>
-
 
 /* Definition of Task Stacks */
 #define   TASK_STACKSIZE       2048
@@ -64,18 +43,64 @@ OS_STK    task2_stk[TASK_STACKSIZE];
 #define TASK1_PRIORITY      1
 #define TASK2_PRIORITY      2
 
-#define VIDEO_INT           0x10      /* the BIOS video interrupt. */
-#define SET_MODE            0x00      /* BIOS func to set the video mode. */
-#define VGA_256_COLOR_MODE  0x13      /* use to set 256-color mode. */
-#define TEXT_MODE           0x03      /* use to set 80x25 text mode. */
-
 #define SCREEN_WIDTH        640       /* width in pixels of mode 0x13 */
 #define SCREEN_HEIGHT       480       /* height in pixels of mode 0x13 */
 #define NUM_COLORS          256       /* number of colors in mode 0x13 */
+#define BMP_OFFSET          54
 
 
+/**************************************************************************
+ *  load_bmp                                                              *
+ *    Loads a bitmap file into memory.                                    *
+ **************************************************************************/
 
-/* The main function creates two task and starts multi-tasking */
+void load_bmp(int file_handle, unsigned char **data_array)
+{
+
+  for(times_read = 0; times_read < BMP_OFFSET; times_read++){
+    data = alt_up_sd_card_read(file_handle);
+  }
+
+  int x, y;
+  unsigned char byte_b, byte_g, byte_r;
+  /* read the bitmap. Bytes are red in BRG format and then translated into RGB */
+  for(y=(SCREEN_HEIGHT-1);y>+ 0;y--){
+    for(x=0;x<SCREEN_WIDTH;x++)  {
+        byte_b=alt_up_sd_card_read(file_handle);
+        byte_g=alt_up_sd_card_read(file_handle);
+        byte_r=alt_up_sd_card_read(file_handle);
+        
+        if((byte_b < 0) || (byte_g < 0) || (byte_r < 0)){
+            break;
+        }
+
+        byte_b = (unsigned char) byte_b;
+        byte_g = (unsigned char) byte_g;
+        byte_r = (unsigned char) byte_r;
+
+        data_array[x][y]=((byte_r>>3)<<11)|((byte_g>>2)<<5)|((byte_b>>3)<<0);
+
+    }
+  }
+}
+
+/**************************************************************************
+ *  draw_bitmap                                                           *
+ *    Draws a bitmap.                                                     *
+ **************************************************************************/
+
+void draw_bitmap(unsigned char **data_array)
+{
+  for(y = 0; y < SCREEN_HEIGHT; y++){
+    for(x = 0; x < SCREEN_WIDTH; x++){
+      alt_up_pixel_buffer_dma_draw(vga_buffer, data_array[x + SCREEN_HEIGHT*y],x,y);
+
+    }
+  }
+}
+
+
+/* The main function instantiates the pixel buffer and sd card and loads a bitmap from sd card into the buffer */
 int main(void)
 {
   alt_up_sd_card_dev *sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
@@ -83,7 +108,7 @@ int main(void)
   alt_up_pixel_buffer_dma_dev *vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
 
   if(vga_buffer == NULL){
-	  printf("WE all DOOMED");
+	  printf("Could not instantiate VGA buffer");
   }
 
   if(sd_card == NULL){
@@ -99,80 +124,30 @@ int main(void)
 
   short int file_attributes = alt_up_sd_card_get_attributes(file_handle);
   printf("File Attributes: %d\n",file_attributes );
-  unsigned char data;
   printf("Reading Data \n");
 
-  int times_read = 0;
-  unsigned char data_array[SCREEN_WIDTH][SCREEN_HEIGHT];
-  //BITMAP bmp;
-  for(times_read = 0; times_read < 54; times_read++){
-	  data = alt_up_sd_card_read(file_handle);
+  unsigned char **data_array = malloc(SCREEN_WIDTH * sizeof(unsigned char*));
+  int i;
+  for(i = 0; i < SCREEN_WIDTH; i++){
+    data_array[i] = malloc(SCREEN_HEIGHT * sizeof(unsigned char));
   }
-/*
-  word width_buf[sizeof(word)/8];
+  
+  load_bmp(file_handle, data_array);
 
-  for(times_read = 0; times_read < sizeof(word); times_read++){
-	  width_buf[times_read%8] = (unsigned char)alt_up_sd_card_read(file_handle);
-	  times_read +=8;
-  }
-  printf(width_buf);
-  printf("\n");
-  */
-  int x, y;
-  unsigned char byte_b, byte_g, byte_r;
-  /* read the bitmap */
-  for(y = (SCREEN_HEIGHT-1); y >= 0; y--){
-	for(x = 0; x < SCREEN_WIDTH; x++){
-		byte_b= alt_up_sd_card_read(file_handle);
-		byte_g= alt_up_sd_card_read(file_handle);
-		byte_r= alt_up_sd_card_read(file_handle);
-		if((byte_b < 0) || (byte_g < 0) || (byte_r < 0)){
-			break;
-		}
-
-		byte_b = (unsigned char) byte_b;
-		byte_g = (unsigned char) byte_g;
-		byte_r = (unsigned char) byte_r;
-
-		data_array[x][y]=((byte_r>>3)<<11)|((byte_g>>2)<<5)|((byte_b>>3)<<0);
-		times_read++;
-	}
-  }
-/*
-  while(data >= 0){
-	  //printf("Reading file data: %d \n", data);
-	  data = (byte)alt_up_sd_card_read(file_handle);
-	  if(data >= 0){
-		  data_array[times_read] = data;
-	  }
-	  times_read++;
-  }
-  */
   printf("Done Reading File \n");
   //OSTimeDly(1);
   printf("Number of reads: %d\n", times_read);
 
-
-	  //printf("Reading file data: %d \n", data);
-	 // data = ;
-
-
   alt_up_pixel_buffer_dma_clear_screen(vga_buffer, 0);
 
   while(1){
-	  for(y = 0; y < SCREEN_HEIGHT; y++){
-		  for(x = 0; x < SCREEN_WIDTH; x++){
-			  alt_up_pixel_buffer_dma_draw(vga_buffer, data_array[x][y],x,y);
+    draw_bitmap(data_array);
 
-
-		  }
-	  }
-  //printf("Finished displaying data\n");
   }
+
+  free(data_array);
+  return 0;
 }
-
-
-
 
 /******************************************************************************
 *                                                                             *

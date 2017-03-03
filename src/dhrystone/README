@@ -1,0 +1,5 @@
+This project contains benchmarks written by Roy Longmottom: http://www.roylongbottom.org.uk/
+
+These benchmarks will be used to estimate required CPU performance of the webserver. The benchmarks can also be used for testing embedded C code and algorithms on a desktop machine and then comparing the DMIPS of the desktop and embedded platform to see if the algorithm can be ported to the less powerful platform.
+
+Simply run dhrystone2_64 to start the benchmark. There is a suite of other benchmarks in the "classic_benchmarks" folder which may be useful.

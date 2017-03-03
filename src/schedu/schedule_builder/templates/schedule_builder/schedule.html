@@ -1,0 +1,33 @@
+{% extends "schedule_builder/base.html" %}
+{% load static %}
+
+
+{% block content %}
+<script type="text/javascript" src="{% static 'schedule_builder/schedule.js' %}"></script>
+<div class="body-content">
+	<div class="schedule">
+		<div class="search-column">
+			<h1>{{ schedule.term }} - {{ schedule.year }}</h1>
+			<script type="text/javascript"> 
+			window.CSRF_TOKEN = "{{ csrf_token }}"; 
+			username = "{{ schedule.user.name }}";
+			year = "{{ schedule.year }}";
+			term = "{{ schedule.term }}";
+			</script>
+
+			<form action="" method="get" class="search">
+          		<div class="form-div">
+            		<input type="text" id="classSearchTextId" placeholder="Class Name" class="search-bar" />
+            		<button id="addClassButton" type="button" class="button search-button">Search</button>
+          		</div>
+        	</form>
+
+        	<div class="search-returns" id="search-returns"></div>
+
+		</div>
+		<div class="class-column"></div>
+		
+		
+	</div>
+</div>
+{% endblock %}

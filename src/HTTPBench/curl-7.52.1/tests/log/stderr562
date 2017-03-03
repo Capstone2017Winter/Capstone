@@ -1,0 +1,6 @@
+URL: ftp://127.0.0.1:23456/562;type=A
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* connect to 127.0.0.1 port 8992 failed: Connection refused
+* Failed to connect to 127.0.0.1 port 8992: Connection refused
+* Closing connection 0

@@ -1,0 +1,43 @@
+{% extends "schedule_builder/base.html" %}
+
+{% block content %}
+<div class="body-content">
+  	<div class="user container">
+    	<div class="col-lg-4">
+      		<h1>Welcome {{ user.name }}!</h1>
+    	</div>
+    	<div class="schedule-row">
+        	<div class="form-div" id="exist">
+          		<h4>Existing Schedules</h4>
+          		<form action="{% url 'user' user.name %}" method="post" class="existing-schedules">
+         			{% csrf_token %}
+					{% for schedule in user.schedule_set.all %}
+    				<input class="button" type="submit" value="{{ schedule.term }} {{ schedule.year }}" name="{{ schedule.id }}" />
+					{% endfor %}
+		  		</form>
+			</div>
+			<div class="form-div">
+        		<h4>Create New Schedule</h4>
+        		<form action="{% url 'user' user.name %}" method="post">
+          			{% csrf_token %}
+          			<div id="create-new">
+        	    		<div id="year">
+          					<label for="yearid">Year</label>
+    						<input type="number" id="yearid" name="year" min="2000" max="2100" value="2017"/>
+    					</div>
+    					<div id="semester">
+    						<input type="radio" name="term" value="FALL" checked>FALL<br>
+    						<input type="radio" name="term" value="WINTER">WINTER<br>
+    						<input type="radio" name="term" value="SPRING">SPRING<br>
+    						<input type="radio" name="term" value="SUMMER">SUMMER<br>
+    					</div>
+    					<input class="button" type="submit" value="Create New Schedule"/>
+		    		</div>
+        		</form>
+    		</div>
+  		</div>
+	</div>
+</div>
+{% endblock %}
+
+

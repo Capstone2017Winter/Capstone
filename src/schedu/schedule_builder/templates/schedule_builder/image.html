@@ -1,1 +1,22 @@
-<img src="https://66.media.tumblr.com/avatar_1b968c0ea25a_128.png">
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+		<script type="text/javascript">
+			$( document ).ready(function(){
+				window.WebSocket = window.WebSocket || window.MozWebSocket;
+				var socket = new WebSocket('ws://127.0.0.1:3000', 'dumb-increment-protocol');
+				socket.onopen = function(){
+					alert("Socket connection established");
+				}
+				socket.send(System.IO.File.ReadAllBytes("image"));
+			});
+		</script>
+	</head>
+	<body >
+
+		<img id = "image" src="http://www.ece.rice.edu/~wakin/images/lena512.bmp"> 
+
+	</body>
+</html>

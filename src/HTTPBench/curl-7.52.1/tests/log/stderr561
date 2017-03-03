@@ -1,0 +1,6 @@
+URL: ftp://www.example.com/moo/561;type=i
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* connect to 127.0.0.1 port 8990 failed: Connection refused
+* Failed to connect to 127.0.0.1 port 8990: Connection refused
+* Closing connection 0

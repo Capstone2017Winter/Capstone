@@ -1,48 +1,430 @@
-body {
-  width: 100%;
+/*Base Document*/
+html {
+  height: 100%;
+}
+html body {
+  background: #fff;
   font-family: sans-serif;
-  min-height: 100%;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
-body header {
+html body .page-wrap:after {
+  content: "";
+  display: block;
+  height: 75px;
+}
+html body .page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -75px;
+}
+html body .page-wrap header {
   background: #ff8080;
   color: #fff;
 }
-body header .wrap {
+html body .page-wrap header .wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-body header .wrap .header-title {
+html body .page-wrap header .wrap .header-title {
   font-size: 48px;
   text-align: center;
 }
-body header .wrap .header-title .u-span {
-  color: #007C41;
+html body .page-wrap header .wrap .header-title .u-span {
+  color: #007c41;
   font-size: 62px;
 }
-body header .wrap nav {
+html body .page-wrap header .wrap nav {
   display: flex;
   justify-content: center;
   font-size: 24px;
 }
-body header .wrap nav ul {
+html body .page-wrap header .wrap nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-body header .wrap nav ul li {
-  margin: 0px 20px;
+html body .page-wrap header .wrap nav ul li {
+  margin: 0 20px;
 }
-body header .wrap nav ul li a {
+html body .page-wrap header .wrap nav ul li a {
   text-decoration: none;
   color: #fff;
 }
-body header .wrap nav ul li a:hover {
+html body .page-wrap header .wrap nav ul li a:hover {
   text-decoration: none;
-  color: #007C41;
+  color: #007c41;
   cursor: pointer;
+}
+/*Body Content*/
+html body .page-wrap .body-content {
+  width: 100%;
+}
+/*CSS for home.html*/
+html body .page-wrap .body-content .home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .page-wrap .body-content .home .welcome {
+  background: #ff8080;
+  margin: 20px 0px;
+  padding: 40px 0px;
+  border:solid 1px #333;
+  border-radius: 10px;
+  width: 50%;
+  min-width: 350px;
+}
+html body .page-wrap .body-content .home .welcome .fancy-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20px 40px;
+  width: 100%;
+}
+html body .page-wrap .body-content .home .welcome .fancy-background h1 {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+html body .page-wrap .body-content .home .welcome .fancy-background .error {
+  display: none;
+}
+html body .page-wrap .body-content .home .welcome .fancy-background .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .page-wrap .body-content .home .welcome .fancy-background .login input {
+  margin: 0px 0px 15px 0px;
+  border: none;
+  border-radius: .125rem;
+}
+html body .page-wrap .body-content .home .welcome .fancy-background .login .input-field {
+  border: solid 1px #333;
+  color: #333;
+}
+html body .page-wrap .body-content .home .welcome .fancy-background .login .button {
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-left: .5rem;
+  padding: 6px 10px;
+  padding: .375rem .625rem;
+}
+/*CSS for user.html*/
+html body .page-wrap .body-content .user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+html body .page-wrap .body-content .user h1 {
+  text-align: center;
+}
+html body .page-wrap .body-content .user .schedule-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+html body .page-wrap .body-content .user .schedule-row .form-div {
+  width: 45%;
+  background: rgba(255, 128, 128, 0.5);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .page-wrap .body-content .user .schedule-row .form-div form input {
+  margin-bottom: 10px;
+}
+html body .page-wrap .body-content .user .schedule-row .form-div form .button {
+  border: none;
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-left: .5rem;
+  padding: 6px 10px;
+  padding: .375rem .625rem;
+}
+/*CSS for schedule.html*/
+html body .page-wrap .body-content .schedule {
+  min-height: 800px;
+  display: flex;
+  flex-direction: row;
+}
+html body .page-wrap .body-content .schedule .search-column {
+  width: 25%;
+  padding: 5px;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .search-column h1 {
+  color: #fff;
+}
+html body .page-wrap .body-content .schedule .search-column .search {
+  background-color: #42454e;
+  border-radius: .125rem;
+  font-size: 12px;
+  font-size: .75rem;
+  padding: 5px;
+  padding: .5rem;
+  width: 100%;
+  margin: 0px 5px 20px 5px;
+}
+html body .page-wrap .body-content .schedule .search-column .search .form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+}
+html body .page-wrap .body-content .schedule .search-column .search .form-div .search-bar {
+  border: none;
+  border-radius: .125rem;
+  background-color: #fff;
+  color: #007c41;
+  font-size: 20px;
+  min-width: 20%;
+  padding: 6px 8px;
+  padding: .375rem .5rem;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+html body .page-wrap .body-content .schedule .search-column .search .form-div ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search-column .search .form-div ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search-column .search .form-div :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search-column .search .form-div :-moz-placeholder {
+  /* Firefox 18- */
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search-column .search .form-div .button {
+  border: none;
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-left: .5rem;
+  padding: 6px 10px;
+  padding: .375rem .625rem;
+  font-size: 12px;
+}
+html body .page-wrap .body-content .schedule .search-column .search .form-div .button:hover {
+  background-color: #00994f;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return {
+  padding: 10px;
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: .125rem;
+  background: #fff;
+  border: solid 1px #333;
+  width: 100%;
+  border-radius: 5px;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return div .return-field {
+  margin: 0px 0px 5px 0px;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return div .return-field span {
+  color: #007c41;
+  font-weight: bold;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div {
+  display: flex;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div .class-title {
+  margin: 0px;
+  font-size: 24px;
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div div {
+  margin-left: auto;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div div .button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: .125rem;
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div div .button:hover {
+  background-color: #00994f;
+}
+html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top .short-desc {
+  font-size: 16px;
+  color: #333;
+}
+html body .page-wrap .body-content .schedule .class-column {
+  width: 25%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class {
+  padding: 10px;
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: .125rem;
+  background: #fff;
+  border: solid 5px #ff8080;
+  width: 100%;
+  border-radius: 5px;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class div .return-field {
+  margin: 0px 0px 5px 0px;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class div .return-field span {
+  color: #007c41;
+  font-weight: bold;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div {
+  display: flex;
+  align-items: center;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div .class-title {
+  margin: 0px;
+  font-size: 24px;
+  color: #007c41;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div div {
+  margin-left: auto;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div div .button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: .125rem;
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top div div .button:hover {
+  background-color: #00994f;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .short-desc {
+  font-size: 16px;
+  color: #333;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0px;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice p {
+  padding-top: 10px;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 10px;
+  font-size: .7em;
+  /* demo only */
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown select {
+  background-color: #007c41;
+  color: #fff;
+  font-size: inherit;
+  padding: .5em;
+  padding-right: 2.5em;
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button;
+  /* hide default arrow in chrome OSX */
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::before,
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::after {
+  /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::before {
+  /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown select[disabled] {
+  color: rgba(0, 0, 0, 0.3);
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown select[disabled]::after {
+  color: rgba(0, 0, 0, 0.1);
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::after {
+  color: rgba(0, 0, 0, 0.4);
+}
+/*Footer*/
+html body footer {
+  height: 75px;
+  background: #ff8080;
 }
