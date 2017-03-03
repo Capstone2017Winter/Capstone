@@ -74,7 +74,7 @@ $(document).ready(function(){
       '<div class="choice">' +
       '<p>Lecture:</p>' +
       '<span class="lectures custom-dropdown">' +
-      '<select>' +
+      '<select id="' + course.varname + '_lecture' + '">' +
       lectures +
       '</select>' +
       '</span>' +
@@ -82,7 +82,7 @@ $(document).ready(function(){
       '<div class="choice">' +
       '<p>Seminar:</p> ' +
       '<span class="lectures custom-dropdown">' +
-      '<select>' +
+      '<select id="' + course.varname + '_seminar' + '">' +
       seminars +
       '</select>' +
       '</span>' +
@@ -90,7 +90,7 @@ $(document).ready(function(){
       '<div class="choice">' +
       '<p>Lab:</p> ' +
       '<span class="lectures custom-dropdown">' +
-      '<select>' +
+      '<select id="' + course.varname + '_lab' + '">' +
       labs +
       '</select>' +
       '</span>' +
