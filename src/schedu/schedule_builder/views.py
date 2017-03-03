@@ -83,3 +83,25 @@ def course_sections(request):
             return HttpResponse(json.dumps(params), 
                                 content_type="application/json")
     return HttpResponseBadRequest('Invalid GET Parameters')
+
+def save_schedule(request):
+    if request.method == "POST":
+        post = request.POST.copy()
+        scheduleId = post['scheduleId']
+        courseName = post['courseName']
+        lecture = post['lecture']
+      
+        schedule = get_object_or_404(Schedule, pk=scheduleId)
+        myclass = None
+        try:
+            myclass = MyClass.objects.get(class_code=courseName)
+        except (MyClass.DoesNotExist):
+            myclass = MyClass(class_code=courseName, class_description="")
+            myclass.save()
+        mySection = None
+        try:
+            mySection = ClassSection.objects.get(schedule=schedule, myclass=myclass, 
+                                            section_number=lecture)
+        except (ClassSection.DoesNotExist):
+            mysection = myclass.classsection_set.create(section_number=lecture)
+            mysection.save()

@@ -104,6 +104,7 @@ $(document).ready(function(){
       '</div>' +
       '</div>'
     );
+    saveSchedule();
   });
 
 });
@@ -216,4 +217,23 @@ function addClassCallback(response, status) {
 
 	}}
 	$.ajax(args);
+}
+
+function saveSchedule() {
+	for (key in window.added_courses) {
+		var course = window.added_courses[key];
+		var lecture = $("#" + course.varname + "_lecture").val();
+		var seminar = $("#" + course.varname + "_seminar").val();
+		var lab = $("#" + course.varname + "_lab").val();
+
+		// get last element from URL, should be schedule ID
+		var url = window.location.href.split("/");
+		url.pop(); // pop of trailing forward slash
+		var scheduleId = url.pop();
+		var data = { courseName:course.varname, lecture:lecture, seminar:seminar, lab:lab,
+				 scheduleId:scheduleId, csrfmiddlewaretoken:window.CSRF_TOKEN };
+		var args = { type:"POST", url:"/builder/save/", data:data};
+		$.ajax(args);
+
+	}
 }
