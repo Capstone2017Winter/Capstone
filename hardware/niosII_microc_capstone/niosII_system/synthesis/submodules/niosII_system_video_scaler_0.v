@@ -78,15 +78,15 @@ parameter DW					= 29; // Frame's Data Width
 parameter EW					= 1; // Frame's Empty Width
 
 parameter WIW					= 9; // Incoming frame's width's address width
-parameter HIW					= 7; // Incoming frame's height's address width
+parameter HIW					= 8; // Incoming frame's height's address width
 parameter WIDTH_IN			= 640;
 
-parameter WIDTH_DROP_MASK	= 4'b0101;
+parameter WIDTH_DROP_MASK	= 4'b0000;
 parameter HEIGHT_DROP_MASK	= 4'b0000;
 
-parameter MH_WW				= 8; // Multiply height's incoming width's address width
-parameter MH_WIDTH_IN		= 320; // Multiply height's incoming width
-parameter MH_CW				= 0; // Multiply height's counter width
+parameter MH_WW				= 9; // Multiply height's incoming width's address width
+parameter MH_WIDTH_IN		= 640; // Multiply height's incoming width
+parameter MH_CW				= 1; // Multiply height's counter width
 
 parameter MW_CW				= 0; // Multiply width's counter width
 
@@ -166,7 +166,8 @@ assign stream_out_empty	= 'h0;
  *                              Internal Modules                             *
  *****************************************************************************/
 
-altera_up_video_scaler_shrink Shrink_Frame (
+
+altera_up_video_scaler_multiply_height Multiply_Height (
 	// Inputs
 	.clk								(clk),
 	.reset							(reset),
@@ -176,12 +177,41 @@ altera_up_video_scaler_shrink Shrink_Frame (
 	.stream_in_endofpacket		(stream_in_endofpacket),
 	.stream_in_valid				(stream_in_valid),
 
-	.stream_out_ready				(stream_out_ready),
-	
-	// Bidirectional
+	.stream_out_ready				(internal_ready),
+
+	// Bi-Directional
 
 	// Outputs
 	.stream_in_ready				(stream_in_ready),
+
+	.stream_out_data				(internal_data),
+	.stream_out_startofpacket	(internal_startofpacket),
+	.stream_out_endofpacket		(internal_endofpacket),
+	.stream_out_valid				(internal_valid)
+);
+defparam
+	Multiply_Height.DW		= DW,
+	Multiply_Height.WW		= MH_WW,
+	Multiply_Height.WIDTH	= MH_WIDTH_IN,
+
+	Multiply_Height.CW		= MH_CW;
+
+altera_up_video_scaler_multiply_width Multiply_Width (
+	// Inputs
+	.clk								(clk),
+	.reset							(reset),
+
+	.stream_in_data				(internal_data),
+	.stream_in_startofpacket	(internal_startofpacket),
+	.stream_in_endofpacket		(internal_endofpacket),
+	.stream_in_valid				(internal_valid),
+
+	.stream_out_ready				(stream_out_ready),
+
+	// Bi-Directional
+
+	// Outputs
+	.stream_in_ready				(internal_ready),
 
 	.stream_out_data				(stream_out_data),
 	.stream_out_startofpacket	(stream_out_startofpacket),
@@ -189,16 +219,8 @@ altera_up_video_scaler_shrink Shrink_Frame (
 	.stream_out_valid				(stream_out_valid)
 );
 defparam
-	Shrink_Frame.DW					= DW,
-	Shrink_Frame.WW					= WIW,
-	Shrink_Frame.HW					= HIW,
-
-	Shrink_Frame.WIDTH_IN			= WIDTH_IN,
-
-	Shrink_Frame.WIDTH_DROP_MASK	= WIDTH_DROP_MASK,
-	Shrink_Frame.HEIGHT_DROP_MASK	= HEIGHT_DROP_MASK;
-
-
+	Multiply_Width.DW = DW,
+	Multiply_Width.CW = MW_CW;
 
 endmodule
 
