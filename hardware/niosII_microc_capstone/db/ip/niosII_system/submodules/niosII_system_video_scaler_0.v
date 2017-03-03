@@ -78,7 +78,7 @@ parameter DW					= 29; // Frame's Data Width
 parameter EW					= 1; // Frame's Empty Width
 
 parameter WIW					= 9; // Incoming frame's width's address width
-parameter HIW					= 7; // Incoming frame's height's address width
+parameter HIW					= 8; // Incoming frame's height's address width
 parameter WIDTH_IN			= 640;
 
 parameter WIDTH_DROP_MASK	= 4'b0101;
