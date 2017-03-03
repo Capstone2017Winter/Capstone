@@ -16,7 +16,7 @@
    {
       datum _sortIndex
       {
-         value = "16";
+         value = "15";
          type = "int";
       }
    }
@@ -24,7 +24,7 @@
    {
       datum _sortIndex
       {
-         value = "15";
+         value = "14";
          type = "int";
       }
    }
@@ -72,7 +72,7 @@
    {
       datum _sortIndex
       {
-         value = "14";
+         value = "13";
          type = "int";
       }
    }
@@ -104,7 +104,7 @@
    {
       datum _sortIndex
       {
-         value = "13";
+         value = "12";
          type = "int";
       }
    }
@@ -129,14 +129,6 @@
          type = "boolean";
       }
    }
-   element DM9000A_IF_0.s1
-   {
-      datum baseAddress
-      {
-         value = "17339440";
-         type = "String";
-      }
-   }
    element onchip_memory2_0.s1
    {
       datum baseAddress
@@ -158,6 +150,14 @@
       datum baseAddress
       {
          value = "8388608";
+         type = "String";
+      }
+   }
+   element DM9000A_IF_0.s1
+   {
+      datum baseAddress
+      {
+         value = "17339440";
          type = "String";
       }
    }
@@ -186,7 +186,7 @@
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "10";
          type = "int";
       }
    }
@@ -194,7 +194,7 @@
    {
       datum _sortIndex
       {
-         value = "12";
+         value = "11";
          type = "int";
       }
    }
@@ -210,7 +210,7 @@
    {
       datum _sortIndex
       {
-         value = "9";
+         value = "8";
          type = "int";
       }
    }
@@ -230,19 +230,11 @@
          type = "int";
       }
    }
-   element video_scaler_0
-   {
-      datum _sortIndex
-      {
-         value = "8";
-         type = "int";
-      }
-   }
    element video_vga_controller_0
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "9";
          type = "int";
       }
    }
@@ -261,7 +253,7 @@
  <parameter name="projectName">niosII_microc_capstone.qpf</parameter>
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1487184853909" />
+ <parameter name="timeStamp" value="1488227206156" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
@@ -533,20 +525,6 @@
   <parameter name="input_type" value="8-bit RGB" />
   <parameter name="output_type" value="30-bit RGB" />
   <parameter name="alpha" value="1023" />
-  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
- </module>
- <module
-   kind="altera_up_avalon_video_scaler"
-   version="12.0"
-   enabled="1"
-   name="video_scaler_0">
-  <parameter name="width_scaling" value="0.5" />
-  <parameter name="height_scaling" value="1" />
-  <parameter name="width_in" value="640" />
-  <parameter name="height_in" value="240" />
-  <parameter name="color_bits" value="10" />
-  <parameter name="color_planes" value="3" />
   <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
  </module>
@@ -889,16 +867,6 @@
    kind="reset"
    version="12.1"
    start="clk_0.clk_reset"
-   end="video_scaler_0.clock_reset_reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="video_scaler_0.clock_reset_reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="clk_0.clk_reset"
    end="video_vga_controller_0.clock_reset_reset" />
  <connection
    kind="reset"
@@ -915,21 +883,6 @@
    version="12.1"
    start="nios2_qsys_0.jtag_debug_module_reset"
    end="Altera_UP_SD_Card_Avalon_Interface_0.clock_sink_reset" />
- <connection
-   kind="avalon_streaming"
-   version="12.1"
-   start="video_rgb_resampler_0.avalon_rgb_source"
-   end="video_scaler_0.avalon_scaler_sink" />
- <connection
-   kind="clock"
-   version="12.1"
-   start="up_clocks_0.sys_clk"
-   end="video_scaler_0.clock_reset" />
- <connection
-   kind="avalon_streaming"
-   version="12.1"
-   start="video_scaler_0.avalon_scaler_source"
-   end="video_dual_clock_buffer_0.avalon_dc_buffer_sink" />
  <connection
    kind="clock"
    version="12.1"
@@ -1024,4 +977,9 @@
    version="12.1"
    start="nios2_qsys_0.jtag_debug_module_reset"
    end="up_clocks_0.clk_in_primary_reset" />
+ <connection
+   kind="avalon_streaming"
+   version="12.1"
+   start="video_rgb_resampler_0.avalon_rgb_source"
+   end="video_dual_clock_buffer_0.avalon_dc_buffer_sink" />
 </system>
