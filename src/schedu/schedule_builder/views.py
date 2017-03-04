@@ -90,9 +90,8 @@ def save_schedule(request):
         scheduleId = post['scheduleId']
         classList = post.getlist('classArray[]')
       
-        if (len(classList) == 0):
-            raise Exception('classList empty')
         schedule = get_object_or_404(Schedule, pk=scheduleId)
+        schedule.classsection_set.clear()
         for classToSaveJSON in classList:
             classToSave = json.loads(classToSaveJSON)
             myclass = None
