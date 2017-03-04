@@ -28,8 +28,9 @@ $(document).ready(function(){
   	});
 
   	$(".class-column").on('click', '.minus-button', function() {
-    	delete window.added_courses[$(this).closest('div[class^="added-class"]').attr('id')];
-    	$(this).closest('div[class^="added-class"]').remove();
+	    	delete window.added_courses[$(this).closest('div[class^="added-class"]').attr('id')];
+    		$(this).closest('div[class^="added-class"]').remove();
+		saveSchedule();
   	});
 
   	$('.search-returns').on('click', '.plus-button', function() {
@@ -220,8 +221,8 @@ function addClassCallback(response, status) {
 }
 
 function saveSchedule() {
-	classArray = new Array(); // add with .push()
-	for (key in window.added_courses) {
+	var classArray = new Array(); // add with .push()
+	for (var key in window.added_courses) {
 		var course = window.added_courses[key];
 		var lecture = $("#" + course.varname + "_lecture").val();
 		var seminar = $("#" + course.varname + "_seminar").val();
