@@ -108,3 +108,4 @@ def save_schedule(request):
             except (ClassSection.DoesNotExist):
                 mysection = myclass.classsection_set.create(section_number=classToSave['lecture'])
                 mysection.save()
+            mysection.schedule.add(schedule)
