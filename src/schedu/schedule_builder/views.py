@@ -145,6 +145,8 @@ def load_schedule(request):
             return HttpResponseBadRequest('Missing "scheduleId" paramter')
         scheduleId = get['scheduleId']
         schedule = get_object_or_404(Schedule, pk=scheduleId)
+        
+        # load all class sections and associate them with the className
         loaded_classes = {}
         for section in schedule.classsection_set.all():
             className = section.myclass.class_code
@@ -153,9 +155,12 @@ def load_schedule(request):
             if not className in loaded_classes:
                 loaded_classes[className] = {}
             loaded_classes[className][sectionType] = sectionNumber
+
+        # reduce class sections (lecture, seminar, lab) into a single class object
         class_list = []
         for className, loaded_class in loaded_classes.items():
             loaded_class['courseName'] = className
             class_list.append(loaded_class)
+
         return HttpResponse(json.dumps(class_list), 
                                 content_type="application/json")
