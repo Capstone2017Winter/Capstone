@@ -114,9 +114,9 @@ def save_schedule(request):
                     mySection = ClassSection.objects.get(myclass=myclass, 
                                                      section_number=lecture_section, section_type='lecture')
                 except (ClassSection.DoesNotExist):
-                    mysection = myclass.classsection_set.create(section_number=lecture_section, section_type='lecture')
-                    mysection.save()
-                mysection.schedule.add(schedule)
+                    mySection = myclass.classsection_set.create(section_number=lecture_section, section_type='lecture')
+                    mySection.save()
+                mySection.schedule.add(schedule)
 
             #create seminar section if it doesn't exist and add it to schedule
             if seminar_section != None:
@@ -124,9 +124,9 @@ def save_schedule(request):
                     mySection = ClassSection.objects.get(myclass=myclass, 
                                                      section_number=seminar_section, section_type='seminar')
                 except (ClassSection.DoesNotExist):
-                    mysection = myclass.classsection_set.create(section_number=seminar_section, section_type='seminar')
-                    mysection.save()
-                mysection.schedule.add(schedule)
+                    mySection = myclass.classsection_set.create(section_number=seminar_section, section_type='seminar')
+                    mySection.save()
+                mySection.schedule.add(schedule)
 
             #create lab section if it doesn't exist and add it to schedule
             if lab_section != None:
@@ -134,9 +134,9 @@ def save_schedule(request):
                     mySection = ClassSection.objects.get(myclass=myclass, 
                                                      section_number=lab_section, section_type='lab')
                 except (ClassSection.DoesNotExist):
-                    mysection = myclass.classsection_set.create(section_number=lab_section, section_type='lab')
-                    mysection.save()
-                mysection.schedule.add(schedule)
+                    mySection = myclass.classsection_set.create(section_number=lab_section, section_type='lab')
+                    mySection.save()
+                mySection.schedule.add(schedule)
 
 def load_schedule(request):
     if request.method == "GET":

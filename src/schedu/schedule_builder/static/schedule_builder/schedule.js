@@ -20,24 +20,31 @@ $(document).ready(function(){
 		var args = { type:"GET", url:"/builder/class/", data:data, complete:searchClassCallback };
 		$.ajax(args);
 	});
+	
+	$('#saveButton').click(function(){
+		saveSchedule();
+	});	
 
 	$(".search-returns").on('click', '.expand-button', function() {
-    	$(this).closest('div[class^="search-return"]').children('.more').toggle();
+    		$(this).closest('div[class^="search-return"]').children('.more').toggle();
   	});
 
   	$(".class-column").on('click', '.expand-button', function() {
-    	$(this).closest('div[class^="added-class"]').children('.more').toggle();
+    		$(this).closest('div[class^="added-class"]').children('.more').toggle();
   	});
 
   	$(".class-column").on('click', '.minus-button', function() {
 	    	delete window.added_courses[$(this).closest('div[class^="added-class"]').attr('id')];
     		$(this).closest('div[class^="added-class"]').remove();
-		saveSchedule();
   	});
 
   	$('.search-returns').on('click', '.plus-button', function() {
+    		var course = window.searched_courses[$(this).closest('div[class^="search-return"]').attr('id')];
+		addClassToSchedule(course)
+  	});
+});
 
-    	var course = window.searched_courses[$(this).closest('div[class^="search-return"]').attr('id')];
+function addClassToSchedule(course) {
 
     	if (!window.added_courses[course.varname]) {
       		window.added_courses[course.varname] = course;
@@ -48,21 +55,21 @@ $(document).ready(function(){
 
     	var lectures = ""
     	var seminars = ""
-   		var labs = ""
+        var labs = ""
 
     	Object.keys(course.lectures).forEach(function(key, index) {
       		lectures = lectures + '<option>' + key + '</option>'
-    	});
+	});
 
-    	Object.keys(course.seminars).forEach(function(key, index) {
+	Object.keys(course.seminars).forEach(function(key, index) {
       		seminars = seminars + '<option>' + key + '</option>'
-    	});
+	});
 
-    	Object.keys(course.labs).forEach(function(key, index) {
+	Object.keys(course.labs).forEach(function(key, index) {
       		labs = labs + '<option>' + key + '</option>'
-    	});
+	});
 
-    $(".class-column").append(
+      $(".class-column").append(
       '<div class="added-class" id="' + course.varname + '">' +
       '<div class="top">' +
       '<div>' +
@@ -107,10 +114,7 @@ $(document).ready(function(){
       '</div>' +
       '</div>'
     );
-    saveSchedule();
-  });
-
-});
+}
 
 function searchClassCallback(response, status) {
 	var json = response.responseJSON;
@@ -221,6 +225,83 @@ function searchClassCallback(response, status) {
 	$.ajax(args);
 }
 
+function searchClassLoadCallback(response, status, lecture, seminar, lab) {
+	var json = response.responseJSON;
+	var first = json.objects[0];
+	var name = first.asString;
+	var description = first.courseDescription;
+	var courseTitle = first.courseTitle;
+	var courseId = first.course;
+	var termName = term + " " + year;
+
+	var data = { courseId:courseId, termName:termName, csrfmiddlewaretoken:window.CSRF_TOKEN};
+	var args = { type:"GET", url:"/builder/section/", data:data, complete:
+	function(resp){
+		var json1 = resp.responseJSON;
+		var o = json1.objects[0];
+		var sections = o.sections;
+
+		var course = {
+			varname: name.replace(/\s/g,'').toLowerCase(),
+			name: name,
+			courseId: courseId,
+			short: courseTitle,
+			lectures: {},
+			seminars: {},
+			labs: {},
+			long: description
+		}
+
+		sections.forEach(function(section) {
+		//parse sections
+		if(/^B/.test(section.section)){
+			course.lectures[section.section] = {
+				start: section.startTime,
+				end: section.endTime,
+				days: section.day,
+				location: section.location
+			}
+		}
+		else if(/^S/.test(section.section)){
+			course.seminars[section.section] = {
+				start: section.startTime,
+				end: section.endTime,
+				days: section.day,
+				location: section.location
+			}
+		}
+		else if(/^H/.test(section.section)){
+			course.labs[section.section] = {
+				start: section.startTime,
+				end: section.endTime,
+				days: section.day,
+				location: section.location
+			}
+		}
+		else{
+			course.lectures[section.section] = {
+				start: section.startTime,
+				end: section.endTime,
+				days: section.day,
+				location: section.location
+			}
+		}	
+		});
+
+		window.searched_courses[course.varname] = course
+		addClassToSchedule(course);
+		if (lecture != '')
+			$("#" + course.varname + "_lecture").val(lecture);
+		if (seminar != '')
+			$("#" + course.varname + "_seminar").val(seminar);
+		if (lab != '')
+			$("#" + course.varname + "_lab").val(lab);
+
+	} /*end function*/    
+	} /*end args*/
+	$.ajax(args);
+}
+
 function loadScheduleCallback(response, status) {
         if (status != "success") {
 		alert("loadScheduleCallback got back a bad status");
@@ -233,7 +314,15 @@ function loadScheduleCallback(response, status) {
 		var lecture = ('lecture' in loadedClass) ? loadedClass['lecture'] : '';
 		var seminar = ('seminar' in loadedClass) ? loadedClass['seminar'] : '';
 		var lab = ('lab' in loadedClass) ? loadedClass['lab'] : '';
-		var breakme = 1;
+		var data = { className:name, csrfmiddlewaretoken:window.CSRF_TOKEN};
+		var args = { type:"GET", url:"/builder/class/", data:data, complete: 
+			function (lecture, seminar, lab) {
+				return function (response, status) {
+					searchClassLoadCallback(response, status, lecture, seminar, lab);
+				};
+			}(lecture, seminar, lab)
+		};
+		$.ajax(args);
 	}
 }
 
@@ -244,7 +333,7 @@ function saveSchedule() {
 		var lecture = $("#" + course.varname + "_lecture").val();
 		var seminar = $("#" + course.varname + "_seminar").val();
 		var lab = $("#" + course.varname + "_lab").val();
-		var myClass = { courseName:course.varname, lecture:lecture, seminar:seminar, lab:lab };
+		var myClass = { courseName:course.name, lecture:lecture, seminar:seminar, lab:lab };
 		classArray.push(JSON.stringify(myClass));
 	}
 	var scheduleId = getScheduleId();	
