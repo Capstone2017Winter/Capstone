@@ -44,9 +44,10 @@ class ClassSection(models.Model):
 	schedule = models.ManyToManyField(Schedule)
 	myclass = models.ForeignKey(MyClass, on_delete=models.CASCADE)
 	section_number = models.CharField(max_length=10) #eg EB2
+	section_type = models.CharField(max_length=20) # eg lecture, seminar, lab
 
 	def __str__(self):
-		return 'class:{}, section:{}'.format(self.myclass, self.section_number)
+		return 'class:{}, section:{}, section_type:{}'.format(self.myclass, self.section_number, self.section_type)
 
 class TimeSlot(models.Model):
 	class_section = models.ManyToManyField(ClassSection)

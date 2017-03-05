@@ -103,8 +103,30 @@ def save_schedule(request):
             mySection = None
             try:
                 mySection = ClassSection.objects.get(schedule=schedule, myclass=myclass, 
-                                                                 section_number=classToSave['lecture'])
+                                                     section_number=classToSave['lecture'], section_type='lecture')
             except (ClassSection.DoesNotExist):
-                mysection = myclass.classsection_set.create(section_number=classToSave['lecture'])
+                mysection = myclass.classsection_set.create(section_number=classToSave['lecture'], section_type='lecture')
                 mysection.save()
             mysection.schedule.add(schedule)
+
+def load_schedule(request):
+    if request.method == "GET":
+        get = request.GET.copy()
+        if not 'scheduleId' in get:
+            return HttpResponseBadRequest('Missing "scheduleId" paramter')
+        scheduleId = get['scheduleId']
+        schedule = get_object_or_404(Schedule, pk=scheduleId)
+        loaded_classes = {}
+        for section in schedule.classsection_set.all():
+            className = section.myclass.class_code
+            sectionType = section.section_type
+            sectionNumber = section.section_number
+            if not className in loaded_classes:
+                loaded_classes[className] = {}
+            loaded_classes[className][sectionType] = sectionNumber
+        class_list = []
+        for className, loaded_class in loaded_classes.items():
+            loaded_class['courseName'] = className
+            class_list.append(loaded_class)
+        return HttpResponse(json.dumps(class_list), 
+                                content_type="application/json")

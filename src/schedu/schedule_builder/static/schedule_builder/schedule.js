@@ -2,6 +2,8 @@ $(document).ready(function(){
 
 	window.searched_courses = {}
 	window.added_courses = {}
+	
+	loadSchedule();
 
 	classes = new Array();
 	$('#addClassButton').click(function(){
@@ -220,6 +222,10 @@ function addClassCallback(response, status) {
 	$.ajax(args);
 }
 
+function loadScheduleCallback(response, status) {
+	var breakme = 1;
+}
+
 function saveSchedule() {
 	var classArray = new Array(); // add with .push()
 	for (var key in window.added_courses) {
@@ -229,11 +235,22 @@ function saveSchedule() {
 		var lab = $("#" + course.varname + "_lab").val();
 		var myClass = { courseName:course.varname, lecture:lecture, seminar:seminar, lab:lab };
 		classArray.push(JSON.stringify(myClass));
-	}		// get last element from URL, should be schedule ID
-	var url = window.location.href.split("/");
-	url.pop(); // pop of trailing forward slash
-	var scheduleId = url.pop();
+	}
+	var scheduleId = getScheduleId();	
 	var data = { classArray:classArray, scheduleId:scheduleId, csrfmiddlewaretoken:window.CSRF_TOKEN };
 	var args = { type:"POST", url:"/builder/save/", data:data};
 	$.ajax(args);
+}
+
+function loadSchedule() {
+	scheduleId = getScheduleId();
+	var data = { scheduleId:scheduleId, crsfmiddlewaretoken:window.CSRF_TOKEN };
+	var args = { type:"GET", url:"/builder/load/", data:data, complete:loadScheduleCallback };
+	$.ajax(args);
+}
+
+function getScheduleId() {
+	var url = window.location.href.split("/");
+	url.pop(); // pop off trailing forward slash
+	return url.pop();
 }
