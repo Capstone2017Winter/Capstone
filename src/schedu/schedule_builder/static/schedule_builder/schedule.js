@@ -223,7 +223,19 @@ function addClassCallback(response, status) {
 }
 
 function loadScheduleCallback(response, status) {
-	var breakme = 1;
+        if (status != "success") {
+		alert("loadScheduleCallback got back a bad status");
+		return;
+	}
+	var json = response.responseJSON;
+	for (var index in json) {
+		var loadedClass = json[index];
+		var name = loadedClass['courseName'];
+		var lecture = ('lecture' in loadedClass) ? loadedClass['lecture'] : '';
+		var seminar = ('seminar' in loadedClass) ? loadedClass['seminar'] : '';
+		var lab = ('lab' in loadedClass) ? loadedClass['lab'] : '';
+		var breakme = 1;
+	}
 }
 
 function saveSchedule() {
@@ -243,7 +255,7 @@ function saveSchedule() {
 }
 
 function loadSchedule() {
-	scheduleId = getScheduleId();
+	var scheduleId = getScheduleId();
 	var data = { scheduleId:scheduleId, crsfmiddlewaretoken:window.CSRF_TOKEN };
 	var args = { type:"GET", url:"/builder/load/", data:data, complete:loadScheduleCallback };
 	$.ajax(args);
