@@ -17,7 +17,7 @@ $(document).ready(function(){
 			return;
 		}
 		var data = { className:className, csrfmiddlewaretoken:window.CSRF_TOKEN};
-		var args = { type:"GET", url:"/builder/class/", data:data, complete:addClassCallback };
+		var args = { type:"GET", url:"/builder/class/", data:data, complete:searchClassCallback };
 		$.ajax(args);
 	});
 
@@ -112,7 +112,7 @@ $(document).ready(function(){
 
 });
 
-function addClassCallback(response, status) {
+function searchClassCallback(response, status) {
 	var json = response.responseJSON;
 	var first = json.objects[0];
 	var name = first.asString;
@@ -130,15 +130,15 @@ function addClassCallback(response, status) {
 		var sections = o.sections;
 
 		var course = {
-    		varname: name.replace(/\s/g,'').toLowerCase(),
-    		name: name,
-    		courseId: courseId,
-    		short: courseTitle,
-    		lectures: {},
-    		seminars: {},
-    		labs: {},
-    		long: description
-    	}
+    			varname: name.replace(/\s/g,'').toLowerCase(),
+    			name: name,
+    			courseId: courseId,
+    			short: courseTitle,
+    			lectures: {},
+    			seminars: {},
+    			labs: {},
+    			long: description
+    		}
 
 		sections.forEach(function(section) {
 			//parse sections
@@ -180,45 +180,44 @@ function addClassCallback(response, status) {
 
 		//Generate some info,  this can probably be simplified or replaced.  Mostly for testing
 		var lectures = ""
-    	var seminars = ""
-    	var labs = ""
+		var seminars = ""
+		var labs = ""
 
-    	Object.keys(course.lectures).forEach(function(key, index) {
-      		var section = course.lectures[key]
-      		lectures = key + ", " + section.start + "-" + section.end + ", " + section.days + ", " + section.location + ";  "
-   		 });
+		Object.keys(course.lectures).forEach(function(key, index) {
+			var section = course.lectures[key]
+			lectures = key + ", " + section.start + "-" + section.end + ", " + section.days + ", " + section.location + ";  "
+		});
 
-    	Object.keys(course.seminars).forEach(function(key, index) {
-      		var section = course.seminars[key]
-      		seminars = key + ", " + section.start + "-" + section.end + ", " + section.days + ", " + section.location + ";  "
-   		 });
+		Object.keys(course.seminars).forEach(function(key, index) {
+			var section = course.seminars[key]
+			seminars = key + ", " + section.start + "-" + section.end + ", " + section.days + ", " + section.location + ";  "
+		});
 
-    	Object.keys(course.labs).forEach(function(key, index) {
-      		var section = course.labs[key]
-      		labs = key + ", " + section.start + "-" + section.end + ", " + section.days + ", " + section.location + ";  "
-    	});
+		Object.keys(course.labs).forEach(function(key, index) {
+			var section = course.labs[key]
+			labs = key + ", " + section.start + "-" + section.end + ", " + section.days + ", " + section.location + ";  "
+		});
 
-    $(".search-returns").append(
-      '<div class="search-return" id="' + course.varname + '">' +
-      '<div class="top">' +
-      '<div>' +
-      '<p class="return-field class-title">' + course.name + '</p>' +
-      '<div class="buttons">' +
-      '<div class="button plus-button">&#43;</div>' +
-      '<div class="button expand-button">&#8595;</div>' +
-      '</div>' +
-      '</div>' +
-      '<p class="return-field short-desc">' + course.short + '</p>' +
-      '</div>' +
-      '<div class="more" style="display:none;">' +
-      '<p class="return-field long-desc"><span>Description: </span>' + course.long + '</p>' + '<p class="return-field section"><span>Lectures: </span>' + lectures + '</p>' +
-      '<p class="return-field time "><span>Seminars: </span>' + seminars + '</p>' +
-      '<p class="return-field days"><span>Labs: </span>' + labs + '</p>' +
-      '</div>' +
-      '</div>'
-    );
+		$(".search-returns").append(
+		'<div class="search-return" id="' + course.varname + '">' +
+		  '<div class="top">' +
+		    '<div>' +
+		      '<p class="return-field class-title">' + course.name + '</p>' +
+		        '<div class="buttons">' +
+		          '<div class="button plus-button">&#43;</div>' +
+		          '<div class="button expand-button">&#8595;</div>' +
+		        '</div>' +
+		    '</div>' +
+		    '<p class="return-field short-desc">' + course.short + '</p>' +
+		  '</div>' +
+		  '<div class="more" style="display:none;">' +
+		    '<p class="return-field long-desc"><span>Description: </span>' + course.long + '</p>' + '<p class="return-field section"><span>Lectures: </span>' + lectures + '</p>' +
+		    '<p class="return-field time "><span>Seminars: </span>' + seminars + '</p>' +
+		    '<p class="return-field days"><span>Labs: </span>' + labs + '</p>' +
+		  '</div>' +
+		'</div>');
 
-	}}
+	} /*end function*/    } /*end args*/
 	$.ajax(args);
 }
 
