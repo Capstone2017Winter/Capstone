@@ -102,9 +102,9 @@ def save_schedule(request):
 
             #create class if it doesn't exist
             try:
-                myclass = MyClass.objects.get(class_code=classToSave['courseName'])
+                myclass = MyClass.objects.get(class_code=courseName)
             except (MyClass.DoesNotExist):
-                myclass = MyClass(class_code=classToSave['courseName'], class_description="")
+                myclass = MyClass(class_code=courseName, class_description="")
             myclass.save()
 
             #create lecture section if it doesn't exist and add it to schedule
@@ -112,9 +112,9 @@ def save_schedule(request):
             if lecture_section != None:
                 try:
                     mySection = ClassSection.objects.get(myclass=myclass, 
-                                                     section_number=classToSave['lecture'], section_type='lecture')
+                                                     section_number=lecture_section, section_type='lecture')
                 except (ClassSection.DoesNotExist):
-                    mysection = myclass.classsection_set.create(section_number=classToSave['lecture'], section_type='lecture')
+                    mysection = myclass.classsection_set.create(section_number=lecture_section, section_type='lecture')
                     mysection.save()
                 mysection.schedule.add(schedule)
 
@@ -122,9 +122,9 @@ def save_schedule(request):
             if seminar_section != None:
                 try:
                     mySection = ClassSection.objects.get(myclass=myclass, 
-                                                     section_number=classToSave['seminar'], section_type='seminar')
+                                                     section_number=seminar_section, section_type='seminar')
                 except (ClassSection.DoesNotExist):
-                    mysection = myclass.classsection_set.create(section_number=classToSave['seminar'], section_type='seminar')
+                    mysection = myclass.classsection_set.create(section_number=seminar_section, section_type='seminar')
                     mysection.save()
                 mysection.schedule.add(schedule)
 
@@ -132,9 +132,9 @@ def save_schedule(request):
             if lab_section != None:
                 try:
                     mySection = ClassSection.objects.get(myclass=myclass, 
-                                                     section_number=classToSave['lab'], section_type='lab')
+                                                     section_number=lab_section, section_type='lab')
                 except (ClassSection.DoesNotExist):
-                    mysection = myclass.classsection_set.create(section_number=classToSave['lab'], section_type='lab')
+                    mysection = myclass.classsection_set.create(section_number=lab_section, section_type='lab')
                     mysection.save()
                 mysection.schedule.add(schedule)
 
