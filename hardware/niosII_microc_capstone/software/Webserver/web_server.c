@@ -49,6 +49,8 @@
 #include "net.h"
 #include "dm9000a.h"
 #include "altera_up_avalon_character_lcd.h"
+#include "altera_up_sd_card_avalon_interface.h"
+#include "altera_up_avalon_video_pixel_buffer_dma.h"
 
 #define LCD_DISPLAY_NAME CHARACTER_LCD_0_NAME
 
@@ -67,6 +69,13 @@
 #ifdef LCD_DISPLAY_NAME  
 FILE* lcdDevice;
 #endif /* LCD_DISPLAY_NAME */
+
+
+#define SCREEN_WIDTH        640       /* width in pixels of mode 0x13 */
+#define SCREEN_HEIGHT       480       /* height in pixels of mode 0x13 */
+#define NUM_COLORS          256       /* number of colors in mode 0x13 */
+#define BMP_OFFSET          54
+
 
 extern int current_flash_block;
 
@@ -94,6 +103,58 @@ struct inet_taskinfo wstask = {
       HTTP_PRIO,
       APP_STACK_SIZE,
 };
+
+
+/**************************************************************************
+ *  load_bmp                                                              *
+ *    Loads a bitmap file into memory.                                    *
+ **************************************************************************/
+
+void load_bmp(int file_handle, unsigned char **data_array)
+{
+
+  for(times_read = 0; times_read < BMP_OFFSET; times_read++){
+    data = alt_up_sd_card_read(file_handle);
+  }
+
+  int x, y;
+  unsigned char byte_b, byte_g, byte_r;
+  /* read the bitmap. Bytes are red in BRG format and then translated into RGB */
+  for(y=(SCREEN_HEIGHT-1);y>+ 0;y--){
+    for(x=0;x<SCREEN_WIDTH;x++)  {
+        byte_b=alt_up_sd_card_read(file_handle);
+        byte_g=alt_up_sd_card_read(file_handle);
+        byte_r=alt_up_sd_card_read(file_handle);
+        
+        if((byte_b < 0) || (byte_g < 0) || (byte_r < 0)){
+            break;
+        }
+
+        byte_b = (unsigned char) byte_b;
+        byte_g = (unsigned char) byte_g;
+        byte_r = (unsigned char) byte_r;
+
+        data_array[x][y]=((byte_r>>3)<<11)|((byte_g>>2)<<5)|((byte_b>>3)<<0);
+
+    }
+  }
+}
+
+/**************************************************************************
+ *  draw_bitmap                                                           *
+ *    Draws a bitmap.                                                     *
+ **************************************************************************/
+
+void draw_bitmap(unsigned char **data_array)
+{
+  for(y = 0; y < SCREEN_HEIGHT; y++){
+    for(x = 0; x < SCREEN_WIDTH; x++){
+      alt_up_pixel_buffer_dma_draw(vga_buffer, data_array[x + SCREEN_HEIGHT*y],x,y);
+
+    }
+  }
+}
+
 
 /* Function which displays the obtained (or assigned) IP
  * Address on the LCD Display.
@@ -355,7 +416,50 @@ void lcd_output_text( char text[20] )
 	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
 	alt_up_character_lcd_init(lcd);
 	alt_up_character_lcd_string(lcd, text);
+  alt_up_sd_card_dev *sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
 
+  alt_up_pixel_buffer_dma_dev *vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
+
+  if(vga_buffer == NULL){
+    printf("Could not instantiate VGA buffer");
+  }
+
+  if(sd_card == NULL){
+    printf("Error instantiating sd card core \n");
+  }
+
+  if(alt_up_sd_card_is_FAT16()){
+    printf("Card connected and formatted properly \n");
+  }
+
+  short int file_handle = alt_up_sd_card_fopen("test.bmp", false);
+  printf("File Handle: %d\n",file_handle );
+
+  short int file_attributes = alt_up_sd_card_get_attributes(file_handle);
+  printf("File Attributes: %d\n",file_attributes );
+  printf("Reading Data \n");
+
+  unsigned char **data_array = malloc(SCREEN_WIDTH * sizeof(unsigned char*));
+  int i;
+  for(i = 0; i < SCREEN_WIDTH; i++){
+    data_array[i] = malloc(SCREEN_HEIGHT * sizeof(unsigned char));
+  }
+  
+  load_bmp(file_handle, data_array);
+
+  printf("Done Reading File \n");
+
+  printf("Number of reads: %d\n", times_read);
+
+  alt_up_pixel_buffer_dma_clear_screen(vga_buffer, 0);
+
+  while(1){
+    draw_bitmap(data_array);
+
+  }
+
+  free(data_array);
+  return 0;
 
 	/*
     lcdDevice = fopen( "/dev/lcd_display", "w" );
