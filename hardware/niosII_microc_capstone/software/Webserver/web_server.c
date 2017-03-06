@@ -112,7 +112,7 @@ struct inet_taskinfo wstask = {
 
 void load_bmp(int file_handle, unsigned char **data_array)
 {
-
+  int times_read;
   for(times_read = 0; times_read < BMP_OFFSET; times_read++){
     data = alt_up_sd_card_read(file_handle);
   }
@@ -145,11 +145,12 @@ void load_bmp(int file_handle, unsigned char **data_array)
  *    Draws a bitmap.                                                     *
  **************************************************************************/
 
-void draw_bitmap(unsigned char **data_array)
+void draw_bitmap(unsigned char **data_array, alt_up_pixel_buffer_dma_dev *vga_buffer)
 {
+  int x,y;
   for(y = 0; y < SCREEN_HEIGHT; y++){
     for(x = 0; x < SCREEN_WIDTH; x++){
-      alt_up_pixel_buffer_dma_draw(vga_buffer, data_array[x + SCREEN_HEIGHT*y],x,y);
+      alt_up_pixel_buffer_dma_draw(vga_buffer, data_array[x][y],x,y);
 
     }
   }
@@ -311,6 +312,52 @@ int main (int argc, char* argv[], char* envp[])
   /* Clear the RTOS timer */
   OSTimeSet(0);
   
+  alt_up_sd_card_dev *sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
+
+  alt_up_pixel_buffer_dma_dev *vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
+
+  if(vga_buffer == NULL){
+    printf("Could not instantiate VGA buffer");
+  }
+
+  if(sd_card == NULL){
+    printf("Error instantiating sd card core \n");
+  }
+
+  if(alt_up_sd_card_is_FAT16()){
+    printf("Card connected and formatted properly \n");
+  }
+
+  short int file_handle = alt_up_sd_card_fopen("test.bmp", false);
+  printf("File Handle: %d\n",file_handle );
+
+  short int file_attributes = alt_up_sd_card_get_attributes(file_handle);
+  printf("File Attributes: %d\n",file_attributes );
+  printf("Reading Data \n");
+
+  unsigned char **data_array = malloc(SCREEN_WIDTH * sizeof(unsigned char*));
+  int i;
+  for(i = 0; i < SCREEN_WIDTH; i++){
+    data_array[i] = malloc(SCREEN_HEIGHT * sizeof(unsigned char));
+  }
+  
+  load_bmp(file_handle, data_array);
+
+  printf("Done Reading File \n");
+
+  //printf("Number of reads: %d\n", times_read);
+
+  alt_up_pixel_buffer_dma_clear_screen(vga_buffer, 0);
+
+  draw_bitmap(data_array, vga_buffer);
+
+  for(i = 0; i < SCREEN_WIDTH; i++){
+    free(data_array[i]);
+  }
+
+  free(data_array);
+
+
   /* WSInitialTask will initialize the NicheStack TCP/IP Stack and then 
    * initialize the rest of the web server's tasks.
    */ 
@@ -416,51 +463,7 @@ void lcd_output_text( char text[20] )
 	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
 	alt_up_character_lcd_init(lcd);
 	alt_up_character_lcd_string(lcd, text);
-  alt_up_sd_card_dev *sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
-
-  alt_up_pixel_buffer_dma_dev *vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
-
-  if(vga_buffer == NULL){
-    printf("Could not instantiate VGA buffer");
-  }
-
-  if(sd_card == NULL){
-    printf("Error instantiating sd card core \n");
-  }
-
-  if(alt_up_sd_card_is_FAT16()){
-    printf("Card connected and formatted properly \n");
-  }
-
-  short int file_handle = alt_up_sd_card_fopen("test.bmp", false);
-  printf("File Handle: %d\n",file_handle );
-
-  short int file_attributes = alt_up_sd_card_get_attributes(file_handle);
-  printf("File Attributes: %d\n",file_attributes );
-  printf("Reading Data \n");
-
-  unsigned char **data_array = malloc(SCREEN_WIDTH * sizeof(unsigned char*));
-  int i;
-  for(i = 0; i < SCREEN_WIDTH; i++){
-    data_array[i] = malloc(SCREEN_HEIGHT * sizeof(unsigned char));
-  }
-  
-  load_bmp(file_handle, data_array);
-
-  printf("Done Reading File \n");
-
-  printf("Number of reads: %d\n", times_read);
-
-  alt_up_pixel_buffer_dma_clear_screen(vga_buffer, 0);
-
-  while(1){
-    draw_bitmap(data_array);
-
-  }
-
-  free(data_array);
-  return 0;
-
+ 
 	/*
     lcdDevice = fopen( "/dev/lcd_display", "w" );
     fprintf(lcdDevice, "\n\n%s", text);
