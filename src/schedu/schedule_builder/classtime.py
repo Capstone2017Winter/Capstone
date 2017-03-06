@@ -1,10 +1,16 @@
 import requests
 
 def ct_get_class_info(className):
+	"""
+	Get class info from the courses endpoint in classtime
+	"""
 	r = requests.get('https://classtime.herokuapp.com/api/v1/courses?q={"filters":[{"name":"asString","op":"equals","val":"'+className+'"}]}')
 	return r.json()
 
 def ct_get_class_sections(classId, termName):
+	"""
+	Get class sections from the sections endpoint in classtime
+	"""
 	term_code = ct_term_to_code_map(termName)
 	#python multi-line strings with replacement sucks... its going on one line
 	q = '{"institution": "ualberta","term": "'+term_code +'","courses": ["'+classId+'"],"busy-times":[],"electives": [],"preferences": {"start-early": 0,"no-marathons": 0,"day-classes": 0,"current-status": false,"obey-status": true}}'
@@ -13,6 +19,9 @@ def ct_get_class_sections(classId, termName):
 
 #this is a necessary evil, there is no easy way to convert from term to code
 def ct_term_to_code_map(termName):
+	"""
+	map a term name eg. FALL 2014 to a term code
+	"""
 	m = {   'FALL 2014':'1490',
 		'WINTER 2015':'1500',
 		'SPRING 2015':'1510',
