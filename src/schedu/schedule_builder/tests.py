@@ -19,9 +19,18 @@ class UserMethodTests(TestCase):
 
 class CourseInfoViewTests(TestCase):
 
-	def test_can_get_course_info(self):
+	def test_course_info_endpoint_exists(self):
 		"""
 		test that we can get a response from the course info endpoint
 		"""
 		response = self.client.get(reverse('class'), {'className':'MATH 100'})
 		self.assertEqual(response.status_code, 200)
+
+	def test_course_info_endpoint_has_objects(self):
+		"""
+		test that the course info endpoint returns some courses
+		"""
+		response = self.client.get(reverse('class'), {'className':'MATH 100'})
+		self.assertEqual(response.status_code, 200)
+		jsons = response.json()
+		self.assertTrue(jsons['num_results'] > 0)
