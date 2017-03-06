@@ -6,12 +6,18 @@ from django.contrib import admin
 import re #regex
 
 class Degree(models.Model):
+	"""
+	model representing a user's degree. ie: Computer Engineering
+	"""
 	name = models.CharField(max_length=50, primary_key=True)
 
 	def __str__(self):
 		return self.name
 
 class User(models.Model):
+	"""
+	model representing a user. The user is associated with a degree
+	"""
 	degree = models.ForeignKey(Degree, null=True)
 	name_regex = r'[a-zA-Z0-9]+'
 	name = models.CharField(max_length=100, primary_key=True)
@@ -20,9 +26,15 @@ class User(models.Model):
 		return self.name
 
 	def is_valid_name(s):
+		"""
+		validate that the user name is valid according to our regex
+		"""
 		return re.match(r'^' + User.name_regex + r'$', s)
 
 class Schedule(models.Model):
+	"""
+	model representing a schedule. A schedule has a reference to a user
+	"""	
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	creation_date = models.DateTimeField('date created', auto_now_add=True)
 	modified_date = models.DateTimeField('date modified', auto_now=True)
@@ -33,6 +45,9 @@ class Schedule(models.Model):
 		return 'user:{}, year:{}, term:{}'.format(self.user, self.year, self.term)
 
 class MyClass(models.Model):
+	"""
+	model representing a class. A class can be associated with a degree
+	"""
 	degree = models.ManyToManyField(Degree)
 	class_code = models.CharField(max_length=10, primary_key=True)
 	class_description = models.CharField(max_length=500)
@@ -41,6 +56,10 @@ class MyClass(models.Model):
 		return self.class_code
 
 class ClassSection(models.Model):
+	"""
+	model representing a class section, ie: B1. A section
+	belongs to a class and can be associated with a schedule
+	"""
 	schedule = models.ManyToManyField(Schedule)
 	myclass = models.ForeignKey(MyClass, on_delete=models.CASCADE)
 	section_number = models.CharField(max_length=10) #eg EB2
@@ -50,6 +69,10 @@ class ClassSection(models.Model):
 		return 'class:{}, section:{}, section_type:{}'.format(self.myclass, self.section_number, self.section_type)
 
 class TimeSlot(models.Model):
+	"""
+	model representing a time slot. IE MWF 11:00AM-12:00PM.
+	it may be associated with a class section
+	"""
 	class_section = models.ManyToManyField(ClassSection)
 	time = models.TimeField()
 	day = models.CharField(max_length=20)
@@ -59,6 +82,9 @@ class TimeSlot(models.Model):
 		return 'time:{}, day:{}, duration:{}'.format(self.time, self.day, self.duration)
 
 class ScheduleImage(models.Model):
+	"""
+	model representing a image of a created schedule
+	"""
 	schedule = models.ForeignKey(Schedule, on_delete=models.CASCADE) #warning, if image is stored on file system, it must be manually deleted
 	creation_date = models.DateTimeField('date created', auto_now_add=True)
 
