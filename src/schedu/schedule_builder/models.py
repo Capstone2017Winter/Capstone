@@ -1,3 +1,10 @@
+"""
+This file defines the django 'models' used in the application.
+The models are python classes which will be mapped to and from
+entries in database tables. The models represent the objects
+which are persistent in the web application.
+See: https://docs.djangoproject.com/en/1.10/topics/db/models/
+"""
 from __future__ import unicode_literals
 
 from django.db import models
