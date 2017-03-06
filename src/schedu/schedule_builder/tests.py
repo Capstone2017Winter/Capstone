@@ -47,10 +47,20 @@ class CourseInfoViewTests(TestCase):
 
 	def test_course_info_endpoint_objects_have_description(self):
 		"""
-		test that the course info endpoint returns some courses
+		test that the course info objects returned have a description
 		"""
 		response = self.client.get(reverse('class'), {'className':'MATH 100'})
 		self.assertEqual(response.status_code, 200)
 		jsons = response.json()
 		course_info = jsons['objects'][0]
 		self.assertTrue('courseDescription' in course_info)
+
+	def test_course_info_endpoint_objects_have_term(self):
+		"""
+		test that the course info objects returned have a term
+		"""
+		response = self.client.get(reverse('class'), {'className':'MATH 100'})
+		self.assertEqual(response.status_code, 200)
+		jsons = response.json()
+		course_info = jsons['objects'][0]
+		self.assertTrue('term' in course_info)
