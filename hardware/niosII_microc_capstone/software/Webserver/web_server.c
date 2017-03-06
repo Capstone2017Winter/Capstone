@@ -118,7 +118,7 @@ void load_bmp(int file_handle, unsigned char **data_array)
   }
 
   int x, y;
-  unsigned char byte_b, byte_g, byte_r;
+  short int byte_b, byte_g, byte_r;
   /* read the bitmap. Bytes are red in BRG format and then translated into RGB */
   for(y=(SCREEN_HEIGHT-1);y>+ 0;y--){
     for(x=0;x<SCREEN_WIDTH;x++)  {
