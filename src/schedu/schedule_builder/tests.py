@@ -64,3 +64,73 @@ class CourseInfoViewTests(TestCase):
 		jsons = response.json()
 		course_info = jsons['objects'][0]
 		self.assertTrue('term' in course_info)
+
+class CourseSectionViewTests(TestCase):
+
+	def test_course_section_endpoint_exists(self):
+		"""
+		test that we can get a response from the course section endpoint
+		"""
+		response = self.client.get(reverse('section'), {'courseId':'006768', 'termName':'FALL 2016'})
+		self.assertEqual(response.status_code, 200)
+
+	def test_course_section_endpoint_has_objects(self):
+		"""
+		test that the course info endpoint returns some sections
+		"""
+		response = self.client.get(reverse('section'), {'courseId':'006768', 'termName':'FALL 2016'})
+		self.assertEqual(response.status_code, 200)	
+		jsons = response.json()
+		self.assertTrue(jsons['num_results'] > 0)
+
+	def test_course_section_endpoint_has_sections(self):
+		"""
+		test that the returned objects contains sections
+		"""
+		response = self.client.get(reverse('section'), {'courseId':'006768', 'termName':'FALL 2016'})
+		self.assertEqual(response.status_code, 200)
+		jsons = response.json()
+		self.assertTrue('sections' in jsons['objects'][0])
+
+	def test_course_section_endpoint_section_has_component(self):
+		"""
+		test that the returned sections have a component.
+		the component denotes what section type it is such as
+		lecture, seminar, or lab.
+		"""
+		response = self.client.get(reverse('section'), {'courseId':'006768', 'termName':'FALL 2016'})
+		self.assertEqual(response.status_code, 200)
+		jsons = response.json()
+		section = jsons['objects'][0]['sections'][0]
+		self.assertTrue('component' in section)
+
+	def test_course_section_endpoint_section_has_times(self):
+		"""
+		test that the returned sections have start time and end time
+		"""
+		response = self.client.get(reverse('section'), {'courseId':'006768', 'termName':'FALL 2016'})
+		self.assertEqual(response.status_code, 200)
+		jsons = response.json()
+		section = jsons['objects'][0]['sections'][0]
+		self.assertTrue('startTime' in section)
+		self.assertTrue('endTime' in section)
+
+	def test_course_section_endpoint_section_has_section_number(self):
+		"""
+		test that the returned sections have a section number such as 'b1'
+		"""
+		response = self.client.get(reverse('section'), {'courseId':'006768', 'termName':'FALL 2016'})
+		self.assertEqual(response.status_code, 200)
+		jsons = response.json()
+		section = jsons['objects'][0]['sections'][0]
+		self.assertTrue('section' in section)
+
+	def test_course_section_endpoint_section_has_day(self):
+		"""
+		test that the returned sections have a day such as 'MWF'
+		"""
+		response = self.client.get(reverse('section'), {'courseId':'006768', 'termName':'FALL 2016'})
+		self.assertEqual(response.status_code, 200)
+		jsons = response.json()
+		section = jsons['objects'][0]['sections'][0]
+		self.assertTrue('day' in section)
