@@ -8,7 +8,6 @@ def ct_get_class_sections(classId, termName):
 	term_code = ct_term_to_code_map(termName)
 	#python multi-line strings with replacement sucks... its going on one line
 	q = '{"institution": "ualberta","term": "'+term_code +'","courses": ["'+classId+'"],"busy-times":[],"electives": [],"preferences": {"start-early": 0,"no-marathons": 0,"day-classes": 0,"current-status": false,"obey-status": true}}'
-	print(q)
 	r = requests.get('https://classtime.herokuapp.com/api/v1/generate-schedules?q='+q)
 	return r.json()
 
