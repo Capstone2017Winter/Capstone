@@ -1,3 +1,9 @@
+"""
+The urls.py file defines what website urls
+map to the corresponding views in views.py which
+handles requests.
+See: https://docs.djangoproject.com/en/1.10/topics/http/views/
+"""
 from django.conf.urls import url
 
 from . import views, models

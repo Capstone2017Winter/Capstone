@@ -1,3 +1,9 @@
+"""
+This file contains the views which handles requests to the web server.
+Some requests are simple such as requesting a http file to render, others
+are more complex such as requesting class information or saving a schedule.
+"""
+
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect, HttpResponseBadRequest
 from django.urls import reverse
@@ -6,8 +12,7 @@ import json
 import re #regex
 
 from .models import *
-from .classtime import * 
-# Create your views here.
+from .classtime import *
 
 def index(request):
     return render(request, 'schedule_builder/index.html')
@@ -16,14 +21,17 @@ def image(request):
     return render(request, 'schedule_builder/image.html')
 
 def user(request, username):
+    """
+    handle request to display user page
+    """
     user = get_object_or_404(User, pk=username)
-    if request.method == "GET":
+    if request.method == "GET": # handle getting a user
         return render(request, 'schedule_builder/user.html', {
             'user':user,
         })
-    else:
+    else: # handle creating the user
         sched_id = None
-        if 'year' in request.POST and 'term' in request.POST:
+        if 'year' in request.POST and 'term' in request.POST: # create a new schedule
             new_sched = user.schedule_set.create(year=request.POST['year'], term=request.POST['term'])
             new_sched.save()
             sched_id = new_sched.id
@@ -35,25 +43,22 @@ def user(request, username):
         return HttpResponseRedirect(reverse('schedule', args=(user.name, sched_id,))) 
 
 def schedule(request, username, schedule_id):
+    """
+    handle request for rendering a schedule page
+    """
     schedule = get_object_or_404(Schedule, user__name=username, id=schedule_id)
     return render(request, 'schedule_builder/schedule.html', {'schedule':schedule,})
 
-#work in progress, this will reload a saved schedule
-def load_schedule(request):
-    get = request.GET.copy()
-    if 'username' in get and 'year' in get and 'term' in get:
-        schedule = get_object_or_404(Schedule, user__name=get['username'], year='year', term='term')
-        
-    else:
-        raise HttpResponseBadRequest('Invalid GET Parameters')
-
 def home(request):
+    """
+    handle request for website home page
+    """
     user = None
     try:
-        user = User.objects.get(pk=request.POST['user'])
+        user = User.objects.get(pk=request.POST['user']) #try to get user
     except (KeyError):
-        return render(request, 'schedule_builder/home.html')
-    except (User.DoesNotExist):
+        return render(request, 'schedule_builder/home.html') 
+    except (User.DoesNotExist): # if user doesn't exist, we create it
         if not User.is_valid_name(request.POST['user']):
             return render(request, 'schedule_builder/home.html', {
                 'error_message': "Invalid user name. User names can only contain letters and numbers",
@@ -63,17 +68,24 @@ def home(request):
     return HttpResponseRedirect(reverse('user', args=(user.name,)))
 
 def course_info(request):
+    """
+    handle request for to retrieve course info for
+    a specific class name
+    """
     if request.method == "GET":
         get = request.GET.copy()
         if 'className' in get:
             className = get['className']
-            params = ct_get_class_info(className)
-            #create class and do stuff with params
+            params = ct_get_class_info(className) # call the classtime methods
             return HttpResponse(json.dumps(params),
-                                content_type="application/json")
+                                content_type="application/json") # dump classtime data into json
     return HttpResponseBadRequest('Invalid GET Parmeters')
 
 def course_sections(request):
+    """
+    handle request to get course section info
+    for a specific course id and term
+    """
     if request.method == "GET":
         get = request.GET.copy()
         if 'courseId' in get and 'termName' in get:
@@ -85,11 +97,14 @@ def course_sections(request):
     return HttpResponseBadRequest('Invalid GET Parameters')
 
 def save_schedule(request):
+    """
+    handle request to save schedule
+    """
     if request.method == "POST":
         post = request.POST.copy()
-        scheduleId = post['scheduleId']
-        classList = post.getlist('classArray[]')
-      
+        scheduleId = post['scheduleId'] # get schedule id to save
+        classList = post.getlist('classArray[]') # get classes to save
+        
         schedule = get_object_or_404(Schedule, pk=scheduleId)
         schedule.classsection_set.clear()
         for classToSaveJSON in classList:
@@ -139,6 +154,9 @@ def save_schedule(request):
                 mySection.schedule.add(schedule)
 
 def load_schedule(request):
+    """
+    handle request to load a schedule that was previously saved
+    """
     if request.method == "GET":
         get = request.GET.copy()
         if not 'scheduleId' in get:
