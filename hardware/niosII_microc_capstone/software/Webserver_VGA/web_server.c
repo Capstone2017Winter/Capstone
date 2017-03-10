@@ -293,7 +293,7 @@ int main (int argc, char* argv[], char* envp[])
    * initialize the rest of the web server's tasks.
    */ 
 
-  alt_up_sd_card_dev *sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
+    alt_up_sd_card_dev *sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
 
     alt_up_pixel_buffer_dma_dev *vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
 
