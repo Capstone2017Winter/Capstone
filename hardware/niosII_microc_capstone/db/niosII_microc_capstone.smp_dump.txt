@@ -1,4 +1,11 @@
 
+State Machine - |niosII_microc_capstone|niosII_system:u0|altera_merlin_burst_adapter:burst_adapter_011|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
 State Machine - |niosII_microc_capstone|niosII_system:u0|altera_merlin_burst_adapter:burst_adapter_010|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
 Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
 state.ST_IDLE 0 0 0 0 
@@ -211,7 +218,7 @@ s_lcd.LCD_STATE_2_HOLD 0 0 1 0 1
 s_lcd.LCD_STATE_3_END 0 1 0 0 1 
 s_lcd.LCD_STATE_0_OPERATION 1 0 0 0 1 
 
-State Machine - |niosII_microc_capstone|niosII_system:u0|niosII_system_nios2_qsys_0:nios2_qsys_0|niosII_system_nios2_qsys_0_nios2_oci:the_niosII_system_nios2_qsys_0_nios2_oci|niosII_system_nios2_qsys_0_jtag_debug_module_wrapper:the_niosII_system_nios2_qsys_0_jtag_debug_module_wrapper|niosII_system_nios2_qsys_0_jtag_debug_module_tck:the_niosII_system_nios2_qsys_0_jtag_debug_module_tck|DRsize
+State Machine - |niosII_microc_capstone|niosII_system:u0|niosII_system_nios2_0:nios2_0|niosII_system_nios2_0_nios2_oci:the_niosII_system_nios2_0_nios2_oci|niosII_system_nios2_0_jtag_debug_module_wrapper:the_niosII_system_nios2_0_jtag_debug_module_wrapper|niosII_system_nios2_0_jtag_debug_module_tck:the_niosII_system_nios2_0_jtag_debug_module_tck|DRsize
 Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
 DRsize.000 0 0 0 0 0 0 
 DRsize.001 0 0 0 0 1 1 

@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 3, 2017 3:00:24 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1488578424607</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 9, 2017 5:44:11 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1489106651814</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosII_system.sopcinfo</SopcDesignFile>
@@ -146,7 +146,7 @@
                 <SettingName>hal.linker.exception_stack_memory_region_name</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>sdram_0</Value>
+                <Value>generic_tristate_controller_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'exception_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'exception_stack' memory region.</Description>
@@ -182,7 +182,7 @@
                 <SettingName>hal.linker.interrupt_stack_memory_region_name</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>sdram_0</Value>
+                <Value>onchip_memory2_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'interrupt_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'interrupt_stack' memory region.</Description>
@@ -1812,55 +1812,55 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sram_0</slaveDescriptor>
-                <addressRange>0x01880000 - 0x018FFFFF</addressRange>
+                <addressRange>0x01800000 - 0x0187FFFF</addressRange>
                 <addressSpan>524288</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
-                <addressRange>0x01904000 - 0x01907FFF</addressRange>
+                <addressRange>0x01884000 - 0x01887FFF</addressRange>
                 <addressSpan>16384</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>Altera_UP_SD_Card_Avalon_Interface_0</slaveDescriptor>
-                <addressRange>0x01909000 - 0x019093FF</addressRange>
+                <addressRange>0x01889000 - 0x018893FF</addressRange>
                 <addressSpan>1024</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>timer_0</slaveDescriptor>
-                <addressRange>0x01909400 - 0x0190941F</addressRange>
+                <addressRange>0x01889400 - 0x0188941F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>video_pixel_buffer_dma_0</slaveDescriptor>
-                <addressRange>0x01909420 - 0x0190942F</addressRange>
+                <addressRange>0x01889420 - 0x0188942F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>DM9000A</slaveDescriptor>
-                <addressRange>0x01909430 - 0x01909437</addressRange>
+                <slaveDescriptor>DM9000A_IF_0</slaveDescriptor>
+                <addressRange>0x01889430 - 0x01889437</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x01909438 - 0x0190943F</addressRange>
+                <addressRange>0x01889438 - 0x0188943F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x01909440 - 0x01909447</addressRange>
+                <addressRange>0x01889440 - 0x01889447</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>character_lcd_0</slaveDescriptor>
-                <addressRange>0x01909448 - 0x01909449</addressRange>
+                <addressRange>0x01889448 - 0x01889449</addressRange>
                 <addressSpan>2</addressSpan>
                 <attributes/>
         </MemoryMap>

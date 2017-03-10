@@ -33,6 +33,7 @@
 
 #define EXT_FLASH_NAME GENERIC_TRISTATE_CONTROLLER_0_NAME
 #define EXT_FLASH_BASE GENERIC_TRISTATE_CONTROLLER_0_BASE
+#define FAKE_SER_NO "040800017"
 
 #define IP4_ADDR(ipaddr, a,b,c,d) ipaddr = \
     htonl((((alt_u32)(a & 0xff) << 24) | ((alt_u32)(b & 0xff) << 16) | \
@@ -75,7 +76,7 @@ void die_with_error(char err_msg[DIE_WITH_ERROR_BUFFER])
 /*
 * get_serial_number
 *
-* Enter fake 9-digit number (040800017) for the program to generate MAC address
+* Prompt user to enter 9-digit serial number. 
 *
 */
 alt_u32 get_serial_number (void)
@@ -83,20 +84,27 @@ alt_u32 get_serial_number (void)
     alt_u32 ser_num = 0;
     char serial_number[9] = "040800017";
     int i = 0;
-
-    for(i=0; i<9; i++)
+    
+    while(!ser_num)
     {
-    	if (isdigit(serial_number[i]))
-    	{
-    		ser_num *= 10;
-    		ser_num += serial_number[i] - '0';
-    	}
-    	else
-    	{
-    		ser_num = 0;
-    		printf("Serial number only contains decimal digits and is non-zero\n");
-    		break;
-    	}
+        printf("Please enter your 9-digit serial number. This is printed on a \n");
+        printf("label under your Nios dev. board. The first 3 digits of the \n");
+        printf("label are ASJ and the serial number follows this.\n -->");
+                
+        for(i=0; i<9; i++)
+        {
+            if (isdigit(serial_number[i]))
+            {
+                ser_num *= 10;
+                ser_num += serial_number[i] - '0';
+            }
+            else
+            {
+                ser_num = 0;
+                printf("Serial number only contains decimal digits and is non-zero\n");
+                break;
+            }
+        }
     }
     
     return ser_num;

@@ -3,8 +3,9 @@
 
 #include "alt_iniche_dev.h"
 
-#define DM9000A_INST_BASE DM9000A_BASE
-#define DM9000A_INST_IRQ DM9000A_IRQ
+#define DM9000A_INST_BASE DM9000A_IF_0_BASE
+#define DM9000A_INST_IRQ DM9000A_IF_0_IRQ
+
 
 #ifdef __cplusplus
 extern "C"

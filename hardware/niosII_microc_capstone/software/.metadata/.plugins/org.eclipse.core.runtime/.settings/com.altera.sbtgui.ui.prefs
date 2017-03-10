@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage.defaultLocation=/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/vga
-newSoftwareExampleWizardPage.sopcinfoFile=/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/niosII_system.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/vga_bsp
+newSoftwareExampleWizardPage.defaultLocation=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_VGA
+newSoftwareExampleWizardPage.sopcinfoFile=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/niosII_system.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_VGA_bsp

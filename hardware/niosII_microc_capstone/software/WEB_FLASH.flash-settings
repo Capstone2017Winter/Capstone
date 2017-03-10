@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_23" class="java.beans.XMLDecoder"> 
+ <object class="com.altera.embeddedsw.utilities.bean.PersistModels"> 
+  <void property="filesModels"> 
+   <void method="add"> 
+    <object class="com.altera.embeddedsw.flash.model.internal.FileModel"> 
+     <void property="baseAddress"> 
+      <string>0x1400000</string> 
+     </void> 
+     <void property="bootloader"> 
+      <string>/OPT/altera/12.1/nios2eds/components/altera_nios2/boot_loader_cfi.srec</string> 
+     </void> 
+     <void property="cpuResetAddress"> 
+      <string>0x1400000</string> 
+     </void> 
+     <void property="endAddress"> 
+      <string>0x1800000</string> 
+     </void> 
+     <void property="extraArgs"> 
+      <string></string> 
+     </void> 
+     <void property="fileType"> 
+      <object class="com.altera.embeddedsw.flash.model.IMemoryFilesModel$FileType" method="valueOf"> 
+       <string>ELF</string> 
+      </object> 
+     </void> 
+     <void property="filename"> 
+      <string>/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_VGA/Webserver_VGA.elf</string> 
+     </void> 
+     <void property="memoryName"> 
+      <string>generic_tristate_controller_0</string> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+  <void id="LinkedHashMap0" property="map"> 
+   <void method="put"> 
+    <string>VERSION</string> 
+    <string>12.1sp1</string> 
+   </void> 
+   <void method="put"> 
+    <string>BUILD</string> 
+    <string>243</string> 
+   </void> 
+   <void method="put"> 
+    <string>sopcinfoFile</string> 
+    <string>/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/niosII_system.sopcinfo</string> 
+   </void> 
+   <void method="put"> 
+    <string>physicalCpuName</string> 
+    <string>nios2_0</string> 
+   </void> 
+   <void method="put"> 
+    <string>generateFiles</string> 
+    <string>true</string> 
+   </void> 
+   <void method="put"> 
+    <string>programFlash</string> 
+    <string>true</string> 
+   </void> 
+   <void method="put"> 
+    <string>bspFile</string> 
+    <string>/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_VGA_bsp/settings.bsp</string> 
+   </void> 
+   <void method="put"> 
+    <string>flashFilesDir</string> 
+    <string>/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_VGA_bsp/flash</string> 
+   </void> 
+   <void method="put"> 
+    <string>scriptDir</string> 
+    <string>/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_VGA_bsp/script</string> 
+   </void> 
+   <void method="put"> 
+    <string>eraseAllEnabled</string> 
+    <string>false</string> 
+   </void> 
+   <void method="put"> 
+    <string>runFromResetEnabled</string> 
+    <string>false</string> 
+   </void> 
+   <void method="put"> 
+    <string>acceptBadSysId</string> 
+    <string>false</string> 
+   </void> 
+   <void method="put"> 
+    <string>acceptBadTimestamp</string> 
+    <string>false</string> 
+   </void> 
+   <void method="put"> 
+    <string>processorCableName</string> 
+    <string>USB-Blaster on localhost [2-1.7]</string> 
+   </void> 
+   <void method="put"> 
+    <string>processorDeviceIndex</string> 
+    <string>1</string> 
+   </void> 
+   <void method="put"> 
+    <string>processorInstanceId</string> 
+    <string>0</string> 
+   </void> 
+   <void method="put"> 
+    <string>userQpfFile</string> 
+    <string>/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/niosII_microc_capstone.qpf</string> 
+   </void> 
+  </void> 
+  <void property="map"> 
+   <object idref="LinkedHashMap0"/> 
+  </void> 
+ </object> 
+</java> 

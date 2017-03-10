@@ -1,50 +1,55 @@
 	component niosII_system is
 		port (
-			clk_clk                                                     : in    std_logic                     := 'X';             -- clk
-			reset_reset_n                                               : in    std_logic                     := 'X';             -- reset_n
-			character_lcd_0_external_interface_DATA                     : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- DATA
-			character_lcd_0_external_interface_ON                       : out   std_logic;                                        -- ON
-			character_lcd_0_external_interface_BLON                     : out   std_logic;                                        -- BLON
-			character_lcd_0_external_interface_EN                       : out   std_logic;                                        -- EN
-			character_lcd_0_external_interface_RS                       : out   std_logic;                                        -- RS
-			character_lcd_0_external_interface_RW                       : out   std_logic;                                        -- RW
-			sram_0_external_interface_DQ                                : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DQ
-			sram_0_external_interface_ADDR                              : out   std_logic_vector(17 downto 0);                    -- ADDR
-			sram_0_external_interface_LB_N                              : out   std_logic;                                        -- LB_N
-			sram_0_external_interface_UB_N                              : out   std_logic;                                        -- UB_N
-			sram_0_external_interface_CE_N                              : out   std_logic;                                        -- CE_N
-			sram_0_external_interface_OE_N                              : out   std_logic;                                        -- OE_N
-			sram_0_external_interface_WE_N                              : out   std_logic;                                        -- WE_N
-			dm9000a_if_0_s1_export_DATA                                 : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DATA
-			dm9000a_if_0_s1_export_CMD                                  : out   std_logic;                                        -- CMD
-			dm9000a_if_0_s1_export_RD_N                                 : out   std_logic;                                        -- RD_N
-			dm9000a_if_0_s1_export_WR_N                                 : out   std_logic;                                        -- WR_N
-			dm9000a_if_0_s1_export_CS_N                                 : out   std_logic;                                        -- CS_N
-			dm9000a_if_0_s1_export_RST_N                                : out   std_logic;                                        -- RST_N
-			dm9000a_if_0_s1_export_INT                                  : in    std_logic                     := 'X';             -- INT
-			dm9000a_if_0_s1_export_CLK                                  : out   std_logic;                                        -- CLK
-			video_vga_controller_0_external_interface_CLK               : out   std_logic;                                        -- CLK
-			video_vga_controller_0_external_interface_HS                : out   std_logic;                                        -- HS
-			video_vga_controller_0_external_interface_VS                : out   std_logic;                                        -- VS
-			video_vga_controller_0_external_interface_BLANK             : out   std_logic;                                        -- BLANK
-			video_vga_controller_0_external_interface_SYNC              : out   std_logic;                                        -- SYNC
-			video_vga_controller_0_external_interface_R                 : out   std_logic_vector(9 downto 0);                     -- R
-			video_vga_controller_0_external_interface_G                 : out   std_logic_vector(9 downto 0);                     -- G
-			video_vga_controller_0_external_interface_B                 : out   std_logic_vector(9 downto 0);                     -- B
-			altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_cmd   : inout std_logic                     := 'X';             -- b_SD_cmd
-			altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat   : inout std_logic                     := 'X';             -- b_SD_dat
-			altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat3  : inout std_logic                     := 'X';             -- b_SD_dat3
-			altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock : out   std_logic;                                        -- o_SD_clock
-			sdram_0_wire_addr                                           : out   std_logic_vector(11 downto 0);                    -- addr
-			sdram_0_wire_ba                                             : out   std_logic_vector(1 downto 0);                     -- ba
-			sdram_0_wire_cas_n                                          : out   std_logic;                                        -- cas_n
-			sdram_0_wire_cke                                            : out   std_logic;                                        -- cke
-			sdram_0_wire_cs_n                                           : out   std_logic;                                        -- cs_n
-			sdram_0_wire_dq                                             : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
-			sdram_0_wire_dqm                                            : out   std_logic_vector(1 downto 0);                     -- dqm
-			sdram_0_wire_ras_n                                          : out   std_logic;                                        -- ras_n
-			sdram_0_wire_we_n                                           : out   std_logic;                                        -- we_n
-			up_clocks_0_sdram_clk_clk                                   : out   std_logic                                         -- clk
+			clk_clk                                                                          : in    std_logic                     := 'X';             -- clk
+			reset_reset_n                                                                    : in    std_logic                     := 'X';             -- reset_n
+			character_lcd_0_external_interface_DATA                                          : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- DATA
+			character_lcd_0_external_interface_ON                                            : out   std_logic;                                        -- ON
+			character_lcd_0_external_interface_BLON                                          : out   std_logic;                                        -- BLON
+			character_lcd_0_external_interface_EN                                            : out   std_logic;                                        -- EN
+			character_lcd_0_external_interface_RS                                            : out   std_logic;                                        -- RS
+			character_lcd_0_external_interface_RW                                            : out   std_logic;                                        -- RW
+			sram_0_external_interface_DQ                                                     : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DQ
+			sram_0_external_interface_ADDR                                                   : out   std_logic_vector(17 downto 0);                    -- ADDR
+			sram_0_external_interface_LB_N                                                   : out   std_logic;                                        -- LB_N
+			sram_0_external_interface_UB_N                                                   : out   std_logic;                                        -- UB_N
+			sram_0_external_interface_CE_N                                                   : out   std_logic;                                        -- CE_N
+			sram_0_external_interface_OE_N                                                   : out   std_logic;                                        -- OE_N
+			sram_0_external_interface_WE_N                                                   : out   std_logic;                                        -- WE_N
+			dm9000a_if_0_s1_export_DATA                                                      : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DATA
+			dm9000a_if_0_s1_export_CMD                                                       : out   std_logic;                                        -- CMD
+			dm9000a_if_0_s1_export_RD_N                                                      : out   std_logic;                                        -- RD_N
+			dm9000a_if_0_s1_export_WR_N                                                      : out   std_logic;                                        -- WR_N
+			dm9000a_if_0_s1_export_CS_N                                                      : out   std_logic;                                        -- CS_N
+			dm9000a_if_0_s1_export_RST_N                                                     : out   std_logic;                                        -- RST_N
+			dm9000a_if_0_s1_export_INT                                                       : in    std_logic                     := 'X';             -- INT
+			dm9000a_if_0_s1_export_CLK                                                       : out   std_logic;                                        -- CLK
+			video_vga_controller_0_external_interface_CLK                                    : out   std_logic;                                        -- CLK
+			video_vga_controller_0_external_interface_HS                                     : out   std_logic;                                        -- HS
+			video_vga_controller_0_external_interface_VS                                     : out   std_logic;                                        -- VS
+			video_vga_controller_0_external_interface_BLANK                                  : out   std_logic;                                        -- BLANK
+			video_vga_controller_0_external_interface_SYNC                                   : out   std_logic;                                        -- SYNC
+			video_vga_controller_0_external_interface_R                                      : out   std_logic_vector(9 downto 0);                     -- R
+			video_vga_controller_0_external_interface_G                                      : out   std_logic_vector(9 downto 0);                     -- G
+			video_vga_controller_0_external_interface_B                                      : out   std_logic_vector(9 downto 0);                     -- B
+			altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_cmd                        : inout std_logic                     := 'X';             -- b_SD_cmd
+			altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat                        : inout std_logic                     := 'X';             -- b_SD_dat
+			altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat3                       : inout std_logic                     := 'X';             -- b_SD_dat3
+			altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock                      : out   std_logic;                                        -- o_SD_clock
+			sdram_0_wire_addr                                                                : out   std_logic_vector(11 downto 0);                    -- addr
+			sdram_0_wire_ba                                                                  : out   std_logic_vector(1 downto 0);                     -- ba
+			sdram_0_wire_cas_n                                                               : out   std_logic;                                        -- cas_n
+			sdram_0_wire_cke                                                                 : out   std_logic;                                        -- cke
+			sdram_0_wire_cs_n                                                                : out   std_logic;                                        -- cs_n
+			sdram_0_wire_dq                                                                  : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+			sdram_0_wire_dqm                                                                 : out   std_logic_vector(1 downto 0);                     -- dqm
+			sdram_0_wire_ras_n                                                               : out   std_logic;                                        -- ras_n
+			sdram_0_wire_we_n                                                                : out   std_logic;                                        -- we_n
+			tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_read_n_out       : out   std_logic_vector(0 downto 0);                     -- generic_tristate_controller_0_tcm_read_n_out
+			tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_data_out         : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- generic_tristate_controller_0_tcm_data_out
+			tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_chipselect_n_out : out   std_logic_vector(0 downto 0);                     -- generic_tristate_controller_0_tcm_chipselect_n_out
+			tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_write_n_out      : out   std_logic_vector(0 downto 0);                     -- generic_tristate_controller_0_tcm_write_n_out
+			tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_address_out      : out   std_logic_vector(21 downto 0);                    -- generic_tristate_controller_0_tcm_address_out
+			up_clocks_0_sdram_clk_clk                                                        : out   std_logic                                         -- clk
 		);
 	end component niosII_system;
 

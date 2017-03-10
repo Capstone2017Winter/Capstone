@@ -85,6 +85,15 @@ library ieee;
 		VGA_BLANK	:	out	std_LOGIC;
 		VGA_SYNC		:	out	std_LOGIC;
 		
+		-- FLASH
+		
+		FL_ADDR     :  out   std_logic_vector (21 downto 0);
+		FL_CE_N     :  out   std_logic_vector (0 downto 0);
+		FL_OE_N     :  out   std_logic_vector (0 downto 0);
+		FL_DQ     :  inout   std_logic_vector (7 downto 0);
+		FL_RST_N    :  out   std_logic_vector (0 downto 0);
+		FL_WE_N     :  out   std_logic_vector (0 downto 0);
+		
 		--SD Card
 		SD_CMD		:	inout	std_LOGIC;
 		SD_DAT		:	inout	std_LOGIC;
@@ -144,7 +153,12 @@ architecture structure of niosII_microc_capstone is
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_cmd   : inout std_logic                     := 'X';             -- b_SD_cmd
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat   : inout std_logic                     := 'X';             -- b_SD_dat
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat3  : inout std_logic                     := 'X';             -- b_SD_dat3
-            altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock : out   std_logic                                         -- o_SD_clock
+            altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock : out   std_logic;                                         -- o_SD_clock
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_address_out : out std_LOGIC_VECTOR(21 downto 0);
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_data_out : inout std_LOGIC_VECTOR(7 downto 0);
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_write_n_out : out std_LOGIC;
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_chipselect_n_out : out std_LOGIC;
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_read_n_out : out std_LOGIC		
         );
     end component niosII_system;
 
@@ -161,6 +175,7 @@ begin
 	
 	DRAM_UDQM <= DQM(1);
 	DRAM_LDQM <= DQM(0);
+	FL_RST_N(0)  <= '1';
 
 	--need to create proccess that will generate a 25 mhz clock for ethernet
 	process(CLOCK_50)
@@ -219,8 +234,13 @@ begin
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_cmd   => SD_CMD,   				  -- altera_up_sd_card_avalon_interface_0_conduit_end.b_SD_cmd
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat   => SD_DAT,   				  --                                                 .b_SD_dat
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat3  => SD_DAT3,  				  --                                                 .b_SD_dat3
-            altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock => SD_CLK  					  --                                                 .o_SD_clock
-        );
+            altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock => SD_CLK, 					  --                                                 .o_SD_clock
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_address_out => FL_ADDR,
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_data_out => FL_DQ,
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_write_n_out => FL_WE_N(0),
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_chipselect_n_out => FL_CE_N(0),
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_read_n_out => FL_OE_N(0)
+		  );
 
 end structure;
 

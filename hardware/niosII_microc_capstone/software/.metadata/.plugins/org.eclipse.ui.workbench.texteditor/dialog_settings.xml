@@ -13,8 +13,12 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="VIDEO" key="selection"/>
+		<item value="ip" key="selection"/>
 		<list key="findhistory">
+			<item value="ip"/>
+			<item value="Pack"/>
+			<item value="Pa"/>
+			<item value="DM9000A"/>
 			<item value="Video"/>
 		</list>
 		<list key="replacehistory">

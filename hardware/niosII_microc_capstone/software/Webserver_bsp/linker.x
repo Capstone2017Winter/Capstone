@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'niosII_system'
  * SOPC Builder design path: ../../niosII_system.sopcinfo
  *
- * Generated: Sat Feb 11 17:55:22 MST 2017
+ * Generated: Thu Mar 09 14:27:09 MST 2017
  */
 
 /*
@@ -53,14 +53,14 @@ MEMORY
     sdram_0 : ORIGIN = 0x800000, LENGTH = 8388608
     reset : ORIGIN = 0x1400000, LENGTH = 32
     generic_tristate_controller_0 : ORIGIN = 0x1400020, LENGTH = 4194272
-    onchip_memory2_0_BEFORE_EXCEPTION : ORIGIN = 0x1904000, LENGTH = 32
-    onchip_memory2_0 : ORIGIN = 0x1904020, LENGTH = 16352
+    onchip_memory2_0_BEFORE_EXCEPTION : ORIGIN = 0x1884000, LENGTH = 32
+    onchip_memory2_0 : ORIGIN = 0x1884020, LENGTH = 16352
 }
 
 /* Define symbols for each memory base-address */
 __alt_mem_sdram_0 = 0x800000;
 __alt_mem_generic_tristate_controller_0 = 0x1400000;
-__alt_mem_onchip_memory2_0 = 0x1904000;
+__alt_mem_onchip_memory2_0 = 0x1884000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",

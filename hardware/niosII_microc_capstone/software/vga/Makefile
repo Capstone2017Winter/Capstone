@@ -142,7 +142,7 @@ ACDS_VERSION := 12.1sp1
 ELF := vga.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := hello_ucosii.c
+C_SRCS := vga.c
 CXX_SRCS :=
 ASM_SRCS :=
 
