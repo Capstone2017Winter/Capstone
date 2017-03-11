@@ -81,9 +81,9 @@ class TimeSlot(models.Model):
 	it may be associated with a class section
 	"""
 	class_section = models.ManyToManyField(ClassSection)
-	time = models.TimeField()
+	start_time = models.TimeField()
+	end_time = models.TimeField()
 	day = models.CharField(max_length=20)
-	duration = models.DurationField()
 
 	def __str__(self):
 		return 'time:{}, day:{}, duration:{}'.format(self.time, self.day, self.duration)
