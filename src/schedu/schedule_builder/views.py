@@ -8,6 +8,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect, HttpResponseBadRequest
 from django.urls import reverse
 import json
+from datetime import datetime
 
 import re #regex
 
@@ -113,21 +114,24 @@ def save_schedule(request):
             lecture_section = classToSave['lecture'] if 'lecture' in classToSave else None
             seminar_section = classToSave['seminar'] if 'seminar' in classToSave else None
             lab_section = classToSave['lab'] if 'lab' in classToSave else None
-
+            date_time_format = '%I:%M %p'
             myclass = None
+
             #create class if it doesn't exist
+            courseName = course['name']
+            courseDescription = course['short'] + ' : ' + course['long']
             try:
-                courseName = course['name']
-                courseDesciption = course['short'] + ' : ' + course['long']
                 myclass = MyClass.objects.get(class_code=courseName)
             except (MyClass.DoesNotExist):
                 myclass = MyClass(class_code=courseName, class_description=courseDescription)             
                 myclass.save()
 
+            timeSlot = None
             #create lecture section if it doesn't exist and add it to schedule
             mySection = None
             if lecture_section != None:
                 lecture_code = lecture_section['code']
+
                 try:
                     mySection = ClassSection.objects.get(myclass=myclass, 
                                                      section_number=lecture_code, section_type='lecture')
@@ -135,6 +139,15 @@ def save_schedule(request):
                     mySection = myclass.classsection_set.create(section_number=lecture_code, section_type='lecture')
                     mySection.save()
                 mySection.schedule.add(schedule)
+                startTime = datetime.strptime(lecture_section['start'], date_time_format)
+                endTime = datetime.strptime(lecture_section['end'], date_time_format)
+                day = lecture_section['days']
+                try:
+                    timeSlot = TimeSlot.objects.get(start_time=startTime, end_time=endTime, day=day)
+                except (TimeSlot.DoesNotExist):
+                    timeSlot = mySection.timeslot_set.create(start_time=startTime, end_time=endTime, day=day)
+                    timeSlot.save()
+                timeSlot.class_section.add(mySection)
 
             #create seminar section if it doesn't exist and add it to schedule
             if seminar_section != None:
@@ -146,6 +159,15 @@ def save_schedule(request):
                     mySection = myclass.classsection_set.create(section_number=seminar_code, section_type='seminar')
                     mySection.save()
                 mySection.schedule.add(schedule)
+                startTime = datetime.strptime(seminar_section['start'], date_time_format)
+                endTime = datetime.strptime(seminar_section['end'], date_time_format)
+                day = seminar_section['days']
+                try:
+                    timeSlot = TimeSlot.objects.get(start_time=startTime, end_time=endTime, day=day)
+                except (TimeSlot.DoesNotExist):
+                    timeSlot = mySection.timeslot_set.create(start_time=startTime, end_time=endTime, day=day)
+                    timeSlot.save()
+                timeSlot.class_section.add(mySection)
 
             #create lab section if it doesn't exist and add it to schedule
             if lab_section != None:
@@ -157,6 +179,15 @@ def save_schedule(request):
                     mySection = myclass.classsection_set.create(section_number=lab_code, section_type='lab')
                     mySection.save()
                 mySection.schedule.add(schedule)
+                startTime = datetime.strptime(lab_section['start'], date_time_format)
+                endTime = datetime.strptime(lab_section['end'], date_time_format)
+                day = lab_section['days']
+                try:
+                    timeSlot = TimeSlot.objects.get(start_time=startTime, end_time=endTime, day=day)
+                except (TimeSlot.DoesNotExist):
+                    timeSlot = mySection.timeslot_set.create(start_time=startTime, end_time=endTime, day=day)
+                    timeSlot.save()
+                timeSlot.class_section.add(mySection)
 
 def load_schedule(request):
     """

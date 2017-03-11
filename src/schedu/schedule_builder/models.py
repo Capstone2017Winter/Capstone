@@ -80,13 +80,14 @@ class TimeSlot(models.Model):
 	model representing a time slot. IE MWF 11:00AM-12:00PM.
 	it may be associated with a class section
 	"""
+	TIME_INPUT_FORMATS = ['%I:%M %p',] #eg 4:30 PM
 	class_section = models.ManyToManyField(ClassSection)
 	start_time = models.TimeField()
 	end_time = models.TimeField()
 	day = models.CharField(max_length=20)
 
 	def __str__(self):
-		return 'time:{}, day:{}, duration:{}'.format(self.time, self.day, self.duration)
+		return 'start_time:{}, end_time:{}, day:{}'.format(self.start_time, self.end_time, self.day)
 
 class ScheduleImage(models.Model):
 	"""
