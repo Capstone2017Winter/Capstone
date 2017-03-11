@@ -330,10 +330,25 @@ function saveSchedule() {
 	var classArray = new Array(); // add with .push()
 	for (var key in window.added_courses) {
 		var course = window.added_courses[key];
-		var lecture = $("#" + course.varname + "_lecture").val();
-		var seminar = $("#" + course.varname + "_seminar").val();
-		var lab = $("#" + course.varname + "_lab").val();
-		var myClass = { courseName:course.name, lecture:lecture, seminar:seminar, lab:lab };
+		var lectureCode = $("#" + course.varname + "_lecture").val();
+		var seminarCode = $("#" + course.varname + "_seminar").val();
+		var labCode = $("#" + course.varname + "_lab").val();
+		var lecture;
+		var seminar;
+		var lab;
+		if (lectureCode != null) {
+			lecture = course.lectures[lectureCode];
+			lecture['code'] = lectureCode;
+	        }
+		if (seminarCode != null) {
+			seminar = course.seminars[seminarCode];
+			seminar['code'] = seminarCode;	
+		}
+		if (labCode != null) {
+			lab = course.labs[labCode];
+			lab['code'] = labCode;
+		}
+		var myClass = { course:course, lecture:lecture, seminar:seminar, lab:lab };
 		classArray.push(JSON.stringify(myClass));
 	}
 	var scheduleId = getScheduleId();	
