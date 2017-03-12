@@ -98,6 +98,21 @@ Content-Length: 2000\r\n\r\n\
 <center><h2>Nios II Web Server Hardware Report</h2>\
 </center>\
 "};
+
+static const alt_8 image_ready[] = {"\
+    </p>\r\n\
+    <strong>What Actions would you like to take?</strong></h2>\r\n\
+    <form method=\"post\" action=\"/SWEEP\" name=\"sweep\">\r\n\
+    <input name=\"action_group\" value=\"LEDs\" type=\"radio\"/>Unlock door<br />\r\n\
+    <input name=\"action_group\" value=\"Seven Segment Sweep\" type=\"radio\" />Release the Hounds!<br />\r\n\
+    <input class=\"adjust_font\" name=\"start\" value=\"Go\" type=\"submit\"/><br />\r\n\
+    </form>\r\n\
+    <form method=\"post\" action=\"/LCD\" name=\"LCD_Text\">Send a Message<br />\r\n\
+    <input name=\"lcd_text\" value=\"Hello World\" size=\"20\" maxlength=\"20\"/><br />\r\n\
+    <input class=\"adjust_font\" name=\"send_text\" value=\"Send\" type=\"submit\"/>  <br />\r\n\
+    </form>\r\n\
+    "};
+
 /* 
  * Mapping between pages to post to and functions to call: This allows us to
  * have the HTTP server respond to a POST requset saying "print" by calling
@@ -381,6 +396,18 @@ post_funcs upload_field =
 post_funcs flash_field =
 { "/reset_system.html",
    ProgFlashStub
+};
+
+post_funcs request_field =
+{
+  "/IMAGE_REQUEST",
+  ready_response
+}
+
+post_funcs image_field =
+{
+  "/IMAGE64",
+  download_image
 };
 
 #ifdef RECONFIG_REQUEST_PIO_NAME
