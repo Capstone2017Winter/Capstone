@@ -1,48 +1,31 @@
 {% load static %}
 <html>
-	<head>
+	<head id="head">
+		<div id="imageMe">
+			<h1>Hello World!</h1>
+		</div>	
 		<img id = "image" src="{% static 'schedule_builder/lena512.bmp' %}"> 
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="{% static 'schedule_builder/dom-to-image.js' %}"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				alert("Connection Started");
-				var canvas = document.getElementById("myCanvas");
-				var context = canvas.getContext("2d");
-				context.drawImage(document.getElementById("image"), 640, 480);
 
-				
-				var formData = new FormData();
-				var img = document.getElementById("image");
-				var encodedImage = canvas.toDataURL("image/bmp", 0.8);
-
-				formData.append("imageBase64", encodedImage);
-
-				var xhr = new XMLHttpRequest()
-				xhr.open("GET", "http://192.168.1.101", true);
-				xhr.send("IMAGE_REQUEST");
-				xhr.on
-
-				alert(encodedImage);
-				/*
-				xhr.addEventListener("load", function() {
-    				var reader = new FileReader();
-    				reader.readAsDataURL(xhr.response); 
-    				reader.addEventListener("loadend", function() {             
-        			console.log(reader.result);
-        			console.log("Sent data to server");
-
-    				});
-    			});
-				
-				*/
+				var img = document.getElementById("imageMe");
+				domtoimage.toBmp(img)
+					.then(function (dataUrl) {
+						formData.append("imageBase64", dataUrl);
+						var xhr = new XMLHttpRequest()
+						xhr.open("GET", "http://192.168.1.101", true);
+						xhr.send("IMAGE_REQUEST");
+						xhr.on
+						var newImg = '<img src="' + dataUrl + '"/>';
+						$('body').append(newImg);
+					});				
 			});
 		</script>
 	</head>
-	<body >
-		<canvas id = "myCanvas" width = "640" height="480"></canvas>
-		
-
+	<body id="body">
 	</body>
 </html>
