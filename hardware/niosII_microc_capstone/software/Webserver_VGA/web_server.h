@@ -40,7 +40,7 @@ struct http_form_data
 {
   alt_u8 LED_ON;
   alt_u8 SSD_ON;
-  char LCD_TEXT[20];
+  char LCD_TEXT[8192];
   alt_u8 File_Upload[20];
 };
 

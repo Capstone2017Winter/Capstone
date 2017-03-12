@@ -15,15 +15,16 @@
 				
 				var formData = new FormData();
 				var img = document.getElementById("image");
-				var encodedImage = canvas.toDataURL("image/bmp");
+				var encodedImage = canvas.toDataURL("image/bmp", 0.8);
 
 				formData.append("imageBase64", encodedImage);
 
 				var xhr = new XMLHttpRequest()
-				xhr.open("POST", "http://192.168.1.101", true);
-				xhr.send(formData);
+				xhr.open("GET", "http://192.168.1.101", true);
+				xhr.send("IMAGE_REQUEST");
+				xhr.on
 
-				alert("Image request sent");
+				alert(encodedImage);
 				/*
 				xhr.addEventListener("load", function() {
     				var reader = new FileReader();
