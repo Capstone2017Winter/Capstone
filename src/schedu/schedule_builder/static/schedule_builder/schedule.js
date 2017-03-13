@@ -365,10 +365,17 @@ function downloadScheduleToBoard() {
 	var scheduleNode = document.getElementById("scheduleDiv")
 	domtoimage.toBmp(scheduleNode)
 		.then(function (dataUrl) {
+			dataUrl = "/IMAGE_DATA/" + dataUrl;
 			var xhr = new XMLHttpRequest()
 			xhr.open("GET", "http://192.168.1.101", true)
 			xhr.send("IMAGE_REQUEST");
-			xhr.on
+			
+			if (xhr.status === 200) {
+				if (xhr.responseText() === "SEND_DATA") {
+					xhr.open("POST", "http://192.168.1.101", true);
+					xhr.send(dataUrl)
+				}
+			}
 		});
 }
 
