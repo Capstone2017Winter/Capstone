@@ -188,6 +188,7 @@ def save_schedule(request):
                     timeSlot = mySection.timeslot_set.create(start_time=startTime, end_time=endTime, day=day)
                     timeSlot.save()
                 timeSlot.class_section.add(mySection)
+    return HttpResponse(status=200)
 
 def load_schedule(request):
     """

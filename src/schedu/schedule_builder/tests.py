@@ -1,6 +1,7 @@
 from django.test import TestCase
 from .models import *
 from django.urls import reverse
+import json
 
 class UserMethodTests(TestCase):
 
@@ -134,3 +135,35 @@ class CourseSectionViewTests(TestCase):
 		jsons = response.json()
 		section = jsons['objects'][0]['sections'][0]
 		self.assertTrue('day' in section)
+
+class SaveScheduleTests(TestCase):
+	
+	def test_save_schedule_endpoint_exists(self):
+		"""
+		test that we can get a response from the save schedule endpoint
+		"""
+		response = self.client.get(reverse('save'))
+		self.assertEqual(response.status_code, 200)
+
+	def test_save_schedule_enpoint_can_save_lecture(self):
+		"""
+		test that the save schedule can save a course with only a lecture section
+		"""
+		scheduleId = '1'
+
+		courseName = 'test_course'
+		courseShortDescription = 'Test Description'
+		courseLongDescription = 'This is a test class description'
+
+		lectureCode = 'B1'
+		lectureStart = '12:00 PM'
+		lectureEnd = '12:50 PM'
+		lectureDays = 'MWF'
+
+		course = {'name':courseName, 'short':courseShortDescription, 'long':courseLongDescription}
+		lecture = {'code':lectureCode, 'start':lectureStart, 'end':lectureEnd, 'days':lectureDays }
+
+		data = {'scheduleId':scheduleId, 'classArray[]':[json.dumps({'course':course, 'lecture':lecture})]}
+		response = self.client.post(reverse('save'), data)
+		schedule = Schedule.objects.get(pk=scheduleId)
+		
