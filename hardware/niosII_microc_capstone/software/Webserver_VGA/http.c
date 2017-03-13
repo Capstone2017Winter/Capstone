@@ -39,8 +39,6 @@
   #define ALT_DEBUG_ASSERT(a) 
 #endif /* DEBUG */
 
-extern altera_up_sd_card_dev* sd_card;
-extern alt_up_pixel_buffer_dma_dev* vga_buffer;
 
 /* 
  * TX & RX buffers. 

@@ -295,8 +295,8 @@ int main (int argc, char* argv[], char* envp[])
    * initialize the rest of the web server's tasks.
    */ 
 
-    altera_up_sd_card_dev* sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
-    alt_up_pixel_buffer_dma_dev* vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
+    sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
+    vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
 
     if(vga_buffer == NULL){
       printf("Could not instantiate VGA buffer");
@@ -339,7 +339,10 @@ int main (int argc, char* argv[], char* envp[])
 
     free(data_array);
 
-  error_code = OSTaskCreateExt(WSInitialTask,
+    if(alt_up_sd_card_fclose(short int file_handle)){
+      printf("Test file closed");
+    }
+    error_code = OSTaskCreateExt(WSInitialTask,
                              NULL,
                              (void *)&WSInitialTaskStk[TASK_STACKSIZE-1],
                              WS_INITIAL_TASK_PRIO,
@@ -348,18 +351,18 @@ int main (int argc, char* argv[], char* envp[])
                              TASK_STACKSIZE,
                              NULL,
                              0);
-  alt_uCOSIIErrorHandler(error_code, 0);
+    alt_uCOSIIErrorHandler(error_code, 0);
 
 
-  /*
-   * As with all MicroC/OS-II designs, once the initial thread(s) and 
-   * associated RTOS resources are declared, we start the RTOS. That's it!
-   */
-  OSStart();
-  
-  while(1); /* Correct Program Flow never gets here. */
+    /*
+     * As with all MicroC/OS-II designs, once the initial thread(s) and 
+     * associated RTOS resources are declared, we start the RTOS. That's it!
+     */
+    OSStart();
+    
+    while(1); /* Correct Program Flow never gets here. */
 
-  return -1;
+    return -1;
 }
 
 static void WSCreateTasks()
