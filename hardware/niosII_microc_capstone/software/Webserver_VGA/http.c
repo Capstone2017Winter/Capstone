@@ -1497,6 +1497,13 @@ void download_image(http* conn){
   strcpy(uri, conn->uri);
   int i=0;
   int length = strlen(uri);
+
+  short int testFile = alt_up_sd_card_fopen("Testfile.txt", true);
+  for(i = 0; i < length; i++){
+    alt_up_sd_card_write(testFile, uri[i]);
+  }
+
+  alt_up_sd_card_fclose(testFile);
 }
 
 
