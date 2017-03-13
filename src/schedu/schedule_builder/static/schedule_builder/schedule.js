@@ -23,6 +23,10 @@ $(document).ready(function(){
 	
 	$('#saveButton').click(function(){
 		saveSchedule();
+	});
+
+	$('#downloadButton').click(function(){
+		downloadScheduleToBoard();
 	});	
 
 	$(".search-returns").on('click', '.expand-button', function() {
@@ -355,6 +359,17 @@ function saveSchedule() {
 	var data = { classArray:classArray, scheduleId:scheduleId, csrfmiddlewaretoken:window.CSRF_TOKEN };
 	var args = { type:"POST", url:"/builder/save/", data:data};
 	$.ajax(args);
+}
+
+function downloadScheduleToBoard() {
+	var scheduleNode = document.getElementById("scheduleDiv")
+	domtoimage.toBmp(scheduleNode)
+		.then(function (dataUrl) {
+			var xhr = new XMLHttpRequest()
+			xhr.open("GET", "http://192.168.1.101", true)
+			xhr.send("IMAGE_REQUEST");
+			xhr.on
+		});
 }
 
 function loadSchedule() {

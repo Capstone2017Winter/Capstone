@@ -4,6 +4,7 @@
 
 {% block content %}
 <script type="text/javascript" src="{% static 'schedule_builder/schedule.js' %}"></script>
+<script type="text/javascript" src="{% static 'schedule_builder/dom-to-image.js' %}"></script>
 <div class="body-content">
 	<div class="schedule">
 		<div class="search-column">
@@ -21,8 +22,13 @@
             		<button id="addClassButton" type="button" class="button search-button">Search</button>
           		</div>
 			<br>
-			<button id="saveButton" type="button" class="button save-button">Save</button> <!--TODO write save-button class-->
-			</br>
+			<div class="form-div">
+				<button id="saveButton" type="button" class="button">Save Schedule</button> <!--TODO write save-button class-->
+			</div>
+			<br>
+			<div class="form-div">
+				<button id="downloadButton" type="button" class="button">Download To Board</button> <!--TODO write download-button class-->
+			</div>
         	</form>
 
         	<div class="search-returns" id="search-returns"></div>
@@ -30,7 +36,7 @@
 		</div>
 		<div class="class-column"></div>
 		
-		
+		<div id="scheduleDiv"><h1>Schedule Here!</h1></div>	
 	</div>
 </div>
 {% endblock %}
