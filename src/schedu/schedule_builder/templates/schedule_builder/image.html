@@ -2,7 +2,7 @@
 <html>
 	<head id="head">
 		<div id="imageMe">
-			<h1>Hello World!</h1>
+			<h1 style="color:#FFFF00;width:200px;height:200px">Hello World!</h1>
 		</div>	
 		<img id = "image" src="{% static 'schedule_builder/lena512.bmp' %}"> 
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -15,7 +15,6 @@
 				var img = document.getElementById("imageMe");
 				domtoimage.toBmp(img)
 					.then(function (dataUrl) {
-						formData.append("imageBase64", dataUrl);
 						var xhr = new XMLHttpRequest()
 						xhr.open("GET", "http://192.168.1.101", true);
 						xhr.send("IMAGE_REQUEST");
