@@ -79,6 +79,8 @@ extern int current_flash_block;
 extern void WSTask();
 static void WSCreateTasks();
 
+
+
 /* NicheStack network structure. */
 extern struct net netstatic[STATIC_NETS];
 
@@ -96,7 +98,7 @@ TK_ENTRY(WSTask);
 struct inet_taskinfo wstask = {
       &to_wstask,
       "web server",
-      WSTask,
+      WSTask,   
       HTTP_PRIO,
       APP_STACK_SIZE,
 };
@@ -293,9 +295,8 @@ int main (int argc, char* argv[], char* envp[])
    * initialize the rest of the web server's tasks.
    */ 
 
-    alt_up_sd_card_dev *sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
-
-    alt_up_pixel_buffer_dma_dev *vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
+    altera_up_sd_card_dev* sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
+    alt_up_pixel_buffer_dma_dev* vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
 
     if(vga_buffer == NULL){
       printf("Could not instantiate VGA buffer");

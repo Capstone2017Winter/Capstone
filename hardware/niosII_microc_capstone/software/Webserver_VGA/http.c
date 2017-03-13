@@ -39,6 +39,9 @@
   #define ALT_DEBUG_ASSERT(a) 
 #endif /* DEBUG */
 
+extern altera_up_sd_card_dev* sd_card;
+extern alt_up_pixel_buffer_dma_dev* vga_buffer;
+
 /* 
  * TX & RX buffers. 
  * 
@@ -398,15 +401,10 @@ post_funcs flash_field =
    ProgFlashStub
 };
 
-post_funcs request_field =
-{
-  "/IMAGE_REQUEST",
-  ready_response
-}
 
 post_funcs image_field =
 {
-  "/IMAGE64",
+  "/IMAGE_DATA",
   download_image
 };
 
@@ -1123,6 +1121,10 @@ int http_handle_post(http_conn* conn)
     /* Kick off the flash programming. */
     flash_field.func( conn );
   }
+
+  else if (!strcmp(conn->uri, image_field.name)){
+    image_field.func( conn );
+  }
 #ifdef RECONFIG_REQUEST_PIO_NAME
   else if (!strcmp(conn->uri, reset_field.name))
   {
@@ -1149,9 +1151,11 @@ int http_prepare_response(http_conn* conn)
   {
     case GET:
     {
-      /* Find file from uri */
-      ret_code = http_find_file(conn);
-      break;
+      if(strcasecomp(conn->uri, CONNECTION_READY) == 0){
+        send(conn->fd, DATA_READY, strlen(DATA_READY), 0);
+        conn->state = CLOSE;
+
+      }
     }
     case POST:
     {
@@ -1487,6 +1491,16 @@ void WSTask()
     }  
   } /* while(1) */
 }
+
+void download_image(http* conn){
+  char uri[HTTP_URI_SIZE];
+
+  // Separate uri string so it can be read
+  strcpy(uri, conn->uri);
+  int i=0;
+  int length = strlen(uri);
+}
+
 
 /******************************************************************************
 *                                                                             *
