@@ -1146,10 +1146,13 @@ int http_prepare_response(http_conn* conn)
   {
     case GET:
     {
-      if(strcasecomp(conn->uri, CONNECTION_READY) == 0){
-        sprintf(conn->tx_buffer, canned_response2);
+      if(strcasecmp(conn->uri, CONNECTION_READY) == 0){
+        send(conn->fd,(void*) canned_response2, strlen(canned_response2), 0);
         conn->state = CLOSE;
-
+        break;
+      }else{
+        ret_code = http_find_file(conn);
+        break;
       }
     }
     case POST:
