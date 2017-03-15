@@ -35,6 +35,13 @@ obj/default/web_server.o: web_server.c \
   ../Webserver_VGA_bsp//iniche/src/h/tcpport.h \
   ../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h alt_error_handler.h \
   web_server.h ../Webserver_VGA_bsp//HAL/inc/alt_types.h \
+  ../Webserver_VGA_bsp//drivers/inc/altera_up_sd_card_avalon_interface.h \
+  ../Webserver_VGA_bsp//HAL/inc/alt_types.h \
+  ../Webserver_VGA_bsp//HAL/inc/sys/alt_dev.h \
+  ../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h \
+  ../Webserver_VGA_bsp//HAL/inc/priv/alt_dev_llist.h \
+  ../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h \
+  ../Webserver_VGA_bsp//drivers/inc/altera_up_avalon_video_pixel_buffer_dma.h \
   ../Webserver_VGA_bsp//iniche/src/h/nios2/ipport.h \
   ../Webserver_VGA_bsp//iniche/src/h/libport.h \
   ../Webserver_VGA_bsp//iniche/src/nios2/osport.h \
@@ -57,16 +64,8 @@ obj/default/web_server.o: web_server.c \
   ../Webserver_VGA_bsp//iniche/src/h/tcpport.h \
   ../Webserver_VGA_bsp//iniche/src/h/net.h \
   ../Webserver_VGA_bsp//drivers/inc/altera_up_avalon_character_lcd.h \
-  ../Webserver_VGA_bsp//HAL/inc/sys/alt_dev.h \
-  ../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h \
-  ../Webserver_VGA_bsp//HAL/inc/priv/alt_dev_llist.h \
-  ../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h \
   ../Webserver_VGA_bsp//HAL/inc/sys/alt_alarm.h \
-  ../Webserver_VGA_bsp//HAL/inc/sys/alt_warning.h \
-  ../Webserver_VGA_bsp//drivers/inc/altera_up_sd_card_avalon_interface.h \
-  ../Webserver_VGA_bsp//HAL/inc/alt_types.h \
-  ../Webserver_VGA_bsp//HAL/inc/sys/alt_dev.h \
-  ../Webserver_VGA_bsp//drivers/inc/altera_up_avalon_video_pixel_buffer_dma.h
+  ../Webserver_VGA_bsp//HAL/inc/sys/alt_warning.h
 
 ../Webserver_VGA_bsp//HAL/inc/includes.h:
 
@@ -154,6 +153,20 @@ web_server.h:
 
 ../Webserver_VGA_bsp//HAL/inc/alt_types.h:
 
+../Webserver_VGA_bsp//drivers/inc/altera_up_sd_card_avalon_interface.h:
+
+../Webserver_VGA_bsp//HAL/inc/alt_types.h:
+
+../Webserver_VGA_bsp//HAL/inc/sys/alt_dev.h:
+
+../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h:
+
+../Webserver_VGA_bsp//HAL/inc/priv/alt_dev_llist.h:
+
+../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h:
+
+../Webserver_VGA_bsp//drivers/inc/altera_up_avalon_video_pixel_buffer_dma.h:
+
 ../Webserver_VGA_bsp//iniche/src/h/nios2/ipport.h:
 
 ../Webserver_VGA_bsp//iniche/src/h/libport.h:
@@ -198,22 +211,6 @@ web_server.h:
 
 ../Webserver_VGA_bsp//drivers/inc/altera_up_avalon_character_lcd.h:
 
-../Webserver_VGA_bsp//HAL/inc/sys/alt_dev.h:
-
-../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h:
-
-../Webserver_VGA_bsp//HAL/inc/priv/alt_dev_llist.h:
-
-../Webserver_VGA_bsp//HAL/inc/sys/alt_llist.h:
-
 ../Webserver_VGA_bsp//HAL/inc/sys/alt_alarm.h:
 
 ../Webserver_VGA_bsp//HAL/inc/sys/alt_warning.h:
-
-../Webserver_VGA_bsp//drivers/inc/altera_up_sd_card_avalon_interface.h:
-
-../Webserver_VGA_bsp//HAL/inc/alt_types.h:
-
-../Webserver_VGA_bsp//HAL/inc/sys/alt_dev.h:
-
-../Webserver_VGA_bsp//drivers/inc/altera_up_avalon_video_pixel_buffer_dma.h:

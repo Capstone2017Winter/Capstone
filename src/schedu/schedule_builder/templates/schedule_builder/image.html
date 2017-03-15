@@ -1,15 +1,25 @@
+<<<<<<< HEAD
 <!--{% load static %} -->
+=======
+<!--{% load static %}-->
+>>>>>>> 650a443f5f2019240762c72ef0ed5b6922f8cbff
 <html>
 	<head id="head">
 		<div id="imageMe">
 			<h1 style="color:#FFFF00;width:200px;height:200px">Hello World!</h1>
 		</div>	
+<<<<<<< HEAD
 <!--		<img id = "image" src="{% static 'schedule_builder/lena512.bmp' %}">  -->
+=======
+>>>>>>> 650a443f5f2019240762c72ef0ed5b6922f8cbff
 		<img id = "image" src="./lena512.bmp"> 
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+<<<<<<< HEAD
 <!--		<script type="text/javascript" src="{% static 'schedule_builder/dom-to-image.js' %}"></script> -->
+=======
+>>>>>>> 650a443f5f2019240762c72ef0ed5b6922f8cbff
 		<script type="text/javascript" src="../../static/schedule_builder/dom-to-image.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -18,6 +28,7 @@
 				domtoimage.toBmp(img)
 					.then(function (dataUrl) {
 
+<<<<<<< HEAD
 						dataUrl = dataUrl;
 
 						var xhr = new XMLHttpRequest()
@@ -29,13 +40,35 @@
 
 									xhr.send(dataUrl);
 								}
+=======
+						dataUrl = dataUrl + "\r\n";
+
+						var xhr = new XMLHttpRequest()
+						xhr.open("GET", "http://192.168.1.100/IMAGE_REQUEST", true);
+						xhr.onload = function() {
+						if(xhr.status === 200){
+							if(xhr.responseText === "SEND_DATA"){
+								xhr.open("POST", "http://192.168.1.100/IMAGE_DATA", true);
+
+								xhr.send(dataUrl);
+							}
+						}
+						}
+						xhr.send(null);
+
+						/*if(xhr.status === 200){
+							if(xhr.responseText() === "SEND_DATA"){
+								xhr.open("POST", "http://192.168.1.100/SEND_DATA", true);
+
+								xhr.send(dataUrl);
+>>>>>>> 650a443f5f2019240762c72ef0ed5b6922f8cbff
 							}
 						}
 
 						xhr.send(null);
 						
 						var newImg = '<img src="' + dataUrl + '"/>';
-						$('body').append(newImg);
+						$('body').append(newImg);*/
 					});				
 			});
 		</script>

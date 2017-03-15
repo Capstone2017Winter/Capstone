@@ -16,6 +16,8 @@
 
 #include "alt_types.h"
 #include "includes.h"
+#include "altera_up_sd_card_avalon_interface.h"
+#include "altera_up_avalon_video_pixel_buffer_dma.h"
 /*
  * Prototypes:
  *    die_with_error() - Kills current task and delivers error message to 
@@ -29,8 +31,7 @@
  *                       subroutines to service HTTP requests.
  */
 void die_with_error(char err_msg[]);
-void load_bmp(int file_handle, unsigned char **data_array);
-void draw_bitmap(unsigned char **data_array, alt_up_pixel_buffer_dma_dev *vga_buffer);
+
 
 /*
  * Mailbox to control board features 
@@ -39,8 +40,7 @@ void draw_bitmap(unsigned char **data_array, alt_up_pixel_buffer_dma_dev *vga_bu
 extern OS_EVENT *board_control_mbox;
 
 /*** Initiated in web_server.c used in http.c to download/save image then write it to the vga pixel buffer. Protected with semaphores***/
-extern altera_up_sd_card_dev* sd_card;
-extern alt_up_pixel_buffer_dma_dev* vga_buffer;
+
 
 struct http_form_data
 {
@@ -52,6 +52,8 @@ struct http_form_data
 
 extern FILE* lcdDevice;
 
+alt_up_sd_card_dev* sd_card;
+alt_up_pixel_buffer_dma_dev* vga_buffer;
 
 /* 
  * The IP, gateway, and subnet mask address below are used as a last resort 
