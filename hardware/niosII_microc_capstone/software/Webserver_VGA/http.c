@@ -93,8 +93,9 @@ Have you programmed the flash filing system into flash?</html>\
 static const char canned_response2[] = {"\
 HTTP/1.0 200 OK\r\n\
 Content-Type: text/html\r\n\
+Access-Control-Allow-Origin: *\r\n\
 Content-Length: 9\r\n\r\n\
-DATA_READY\
+SEND_DATA\
 "};
 
 static const alt_8 image_ready[] = {"\
@@ -123,6 +124,8 @@ typedef struct funcs
 }post_funcs;
 
 struct http_form_data board_funcs;
+
+void download_image(http_conn* conn);
 
 /* 
  * print()
@@ -697,6 +700,9 @@ int http_process_headers(http_conn* conn)
     conn->content_length = atoi(option+16);
     //printf( "Content Length = %d.\n", conn->content_length );
   }
+  else if (stricmp(option, "data") == 0){
+
+  }
   /* When getting the Content-Type, get the whole line and throw it
    * to another function.  This will be done several times.
    */
@@ -1146,11 +1152,15 @@ int http_prepare_response(http_conn* conn)
   {
     case GET:
     {
-      if(strcasecomp(conn->uri, CONNECTION_READY) == 0){
-        sprintf(conn->tx_buffer, canned_response2);
-        conn->state = CLOSE;
-
+      if(strcasecmp(conn->uri, CONNECTION_READY) == 0){
+        send(conn->fd, (void *)canned_response2, strlen(canned_response2), 0);
+        conn->state = DATA;
+        break;
+      }else{
+    	  ret_code = http_find_file(conn);
+    	  break;
       }
+
     }
     case POST:
     {
@@ -1487,14 +1497,14 @@ void WSTask()
   } /* while(1) */
 }
 
-void download_image(http* conn){
+void download_image(http_conn* conn){
   char uri[HTTP_URI_SIZE];
 
   // Separate uri string so it can be read
   strcpy(uri, conn->uri);
   int i=0;
   int length = strlen(uri);
-
+  printf("Made it here/n");
   short int testFile = alt_up_sd_card_fopen("Testfile.txt", true);
   for(i = 0; i < length; i++){
     alt_up_sd_card_write(testFile, uri[i]);

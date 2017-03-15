@@ -1,5 +1,5 @@
 Flow report for niosII_microc_capstone
-Thu Mar  9 17:51:39 2017
+Fri Mar 10 13:55:54 2017
 Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
 
 
@@ -38,15 +38,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar  9 17:51:39 2017          ;
+; Flow Status                        ; Successful - Fri Mar 10 13:55:54 2017          ;
 ; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; niosII_microc_capstone                         ;
 ; Top-level Entity Name              ; niosII_microc_capstone                         ;
 ; Family                             ; Cyclone II                                     ;
 ; Device                             ; EP2C35F672C6                                   ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 8,758 / 33,216 ( 26 % )                        ;
-;     Total combinational functions  ; 7,835 / 33,216 ( 24 % )                        ;
+; Total logic elements               ; 8,755 / 33,216 ( 26 % )                        ;
+;     Total combinational functions  ; 7,831 / 33,216 ( 24 % )                        ;
 ;     Dedicated logic registers      ; 5,397 / 33,216 ( 16 % )                        ;
 ; Total registers                    ; 5630                                           ;
 ; Total pins                         ; 189 / 475 ( 40 % )                             ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 03/09/2017 17:48:17    ;
+; Start date & time ; 03/10/2017 13:53:02    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; niosII_microc_capstone ;
 +-------------------+------------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.148910689427055                     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.148917917921475                     ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -92,12 +92,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:56     ; 1.0                     ; 487 MB              ; 00:01:59                           ;
-; Fitter                    ; 00:00:46     ; 2.3                     ; 596 MB              ; 00:00:58                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 355 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 406 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:13     ; 1.0                     ; 387 MB              ; 00:00:07                           ;
-; Total                     ; 00:03:04     ; --                      ; --                  ; 00:03:10                           ;
+; Analysis & Synthesis      ; 00:01:35     ; 1.0                     ; 484 MB              ; 00:01:47                           ;
+; Fitter                    ; 00:00:43     ; 2.2                     ; 583 MB              ; 00:00:56                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 359 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 397 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:10     ; 1.0                     ; 387 MB              ; 00:00:06                           ;
+; Total                     ; 00:02:37     ; --                      ; --                  ; 00:02:55                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

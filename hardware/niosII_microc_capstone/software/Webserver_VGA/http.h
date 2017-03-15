@@ -51,8 +51,9 @@
 
 #define   UPLOAD_BUF_SIZE         6000000
 
-#define   CONNECTION_READY        "IMAGE_REQUEST"
-#define   DATA_READY              "SEND_DATA"
+#define   CONNECTION_READY        "/IMAGE_REQUEST"
+#define   DATA_READY              "/SEND_DATA"
+
 
 typedef struct http_socket
 {
