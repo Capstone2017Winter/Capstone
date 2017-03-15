@@ -93,11 +93,8 @@ Have you programmed the flash filing system into flash?</html>\
 static const char canned_response2[] = {"\
 HTTP/1.0 200 OK\r\n\
 Content-Type: text/html\r\n\
-Content-Length: 2000\r\n\r\n\
-<HTML><HEAD><TITLE>Nios II Web Server Demonstration</TITLE></HEAD>\
-<title>NicheStack on Nios II</title><BODY>\
-<center><h2>Nios II Web Server Hardware Report</h2>\
-</center>\
+Content-Length: 9\r\n\r\n\
+DATA_READY\
 "};
 
 static const alt_8 image_ready[] = {"\
@@ -1150,7 +1147,7 @@ int http_prepare_response(http_conn* conn)
     case GET:
     {
       if(strcasecomp(conn->uri, CONNECTION_READY) == 0){
-        send(conn->fd, DATA_READY, strlen(DATA_READY), 0);
+        sprintf(conn->tx_buffer, canned_response2);
         conn->state = CLOSE;
 
       }
@@ -1503,7 +1500,7 @@ void download_image(http* conn){
     alt_up_sd_card_write(testFile, uri[i]);
   }
 
-  alt_up_sd_card_fclose(testFile);
+  alt_up_sd_card_fclose(testFile); 
 }
 
 
