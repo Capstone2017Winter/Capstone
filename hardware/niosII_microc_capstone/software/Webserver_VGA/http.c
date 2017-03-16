@@ -700,8 +700,8 @@ int http_process_headers(http_conn* conn)
     conn->content_length = atoi(option+16);
     //printf( "Content Length = %d.\n", conn->content_length );
   }
-  else if (stricmp(option, "data") == 0){
-
+  else if (stricmp(option, "\r\ndata") == 0){
+	  conn->state = DATA;
   }
   /* When getting the Content-Type, get the whole line and throw it
    * to another function.  This will be done several times.
@@ -1498,16 +1498,16 @@ void WSTask()
 }
 
 void download_image(http_conn* conn){
-  char uri[HTTP_URI_SIZE];
+  char data[HTTP_URI_SIZE];
 
   // Separate uri string so it can be read
-  strcpy(uri, conn->uri);
+  strcpy(data, conn->rx_buffer);
   int i=0;
-  int length = strlen(uri);
+  int length = strlen(data);
   printf("Made it here/n");
   short int testFile = alt_up_sd_card_fopen("Testfile.txt", true);
   for(i = 0; i < length; i++){
-    alt_up_sd_card_write(testFile, uri[i]);
+    alt_up_sd_card_write(testFile, data[i]);
   }
 
   alt_up_sd_card_fclose(testFile); 
