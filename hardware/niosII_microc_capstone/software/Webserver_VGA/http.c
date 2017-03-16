@@ -1504,7 +1504,7 @@ void download_image(http_conn* conn){
   strcpy(uri, conn->uri);
   int i=0;
   int length = strlen(uri);
-  printf("Made it here/n");
+  printf("Made it to POST function \n");
   short int testFile = alt_up_sd_card_fopen("Testfile.txt", true);
   for(i = 0; i < length; i++){
     alt_up_sd_card_write(testFile, uri[i]);
