@@ -1498,16 +1498,16 @@ void WSTask()
 }
 
 void download_image(http_conn* conn){
-  char data[HTTP_URI_SIZE];
+  char uri[HTTP_URI_SIZE];
 
   // Separate uri string so it can be read
-  strcpy(data, conn->rx_buffer);
+  strcpy(uri, conn->uri);
   int i=0;
-  int length = strlen(data);
-  printf("Made it here/n");
+  int length = strlen(uri);
+  printf("Made it to POST function \n");
   short int testFile = alt_up_sd_card_fopen("Testfile.txt", true);
   for(i = 0; i < length; i++){
-    alt_up_sd_card_write(testFile, data[i]);
+    alt_up_sd_card_write(testFile, uri[i]);
   }
 
   alt_up_sd_card_fclose(testFile); 
