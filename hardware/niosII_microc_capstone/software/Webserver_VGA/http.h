@@ -40,6 +40,7 @@
 #define   HTTP_CONTENT_TYPE_CSS   "text/css\r\n"
 #define   HTTP_CONTENT_TYPE_SWF   "application/x-shockwave-flash\r\n"
 #define   HTTP_CONTENT_TYPE_ICO   "image/vnd.microsoft.icon\r\n"
+#define   HTTP_CONTENT_TYPE_TEXT  "text/plain\r\n"
 #define   HTTP_CONTENT_LENGTH     "Content-Length: "
 #define   HTTP_KEEP_ALIVE         "Connection: Keep-Alive\r\n"
 #define   HTTP_CLOSE              "Connection: close\r\n"
