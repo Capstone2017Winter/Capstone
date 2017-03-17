@@ -54,15 +54,6 @@ $(document).ready(function(){
   });
 
   loadSchedule();
-	
-	//console.log("Start");
-	//console.log(window.added_courses);
-
-  	//for (var key in window.added_courses) {
-	//	console.log(added_courses[key]);
-	//}
-  	
-  	//console.log("End");
   
   $('.class-column').on('change', 'select', function() {
     var change_id = $(this).closest('div[class^="added-class"]').attr('id');
@@ -117,7 +108,7 @@ $(document).ready(function(){
   	$('.search-returns').on('click', '.plus-button', function() {
     	var course = window.searched_courses[$(this).closest('div[class^="search-return"]').attr('id')];
 		addClassToSchedule(course);
-		$(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course);
+		
   	});
 
   	function checkResize() {
@@ -212,6 +203,7 @@ function timeTo24(time) {
 function addClassToSchedule(course) {
 
    	if (!window.added_courses[course.varname]) {
+   		console.log("addClassToSchedule");
   		window.added_courses[course.varname] = course;
    	} 
     else {
@@ -296,7 +288,8 @@ function addClassToSchedule(course) {
       '</div>' +
       '</div>'
 
-    $(".class-column").append(added_course);     
+    $(".class-column").append(added_course);
+    $(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course);     
 }
 
 function searchClassCallback(response, status) {
