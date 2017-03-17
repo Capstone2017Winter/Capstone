@@ -13,6 +13,21 @@ html body {
   padding: 0;
   margin: 0;
 }
+html .button{
+  border: none;
+  border-radius: .125rem;
+  background-color: #007c41;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-left: .5rem;
+  padding: 6px 10px;
+  padding: .375rem .625rem;
+  cursor: pointer;
+}
+html .button:hover{
+  background-color: #00994f;
+}
 html body .page-wrap:after {
   content: "";
   display: block;
@@ -111,15 +126,6 @@ html body .page-wrap .body-content .home .welcome .fancy-background .login .inpu
   border: solid 1px #333;
   color: #333;
 }
-html body .page-wrap .body-content .home .welcome .fancy-background .login .button {
-  background-color: #007c41;
-  color: #fff;
-  font-weight: bold;
-  margin-left: 8px;
-  margin-left: .5rem;
-  padding: 6px 10px;
-  padding: .375rem .625rem;
-}
 /*CSS for user.html*/
 html body .page-wrap .body-content .user {
   width: 100%;
@@ -149,16 +155,6 @@ html body .page-wrap .body-content .user .schedule-row .form-div {
 html body .page-wrap .body-content .user .schedule-row .form-div form input {
   margin-bottom: 10px;
 }
-html body .page-wrap .body-content .user .schedule-row .form-div form .button {
-  border: none;
-  background-color: #007c41;
-  color: #fff;
-  font-weight: bold;
-  margin-left: 8px;
-  margin-left: .5rem;
-  padding: 6px 10px;
-  padding: .375rem .625rem;
-}
 /*CSS for schedule.html*/
 html body .page-wrap .body-content .schedule {
   min-height: 800px;
@@ -166,7 +162,7 @@ html body .page-wrap .body-content .schedule {
   flex-direction: row;
 }
 html body .page-wrap .body-content .schedule .search-column {
-  width: 25%;
+  width: 20%;
   padding: 5px;
   background: #333;
   display: flex;
@@ -223,14 +219,6 @@ html body .page-wrap .body-content .schedule .search-column .search .form-div :-
   color: #007c41;
 }
 html body .page-wrap .body-content .schedule .search-column .search .form-div .button {
-  border: none;
-  background-color: #007c41;
-  color: #fff;
-  font-weight: bold;
-  margin-left: 8px;
-  margin-left: .5rem;
-  padding: 6px 10px;
-  padding: .375rem .625rem;
   font-size: 12px;
 }
 html body .page-wrap .body-content .schedule .search-column .search .form-div .button:hover {
@@ -277,17 +265,11 @@ html body .page-wrap .body-content .schedule .search-column .search-returns .sea
   justify-content: center;
   border: none;
   border-radius: .125rem;
-  background-color: #007c41;
-  color: #fff;
-  font-weight: bold;
   width: 25px;
   height: 25px;
   font-size: 18px;
   margin: 0px 3px;
-  cursor: pointer;
-}
-html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top div div .button:hover {
-  background-color: #00994f;
+  
 }
 html body .page-wrap .body-content .schedule .search-column .search-returns .search-return .top .short-desc {
   font-size: 16px;
@@ -301,8 +283,8 @@ html body .page-wrap .body-content .schedule .class-column {
   align-items: center;
 }
 html body .page-wrap .body-content .schedule .class-column .added-class {
-  padding: 10px;
-  margin: 0px 0px 5px 0px;
+  padding: 5px;
+  margin: 2px 0px 2px 0px;
   display: flex;
   flex-direction: column;
   border-radius: .125rem;
@@ -333,19 +315,11 @@ html body .page-wrap .body-content .schedule .class-column .added-class .top div
 html body .page-wrap .body-content .schedule .class-column .added-class .top div div .button {
   display: flex;
   justify-content: center;
-  border: none;
   border-radius: .125rem;
-  background-color: #007c41;
-  color: #fff;
-  font-weight: bold;
   width: 25px;
   height: 25px;
   font-size: 18px;
   margin: 0px 3px;
-  cursor: pointer;
-}
-html body .page-wrap .body-content .schedule .class-column .added-class .top div div .button:hover {
-  background-color: #00994f;
 }
 html body .page-wrap .body-content .schedule .class-column .added-class .top .short-desc {
   font-size: 16px;
@@ -422,6 +396,1142 @@ html body .page-wrap .body-content .schedule .class-column .added-class .top .ch
 }
 html body .page-wrap .body-content .schedule .class-column .added-class .top .choices-div .choice .custom-dropdown::after {
   color: rgba(0, 0, 0, 0.4);
+}
+/*Grid Column*/
+html body .page-wrap .body-content .schedule .grid-column {
+  width: 65%;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule {
+  position: relative;
+  margin: 2em 0;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline {
+  display: none;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events {
+  position: relative;
+  z-index: 1;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .events-group {
+  margin-bottom: 30px;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .events-group > ul {
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  overflow-x: scroll;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .events-group > ul::after {
+  display: inline-block;
+  content: '-';
+  width: 1px;
+  height: 100%;
+  opacity: 0;
+  color: transparent;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .top-info {
+  width: 100%;
+  padding: 0 5%;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .top-info > span {
+  display: inline-block;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event {
+  flex-shrink: 0;
+  float: left;
+  height: 150px;
+  width: 70%;
+  max-width: 300px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+  transition: opacity .2s, background .2s;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event:last-of-type {
+  margin-right: 5%;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event a {
+  display: block;
+  height: 100%;
+  padding: .8em;
+  color: #fff;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-name {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-date {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  opacity: .7;
+  line-height: 1.2;
+  margin-bottom: .2em;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-1"] {
+  background: #577f92;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-1"]:hover {
+  background: #618da1;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-2"] {
+  background: #443453;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-2"]:hover {
+  background: #513e63;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-3"] {
+  background: #a2b9b2;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-3"]:hover {
+  background: #b1c4be;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-4"] {
+  background: #f6b067;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-4"]:hover {
+  background: #f7bd7f;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  transform: translateZ(0);
+  transform: translateX(100%);
+  transition: transform .4s, visibility .4s;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .header {
+  position: relative;
+  height: 70px;
+  display: table;
+  width: 100%;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .header .content {
+  position: relative;
+  z-index: 3;
+  display: table-cell;
+  vertical-align: middle;
+  padding: .6em 5%;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .body {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 70px);
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .event-info {
+  position: relative;
+  z-index: 2;
+  line-height: 1.4;
+  height: 100%;
+  overflow: hidden;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .event-info > div {
+  overflow: auto;
+  height: 100%;
+  padding: 1.4em 5%;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transform-origin: top center;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .body-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: #fff;
+  transform-origin: top left;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.1);
+  color: transparent;
+  white-space: nowrap;
+  text-indent: 100%;
+  height: 70px;
+  width: 70px;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .close::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #fff;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #fff;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .event-date {
+  display: none;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal.no-transition {
+  transition: none;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal.no-transition .header-bg {
+  transition: none;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal.no-transition .body-bg {
+  transition: none;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule.modal-is-open .event-modal {
+  transform: translateX(0);
+  visibility: visible;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule.modal-is-open .cover-layer {
+  opacity: 1;
+  visibility: visible;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .cover-layer {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s, visibility .4s;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule.loading .events .single-event {
+  opacity: 0;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-1"] .header-bg {
+  background: #577f92;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-2"] .header-bg {
+  background: #443453;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-3"] .header-bg {
+  background: #a2b9b2;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-4"] .header-bg {
+  background: #f6b067;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule::before {
+  content: 'mobile';
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule {
+    width: 90%;
+    max-width: 1400px;
+    margin: 2em auto;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline li {
+    position: relative;
+    height: 60px;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline li:last-of-type::after {
+    display: none;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline li span {
+    display: none;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #eaeaea !important;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events {
+    float: left;
+    width: 100%;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .events-group {
+    width: 20%;
+    float: left;
+    border: 1px solid #eaeaea;
+    margin-bottom: 0;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .events-group > ul {
+    height: calc(14*60px);
+    display: block;
+    overflow: visible;
+    padding: 0;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .events-group > ul::after {
+    clear: both;
+    content: "";
+    display: block;
+    display: none;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .events-group:not(:first-of-type) {
+    border-left-width: 0;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .top-info {
+    display: table;
+    height: 50px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .top-info > span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 .5em;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event {
+    position: absolute;
+    z-index: 3;
+    width: calc(100% +2px);
+    left: -1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    flex-shrink: 1;
+    height: auto;
+    max-width: none;
+    margin-right: 0;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event a {
+    padding: 1.2em;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event:last-of-type {
+    margin-right: 0;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event.selected-event {
+    visibility: hidden;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-name {
+    font-size: 2rem;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal {
+    right: auto;
+    width: auto;
+    height: auto;
+    transform: translateX(0);
+    will-change: transform, width, height;
+    transition: height .4s, width .4s, transform .4s, visibility .4s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .header {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .header .content {
+    display: block;
+    padding: .8em;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .event-info {
+    opacity: 0;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .event-info > div {
+    padding: 2em 3em 2em 2em;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .body {
+    height: 100%;
+    width: auto;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .header-bg {
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    transition: transform .4s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .body-bg {
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    opacity: 0;
+    transform: none;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .event-date {
+    display: block;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .close {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .close::after {
+    background: #222222;
+    height: 16px;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .close::before {
+    background: #222222;
+    height: 16px;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule.animation-completed .event-modal .close {
+    opacity: 1;
+    transition: opacity .2s;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule.content-loaded.animation-completed .event-modal .event-info {
+    opacity: 1;
+    transition: opacity .2s;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule.modal-is-open .body-bg {
+    opacity: 1;
+    transition: transform .4s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule::before {
+    content: 'desktop';
+  }
+}
+@media only screen and (min-width: 1000px) {
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline li::after {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline li span {
+    display: inline-block;
+    transform: translateY(-50%);
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .timeline li:nth-of-type(2n) span {
+    display: none;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal .header .content {
+    padding: 1.2em;
+  }
+}
+@media only screen and (min-width: 550px) {
+  html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event {
+    width: 100%;
+  }
+}
+html body .page-wrap .body-content .schedule .grid-column html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  line-height: 1;
+}
+html body .page-wrap .body-content .schedule .grid-column div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column applet {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column object {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column iframe {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column h4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column h5 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  quotes: none;
+}
+html body .page-wrap .body-content .schedule .grid-column blockquote:before {
+  content: '';
+  content: none;
+}
+html body .page-wrap .body-content .schedule .grid-column blockquote:after {
+  content: '';
+  content: none;
+}
+html body .page-wrap .body-content .schedule .grid-column pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column abbr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column acronym {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column address {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column big {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column cite {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column code {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column del {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column dfn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column ins {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column kbd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  quotes: none;
+}
+html body .page-wrap .body-content .schedule .grid-column q:before {
+  content: '';
+  content: none;
+}
+html body .page-wrap .body-content .schedule .grid-column q:after {
+  content: '';
+  content: none;
+}
+html body .page-wrap .body-content .schedule .grid-column s {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column samp {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column strike {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column strong {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column sub {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column sup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column tt {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column b {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column u {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column i {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column center {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column dl {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column dt {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column ol {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+html body .page-wrap .body-content .schedule .grid-column ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+html body .page-wrap .body-content .schedule .grid-column li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html body .page-wrap .body-content .schedule .grid-column caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column tfoot {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column thead {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column th {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column details {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column embed {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column output {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column ruby {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+html body .page-wrap .body-content .schedule .grid-column summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column time {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column mark {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column audio {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html body .page-wrap .body-content .schedule .grid-column main {
+  display: block;
 }
 /*Footer*/
 html body footer {
