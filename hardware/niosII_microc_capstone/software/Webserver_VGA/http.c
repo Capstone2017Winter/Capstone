@@ -1153,6 +1153,7 @@ int http_prepare_response(http_conn* conn)
     case GET:
     {
       if(strcasecmp(conn->uri, CONNECTION_READY) == 0){
+    	printf("Received GET request \n");
         send(conn->fd, (void *)canned_response2, strlen(canned_response2), 0);
         conn->state = DATA;
         break;
@@ -1501,17 +1502,28 @@ void download_image(http_conn* conn){
   char data[HTTP_URI_SIZE];
 
   // Separate uri string so it can be read
-  strcpy(data, conn->rx_buffer);
+  strcpy(data, conn->rx_rd_pos);
   int i=0;
   int length = strlen(data);
   printf("Made it to POST function \n");
-  short int testFile = alt_up_sd_card_fopen("Testfile.txt", true);
+  short int testFile;
+  testFile = alt_up_sd_card_fopen("a.txt", true);
+  if(testFile == -1){
+	  testFile= alt_up_sd_card_fopen("a.txt", false);
+	  printf("Failed first time \n");
+
+  }
+  printf("File handle = %d\n", testFile);
+  //alt_up_sd_card_set_attributes(testFile,0x001D);
   for(i = 0; i < length; i++){
-	data[i] = 'A';
+	data[i] = 'F';
     alt_up_sd_card_write(testFile, data[i]);
   }
   printf("Done writing to file \n");
-  alt_up_sd_card_fclose(testFile); 
+
+  if(alt_up_sd_card_fclose(testFile) == true){
+	  printf("file closed properly\n");
+  }
 }
 
 

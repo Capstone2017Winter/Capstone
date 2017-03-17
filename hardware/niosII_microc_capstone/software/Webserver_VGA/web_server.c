@@ -298,6 +298,8 @@ int main (int argc, char* argv[], char* envp[])
   	sd_card = alt_up_sd_card_open_dev(ALTERA_UP_SD_CARD_AVALON_INTERFACE_0_NAME);
     vga_buffer = alt_up_pixel_buffer_dma_open_dev(VIDEO_PIXEL_BUFFER_DMA_0_NAME);
 
+    //CLR_WRITE_PROTECT
+
     if(vga_buffer == NULL){
       printf("Could not instantiate VGA buffer");
     }
@@ -342,6 +344,8 @@ int main (int argc, char* argv[], char* envp[])
     if(alt_up_sd_card_fclose(file_handle)){
       printf("Test file closed\n");
     }
+
+
     error_code = OSTaskCreateExt(WSInitialTask,
                              NULL,
                              (void *)&WSInitialTaskStk[TASK_STACKSIZE-1],
