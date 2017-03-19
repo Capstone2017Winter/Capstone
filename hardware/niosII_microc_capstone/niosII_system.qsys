@@ -137,14 +137,6 @@
          type = "boolean";
       }
    }
-   element onchip_memory2_0.s1
-   {
-      datum baseAddress
-      {
-         value = "25706496";
-         type = "String";
-      }
-   }
    element timer_0.s1
    {
       datum baseAddress
@@ -153,19 +145,27 @@
          type = "String";
       }
    }
-   element DM9000A_IF_0.s1
-   {
-      datum baseAddress
-      {
-         value = "25728048";
-         type = "String";
-      }
-   }
    element sdram_0.s1
    {
       datum baseAddress
       {
          value = "8388608";
+         type = "String";
+      }
+   }
+   element onchip_memory2_0.s1
+   {
+      datum baseAddress
+      {
+         value = "25706496";
+         type = "String";
+      }
+   }
+   element DM9000A_IF_0.s1
+   {
+      datum baseAddress
+      {
+         value = "25728048";
          type = "String";
       }
    }
@@ -285,7 +285,7 @@
  <parameter name="projectName">niosII_microc_capstone.qpf</parameter>
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1489106858905" />
+ <parameter name="timeStamp" value="1489180060865" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />

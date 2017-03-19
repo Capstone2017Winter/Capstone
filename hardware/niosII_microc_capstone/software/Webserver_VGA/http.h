@@ -20,7 +20,7 @@
 #define   HTTP_KEEP_ALIVE_COUNT 20    /* Max number of files per connection */
 #define   HTTP_KEEP_ALIVE_TIME  5000  /* TCP connection keep-alive time (ms) */
 #define   HTTP_PORT             80    /* TCP port number to listen on */
-#define   HTTP_NUM_CONNECTIONS  1     /* Maximum concurrent HTTP connections */
+#define   HTTP_NUM_CONNECTIONS  2     /* Maximum concurrent HTTP connections */
 #define   HTTP_MAX_LINE_SIZE    256   /* The maximum size of any line. */
 
 #define   HTTP_DEFAULT_FILE       "/index.html"
@@ -40,6 +40,7 @@
 #define   HTTP_CONTENT_TYPE_CSS   "text/css\r\n"
 #define   HTTP_CONTENT_TYPE_SWF   "application/x-shockwave-flash\r\n"
 #define   HTTP_CONTENT_TYPE_ICO   "image/vnd.microsoft.icon\r\n"
+#define   HTTP_CONTENT_TYPE_TEXT  "text/plain\r\n"
 #define   HTTP_CONTENT_LENGTH     "Content-Length: "
 #define   HTTP_KEEP_ALIVE         "Connection: Keep-Alive\r\n"
 #define   HTTP_CLOSE              "Connection: close\r\n"
@@ -51,8 +52,9 @@
 
 #define   UPLOAD_BUF_SIZE         6000000
 
-#define   CONNECTION_READY        "IMAGE_REQUEST"
-#define   DATA_READY              "SEND_DATA"
+#define   CONNECTION_READY        "/IMAGE_REQUEST"
+#define   DATA_READY              "/SEND_DATA"
+
 
 typedef struct http_socket
 {

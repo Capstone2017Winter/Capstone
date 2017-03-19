@@ -93,11 +93,9 @@ Have you programmed the flash filing system into flash?</html>\
 static const char canned_response2[] = {"\
 HTTP/1.0 200 OK\r\n\
 Content-Type: text/html\r\n\
-Content-Length: 2000\r\n\r\n\
-<HTML><HEAD><TITLE>Nios II Web Server Demonstration</TITLE></HEAD>\
-<title>NicheStack on Nios II</title><BODY>\
-<center><h2>Nios II Web Server Hardware Report</h2>\
-</center>\
+Access-Control-Allow-Origin: *\r\n\
+Content-Length: 9\r\n\r\n\
+SEND_DATA\
 "};
 
 static const alt_8 image_ready[] = {"\
@@ -126,6 +124,8 @@ typedef struct funcs
 }post_funcs;
 
 struct http_form_data board_funcs;
+
+void download_image(http_conn* conn);
 
 /* 
  * print()
@@ -700,6 +700,9 @@ int http_process_headers(http_conn* conn)
     conn->content_length = atoi(option+16);
     //printf( "Content Length = %d.\n", conn->content_length );
   }
+  else if (stricmp(option, "\r\ndata") == 0){
+	  conn->state = DATA;
+  }
   /* When getting the Content-Type, get the whole line and throw it
    * to another function.  This will be done several times.
    */
@@ -1149,11 +1152,16 @@ int http_prepare_response(http_conn* conn)
   {
     case GET:
     {
-      if(strcasecomp(conn->uri, CONNECTION_READY) == 0){
-        send(conn->fd, DATA_READY, strlen(DATA_READY), 0);
-        conn->state = CLOSE;
-
+      if(strcasecmp(conn->uri, CONNECTION_READY) == 0){
+    	printf("Received GET request \n");
+        send(conn->fd, (void *)canned_response2, strlen(canned_response2), 0);
+        conn->state = DATA;
+        break;
+      }else{
+    	  ret_code = http_find_file(conn);
+    	  break;
       }
+
     }
     case POST:
     {
@@ -1490,13 +1498,32 @@ void WSTask()
   } /* while(1) */
 }
 
-void download_image(http* conn){
-  char uri[HTTP_URI_SIZE];
+void download_image(http_conn* conn){
+  char data[HTTP_URI_SIZE];
 
   // Separate uri string so it can be read
-  strcpy(uri, conn->uri);
+  strcpy(data, conn->rx_rd_pos);
   int i=0;
-  int length = strlen(uri);
+  int length = strlen(data);
+  printf("Made it to POST function \n");
+  short int testFile;
+  testFile = alt_up_sd_card_fopen("a.txt", true);
+  if(testFile == -1){
+	  testFile= alt_up_sd_card_fopen("a.txt", false);
+	  printf("Failed first time \n");
+
+  }
+  printf("File handle = %d\n", testFile);
+  //alt_up_sd_card_set_attributes(testFile,0x001D);
+  for(i = 0; i < length; i++){
+	data[i] = 'F';
+    alt_up_sd_card_write(testFile, data[i]);
+  }
+  printf("Done writing to file \n");
+
+  if(alt_up_sd_card_fclose(testFile) == true){
+	  printf("file closed properly\n");
+  }
 }
 
 
