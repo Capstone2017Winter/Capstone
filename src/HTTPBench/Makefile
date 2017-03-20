@@ -1,6 +1,6 @@
 CC=cc
 OUT=httpbench
-FLAGS:= $(shell pkg-config --libs --cflags libcurl) -pthread
+FLAGS:= -I/curl-7.52.1-built/include -L/curl-7.52.1-built/lib -lcurl -pthread
 
 httpbench:
 	$(CC) *.c $(FLAGS) -o $(OUT)

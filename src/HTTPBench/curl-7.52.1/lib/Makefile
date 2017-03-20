@@ -403,7 +403,7 @@ CCDEPMODE = depmode=gcc3
 # This might hold -Werror
 CFLAGS = -O2 -Wno-system-headers 
 CFLAG_CURL_SYMBOL_HIDING = -fvisibility=hidden
-CONFIGURE_OPTIONS = ""
+CONFIGURE_OPTIONS = " '--prefix=/home/elias/Capstone/src/HTTPBench/curl-7.52.1../'"
 CPP = gcc -E
 CPPFLAGS = 
 CPPFLAG_CURL_STATICLIB = 
@@ -568,7 +568,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr/local
+prefix = /home/elias/Capstone/src/HTTPBench/curl-7.52.1..
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
