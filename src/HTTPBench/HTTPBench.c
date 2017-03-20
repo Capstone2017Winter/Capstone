@@ -1,3 +1,11 @@
+/* 
+ * A light-weight benchmarking tool
+ * used to load-test and stress-test
+ * small webservers. Based upon libcurl
+ * and pthreads.
+ * Written by: Elias Carter
+ */
+
 #include <stdio.h>
 #include <stdlib.h> // exit
 #include <sys/time.h> // gettimeofday
@@ -170,3 +178,11 @@ int main(int argc, char **args)
 	free(benchmark_times);
 	return 0;
 }
+
+/* 
+ * A light-weight benchmarking tool
+ * used to load-test and stress-test
+ * small webservers. Based upon libcurl
+ * and pthreads.
+ * Written by: Elias Carter
+ */
