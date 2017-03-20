@@ -103,7 +103,6 @@ int main(int argc, char **args)
 {
 
 	/*other*/
-	char *endptr;
 	long long iterations;
 	int i;
 
@@ -128,12 +127,12 @@ int main(int argc, char **args)
 	/* parse arguments */
  	if (argc != 4) usage();
  	target_url = args[1];
-	iterations = strtol(args[2], &endptr, /*base 10*/ 10);
+	iterations = strtol(args[2], NULL, /*base 10*/ 10);
 	if (iterations == 0) {
 		fprintf(stderr, "Unable to parse iterations\n");
 		usage();
 	}
-	thread_count = strtol(args[3], &endptr, /*base 10*/ 10);
+	thread_count = strtol(args[3], NULL, /*base 10*/ 10);
 	if (thread_count == 0) {
 		fprintf(stderr, "Unable to parse thread count\n");
 		usage();
