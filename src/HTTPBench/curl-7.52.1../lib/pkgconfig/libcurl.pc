@@ -23,7 +23,7 @@
 # This should most probably benefit from getting a "Requires:" field added
 # dynamically by configure.
 #
-prefix=/home/elias/Capstone/src/HTTPBench/curl-7.52.1..
+prefix=/afs/ualberta.ca/home/e/d/edcarter/Capstone/src/HTTPBench/curl-7.52.1..
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

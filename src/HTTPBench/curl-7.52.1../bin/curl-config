@@ -21,7 +21,7 @@
 #
 ###########################################################################
 
-prefix=/home/elias/Capstone/src/HTTPBench/curl-7.52.1..
+prefix=/afs/ualberta.ca/home/e/d/edcarter/Capstone/src/HTTPBench/curl-7.52.1..
 exec_prefix=${prefix}
 includedir=${prefix}/include
 cppflag_curl_staticlib=
@@ -71,7 +71,7 @@ while test $# -gt 0; do
         ;;
 
     --ca)
-        echo "/etc/ssl/certs/ca-certificates.crt"
+        echo "/etc/pki/tls/certs/ca-bundle.crt"
         ;;
 
     --cc)
@@ -164,7 +164,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--prefix=/home/elias/Capstone/src/HTTPBench/curl-7.52.1../'"
+        echo " '--prefix=/afs/ualberta.ca/home/e/d/edcarter/Capstone/src/HTTPBench/curl-7.52.1../'"
         ;;
 
     *)

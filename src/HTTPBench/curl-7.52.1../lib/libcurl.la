@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/elias/Capstone/src/HTTPBench/curl-7.52.1../lib'
+libdir='/afs/ualberta.ca/home/e/d/edcarter/Capstone/src/HTTPBench/curl-7.52.1../lib'
