@@ -150,6 +150,11 @@ int main(int argc, char **args)
 	tids = malloc(sizeof(pthread_t) * thread_count);
 	benchmark_times = malloc(sizeof(long long) * thread_count);
 
+	if (tids == NULL || benchmark_times == NULL) {
+		fprintf(stderr, "malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
+
 	for(i=0; i<thread_count; i++) {
 		error = pthread_create(&tids[i],
 					NULL, /* default thread attributes */
