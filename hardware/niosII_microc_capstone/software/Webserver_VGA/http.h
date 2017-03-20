@@ -20,7 +20,7 @@
 #define   HTTP_KEEP_ALIVE_COUNT 20    /* Max number of files per connection */
 #define   HTTP_KEEP_ALIVE_TIME  5000  /* TCP connection keep-alive time (ms) */
 #define   HTTP_PORT             80    /* TCP port number to listen on */
-#define   HTTP_NUM_CONNECTIONS  1     /* Maximum concurrent HTTP connections */
+#define   HTTP_NUM_CONNECTIONS  2     /* Maximum concurrent HTTP connections */
 #define   HTTP_MAX_LINE_SIZE    256   /* The maximum size of any line. */
 
 #define   HTTP_DEFAULT_FILE       "/index.html"

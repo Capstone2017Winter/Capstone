@@ -15,5 +15,5 @@ make
 
 To run HTTPBench cd into HTTPBench/ and then run:
 ```
-./httpbench myurltotest.com:myport number_of_http_get_iterations
+./httpbench myurltotest.com:myport number_of_iterations number_of_threads
 ```

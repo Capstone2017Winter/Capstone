@@ -700,8 +700,8 @@ int http_process_headers(http_conn* conn)
     conn->content_length = atoi(option+16);
     //printf( "Content Length = %d.\n", conn->content_length );
   }
-  else if (stricmp(option, "data") == 0){
-
+  else if (stricmp(option, "\r\ndata") == 0){
+	  conn->state = DATA;
   }
   /* When getting the Content-Type, get the whole line and throw it
    * to another function.  This will be done several times.
@@ -1153,6 +1153,7 @@ int http_prepare_response(http_conn* conn)
     case GET:
     {
       if(strcasecmp(conn->uri, CONNECTION_READY) == 0){
+    	printf("Received GET request \n");
         send(conn->fd, (void *)canned_response2, strlen(canned_response2), 0);
         conn->state = DATA;
         break;
@@ -1498,19 +1499,31 @@ void WSTask()
 }
 
 void download_image(http_conn* conn){
-  char uri[HTTP_URI_SIZE];
+  char data[HTTP_URI_SIZE];
 
   // Separate uri string so it can be read
-  strcpy(uri, conn->uri);
+  strcpy(data, conn->rx_rd_pos);
   int i=0;
-  int length = strlen(uri);
+  int length = strlen(data);
   printf("Made it to POST function \n");
-  short int testFile = alt_up_sd_card_fopen("Testfile.txt", true);
-  for(i = 0; i < length; i++){
-    alt_up_sd_card_write(testFile, uri[i]);
-  }
+  short int testFile;
+  testFile = alt_up_sd_card_fopen("a.txt", true);
+  if(testFile == -1){
+	  testFile= alt_up_sd_card_fopen("a.txt", false);
+	  printf("Failed first time \n");
 
-  alt_up_sd_card_fclose(testFile); 
+  }
+  printf("File handle = %d\n", testFile);
+  //alt_up_sd_card_set_attributes(testFile,0x001D);
+  for(i = 0; i < length; i++){
+	data[i] = 'F';
+    alt_up_sd_card_write(testFile, data[i]);
+  }
+  printf("Done writing to file \n");
+
+  if(alt_up_sd_card_fclose(testFile) == true){
+	  printf("file closed properly\n");
+  }
 }
 
 
