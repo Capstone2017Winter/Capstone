@@ -119,11 +119,12 @@ def save_schedule(request):
 
             #create class if it doesn't exist
             courseName = course['name']
-            courseDescription = course['short'] + ' : ' + course['long']
+            short_description = course['short']
+            long_description = course['long']
             try:
                 myclass = MyClass.objects.get(class_code=courseName)
             except (MyClass.DoesNotExist):
-                myclass = MyClass(class_code=courseName, class_description=courseDescription)             
+                myclass = MyClass(class_code=courseName, short_description=short_description, long_description = long_description)             
                 myclass.save()
 
             timeSlot = None
