@@ -138,14 +138,17 @@ int main(int argc, char **args)
 		usage();
 	}
 
-	tids = malloc(sizeof(pthread_t) * thread_count);
-	benchmark_times = malloc(sizeof(long long) * thread_count);
-
 	/*
 	 * Not thread safe, we must initialize curl library before
 	 * we start creating threads.
 	 */
-	curl_global_init(CURL_GLOBAL_ALL);
+	if(curl_global_init(CURL_GLOBAL_ALL) != 0) {
+		fprintf(stderr, "curl_global_init failed\n");
+		exit(EXIT_FAILURE);
+	}
+
+	tids = malloc(sizeof(pthread_t) * thread_count);
+	benchmark_times = malloc(sizeof(long long) * thread_count);
 
 	for(i=0; i<thread_count; i++) {
 		error = pthread_create(&tids[i],
