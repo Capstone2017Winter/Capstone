@@ -103,7 +103,6 @@ int main(int argc, char **args)
 {
 
 	/*other*/
-	char *endptr;
 	long long iterations;
 	int i;
 
@@ -128,25 +127,33 @@ int main(int argc, char **args)
 	/* parse arguments */
  	if (argc != 4) usage();
  	target_url = args[1];
-	iterations = strtol(args[2], &endptr, /*base 10*/ 10);
+	iterations = strtol(args[2], NULL, /*base 10*/ 10);
 	if (iterations == 0) {
 		fprintf(stderr, "Unable to parse iterations\n");
 		usage();
 	}
-	thread_count = strtol(args[3], &endptr, /*base 10*/ 10);
+	thread_count = strtol(args[3], NULL, /*base 10*/ 10);
 	if (thread_count == 0) {
 		fprintf(stderr, "Unable to parse thread count\n");
 		usage();
 	}
 
-	tids = malloc(sizeof(pthread_t) * thread_count);
-	benchmark_times = malloc(sizeof(long long) * thread_count);
-
 	/*
 	 * Not thread safe, we must initialize curl library before
 	 * we start creating threads.
 	 */
-	curl_global_init(CURL_GLOBAL_ALL);
+	if(curl_global_init(CURL_GLOBAL_ALL) != 0) {
+		fprintf(stderr, "curl_global_init failed\n");
+		exit(EXIT_FAILURE);
+	}
+
+	tids = malloc(sizeof(pthread_t) * thread_count);
+	benchmark_times = malloc(sizeof(long long) * thread_count);
+
+	if (tids == NULL || benchmark_times == NULL) {
+		fprintf(stderr, "malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
 
 	for(i=0; i<thread_count; i++) {
 		error = pthread_create(&tids[i],

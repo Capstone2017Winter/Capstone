@@ -1,9 +1,9 @@
 # Directories...
-$prefix=/usr/local
+$prefix=/afs/ualberta.ca/home/e/d/edcarter/Capstone/src/HTTPBench/curl-7.52.1..
 $exec_prefix=${prefix}
 $bindir=${exec_prefix}/bin
 $confdir=${prefix}/etc
-$docdir=/usr/local/doc
+$docdir=/afs/ualberta.ca/home/e/d/edcarter/Capstone/src/HTTPBench/curl-7.52.1../doc
 $mandir=${datarootdir}/man
 $libdir=${exec_prefix}/lib
 $srcdir=../..
