@@ -54,6 +54,7 @@
 
 #define   CONNECTION_READY        "/IMAGE_REQUEST"
 #define   DATA_READY              "/SEND_DATA"
+#define   DATA_HEADER			  "image/bmp;base64,"
 
 
 typedef struct http_socket
