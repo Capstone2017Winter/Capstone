@@ -1498,26 +1498,61 @@ void WSTask()
   } /* while(1) */
 }
 
+char * buildDecodingTable() {
+	int i;
+	char encodingTable[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
+                                'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
+                                'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
+                                'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f',
+                                'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+                                'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+                                'w', 'x', 'y', 'z', '0', '1', '2', '3',
+                                '4', '5', '6', '7', '8', '9', '+', '/'};
+
+	char *decoding;
+	decoding = malloc(256);
+
+	for (i = 0; i < 64; i++){
+        	decoding[(unsigned char) encodingTable[i]] = (unsigned char) i;
+	}
+	return decoding;
+}
+
 void download_image(http_conn* conn){
-  char data[HTTP_URI_SIZE];
+  char* data = malloc(168000);
+  memset(data, 0, 168000);
 
   // Separate uri string so it can be read
   strcpy(data, conn->rx_rd_pos);
   int i=0;
+  char decode;
+  char *decodingTable;
   int length = strlen(data);
   printf("Made it to POST function \n");
   short int testFile;
-  testFile = alt_up_sd_card_fopen("a.txt", true);
+  testFile = alt_up_sd_card_fopen("a.bmp", true);
   if(testFile == -1){
-	  testFile= alt_up_sd_card_fopen("a.txt", false);
+	  testFile= alt_up_sd_card_fopen("a.bmp", false);
 	  printf("Failed first time \n");
 
   }
+
   printf("File handle = %d\n", testFile);
   //alt_up_sd_card_set_attributes(testFile,0x001D);
+  //Setting up the table for decoding from base64
+  decodingTable = buildDecodingTable();
+
+  char *header = DATA_HEADER;
+//  char *_data = data;
+  while (*data == *header) {
+	  data++;
+	  header++;
+  }
+  printf("%d\n", length);
   for(i = 0; i < length; i++){
-	data[i] = 'F';
-    alt_up_sd_card_write(testFile, data[i]);
+	printf("%c",data[i]);
+	decode = decodingTable[data[i]];
+    alt_up_sd_card_write(testFile, decode);
   }
   printf("Done writing to file \n");
 

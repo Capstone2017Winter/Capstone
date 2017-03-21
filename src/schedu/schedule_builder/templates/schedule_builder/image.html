@@ -15,7 +15,7 @@
 			$(document).ready(function(){
 
 				var img = document.getElementById("imageMe");
-				domtoimage.toBmp(img)
+				domtoimage.toBmp(img, {width:20, height:20})
 					.then(function (dataUrl) {
 
 						var xhr = new XMLHttpRequest()
