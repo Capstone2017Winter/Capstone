@@ -106,6 +106,7 @@ struct inet_taskinfo wstask = {
 /**************************************************************************
  *  load_bmp                                                              *
  *    Loads a bitmap file into memory.                                    *
+ *    BMP_OFFSET is the size of the bitmap Header                         *
  **************************************************************************/
 
 void load_bmp(int file_handle, unsigned char **data_array)

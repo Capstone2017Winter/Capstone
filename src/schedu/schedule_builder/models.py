@@ -57,7 +57,8 @@ class MyClass(models.Model):
 	"""
 	degree = models.ManyToManyField(Degree)
 	class_code = models.CharField(max_length=10, primary_key=True)
-	class_description = models.CharField(max_length=500)
+	short_description = models.CharField(max_length=100, default="")
+	long_description = models.CharField(max_length=500, default="")
 
 	def __str__(self):
 		return self.class_code
