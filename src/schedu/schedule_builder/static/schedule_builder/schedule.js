@@ -280,6 +280,7 @@ function addClassToSchedule(course) {
       	'</span>' +
       	'</div>' ;
     }
+    added_course += '</div></div>' //close choices-div and top-div
 
     added_course += '<div class="more" style="display:none;">' +
       '<p class="return-field long-desc"><span>Description: </span>' +
