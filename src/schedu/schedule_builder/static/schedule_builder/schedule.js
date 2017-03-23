@@ -181,44 +181,8 @@ function buildScheduleBlock(course, section, section_type, section_number) {
     return schedule_section;
 }
 
-String.prototype.capitalize = function() {
-    return this.replace(/(?:^|\s)\S/g, function(a) {
-      return a.toUpperCase();
-    });
-};
-
-function timeTo24(time) {
-    if (/AM/.test(time)) {
-      time = time.replace(/AM/, "");
-      return time;
-    } else {
-      time = time.replace(/PM/, "");
-      if(/12:/.test(time)){return time;}
-      time = time.split(/:/);
-      time[0] = (+time[0] + 12).toString();
-      return time[0] + ":" + time[1];
-    }
-}
-
-function addClassToSchedule(course) {
-
-   	if (!window.added_courses[course.varname]) {
-   		console.log("addClassToSchedule");
-  		window.added_courses[course.varname] = course;
-   	} 
-    else {
-      	return;
-    }
-
-	Object.keys(course.seminars).forEach(function(key, index) {
-      		seminars = seminars + '<option>' + key + '</option>'
-	});
-
-	Object.keys(course.labs).forEach(function(key, index) {
-      		labs = labs + '<option>' + key + '</option>'
-	});
-
-	var added_course = '<div class="added-class" id="' + course.varname + '">' +
+function buildAddedClassBlock(course){
+    var added_course = '<div class="added-class" id="' + course.varname + '">' +
       '<div class="top">' +
       '<div>' +
       '<p class="return-field class-title">' + course.name + '</p>' +
@@ -288,6 +252,41 @@ function addClassToSchedule(course) {
       '</p>' +
       '</div>' +
       '</div>'
+    
+    return added_course;
+  }
+
+
+String.prototype.capitalize = function() {
+    return this.replace(/(?:^|\s)\S/g, function(a) {
+      return a.toUpperCase();
+    });
+};
+
+function timeTo24(time) {
+    if (/AM/.test(time)) {
+      time = time.replace(/AM/, "");
+      return time;
+    } else {
+      time = time.replace(/PM/, "");
+      if(/12:/.test(time)){return time;}
+      time = time.split(/:/);
+      time[0] = (+time[0] + 12).toString();
+      return time[0] + ":" + time[1];
+    }
+}
+
+function addClassToSchedule(course) {
+
+   	if (!window.added_courses[course.varname]) {
+   		console.log("addClassToSchedule");
+  		window.added_courses[course.varname] = course;
+   	} 
+    else {
+      	return;
+    }
+
+	var added_course = buildAddedClassBlock(course);
 
     $(".class-column").append(added_course);
     $(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course);     
