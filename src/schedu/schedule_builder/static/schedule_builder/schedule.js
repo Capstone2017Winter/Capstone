@@ -71,7 +71,7 @@ $(document).ready(function(){
 	
 	$('#saveButton').click(function(){
 		saveSchedule();
-		alert("Schedule Saved!");
+
 	});
 
 	$('#downloadButton').click(function(){
@@ -544,6 +544,7 @@ function saveSchedule() {
 	var data = { classArray:classArray, scheduleId:scheduleId, csrfmiddlewaretoken:window.CSRF_TOKEN };
 	var args = { type:"POST", url:"/builder/save/", data:data};
 	$.ajax(args);
+	alert("Schedule Saved!");
 }
 
 function downloadScheduleToBoard() {
