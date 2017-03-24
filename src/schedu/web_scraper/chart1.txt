@@ -1,0 +1,955 @@
+Chemical
+Year 2
+Year 3
+Year 4
+Term 3
+CH E 243 (3-1s-0)
+CHEM 261 (3-0-3)
+CME 200 (1 day)
+CME 265 (3-0-3)
+English Elective (3-0-0)
+MATH 209 (3-0-1)
+Complementary Studies Elective (3-0-0)
+Term 4
+ECE 209 (3-0-3/2)
+MAT E 202 (3-0-3/2)
+MATH 201 (3-0-1)
+STAT 235 (3-0-1.5)
+Complementary Studies Elective (3-0-0)
+ITS Elective (3-0-0)
+Term 5
+CH E 312 (3-1s-0)
+CH E 343 (3-1s-0)
+CH E 351 (2-0-3)
+CH E 374 (3-1s-0)
+Program Elective (3-0-0)
+Term 6
+CH E 314 (3-1s-0)
+CH E 318 (3-0-2)
+CH E 345 (3-1s-0)
+CH E 358 (3-0-4)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+Term 7
+CH E 416 (3-0-2)
+CH E 445 (3-1s-0)
+CH E 446 (3-1s-3/3)
+CH E 464 (3-0-3)
+CME 481 (1-0-0)
+Program Elective (3-1s-0)
+Term 8
+CH E 454 (1-0-4)
+CH E 465 (4-0-4)
+CME 483 (1-0-0)
+ENGG 400 (1-0-0)
+Program Elective (3-1s-0)
+Program Elective (3-1s-0)
+Chemical: Biomedical Option
+Year 2
+Year 3
+Year 4
+Term 3
+BIOL 107 (3-1s-3)
+CH E 243 (3-1s-0)
+CME 200 (1 day)
+CME 265 (3-0-3)
+CHEM 261 (3-0-3)
+English Elective (3-0-0)
+MATH 209 (3-0-1)
+Term 4
+BIOCH 200, BIOL 201, or CELL 201 (3-0-0)
+ECE 209 (3-0-3/2)
+MAT E 202 (3-0-3/2)
+MATH 201 (3-0-1)
+STAT 235 (3-0-1.5)
+ITS Elective (3-0-0)
+Term 5
+BME 320 (3-0-0)
+CH E 312 (3-1s-0)
+CH E 343 (3-1s-0)
+CH E 351 (2-0-3)
+CH E 374 (3-1s-0)
+Term 6
+BME 321 (3-0-0)
+CH E 314 (3-1s-0)
+CH E 318 (3-0-2)
+CH E 345 (3-1s-0)
+CH E 358 (3-0-4)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+Term 7
+CH E 446 (3-1s-3/3)
+CH E 464 (3-0-3)
+CH E 416 (3-0-2)
+CME 481 (1-0-0)
+PHIL 386 (3-0-0)
+Complementary Studies Elective (3-0-0)
+Term 8
+CH E 454 (1-0-4)
+CH E 465 (4-0-4)
+CME 483 (1-0-0)
+ENGG 400 (1-0-0)
+Program Elective (3-1s-0)
+Program Elective (3-1s-0)
+Chemical: Computer Process Control Option
+Year 2
+Year 3
+Year 4
+Term 3
+CHEM 261 (3-0-3)
+CME 200 (1 day)
+ECE 202 (3-1s-3/2)
+ECE 210 (3-0-3/2)
+MAT E 202 (3-0-3/2)
+MATH 209 (3-0-1)
+Complementary Studies Elective (3-0-0)
+Term 4
+CH E 243 (3-1s-0)
+CME 265 (3-0-3)
+English Elective (3-0-0)
+MATH 201 (3-0-1)
+STAT 235 (3-0-1.5)
+Complementary Studies Elective (3-0-0)
+Term 5
+CH E 312 (3-1s-0)
+CH E 343 (3-1s-0)
+CH E 351 (2-0-3)
+CH E 374 (3-1s-0)
+CH E 446 (3-1s-3/3)
+Term 6
+CH E 314 (3-1s-0)
+CH E 318 (3-0-2)
+CH E 345 (3-1s-0)
+CH E 358 (3-0-4)
+CH E 472 (3-1s-3/3)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+Term 7
+CH E 416 (3-0-2)
+CH E 464 (3-0-3)
+CME 481 (1-0-0)
+ITS Elective (3-0-0)
+Program Elective (3-1s-0)
+Program Elective (3-1s-0)
+Term 8
+CH E 454 (1-0-4)
+CH E 465 (4-0-4)
+CH E 573 (3-0-3/2)
+CH E 576 (3-0-3/2)
+CME 483 (1-0-0)
+ENGG 400 (1-0-0)
+Chemical: Oil Sands Elective
+Year 2
+Year 3
+Year 4
+Term 3
+CH E 243 (3-1s-0)
+CME 200 (1 day)
+CME 265 (3-0-3)
+CHEM 261 (3-0-3)
+English Elective (3-0-0)
+MATH 209 (3-0-1)
+Complementary Studies Elective (3-0-0)
+Term 4
+MAT E 202 (3-0-3/2)
+ECE 209 (3-0-3/2)
+MATH 201 (3-0-1)
+STAT 235 (3-0-1.5)
+Complementary Studies Elective (3-0-0)
+ITS Elective (3-0-0)
+Term 5
+CH E 312 (3-1s-0)
+CH E 343 (3-1s-0)
+CH E 351 (2-0-3)
+CH E 374 (3-1s-0)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+Term 6
+CH E 314 (3-1s-0)
+CH E 318 (3-0-2)
+CH E 345 (3-1s-0)
+CH E 358 (3-0-4)
+CH E 522 (3-1s-0)
+Term 7
+CH E 416 (3-0-2)
+CH E 445 (3-1s-0)
+CH E 446 (3-1s-3/3)
+CH E 464 (3-0-3)
+CME 481 (1-0-2)
+Program Elective (3-0-0)
+Term 8
+CH E 435 (4-0-4)
+CH E 454 (1-0-4)
+CH E 534 (3-1s-3/3)
+CME 483 (1-0-0)
+ENGG 400 (1-0-0)
+Program Elective (3-0-0)
+Civil
+Year 2
+Year 3
+Year 4
+Term 3
+CIV E 265 (2-0-3)
+CIV E 270 (3-0-3)
+EAS 210 (3-0-3)
+MATH 209 (3-0-1)
+MAT E 202 (3-0-3/2)
+Term 4
+CIV E 221 (3-0-3/2)
+CIV E 240 (1-2s-0)
+CIV E 250 (3-0-3)
+CIV E 251 (1 week)*
+CIV E 295 (3-0-2)
+MATH 201 (3-0-1)
+STAT 235 (3-0-1.5)
+*Held in Spring/Summer (Spring Term)
+Term 5
+CIV E 330 (3-ls-0)
+CIV E 372 (3-2s-0)
+CIV E 391 (3-0-3)
+CIV E 395 (3-0-2/2)
+CIV E 398 (3-1s-0)
+English Elective (3-0-0)
+Term 6
+CIV E 303 (3-0-3/2)
+CIV E 315 (3-0-2)
+CIV E 321 (3-0-3/2)
+CIV E 331 (3-0-3/2)
+CIV E 374 (3-0-3)
+CIV E 381 (3-0-3)
+Term 7
+Program Elective (See Note)
+Program Elective (See Note)
+Program Elective (See Note)
+One of ECE 209, MEC E 250 or CH E 243
+Complementary Studies Elective (3-0-0)
+Term 8
+ENG M 310 (3-0-0) or 401 (3-0-0)
+ENGG 400 (1-0-0)
+ENGG 420 (3-0-0)
+Program Elective (See Note)
+Program Elective (See Note)
+ITS Elective (3-0-0)
+Civil: Biomedical Engineering Option
+Year 2
+Year 3
+Year 4
+Term 3
+CHEM 261 (3-0-3)
+CIV E 265 (2-0-3)
+CIV E 270 (3-0-3)
+EAS 210 (3-0-3)
+MATH 209 (3-0-1)
+MAT E 202 (3-0-3/2)
+Term 4
+BIOL 107 (3-1s-3)
+CIV E 221 (3-0-3/2)
+CIV E 240 (1-2s-0)
+CIV E 295 (3-0-2)
+MATH 201 (3-0-1)
+STAT 235 (3-0-1.5)
+Term 5
+BME 320 (3-0-0)
+CIV E 330 (3-1s-0)
+CIV E 372 (3-2s-0)
+CIV E 395 (3-0-2/2)
+CIV E 398 (3-1s-0)
+English Elective
+Term 6
+BME 321 (3-0-0)
+CIV E 321 (3-0-3/2)
+CIV E 331 (3-0-3/2)
+CIV E 374 (3-0-3)
+CIV E 381 (3-0-3)
+ENV E 251 (3-0-3/2)
+Term 7
+BIOCH 200 (3-0-0)
+One of ECE 209, MEC E 250 or CH E 243
+ENG M 310 (3-0-0) or 401 (3-0-0)
+Complementary Studies Elective (3-0-0)
+ITS Elective (3-0-0)
+Program Elective (See Note)
+Term 8
+CIV E 459 (3-0-3)
+ENGG 400 (1-0-0)
+MEC E 485 (3-0-0)
+PEDS 306 (3-0-2)
+Program Elective (See Note)
+Program Elective (See Note)
+Civil: Environmental Engineering Option
+Year 2
+Year 3
+Year 4
+Term 3
+CIV E 265 (2-0-3)
+CIV E 270 (3-0-3)
+EAS 210 (3-0-3)
+ENV E 220 (3-0-3/2)
+MATH 209 (3-0-1)
+Term 4
+CIV E 240 (1-2s-0)
+CIV E 250 (3-0-3)
+CIV E 251 (1 week)*
+CIV E 295 (3-0-2)
+ENV E 251 (3-0-3/2)
+MATH 201 (3-0-1)
+STAT 235 (3-0-1.5)
+*Held in Spring/Summer (Spring Term)
+Term 5
+CH E 243 (3-1s-0)
+CIV E 330 (3-1s-0)
+CIV E 372 (3-2s-0)
+CIV E 395 (3-0-2/2)
+ENV E 322 (3-0-0)
+ENV E 324 (3-0-3/2)
+Term 6
+CIV E 331 (3-0-3/2)
+CIV E 381 (3-0-3)
+ENV E 302 (2-1s-0)
+ENV E 325 (3-0-3/2)
+Complementary Studies Elective (3-0-0)
+Term 7
+CIV E 374 (3-0-3)
+ENV E 320 (3-0-3/2)
+ENV E 421 (3-0-3/2)
+ENV E 423 (3-0-0)
+ENV E 432 (3-0-0)
+One of CIV E 524 (3-0-0), CIV E 526 (3-0-0), CIV E 558 (3-0-0), ENV E 400 (3-0-0) or ENV E 401 (3-0-0)* 
+*All courses may not be offered every year.
+Winter Term 8
+ENG M 310 (3-0-0) or 401 (3-0-0)
+ENGG 400 (1-0-0)
+ENV E 434 (3-0-0)
+ENV E 440 (3-0-3)
+LAW 399 (3-0-0)
+ITS Elective (3-0-0)
+One of ECE 209, MEC E 250 or MAT E 202
+Computer
+Year 2
+Year 3
+Year 4
+Term 3
+CMPUT 274 (3-0-3)
+ECE 201 (1 day)
+ECE 202 (3-1s-3/2)
+ECE 210 (3-0-3/2)
+MATH 201 (3-0-1)
+MATH 209 (3-0-1)
+English Elective
+Term 4
+CMPUT 272 (3-1s-3)
+CMPUT 275 (3-0-3)
+ECE 203 (3-1s-3/2)
+ECE 212 (3-0-3/2)
+ECE 240 (3-1s-0)
+PHYS 230 (3-0-3/2)
+Term 5
+ECE 302 (3-1s-3/2)
+ECE 311 (3-0-0)
+ECE 325 (3-0-3/2)
+ECE 340 (3-0-3/2)
+Group I Program Elective
+ENG M 310 (3-0-0) or 401 (3-0-0)
+Term 6
+CMPUT 291 (3-0-3)
+CMPUT 379 (3-0-3)
+ECE 315 (3-0-3/2)
+ECE 487 (3-0-0)
+Complementary Studies Elective (3-0-0)
+ITS Elective (3-0-0)
+Term 7
+CMPUT 301 (3-0-3)
+ECE 304 (3-1s-3/2)
+ECE 342 (3-1s-0)
+ECE 410 (3-0-3/2)
+Group II Program Elective
+Complementary Studies Elective (3-0-0)
+Term 8
+ECE 420 (3-0-3/2)
+ECE 492 (1-0-6)
+ENGG 400 (1-0-0)
+Group I Program Elective
+Group II Program Elective
+Group II Program Elective
+Group II Program Elective
+Computer: Nanoscale System Design Option
+Year 2
+Year 3
+Year 4
+Term 3
+CMPUT 274 (3-0-3)
+ECE 201 (1 day)
+ECE 202 (3-1s-3/2)
+ECE 210 (3-0-3/2)
+MATH 201 (3-0-1)
+MATH 209 (3-0-1)
+English Elective
+Term 4
+CMPUT 272 (3-1s-3)
+CMPUT 275 (3-0-3)
+ECE 203 (3-1s-3/2)
+ECE 212 (3-0-3/2)
+ECE 240 (3-1s-0)
+PHYS 230 (3-0-3/2)
+Term 5
+ECE 302 (3-1s-3/2)
+ECE 311 (3-0-0)
+ECE 325 (3-0-3/2)
+Complementary Studies Elective (3-0-0)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+Group I Program Elective
+Term 6
+CMPUT 291 (3-0-3)
+ECE 315 (3-0-3/2)
+ECE 412 (3-0-0)
+ECE 450 (3-0-3/2)
+ECE 475 (3-0-0)
+ITS Elective (3-0-0)
+Term 7
+CMPUT 301 (3-0-3)
+ECE 304 (3-1s-3/2)
+ECE 342 (3-1s-0)
+ECE 410 (3-0-3/2)
+Group II Program Elective
+Complementary Studies Elective (3-0-0)
+Term 8
+ECE 403 (3-0-3/2) 
+ECE 457 (3-0-2) 
+ECE 492 (1-0-6)
+ENGG 400 (1-0-0)
+Group I Program Elective
+Group II Program Elective
+Group II Program Elective
+Electrical
+Year 2
+Year 3
+Year 4
+Term 3
+ECE 201 (1 day)
+ECE 202 (3-1s-3/2)
+ECE 210 (3-0-3/2)
+MATH 201 (3-0-1)
+MATH 209 (3-0-1)
+Group I Program Elective
+English Elective (3-0-0)
+Term 4
+ECE 203 (3-1s-3/2)
+ECE 212 (3-0-3/2)
+ECE 220 (3-0-3/2)
+ECE 240 (3-1s-0)
+PHYS 230 (3-0-3/2)
+Complementary Studies Elective
+Term 5
+ECE 302 (3-1s-3/2)
+ECE 340 (3-0-3/2)
+ECE 342 (3-1s-0)
+ECE 360 (3-0-3/2)
+ECE 370 (3-1s-0)
+MATH 309 (3-0-0)
+Term 6
+ECE 303 (3-1s-3/2)
+ECE 312 (3-0-3/2)
+ECE 330 (3-0-0)
+ECE 380 (3-0-3/2)
+Group II Program Elective
+Complementary Studies Elective (3-0-0)
+Term 7
+ECE 332 (3-0-3/2)
+ECE 490 (1-0-3)
+Group I Program Elective
+Group II Program Elective
+Group II Program Elective
+Group II Program Elective
+Term 8
+ECE 491 (1-0-3)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+ENGG 400 (1-0-0)
+Group II Program Elective
+Group II Program Elective
+Group II Program Elective
+ITS Elective (3-0-0)
+Electrical: Biomedical Engineering Option
+Year 2
+Year 3
+Year 4
+Term 3
+ECE 201 (1 day)
+ECE 202 (3-1s-3/2)
+ECE 210 (3-0-3/2)
+MATH 201 (3-0-1)
+MATH 209 (3-0-1)
+Group I Program Elective
+English Elective (3-0-0)
+Term 4
+ECE 203 (3-1s-3/2)
+ECE 212 (3-0-3/2)
+ECE 220 (3-0-3/2)
+ECE 240 (3-1s-0)
+PHYS 230 (3-0-3/2)
+Complementary Studies Elective (3-0-0)
+Term 5
+BIOL 107 (3-1s-3)
+ECE 302 (3-1s-3/2)
+ECE 312 (3-0-3/2)
+ECE 340 (3-0-3/2)
+ECE 370 (3-1s-0)
+MATH 309 (3-0-0)
+Term 6
+ECE 303 (3-1s-3/2)
+ECE 342 (3-1s-0)
+ECE 360 (3-0-3/2)
+ECE 380 (3-0-3/2)
+Group I Program Elective
+Complementary Studies Elective (3-0-0)
+Term 7
+ECE 405 (3-0-0)
+ECE 440 (3-0-3/2)
+ECE 490 (1-0-3)
+Group II Program Elective
+PHYSL 210A
+ITS Elective (3-0-0)
+Term 8
+ECE 491 (1-0-3)
+Group II Program Elective
+Group II Program Elective
+Group II Program Elective
+ENG M 310 (3-0-0) or 401 (3-0-0)
+ENGG 400 (1-0-0)
+PHYSL 210B
+Electrical: Nanoengineering Option
+Year 2
+Year 3
+Year 4
+Term 3
+ECE 201 (1 day)
+ECE 202 (3-1s-3/2)
+ECE 210 (3-0-3/2)
+MATH 201 (3-0-1)
+MATH 209 (3-0-1)
+Group I Program Elective
+English Elective (3-0-0)
+Term 4
+ECE 203 (3-1s-3/2)
+ECE 212 (3-0-3/2)
+ECE 220 (3-0-3/2)
+ECE 240 (3-1s-0)
+PHYS 230 (3-0-3/2)
+Group I Program Elective
+Term 5
+ECE 302 (3-1s-3/2)
+ECE 340 (3-0-3/2)
+ECE 342 (3-1s-0)
+ECE 360 (3-0-3/2)
+ECE 370 (3-1s-0)
+MATH 309 (3-0-0)
+Term 6
+ECE 303 (3-1s-3/2)
+ECE 312 (3-0-3/2)
+ECE 341 (3-1s-0)
+ECE 450 (3-0-3/2)
+ECE 456 (3-0-0)
+ITS Elective (3-0-0)
+Term 7
+ECE 457 (3-0-2)
+ECE 471 (3-0-3/2)
+ECE 490 (1-0-3)
+Complementary Studies Elective (3-0-0)
+Group II Program Elective
+Group II Program Elective
+Term 8
+ECE 475 (3-0-0)
+ECE 491 (1-0-3)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+ENGG 400 (1-0-0)
+Complementary Studies Elective (3-0-0)
+Group II Program Elective
+Group II Program Elective
+Engineering Physics
+Year 2
+Year 3
+Year 4
+Term 3
+ECE 201 (1 day)
+ECE 202 (3-1s-3/2)
+MAT E 201 (3-0-0)
+MATH 201 (3-0-1)
+MATH 209 (3-0-1)
+PHYS 281 (3-0-0)
+PHYS 292 (0-0-3)
+English Elective (3-0-0)
+Term 4
+CH E 243 (3-1s-0)
+ECE 203 (3-1s-3/2)
+ECE 240 (3-1s-0)
+PHYS 244 (3-0-0)
+PHYS 271 (3-0-0)
+PHYS 292 (0-0-3)
+ITS Elective 
+Term 5
+ECE 210 (3-0-3/2)
+ECE 302 (3-1s-3/2)
+ECE 340 (3-0-3/2)
+ECE 471 (3-0-0)
+MATH 311 (3-0-0)
+PHYS 381 (3-0-0)
+Term 6
+ECE 220 (3-0-3/2)
+ECE 303 (3-1s-3/2)
+ECE 341 (3-1s-0)
+PHYS 311 (3-0-0)
+PHYS 372 (3-0-0)
+PHYS 397 (0-0-6)
+Term 7
+ECE 494 (1-0-3)
+PHYS 415 (3-0-0)
+PHYS 481 (3-0-0)
+Program Elective
+Program Elective
+Program Elective
+Complementary Studies Elective (3-0-0)
+Term 8
+ECE 360 (3-0-3/2)
+ECE 495 (1-0-6)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+ENGG 400 (1-0-0)
+Program Elective
+Program Elective
+Complementary Studies Elective (3-0-0)
+Engineering Physics: Nanoengineering Option
+Year 2
+Year 3
+Year 4
+Term 3
+ECE 201 (1 day)
+ECE 202 (3-1s-3/2)
+MAT E 201 (3-0-0)
+MATH 201 (3-0-1)
+MATH 209 (3-0-1)
+PHYS 281 (3-0-0)
+PHYS 292 (0-0-3)
+English Elective (3-0-0)
+Term 4
+CH E 243 (3-1s-0)
+ECE 203 (3-1s-3/2)
+ECE 240 (3-1s-0)
+PHYS 244 (3-0-0)
+PHYS 271 (3-0-0)
+PHYS 292 (0-0-3)
+ITS Elective
+Term 5
+ECE 210 (3-0-3/2)
+ECE 302 (3-1s-3/2)
+ECE 457 (3-0-2)
+ECE 471 (3-0-0)
+MATH 311 (3-0-0)
+PHYS 381 (3-0-0)
+Term 6
+ECE 303 (3-1s-3/2)
+ECE 341 (3-1s-0)
+ECE 360 (3-0-3/2)
+ECE 456 (3-0-0)
+PHYS 311 (3-0-0)
+PHYS 372 (3-0-0)
+Term 7
+CHEM 261 (3-0-3)
+Complementary Studies Elective (3-0-0)
+ECE 494 (1-0-3)
+PHYS 415 (3-0-0)
+PHYS 481 (3-0-0)
+Program Elective 
+Program Elective
+Term 8
+BIOCH 200 (3-0-0)
+ECE 455 (3-0-0)
+ECE 495 (1-0-6)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+ENGG 400 (1-0-0)
+Program Elective
+Complementary Studies Elective (3-0-0)
+Materials
+Year 2
+Year 3
+Year 4
+Term 3
+CH E 243 (3-1s-0)
+CHEM 261 (3-0-3)
+CME 200 (1 day)
+MAT E 202 (3-0-3/2)
+MATH 209 (3-0-1)
+STAT 235 (3-0-1.5)
+Term 4
+CIV E 270 (3-0-3)
+CME 265 (3-0-3)
+English Elective (3-0-0)
+MATH 201 (3-0-1)
+MAT E 211 (3-1s-3/4)
+MAT E 221 (3-1s-0)
+Term 5
+CH E 312 (3-1s-0)
+CH E 374 (3-1s-0)
+Complementary Studies Elective (3-0-0)
+MAT E 335 (3-1s-0)
+MAT E 301 (3-0-0)
+MAT E 361 (1-1s-3/2)
+Term 6
+Complementary Studies Elective (3-0-0)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+MAT E 336 (3-1s-0)
+MAT E 341 (3-1s-0)
+MAT E 351 (3-1s-0)
+MAT E 362 (1-1s-3/2)
+Term 7
+CH E 314 (3-1s-0)
+CME 481 (1-0-0)
+MAT E 464 (3-0-3)
+ITS Elective (3-0-0)
+Program Elective (3-0-0)
+Program Elective (3-0-0)
+Term 8
+CME 483 (1-0-0)
+ENGG 400 (1-0-0)
+MAT E 461 (1-1s-4)
+MAT E 465 (3-1s-3)
+Program Elective (3-0-0)
+Program Elective (3-0-0)
+Program Elective (3-0-0)
+Materials: Biomedical Option
+Year 2
+Year 3
+Year 4
+Term 3
+CH E 243 (3-1s-0)
+CHEM 261 (3-0-3)
+CME 200 (1 day)
+MAT E 202 (3-0-3/2)
+MATH 209 (3-0-1)
+STAT 235 (3-0-1.5)
+Term 4
+CIV E 270 (3-0-3)
+CME 265 (3-0-3)
+English Elective (3-0-0)
+MATH 201 (3-0-1)
+MAT E 211 (3-1s-3/4)
+MAT E 221 (3-1s-0)
+Term 5
+BIOL 107 (3-1s-3)
+CH E 312 (3-1s-0)
+Complementary Studies Elective (3-0-0)
+MAT E 301 (3-0-0)
+MAT E 335 (3-1s-0)
+MAT E 361 (1-1s-3/2)
+Term 6
+BIOCH 200, or BIOL 201, or CELL 201 (3-0-0)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+MAT E 336 (3-1s-0)
+MAT E 341 (3-1s-0)
+MAT E 351 (3-1s-0)
+MAT E 362 (1-1s-3/2)
+Term 7
+BME 320 (3-0-0)
+CH E 314 (3-1s-0)
+CH E 374 (3-1s-0)
+CME 481 (1-0-0)
+MAT E 464 (3-0-3)
+PHIL 386 (3-0-0)
+Term 8
+BME 321 (3-0-0)
+CH E 582 (3-1s-0) or MAT E 495 (3-1s-0)
+CME 483 (1-0-0)
+ENGG 400 (1-0-0)
+MAT E 461 (1-1s-4)
+MAT E 465 (3-1s-3)
+ITS Elective (3-0-0)
+Materials: Nano and Functional Materials Option
+Year 2
+Year 3
+Year 4
+Term 3
+CH E 243 (3-1s-0)
+CHEM 261 (3-0-3)
+CME 200 (1 day)
+MAT E 202 (3-0-3/2)
+MATH 209 (3-0-1)
+STAT 235 (3-0-1.5)
+Term 4
+CIV E 270 (3-0-3)
+CME 265 (3-0-3)
+English Elective (3-0-0)
+MATH 201 (3-0-1)
+MAT E 211 (3-1s-3/4)
+MAT E 221 (3-1s-0)
+Term 5
+CH E 312 (3-1s-0)
+CH E 374 (3-1s-0)
+MAT E 335 (3-1s-0)
+MAT E 301 (3-0-0)
+MAT E 361 (1-1-3/2)
+MAT E 390 (3-0-0)
+Term 6
+Complementary Studies Elective (3-0-0)
+ENG M 310 (3-0-0) or 401 (3-0-0)
+MAT E 336 (3-1s-0)
+MAT E 341 (3-1s-0)
+MAT E 351 (3-1s-0)
+MAT E 362 (1-1s-3/2)
+Term 7
+CH E 314 (3-1s-0)
+CME 481 (1-0-0)
+ECE 457 (3-0-2)
+MAT E 464 (3-0-3)
+MAT E 491 (3-1s-0)
+Complementary Studies Elective (3-0-0)
+Term 8
+CME 458 (2-0-3) or MAT E 495 (3-1s-0) 
+CME 483 (1-0-0)
+ENGG 400 (1-0-0)
+MAT E 461 (1-1s-4)
+MAT E 465 (3-1s-3)
+MAT E 494 (3-0-3/2)
+ITS Elective (3-0-0)
+Mechanical
+Year 2
+Year 3
+Year 4
+Term 3
+CIV E 270 (3-0-3)
+MATH 209 (3-0-1)
+STAT 235 (3-0-1.5)
+Course Group 2A
+CH E 243 (3-1s-0)
+MEC E 200 (1-2s-0)
+MEC E 250 (3-1s-0)
+or
+Course Group 2B
+MEC E 230 (3-1s-0)
+MEC E 260 (2-0-3)
+MEC E 265 (2-0-3)
+Term 4
+ECE 209 (3-0-3/2)
+MATH 201 (3-0-1)
+MAT E 202 (3-0-3/2)
+Course Group 2A
+CH E 243 (3-1s-0)
+MEC E 200 (1-2s-0)
+MEC E 250 (3-1s-0)
+or
+Course Group 2B
+MEC E 230 (3-1s-0)
+MEC E 260 (2-0-3)
+MEC E 265 (2-0-3)
+Term 5
+Course Group 3A
+MATH 300 (3-0-0)
+MEC E 300 (3-1s-0)
+MEC E 301 (1-0-3)
+MEC E 331 (3-0-1)
+MEC E 371 (3-1s-0)
+MEC E 380 (3-1s-0)
+or
+Course Group 3B
+ENG M 310 (3-0-0) or 401 (3-0-0)
+English Elective (3-0-0)
+MEC E 340 (3-0-0)
+MEC E 360 (3-0-3/2)
+MEC E 362 (3-0-3/2)
+MEC E 390 (3-0-1)
+Term 6
+Course Group 3A
+MATH 300 (3-0-0)
+MEC E 300 (3-1s-0)
+MEC E 301 (1-0-3)
+MEC E 331 (3-0-1)
+MEC E 371 (3-1s-0)
+MEC E 380 (3-1s-0)
+or
+Course Group 3B
+ENG M 310 (3-0-0) or 401 (3-0-0)
+English Elective (3-0-0)
+MEC E 340 (3-0-0)
+MEC E 360 (3-0-3/2)
+MEC E 362 (3-0-3/2)
+MEC E 390 (3-0-1)
+Term 7
+Program Elective (3-0-0)
+Program Elective (3-0-0)
+Course Group 4A
+MEC E 430 (3-0-0) or 480 (3-0-0)
+MEC E 463 (3-0-2)
+Program Elective (3-0-0)
+Complementary Studies Elective (3-0-0)
+or
+Course Group 4B
+MEC E 403 (1-0-3)
+MEC E 451 (3-0-1)
+MEC E 460 (2-1s-4)
+ITS Elective (3-0-0)
+Term 8
+CH E 448 (3-1s-3/3) or ECE 362 (3-0-3/2) or MEC E 420 (3-0-3/2)
+ENGG 400 (1-0-0)
+Program Elective (3-0-0)
+Course Group 4A
+MEC E 430 (3-0-0) or 480 (3-0-0)
+MEC E 463 (3-0-2)
+Program Elective (3-0-0)
+Complementary Studies Elective (3-0-0)
+or
+Course Group 4B
+MEC E 403 (1-0-3)
+MEC E 451 (3-0-1)
+MEC E 460 (2-1s-4)
+ITS Elective (3-0-0)
+Mining
+Year 2
+Year 3
+Year 4
+Term 3
+CIV E 265 (2-0-3)
+EAS 210 (3-0-3)
+ECE 209 (3-0-3/2)
+MATH 209 (3-0-1)
+MIN E 295 (3-0-3/2)
+STAT 235 (3-0-1.5)
+Term 4
+CH E 243 (3-1s-0)
+CIV E 250 (3-0-3)
+CIV E 251 (1 week)*
+CIV E 270 (3-0-3)
+MATH 201 (3-0-1)
+MIN E 310 (3-0-0)
+ITS Elective (3-0-0)
+*Held in Spring/Summer (Spring Term)
+Term 8
+ENGG 400 (1-0-0)
+MIN E 403 (1-0-6)
+MIN E 407 (3-0-3/2)
+MIN E 408 (2-0-2)
+MIN E 420 (3-0-0)
+MIN E 422 (2-1s-0)
+Petroleum
+Year 2
+Year 3
+Year 4
+Term 3
+CH E 243 (3-1s-0)
+EAS 210 (3-0-3)
+ECE 209 (3-0-3/2)
+MAT E 202 (3-0-3/2)
+MATH 209 (3-0-1)
+English Elective (3-0-0)
+Term 4
+CH E 312 (3-1s-0)
+CIV E 270 (3-0-3)
+MATH 201 (3-0-1)
+PET E 275 (3-0-3/2)
+STAT 235 (3-0-1.5)
+Complementary Studies (3-0-0)
+Term 7
+CH E 314 (3-1s-0)
+ENGG 404 (3-3s/2-0)
+PET E 444 (3-0-0)
+PET E 475 (3-0-3/2)
+PET E 476 (3-0-0)
+PET E 484 (3-0-0)
+Term 8
+ENGG 400 (1-0-0)
+PET E 471 (3-0-0)
+PET E 477 (3-0-0)
+PET E 478 (3-0-0)
+PET E 496 (1-6s-0)
+ITS Elective (3-0-0)
