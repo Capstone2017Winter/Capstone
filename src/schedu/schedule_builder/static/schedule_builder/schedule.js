@@ -541,8 +541,10 @@ function saveSchedule() {
 
 function downloadScheduleToBoard() {
 	var scheduleNode = document.getElementById("scheduleDiv")
-	domtoimage.toBmp(scheduleNode)
+	domtoimage.toBmp(scheduleNode, {scalex:0.5, scaley:0.5, bgcolor:'white'})
 		.then(function (dataUrl) {
+			var newImg = '<img src="' + dataUrl + '"/>';
+			$('body').append(newImg);
 			dataUrl = "/IMAGE_DATA/" + dataUrl;
 			var xhr = new XMLHttpRequest()
 			xhr.open("GET", "http://192.168.1.101", true)

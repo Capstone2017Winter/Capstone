@@ -150,6 +150,24 @@
             var canvas = document.createElement('canvas');
             canvas.width = options.width || util.width(domNode);
             canvas.height = options.height || util.height(domNode);
+          
+            // height and width of canvas must be changed before scaling
+            if (options.scalex) {
+                canvas.width = canvas.width * options.scalex;
+            }
+            if (options.scaley) {
+                canvas.height = canvas.height * options.scaley;
+            }
+ 
+            // now we scale
+            if (options.scalex) {
+                var ctx = canvas.getContext('2d');
+                ctx.scale(options.scalex, 1);
+            }
+            if (options.scaley) {
+                var ctx = canvas.getContext('2d');
+                ctx.scale(1, options.scaley);
+            }
 
             if (options.bgcolor) {
                 var ctx = canvas.getContext('2d');
