@@ -3,9 +3,9 @@ $(document).ready(function(){
 	window.searched_courses = {}
 	window.added_courses = {}
 	window.event_colors = ["event-8", "event-3", "event-6", "event-5", "event-4", "event-7", "event-2", "event-1"];
+	window.objSchedulesPlan = [];
 
-	var schedules = $('.cd-schedule');
-  	var objSchedulesPlan = [],
+	var schedules = $('.cd-schedule'),
     windowResize = false;
 
 	var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
@@ -16,7 +16,7 @@ $(document).ready(function(){
   	if (schedules.length > 0) {
     	schedules.each(function() {
       	//create SchedulePlan objects
-      	objSchedulesPlan.push(new SchedulePlan($(this)));
+      	window.objSchedulesPlan.push(new SchedulePlan($(this)));
     	});
   	}
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
 
   $(window).keyup(function(event) {
     if (event.keyCode == 27) {
-      objSchedulesPlan.forEach(function(element) {
+      window.objSchedulesPlan.forEach(function(element) {
         element.closeModal(element.eventsGroup.find('.selected-event'));
       });
     }
@@ -44,11 +44,12 @@ $(document).ready(function(){
     var changed_course = $(".class-column").find('#' + course.varname);
 
     $('.events').find('.single-event.' + change_id + '.' + type_changed).remove();
-    changed_course.find('.choices-div').syncWithDropDowns(course, changed_course.attr('data-event'), type_changed);
+    //changed_course.find('.choices-div').syncWithDropDowns(course, changed_course.attr('data-event'), type_changed);
 
-    for (var plan in objSchedulesPlan) {
-      	objSchedulesPlan[plan].updateSchedule();
-    }
+    colorSyncPlace(course, type_changed);
+    //for (var plan in objSchedulesPlan) {
+      //	objSchedulesPlan[plan].updateSchedule();
+    //}
   });
 
 	classes = new Array();
@@ -70,6 +71,7 @@ $(document).ready(function(){
 	
 	$('#saveButton').click(function(){
 		saveSchedule();
+		alert("Schedule Saved!");
 	});
 
 	$('#downloadButton').click(function(){
@@ -98,14 +100,17 @@ $(document).ready(function(){
     	var course = window.searched_courses[$(this).closest('div[class^="search-return"]').attr('id')];
 		addClassToSchedule(course);
 
-		for (var plan in objSchedulesPlan) {
-      	objSchedulesPlan[plan].updateSchedule();
-    	}
+		colorSyncPlace(course);
+		//for (var plan in objSchedulesPlan) {
+      	//objSchedulesPlan[plan].updateSchedule();
+    	//}
 		
   	});
 
+  	
+
   	function checkResize() {
-    objSchedulesPlan.forEach(function(element) {
+    window.objSchedulesPlan.forEach(function(element) {
       element.scheduleReset();
     });
     windowResize = false;
@@ -113,11 +118,11 @@ $(document).ready(function(){
 });
 
 jQuery.fn.extend({
-    syncWithDropDowns: function(course, event_color, changed_type = null) {
+    syncWithDropDowns: function(course, event_color, type_changed = null) {
       var section_types;
-      if (changed_type != null) {
+      if (type_changed != null) {
         //This is for when a class drop down is changed
-        section_types = [changed_type];
+        section_types = [type_changed];
       } else {
         //This is for adding a class
         var section_types = ["lectures", "seminars", "labs"];
@@ -249,7 +254,6 @@ function buildAddedClassBlock(course){
     return added_course;
   }
 
-
 String.prototype.capitalize = function() {
     return this.replace(/(?:^|\s)\S/g, function(a) {
       return a.toUpperCase();
@@ -285,6 +289,16 @@ function addClassToSchedule(course) {
     $(".class-column").append(added_course);
     $(".class-column").find('#' + course.varname).attr('data-event', event_color);
     $(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course, event_color);    
+}
+
+function colorSyncPlace(course, type_changed=null){
+	
+	var event_color = $('.class-column').find('#' + course.varname).attr('data-event');
+	$(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course, event_color, type_changed);
+
+	for (var plan in window.objSchedulesPlan) {
+   		window.objSchedulesPlan[plan].updateSchedule();
+    }
 }
 
 function searchClassCallback(response, status) {
@@ -467,6 +481,10 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 			$("#" + course.varname + "_seminar").val(seminar);
 		if (lab != '')
 			$("#" + course.varname + "_lab").val(lab);
+
+
+	colorSyncPlace(course);
+	//$(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course, event_color);	
 
 	} /*end function*/    
 	} /*end args*/
@@ -891,7 +909,7 @@ SchedulePlan.prototype.checkEventModal = function(device) {
 }
 
 function checkResize() {
-    objSchedulesPlan.forEach(function(element) {
+    window.objSchedulesPlan.forEach(function(element) {
       element.scheduleReset();
     });
     windowResize = false;
