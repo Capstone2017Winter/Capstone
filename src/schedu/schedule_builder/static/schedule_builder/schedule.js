@@ -20,25 +20,6 @@ $(document).ready(function(){
     	});
   	}
 
-  	function mutationHandler() {
-    	for (var plan in objSchedulesPlan) {
-      	objSchedulesPlan[plan].updateSchedule();
-    	}
-  	}
-
-  	var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-  	var domObserver = new MutationObserver(mutationHandler);
-  	var obsConfig = {
-    	childList: true,
-    	characterData: true,
-    	attributes: true,
-    	subtree: true
-  	};
-  	
-  	$(".events-group").each(function() {
-    	domObserver.observe(this, obsConfig);
-  	});
-
   $(window).on('resize', function() {
     if (!windowResize) {
       windowResize = true;
@@ -64,6 +45,10 @@ $(document).ready(function(){
 
     $('.events').find('.single-event.' + change_id + '.' + type_changed).remove();
     changed_course.find('.choices-div').syncWithDropDowns(course, changed_course.attr('data-event'), type_changed);
+
+    for (var plan in objSchedulesPlan) {
+      	objSchedulesPlan[plan].updateSchedule();
+    }
   });
 
 	classes = new Array();
@@ -112,6 +97,10 @@ $(document).ready(function(){
   	$('.search-returns').on('click', '.plus-button', function() {
     	var course = window.searched_courses[$(this).closest('div[class^="search-return"]').attr('id')];
 		addClassToSchedule(course);
+
+		for (var plan in objSchedulesPlan) {
+      	objSchedulesPlan[plan].updateSchedule();
+    	}
 		
   	});
 
