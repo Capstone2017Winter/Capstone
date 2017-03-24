@@ -276,7 +276,6 @@ function timeTo24(time) {
 function addClassToSchedule(course) {
 
    	if (!window.added_courses[course.varname]) {
-   		console.log("addClassToSchedule");
   		window.added_courses[course.varname] = course;
    	} 
     else {
