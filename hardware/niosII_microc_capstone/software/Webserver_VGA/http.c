@@ -1519,46 +1519,73 @@ char * buildDecodingTable() {
 }
 
 void download_image(http_conn* conn){
-  char* data = malloc(168000);
-  memset(data, 0, 168000);
+  char* data = malloc(HTTP_RX_BUF_SIZE);
+  memset(data, 0, HTTP_RX_BUF_SIZE);
 
   // Separate uri string so it can be read
   strcpy(data, conn->rx_rd_pos);
-  int i=0;
+
   char decode;
   char *decodingTable;
+
+  int i=0;
   int length = strlen(data);
   printf("Made it to POST function \n");
   short int testFile;
-  testFile = alt_up_sd_card_fopen("a.bmp", true);
+  testFile = alt_up_sd_card_fopen("test.bmp", true);
   if(testFile == -1){
-	  testFile= alt_up_sd_card_fopen("a.bmp", false);
+	  testFile= alt_up_sd_card_fopen("test.bmp", false);
 	  printf("Failed first time \n");
 
   }
 
-  printf("File handle = %d\n", testFile);
-  //alt_up_sd_card_set_attributes(testFile,0x001D);
-  //Setting up the table for decoding from base64
   decodingTable = buildDecodingTable();
-
   char *header = DATA_HEADER;
-//  char *_data = data;
   while (*data == *header) {
 	  data++;
 	  header++;
   }
-  printf("%d\n", length);
+
+  printf("File handle = %d\n", testFile);
+  //alt_up_sd_card_set_attributes(testFile,0x001D);
   for(i = 0; i < length; i++){
-	printf("%c",data[i]);
-	decode = decodingTable[data[i]];
-    alt_up_sd_card_write(testFile, decode);
+	  decode = decodingTable[data[i]];
+	  alt_up_sd_card_write(testFile, ((unsigned char)decode));
   }
   printf("Done writing to file \n");
 
   if(alt_up_sd_card_fclose(testFile) == true){
 	  printf("file closed properly\n");
   }
+  OSTimeDly(1);
+  testFile= alt_up_sd_card_fopen("test.bmp", false);
+  if(testFile >= 0){
+	  printf("File opened properly \n");
+
+	  unsigned char **data_array = malloc(640 * sizeof(unsigned char*));
+	  for(i = 0; i < 640; i++){
+	    data_array[i] = malloc(480 * sizeof(unsigned char));
+	  }
+
+	  load_bmp(testFile, data_array);
+
+	  draw_bitmap(data_array, vga_buffer);
+
+	  for(i = 0; i < 640; i++){
+		  free(data_array[i]);
+	  }
+
+	  free(data_array);
+
+	  if(alt_up_sd_card_fclose(testFile) == true){
+		  printf("File closed\n");
+	  }
+
+  }
+
+
+
+
 }
 
 
