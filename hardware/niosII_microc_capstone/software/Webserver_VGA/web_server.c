@@ -48,8 +48,6 @@
 #include "tcpport.h"
 #include "net.h"
 #include "altera_up_avalon_character_lcd.h"
-#include "altera_up_sd_card_avalon_interface.h"
-#include "altera_up_avalon_video_pixel_buffer_dma.h"
 
 #define LCD_DISPLAY_NAME CHARACTER_LCD_0_NAME
 
@@ -106,7 +104,6 @@ struct inet_taskinfo wstask = {
 /**************************************************************************
  *  load_bmp                                                              *
  *    Loads a bitmap file into memory.                                    *
- *    BMP_OFFSET is the size of the bitmap Header                         *
  **************************************************************************/
 
 void load_bmp(int file_handle, unsigned char **data_array)
