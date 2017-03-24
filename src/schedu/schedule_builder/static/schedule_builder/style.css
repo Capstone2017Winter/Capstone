@@ -282,6 +282,30 @@ html body .page-wrap .body-content .schedule .class-column {
   flex-direction: column;
   align-items: center;
 }
+html body .page-wrap .body-content .schedule .class-column .added-class[data-event="event-1"] {
+  border-color: #577f92;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class[data-event="event-2"] {
+  border-color: #443453;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class[data-event="event-3"] {
+  border-color: #a2b9b2;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class[data-event="event-4"] {
+  border-color: #f6b067;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class[data-event="event-5"] {
+  border-color: #48804D;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class[data-event="event-6"] {
+  border-color: #7F0000;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class[data-event="event-7"] {
+  border-color: #340B0F;
+}
+html body .page-wrap .body-content .schedule .class-column .added-class[data-event="event-8"] {
+  border-color: #044C4A;
+}
 html body .page-wrap .body-content .schedule .class-column .added-class {
   padding: 5px;
   margin: 2px 0px 2px 0px;
@@ -289,7 +313,7 @@ html body .page-wrap .body-content .schedule .class-column .added-class {
   flex-direction: column;
   border-radius: .125rem;
   background: #fff;
-  border: solid 5px #ff8080;
+  border: solid 5px;
   width: 100%;
   border-radius: 5px;
 }
@@ -455,7 +479,7 @@ html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .
 html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event a {
   display: block;
   height: 100%;
-  padding: .8em;
+  padding: 2px .8em;
   color: #fff;
 }
 html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-name {
@@ -496,6 +520,30 @@ html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-e
 }
 html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-4"]:hover {
   background: #f7bd7f;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-5"] {
+  background: #48804D;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-5"]:hover {
+  background: #7cb681;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-6"] {
+  background: #7F0000;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-6"]:hover {
+  background: #cc0000;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-7"] {
+  background: #340B0F;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-7"]:hover {
+  background: #7e1b25;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-8"] {
+  background: #044C4A;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule .single-event[data-event="event-8"]:hover {
+  background: #08918d;
 }
 html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-modal {
   position: fixed;
@@ -640,6 +688,30 @@ html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-eve
 html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-4"] .header-bg {
   background: #f6b067;
 }
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-1"] .header-bg {
+  background: #577f92;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-2"] .header-bg {
+  background: #443453;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-3"] .header-bg {
+  background: #a2b9b2;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-4"] .header-bg {
+  background: #f6b067;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-5"] .header-bg {
+  background: #48804D;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-6"] .header-bg {
+  background: #7F0000;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-7"] .header-bg {
+  background: #340B0F;
+}
+html body .page-wrap .body-content .schedule .grid-column .cd-schedule [data-event="event-8"] .header-bg {
+  background: #044C4A;
+}
 html body .page-wrap .body-content .schedule .grid-column .cd-schedule::before {
   content: 'mobile';
   display: none;
@@ -729,7 +801,7 @@ html body .page-wrap .body-content .schedule .grid-column .cd-schedule::before {
     margin-right: 0;
   }
   html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event a {
-    padding: 1.2em;
+    padding: 2px 0.8em;
   }
   html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .single-event:last-of-type {
     margin-right: 0;

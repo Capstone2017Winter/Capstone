@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	window.searched_courses = {}
 	window.added_courses = {}
+	window.event_colors = ["event-8", "event-3", "event-6", "event-5", "event-4", "event-7", "event-2", "event-1"];
 
 	var schedules = $('.cd-schedule');
   	var objSchedulesPlan = [],
@@ -59,9 +60,10 @@ $(document).ready(function(){
     var change_id = $(this).closest('div[class^="added-class"]').attr('id');
     var course = added_courses[change_id];
     var type_changed = $(this).closest('span').attr('class').replace(" custom-dropdown", "");
+    var changed_course = $(".class-column").find('#' + course.varname);
 
     $('.events').find('.single-event.' + change_id + '.' + type_changed).remove();
-    $(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course, type_changed);
+    changed_course.find('.choices-div').syncWithDropDowns(course, changed_course.attr('data-event'), type_changed);
   });
 
 	classes = new Array();
@@ -98,11 +100,13 @@ $(document).ready(function(){
   	});
 
   	$(".class-column").on('click', '.minus-button', function() {
-  		var remove_id = $(this).closest('div[class^="added-class"]').attr('id');
-    	delete window.added_courses[remove_id];
-    	$(this).closest('div[class^="added-class"]').remove();
-
-    	$(".events-group").find("." + remove_id).remove();
+  		var removed_course = $(this).closest('div[class^="added-class"]');
+    
+    	window.event_colors.push(removed_course.attr('data-event'));
+    	delete window.added_courses[removed_course.attr('id')];
+    
+    	$(".events-group").find("." + removed_course.attr('id')).remove();
+    	removed_course.remove();
   	});
 
   	$('.search-returns').on('click', '.plus-button', function() {
@@ -120,7 +124,7 @@ $(document).ready(function(){
 });
 
 jQuery.fn.extend({
-    syncWithDropDowns: function(course, changed_type = null) {
+    syncWithDropDowns: function(course, event_color, changed_type = null) {
       var section_types;
       if (changed_type != null) {
         //This is for when a class drop down is changed
@@ -146,7 +150,7 @@ jQuery.fn.extend({
           continue;
         }
 
-        var schedule_block = buildScheduleBlock(course, section, section_types[section_type], dd.val());
+        var schedule_block = buildScheduleBlock(course, section, section_types[section_type], dd.val(), event_color);
         var days_selector = "";
 
         for (var i = 0, len = section.days.length; i < len; i++) {
@@ -163,13 +167,13 @@ jQuery.fn.extend({
     }
 });
 
-function buildScheduleBlock(course, section, section_type, section_number) {
+function buildScheduleBlock(course, section, section_type, section_number, event_color) {
 
     var schedule_section = '<li class="single-event ' +
       course.varname + ' ' + section_type +
       '" data-start="' + timeTo24(section.start) +
       '" data-end="' + timeTo24(section.end) +
-      '" data-content="event-abs-circuit" data-event="event-1">' +
+      '" data-content="event-abs-circuit" data-event="' + event_color +'">' +
       '<a href="#0">' +
       '<em class="event-name">' + course.name + '</em>' +
       '<p>' + section_type.slice(0, -1).capitalize() +
@@ -286,10 +290,12 @@ function addClassToSchedule(course) {
       	return;
     }
 
-	var added_course = buildAddedClassBlock(course);
+    var event_color = window.event_colors.pop();
+    var added_course = buildAddedClassBlock(course);
 
     $(".class-column").append(added_course);
-    $(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course);     
+    $(".class-column").find('#' + course.varname).attr('data-event', event_color);
+    $(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course, event_color);    
 }
 
 function searchClassCallback(response, status) {
