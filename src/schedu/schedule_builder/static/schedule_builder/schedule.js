@@ -44,12 +44,7 @@ $(document).ready(function(){
     var changed_course = $(".class-column").find('#' + course.varname);
 
     $('.events').find('.single-event.' + change_id + '.' + type_changed).remove();
-    //changed_course.find('.choices-div').syncWithDropDowns(course, changed_course.attr('data-event'), type_changed);
-
     colorSyncPlace(course, type_changed);
-    //for (var plan in objSchedulesPlan) {
-      //	objSchedulesPlan[plan].updateSchedule();
-    //}
   });
 
 	classes = new Array();
@@ -101,10 +96,6 @@ $(document).ready(function(){
 		addClassToSchedule(course);
 
 		colorSyncPlace(course);
-		//for (var plan in objSchedulesPlan) {
-      	//objSchedulesPlan[plan].updateSchedule();
-    	//}
-		
   	});
 
   	
@@ -286,8 +277,7 @@ function addClassToSchedule(course) {
     var added_course = buildAddedClassBlock(course);
 
     $(".class-column").append(added_course);
-    $(".class-column").find('#' + course.varname).attr('data-event', event_color);
-    $(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course, event_color);    
+    $(".class-column").find('#' + course.varname).attr('data-event', event_color);    
 }
 
 function colorSyncPlace(course, type_changed=null){
@@ -481,10 +471,7 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 		if (lab != '')
 			$("#" + course.varname + "_lab").val(lab);
 
-
-	colorSyncPlace(course);
-	//$(".class-column").find('#' + course.varname).find('.choices-div').syncWithDropDowns(course, event_color);	
-
+		colorSyncPlace(course);
 	} /*end function*/    
 	} /*end args*/
 	$.ajax(args);
@@ -579,6 +566,10 @@ function getScheduleId() {
 	return url.pop();
 }
 
+
+/*Codes used from
+ *https://codyhouse.co/gem/schedule-template/
+*/
 function SchedulePlan(element) {
     this.element = element;
     this.timeline = this.element.find('.timeline');
