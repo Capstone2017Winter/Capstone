@@ -3,23 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="311" key="DIALOG_WIDTH"/>
 		<item value="91" key="DIALOG_Y_ORIGIN"/>
-		<item value="479" key="DIALOG_HEIGHT"/>
 		<item value="977" key="DIALOG_X_ORIGIN"/>
+		<item value="479" key="DIALOG_HEIGHT"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="ip" key="selection"/>
+		<item value="canned_response2" key="selection"/>
 		<list key="findhistory">
-			<item value="ip"/>
-			<item value="Pack"/>
-			<item value="Pa"/>
-			<item value="DM9000A"/>
-			<item value="Video"/>
+			<item value="canned_response2"/>
+			<item value="canned_res"/>
+			<item value="SEND_D"/>
+			<item value="SEND_"/>
+			<item value="DATA_R"/>
+			<item value="data"/>
+			<item value="WSTASK"/>
+			<item value="complete"/>
 		</list>
 		<list key="replacehistory">
 		</list>
