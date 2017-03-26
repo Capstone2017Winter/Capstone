@@ -538,6 +538,9 @@ function downloadScheduleToBoard() {
 	domtoimage.toBmp(scheduleNode, {scalex:0.5, scaley:0.5, bgcolor:'white'})
 		.then(function (dataUrl) {
 			//owencm, http://stackoverflow.com/questions/3916191/download-data-url-file
+			var newImg = '<img src="' + dataUrl + '"/>';
+                        $('body').append(newImg);
+
 			var link = document.createElement("a");
 			link.download = "schedule.bmp";
 			link.href = dataUrl;

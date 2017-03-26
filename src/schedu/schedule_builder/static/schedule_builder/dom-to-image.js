@@ -155,6 +155,12 @@
                 var ctx = canvas.getContext('2d');
                 ctx.fillStyle = options.bgcolor;
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
+            }            
+            if (options.scalex) {
+                canvas.width = canvas.width * options.scalex;
+            }
+            if (options.scaley) {
+                canvas.height = canvas.height * options.scaley;
             }
             if (options.scalex) {
                 var ctx = canvas.getContext('2d');
