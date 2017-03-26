@@ -150,8 +150,7 @@
             var canvas = document.createElement('canvas');
             canvas.width = options.width || util.width(domNode);
             canvas.height = options.height || util.height(domNode);
-          
-           
+            
             if (options.scalex) {
                 canvas.width = canvas.width * options.scalex;
             }
