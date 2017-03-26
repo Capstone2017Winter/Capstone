@@ -537,19 +537,14 @@ function downloadScheduleToBoard() {
 	var scheduleNode = document.getElementById("scheduleDiv")
 	domtoimage.toBmp(scheduleNode, {scalex:0.5, scaley:0.5, bgcolor:'white'})
 		.then(function (dataUrl) {
-			var newImg = '<img src="' + dataUrl + '"/>';
-			$('body').append(newImg);
-			dataUrl = "/IMAGE_DATA/" + dataUrl;
-			var xhr = new XMLHttpRequest()
-			xhr.open("GET", "http://192.168.1.101", true)
-			xhr.send("IMAGE_REQUEST");
-			
-			if (xhr.status === 200) {
-				if (xhr.responseText() === "SEND_DATA") {
-					xhr.open("POST", "http://192.168.1.101", true);
-					xhr.send(dataUrl)
-				}
-			}
+			//owencm, http://stackoverflow.com/questions/3916191/download-data-url-file
+			var link = document.createElement("a");
+			link.download = "schedule.bmp";
+			link.href = dataUrl;
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+			delete link;
 		});
 }
 
