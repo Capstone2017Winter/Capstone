@@ -251,6 +251,43 @@ String.prototype.capitalize = function() {
     });
 };
 
+function checkConflicts(course_varname){
+    var course_varname = course_varname;
+    $('#M,#T,#W,#R,#F').each(function(){
+      var added_events = $(this).find('.' + course_varname);
+      var other_events = $(this).find('.single-event').not('.' + course_varname);
+      
+      added_events.each(function(){
+        var added_event = this;
+        other_events.each(function(){
+          if(isConflict(added_event, this)){
+            
+          }  
+        });
+      });
+    });
+  }
+  
+  function isConflict(added_event, other_event){
+    var added_start = $(added_event).attr('data-start').replace(":", "");
+    var added_end = $(added_event).attr('data-end').replace(":", "");
+    var other_start = $(other_event).attr('data-start').replace(":", "");
+    var other_end = $(other_event).attr('data-end').replace(":", "");
+    
+    if((added_end < other_start) || (added_start > other_end)){
+        return false;
+    }
+    //Added ends as the next event starts
+    else if((added_end == other_start) && (added_start < other_start)){
+        return false;
+    }
+    //Added starts as previous event ends
+    else if((added_start == other_end) && (added_end > other_end)){
+        return false;
+    }
+    return true;
+  }
+
 function timeTo24(time) {
     if (/AM/.test(time)) {
       time = time.replace(/AM/, "");
