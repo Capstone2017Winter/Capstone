@@ -48,6 +48,7 @@
  */
 char http_rx_buffer[HTTP_NUM_CONNECTIONS][HTTP_RX_BUF_SIZE];
 char http_tx_buffer[HTTP_NUM_CONNECTIONS][HTTP_TX_BUF_SIZE];
+char* image_string;
 
 /* Declare upload buffer structure globally. */
 struct upload_buf_struct
@@ -1153,7 +1154,6 @@ int http_prepare_response(http_conn* conn)
     case GET:
     {
       if(strcasecmp(conn->uri, CONNECTION_READY) == 0){
-    	printf("Received GET request \n");
         send(conn->fd, (void *)canned_response2, strlen(canned_response2), 0);
         conn->state = DATA;
         break;
@@ -1278,29 +1278,30 @@ void http_handle_receive(http_conn* conn, int http_instance)
       fprintf(stderr, "[http_handle_receive] Error preparing response\n");
       http_manage_connection(conn, http_instance);
     }
-              
+    if (conn->state == DATA && conn->file_upload == 1 )
+    {
+      /* Jump to the file_upload() function....process more received data. */
+      upload_field.func(conn);
+    }
     /* 
      * Manage RX Buffer: Slide any un-read data in our input buffer 
      * down over previously-read data that can now be overwritten, and 
      * zero-out any bytes in question at the top of our new un-read space. 
      */
-    if(conn->rx_rd_pos > (conn->rx_buffer + HTTP_RX_BUF_SIZE))
-    {
-      conn->rx_rd_pos = conn->rx_buffer + HTTP_RX_BUF_SIZE;
-    }
         
     data_used = conn->rx_rd_pos - conn->rx_buffer;
+//    memmove(data,conn->rx_buffer,HTTP_RX_BUF_SIZE);
     memmove(conn->rx_buffer,conn->rx_rd_pos,conn->rx_wr_pos-conn->rx_rd_pos);
     conn->rx_rd_pos = conn->rx_buffer;
     conn->rx_wr_pos -= data_used;
     memset(conn->rx_wr_pos, 0, data_used);
+    if(conn->rx_rd_pos > (conn->rx_buffer + HTTP_RX_BUF_SIZE))
+    {
+       conn->rx_rd_pos = conn->rx_buffer + HTTP_RX_BUF_SIZE;
+    }
    }
    
-  if (conn->state == DATA && conn->file_upload == 1 )
-  {
-    /* Jump to the file_upload() function....process more received data. */
-    upload_field.func(conn);
-  }
+
 }
 
 /* 
@@ -1354,6 +1355,8 @@ void WSTask()
     die_with_error("[WSTask] Listening socket creation failed");
   }
   
+  image_string = malloc(HTTP_RX_BUF_SIZE);
+  memset(image_string, 0, HTTP_RX_BUF_SIZE);
   /*
    * Sockets primer, continued...
    * Calling bind() associates a socket created with socket() to a particular IP
@@ -1496,9 +1499,11 @@ void WSTask()
       }
     }  
   } /* while(1) */
+
+  free(image_string);
 }
 
-char * buildDecodingTable() {
+unsigned char * buildDecodingTable() {
 	int i;
 	char encodingTable[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
                                 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
@@ -1507,9 +1512,9 @@ char * buildDecodingTable() {
                                 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
                                 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
                                 'w', 'x', 'y', 'z', '0', '1', '2', '3',
-                                '4', '5', '6', '7', '8', '9', '+', '/'};
+                                '4', '5', '6', '7', '8', '9', '+', '/', '='};
 
-	char *decoding;
+	unsigned char *decoding;
 	decoding = malloc(256);
 
 	for (i = 0; i < 64; i++){
@@ -1518,69 +1523,119 @@ char * buildDecodingTable() {
 	return decoding;
 }
 
+void char4ToByte3(unsigned char charArr[], unsigned char byteArr[]){
+
+	byteArr[0] = ((charArr[0] << 2) | (charArr[1] >> 4));
+	byteArr[1] = ((charArr[1] << 4) | (charArr[2] >> 2));
+	byteArr[2] = ((charArr[2] << 6) | charArr[3]);
+}
+
 void download_image(http_conn* conn){
-  char* data = malloc(HTTP_RX_BUF_SIZE);
-  memset(data, 0, HTTP_RX_BUF_SIZE);
 
+
+
+//   int rx_code = recv(conn->fd, conn->rx_wr_pos,
+//                (HTTP_RX_BUF_SIZE - (conn->rx_wr_pos - conn->rx_buffer) -1),
+//                0);
+//
+//  conn->rx_buffer += 316;
   // Separate uri string so it can be read
-  strcpy(data, conn->rx_rd_pos);
+//  memmove(data, conn->rx_buffer, HTTP_RX_BUF_SIZE);
+//
+//  memset(conn->rx_buffer, 0, HTTP_RX_BUF_SIZE);
+//
+//  int data_used = conn->rx_rd_pos - conn->rx_buffer;
+////    memmove(data,conn->rx_buffer,HTTP_RX_BUF_SIZE);
+//  conn->rx_rd_pos = conn->rx_buffer;
+//  conn->rx_wr_pos -= data_used;
+//
+//
+//
+//  rx_code = recv(conn->fd, conn->rx_wr_pos,
+//                (HTTP_RX_BUF_SIZE - (conn->rx_wr_pos - conn->rx_buffer) -1),
+//                0);
 
-  char decode;
-  char *decodingTable;
+  strcat(image_string,conn->rx_rd_pos);
 
-  int i=0;
-  int length = strlen(data);
-  printf("Made it to POST function \n");
-  short int testFile;
-  testFile = alt_up_sd_card_fopen("test.bmp", true);
-  if(testFile == -1){
-	  testFile= alt_up_sd_card_fopen("test.bmp", false);
-	  printf("Failed first time \n");
+  if(strstr(image_string, "==")){
+	  printf("Success\n");
 
-  }
+	  unsigned char workBytes[4];
+	  char *decodingTable;
 
-  decodingTable = buildDecodingTable();
-  char *header = DATA_HEADER;
-  while (*data == *header) {
-	  data++;
-	  header++;
-  }
+	  int i=0;
+	  int length = strlen(image_string);
+	  printf("Last char is %c\n", image_string[length-1]);
+	  short int testFile;
+	  testFile = alt_up_sd_card_fopen("test.bmp", true);
+	  if(testFile == -1){
+		  testFile= alt_up_sd_card_fopen("test.bmp", false);
+		  printf("Failed first time \n");
 
-  printf("File handle = %d\n", testFile);
-  //alt_up_sd_card_set_attributes(testFile,0x001D);
-  for(i = 0; i < length; i++){
-	  decode = decodingTable[data[i]];
-	  alt_up_sd_card_write(testFile, ((unsigned char)decode));
-  }
-  printf("Done writing to file \n");
-
-  if(alt_up_sd_card_fclose(testFile) == true){
-	  printf("file closed properly\n");
-  }
-  OSTimeDly(1);
-  testFile= alt_up_sd_card_fopen("test.bmp", false);
-  if(testFile >= 0){
-	  printf("File opened properly \n");
-
-	  unsigned char **data_array = malloc(640 * sizeof(unsigned char*));
-	  for(i = 0; i < 640; i++){
-	    data_array[i] = malloc(480 * sizeof(unsigned char));
 	  }
 
-	  load_bmp(testFile, data_array);
 
-	  draw_bitmap(data_array, vga_buffer);
-
-	  for(i = 0; i < 640; i++){
-		  free(data_array[i]);
+	  decodingTable = buildDecodingTable();
+	  char *header = DATA_HEADER;
+	  while (*image_string == *header) {
+		  image_string++;
+		  header++;
 	  }
 
-	  free(data_array);
+	  //set up byte array to manipulate the bits of the base64 values to proper values
+	  unsigned char decodedBytes[3];
+
+	  printf("File handle = %d\n", testFile);
+	  //alt_up_sd_card_set_attributes(testFile,0x001D);
+	  for(i = 0; i < length; i = i + 4){
+		  workBytes[0] = decodingTable[image_string[i]];
+		  workBytes[1] = decodingTable[image_string[i+1]];
+		  workBytes[2] = decodingTable[image_string[i+2]];
+		  workBytes[3] = decodingTable[image_string[i+3]];
+		  if(workBytes[0] == 65 || workBytes[1] == 65 || workBytes[2] == 65 || workBytes[3] == 65){
+			  break;
+		  }
+		  char4ToByte3(workBytes, decodedBytes);
+		  alt_up_sd_card_write(testFile, decodedBytes[0]);
+		  alt_up_sd_card_write(testFile, decodedBytes[1]);
+		  alt_up_sd_card_write(testFile, decodedBytes[2]);
+	  }
+	  printf("\nDone writing to file \n");
 
 	  if(alt_up_sd_card_fclose(testFile) == true){
-		  printf("File closed\n");
+		  printf("file closed properly\n");
+	  }
+	  OSTimeDly(1);
+	  testFile= alt_up_sd_card_fopen("test.bmp", false);
+	  if(testFile >= 0){
+		  printf("File opened properly \n");
+
+		  unsigned char **data_array = malloc(640 * sizeof(unsigned char*));
+		  for(i = 0; i < 640; i++){
+		    data_array[i] = malloc(480 * sizeof(unsigned char));
+		  }
+
+		  short int file_attributes = alt_up_sd_card_get_attributes(testFile);
+		  printf("File Attributes: %d\n",file_attributes );
+		  load_bmp(testFile, data_array);
+
+		  draw_bitmap(data_array, vga_buffer);
+
+		  for(i = 0; i < 640; i++){
+			  free(data_array[i]);
+		  }
+
+		  free(data_array);
+
+		  if(alt_up_sd_card_fclose(testFile) == true){
+			  printf("File closed\n");
+		  }
+		  image_string[0] = '\0';
 	  }
 
+  }else{
+      send(conn->fd, (void *)canned_response2, strlen(canned_response2), 0);
+      conn->state = DATA;
   }
 
 

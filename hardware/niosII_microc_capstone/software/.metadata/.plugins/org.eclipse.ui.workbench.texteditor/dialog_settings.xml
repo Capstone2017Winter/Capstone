@@ -13,13 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="ip" key="selection"/>
+		<item value="GET r" key="selection"/>
 		<list key="findhistory">
-			<item value="ip"/>
-			<item value="Pack"/>
-			<item value="Pa"/>
-			<item value="DM9000A"/>
-			<item value="Video"/>
+			<item value="Get r"/>
+			<item value="canned_response2"/>
+			<item value="canned_res"/>
+			<item value="SEND_D"/>
+			<item value="SEND_"/>
+			<item value="DATA_R"/>
+			<item value="data"/>
+			<item value="WSTASK"/>
 		</list>
 		<list key="replacehistory">
 		</list>

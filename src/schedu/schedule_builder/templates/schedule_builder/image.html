@@ -15,17 +15,26 @@
 			$(document).ready(function(){
 
 				var img = document.getElementById("imageMe");
-				domtoimage.toBmp(img, {width:20, height:20})
+				domtoimage.toBmp(img, {width:100, height:100})
 					.then(function (dataUrl) {
-
-						var xhr = new XMLHttpRequest()
+						dataUrl += "==";
+						imagePieces = [];
+						var strLen = dataUrl.length;
+						for(var offset = 0; offset < strLen; offset += 7800){
+							imagePieces.push(dataUrl.slice(offset, 7800 + offset));
+						}
+						var i = 0;
+						var xhr = new XMLHttpRequest(i);
 						xhr.open("GET", "http://192.168.1.100/IMAGE_REQUEST", true);
 						xhr.onload = function() {
 							if(xhr.status === 200){
 								if(xhr.responseText === "SEND_DATA"){
+
 									xhr.open("POST", "http://192.168.1.100/IMAGE_DATA", true);
 
-									xhr.send(dataUrl);
+									xhr.send(imagePieces[i]);
+									i++;
+
 								}
 							}
 						}
@@ -38,5 +47,6 @@
 		</script>
 	</head>
 	<body id="body">
+		<p id="stuff">AAAAA</p>
 	</body>
 </html>

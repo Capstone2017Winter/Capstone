@@ -14,9 +14,9 @@
 #ifndef __HTTP_H__
 #define __HTTP_H__
 
-#define   HTTP_RX_BUF_SIZE      163840  /* Receive buffer size */
-#define   HTTP_TX_BUF_SIZE      163840  /* Transmission buffer size */
-#define   HTTP_URI_SIZE         163840  /* Max size of a URI *URL) string */
+#define   HTTP_RX_BUF_SIZE      400000  /* Receive buffer size */
+#define   HTTP_TX_BUF_SIZE      8192  /* Transmission buffer size */
+#define   HTTP_URI_SIZE         8192  /* Max size of a URI *URL) string */
 #define   HTTP_KEEP_ALIVE_COUNT 20    /* Max number of files per connection */
 #define   HTTP_KEEP_ALIVE_TIME  5000  /* TCP connection keep-alive time (ms) */
 #define   HTTP_PORT             80    /* TCP port number to listen on */
