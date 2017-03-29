@@ -45,6 +45,7 @@ $(document).ready(function(){
 
     $('.events').find('.single-event.' + change_id + '.' + type_changed).remove();
     colorSyncPlace(course, type_changed);
+    checkConflicts();
   });
 
 	classes = new Array();
@@ -89,13 +90,15 @@ $(document).ready(function(){
     
     	$(".events-group").find("." + removed_course.attr('id')).remove();
     	removed_course.remove();
+      checkConflicts();
   	});
 
   	$('.search-returns').on('click', '.plus-button', function() {
     	var course = window.searched_courses[$(this).closest('div[class^="search-return"]').attr('id')];
-		addClassToSchedule(course);
+		  addClassToSchedule(course);
 
-		colorSyncPlace(course);
+		  colorSyncPlace(course);
+      checkConflicts();
   	});
 
   	
@@ -251,42 +254,71 @@ String.prototype.capitalize = function() {
     });
 };
 
-function checkConflicts(course_varname){
-    var course_varname = course_varname;
+
+  function checkConflicts(){
+    
     $('#M,#T,#W,#R,#F').each(function(){
-      var added_events = $(this).find('.' + course_varname);
-      var other_events = $(this).find('.single-event').not('.' + course_varname);
+      var day_events = $(this).find('.single-event');
       
-      added_events.each(function(){
-        var added_event = this;
-        other_events.each(function(){
-          if(isConflict(added_event, this)){
-            
-          }  
+      $(day_events).each(function(){
+        $(this).removeClass('conflicted');
+      });
+      
+      $(day_events).each(function(){
+        var event = this;
+        var conflicted = [];
+        $(day_events).not(this).each(function(){
+          if(isConflict(event, this)){
+            conflicted.push(this);
+          }
         });
+        
+        if(conflicted.length != 0){
+          conflicted.push(event);
+          conflictPlace(conflicted);
+        }
+        
+        if(!$(this).hasClass('conflicted')){
+          $(this).width('100%');
+          $(this).css('margin-left', '0px');
+        }
       });
     });
   }
   
-  function isConflict(added_event, other_event){
-    var added_start = $(added_event).attr('data-start').replace(":", "");
-    var added_end = $(added_event).attr('data-end').replace(":", "");
-    var other_start = $(other_event).attr('data-start').replace(":", "");
-    var other_end = $(other_event).attr('data-end').replace(":", "");
+  function conflictPlace(conflicted_array){
+    var width_percent = (100/conflicted_array.length);
+    var offset_percent = 0;
+    var offset_increment = width_percent;
     
-    if((added_end < other_start) || (added_start > other_end)){
+    for(var i in conflicted_array){
+      var event = conflicted_array[i];
+      $(event).addClass('conflicted');
+      $(event).width(width_percent + '%');
+      $(event).css('margin-left', offset_percent + '%');
+      offset_percent += offset_increment;
+    }
+  }
+  
+  function isConflict(event1, event2){
+    var start_1 = $(event1).attr('data-start').replace(":", "");
+    var end_1 = $(event2).attr('data-end').replace(":", "");
+    var start_2 = $(event1).attr('data-start').replace(":", "");
+    var end_2 = $(event2).attr('data-end').replace(":", "");
+
+    
+    if((end_1 < start_2) || (start_1 > end_2)){
         return false;
     }
     //Added ends as the next event starts
-    else if((added_end == other_start) && (added_start < other_start)){
+    else if((end_1 == start_2) && (start_1 < start_2)){
         return false;
     }
     //Added starts as previous event ends
-    else if((added_start == other_end) && (added_end > other_end)){
+    else if((start_1 == end_2) && (end_1 > end_2)){
         return false;
     }
-    return true;
-  }
+    return true;}
 
 function timeTo24(time) {
     if (/AM/.test(time)) {
