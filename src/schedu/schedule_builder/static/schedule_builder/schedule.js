@@ -45,7 +45,6 @@ $(document).ready(function(){
 
     $('.events').find('.single-event.' + change_id + '.' + type_changed).remove();
     colorSyncPlace(course, type_changed);
-    checkConflicts();
   });
 
 	classes = new Array();
@@ -98,7 +97,6 @@ $(document).ready(function(){
 		  addClassToSchedule(course);
 
 		  colorSyncPlace(course);
-      checkConflicts();
   	});
 
   	
@@ -156,12 +154,14 @@ jQuery.fn.extend({
 });
 
 function buildScheduleBlock(course, section, section_type, section_number, event_color) {
+    var start = timeTo24(section.start)
+    var end = timeTo24(section.end);
 
     var schedule_section = '<li class="single-event ' +
       course.varname + ' ' + section_type +
-      '" data-start="' + timeTo24(section.start) +
-      '" data-end="' + timeTo24(section.end) +
-      '" data-content="event-abs-circuit" data-event="' + event_color +'">' +
+      '" data-start="' + start.trim() +
+      '" data-end="' + end.trim() +
+      '" data-content="" data-event="' + event_color +'">' +
       '<a href="#0">' +
       '<em class="event-name">' + course.name + '</em>' +
       '<p>' + section_type.slice(0, -1).capitalize() +
@@ -255,36 +255,35 @@ String.prototype.capitalize = function() {
 };
 
 
-  function checkConflicts(){
-    
-    $('#M,#T,#W,#R,#F').each(function(){
-      var day_events = $(this).find('.single-event');
-      
-      $(day_events).each(function(){
-        $(this).removeClass('conflicted');
-      });
-      
-      $(day_events).each(function(){
-        var event = this;
-        var conflicted = [];
-        $(day_events).not(this).each(function(){
-          if(isConflict(event, this)){
-            conflicted.push(this);
-          }
-        });
-        
-        if(conflicted.length != 0){
-          conflicted.push(event);
-          conflictPlace(conflicted);
-        }
-        
-        if(!$(this).hasClass('conflicted')){
-          $(this).width('100%');
-          $(this).css('margin-left', '0px');
-        }
-      });
+function checkConflicts(){
+  $('#M,#T,#W,#R,#F').each(function(){
+    var day_events = $(this).find('.single-event');
+     
+    $(day_events).each(function(){
+      $(this).removeClass('conflicted');
     });
-  }
+      
+    $(day_events).each(function(){
+      var event = this;
+      var conflicted = [];
+      $(day_events).not(this).each(function(){
+        if(isConflict(event, this)){
+          conflicted.push(this);
+        }
+      });
+       
+      if(conflicted.length != 0){
+        conflicted.push(event);
+        conflictPlace(conflicted);
+      }
+        
+      if(!$(this).hasClass('conflicted')){
+        $(this).width('100%');
+        $(this).css('margin-left', '0px');
+      }
+    });
+  });
+}
   
   function conflictPlace(conflicted_array){
     var width_percent = (100/conflicted_array.length);
@@ -302,8 +301,8 @@ String.prototype.capitalize = function() {
   
   function isConflict(event1, event2){
     var start_1 = $(event1).attr('data-start').replace(":", "");
-    var end_1 = $(event2).attr('data-end').replace(":", "");
-    var start_2 = $(event1).attr('data-start').replace(":", "");
+    var end_1 = $(event1).attr('data-end').replace(":", "");
+    var start_2 = $(event2).attr('data-start').replace(":", "");
     var end_2 = $(event2).attr('data-end').replace(":", "");
 
     
@@ -318,7 +317,8 @@ String.prototype.capitalize = function() {
     else if((start_1 == end_2) && (end_1 > end_2)){
         return false;
     }
-    return true;}
+    return true;
+  }
 
 function timeTo24(time) {
     if (/AM/.test(time)) {
@@ -357,6 +357,7 @@ function colorSyncPlace(course, type_changed=null){
 	for (var plan in window.objSchedulesPlan) {
    		window.objSchedulesPlan[plan].updateSchedule();
     }
+  checkConflicts();
 }
 
 function searchClassCallback(response, status) {
