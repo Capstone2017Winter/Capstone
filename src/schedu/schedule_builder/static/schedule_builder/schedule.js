@@ -535,7 +535,11 @@ function saveSchedule() {
 
 function downloadScheduleToBoard() {
 	var scheduleNode = document.getElementById("scheduleDiv")
-	domtoimage.toBmp(scheduleNode, {scalex:0.5, scaley:0.5, bgcolor:'white'})
+	var desiredWidth = 320;
+	var desiredHeight = 240;
+	var scalex = desiredWidth / scheduleNode.clientWidth;
+	var scaley = desiredHeight / scheduleNode.clientHeight; 
+	domtoimage.toBmp(scheduleNode, {scalex:scalex, scaley:scaley, bgcolor:'white'})
 		.then(function (dataUrl) {
 			//owencm, http://stackoverflow.com/questions/3916191/download-data-url-file
 			var newImg = '<img src="' + dataUrl + '"/>';
