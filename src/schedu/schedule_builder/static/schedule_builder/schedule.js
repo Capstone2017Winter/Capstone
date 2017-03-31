@@ -611,19 +611,17 @@ function downloadScheduleToBoard() {
  	var scaley = desiredHeight / scheduleNode.clientHeight; 
 	domtoimage.toBmp(scheduleNode, {scalex:scalex, scaley:scaley, bgcolor:'white'})
 		.then(function (dataUrl) {
+			//owencm, http://stackoverflow.com/questions/3916191/download-data-url-file
 			var newImg = '<img src="' + dataUrl + '"/>';
-			$('body').append(newImg);
-			dataUrl = "/IMAGE_DATA/" + dataUrl;
-			var xhr = new XMLHttpRequest()
-			xhr.open("GET", "http://192.168.1.101", true)
-			xhr.send("IMAGE_REQUEST");
-			
-			if (xhr.status === 200) {
-				if (xhr.responseText() === "SEND_DATA") {
-					xhr.open("POST", "http://192.168.1.101", true);
-					xhr.send(dataUrl)
-				}
-			}
+                        $('body').append(newImg);
+
+			var link = document.createElement("a");
+			link.download = "schedule.bmp";
+			link.href = dataUrl;
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+			delete link;
 		});
 }
 
