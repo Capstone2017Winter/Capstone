@@ -5,6 +5,8 @@ $(document).ready(function(){
 	window.event_colors = ["event-8", "event-3", "event-6", "event-5", "event-4", "event-7", "event-2", "event-1"];
 	window.objSchedulesPlan = [];
 
+  $('#downloadButton').closest('.form-div').toggle();
+
 	var schedules = $('.cd-schedule'),
     windowResize = false;
 
