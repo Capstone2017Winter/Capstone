@@ -481,6 +481,7 @@ html body .page-wrap .body-content .schedule .grid-column .cd-schedule .events .
   height: 100%;
   padding: 2px .8em;
   color: #fff;
+  overflow: hidden;
 }
 html body .page-wrap .body-content .schedule .grid-column .cd-schedule .event-name {
   display: block;
