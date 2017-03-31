@@ -89,13 +89,14 @@ $(document).ready(function(){
     
     	$(".events-group").find("." + removed_course.attr('id')).remove();
     	removed_course.remove();
+      checkConflicts();
   	});
 
   	$('.search-returns').on('click', '.plus-button', function() {
     	var course = window.searched_courses[$(this).closest('div[class^="search-return"]').attr('id')];
-		addClassToSchedule(course);
+		  addClassToSchedule(course);
 
-		colorSyncPlace(course);
+		  colorSyncPlace(course);
   	});
 
   	
@@ -153,12 +154,14 @@ jQuery.fn.extend({
 });
 
 function buildScheduleBlock(course, section, section_type, section_number, event_color) {
+    var start = timeTo24(section.start)
+    var end = timeTo24(section.end);
 
     var schedule_section = '<li class="single-event ' +
       course.varname + ' ' + section_type +
-      '" data-start="' + timeTo24(section.start) +
-      '" data-end="' + timeTo24(section.end) +
-      '" data-content="event-abs-circuit" data-event="' + event_color +'">' +
+      '" data-start="' + start.trim() +
+      '" data-end="' + end.trim() +
+      '" data-content="" data-event="' + event_color +'">' +
       '<a href="#0">' +
       '<em class="event-name">' + course.name + '</em>' +
       '<p>' + section_type.slice(0, -1).capitalize() +
@@ -251,6 +254,72 @@ String.prototype.capitalize = function() {
     });
 };
 
+
+function checkConflicts(){
+  $('#M,#T,#W,#R,#F').each(function(){
+    var day_events = $(this).find('.single-event');
+     
+    $(day_events).each(function(){
+      $(this).removeClass('conflicted');
+    });
+      
+    $(day_events).each(function(){
+      var event = this;
+      var conflicted = [];
+      $(day_events).not(this).each(function(){
+        if(isConflict(event, this)){
+          conflicted.push(this);
+        }
+      });
+       
+      if(conflicted.length != 0){
+        conflicted.push(event);
+        conflictPlace(conflicted);
+      }
+        
+      if(!$(this).hasClass('conflicted')){
+        $(this).width('100%');
+        $(this).css('margin-left', '0px');
+      }
+    });
+  });
+}
+  
+  function conflictPlace(conflicted_array){
+    var width_percent = (100/conflicted_array.length);
+    var offset_percent = 0;
+    var offset_increment = width_percent;
+    
+    for(var i in conflicted_array){
+      var event = conflicted_array[i];
+      $(event).addClass('conflicted');
+      $(event).width(width_percent + '%');
+      $(event).css('margin-left', offset_percent + '%');
+      offset_percent += offset_increment;
+    }
+  }
+  
+  function isConflict(event1, event2){
+    var start_1 = $(event1).attr('data-start').replace(":", "");
+    var end_1 = $(event1).attr('data-end').replace(":", "");
+    var start_2 = $(event2).attr('data-start').replace(":", "");
+    var end_2 = $(event2).attr('data-end').replace(":", "");
+
+    
+    if((end_1 < start_2) || (start_1 > end_2)){
+        return false;
+    }
+    //Added ends as the next event starts
+    else if((end_1 == start_2) && (start_1 < start_2)){
+        return false;
+    }
+    //Added starts as previous event ends
+    else if((start_1 == end_2) && (end_1 > end_2)){
+        return false;
+    }
+    return true;
+  }
+
 function timeTo24(time) {
     if (/AM/.test(time)) {
       time = time.replace(/AM/, "");
@@ -288,6 +357,7 @@ function colorSyncPlace(course, type_changed=null){
 	for (var plan in window.objSchedulesPlan) {
    		window.objSchedulesPlan[plan].updateSchedule();
     }
+  checkConflicts();
 }
 
 function searchClassCallback(response, status) {
@@ -535,8 +605,8 @@ function saveSchedule() {
 
 function downloadScheduleToBoard() {
 	var scheduleNode = document.getElementById("scheduleDiv")
-	var desiredWidth = 320;
-	var desiredHeight = 240;
+	var desiredWidth = 640;
+	var desiredHeight = 480;
 	var scalex = desiredWidth / scheduleNode.clientWidth;
 	var scaley = desiredHeight / scheduleNode.clientHeight; 
 	domtoimage.toBmp(scheduleNode, {scalex:scalex, scaley:scaley, bgcolor:'white'})

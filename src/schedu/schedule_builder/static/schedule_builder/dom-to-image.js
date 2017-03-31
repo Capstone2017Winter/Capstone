@@ -146,7 +146,7 @@
                 return canvas;
             });
 
-        function newCanvas(domNode) {
+        function newCanvas(domNode) {      
             var canvas = document.createElement('canvas');
             canvas.width = options.width || util.width(domNode);
             canvas.height = options.height || util.height(domNode);

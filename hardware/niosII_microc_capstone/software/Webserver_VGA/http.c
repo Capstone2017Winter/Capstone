@@ -1154,7 +1154,6 @@ int http_prepare_response(http_conn* conn)
     case GET:
     {
       if(strcasecmp(conn->uri, CONNECTION_READY) == 0){
-    	printf("Received GET request \n");
         send(conn->fd, (void *)canned_response2, strlen(canned_response2), 0);
         conn->state = DATA;
         break;
@@ -1504,7 +1503,7 @@ void WSTask()
   free(image_string);
 }
 
-char * buildDecodingTable() {
+unsigned char * buildDecodingTable() {
 	int i;
 	char encodingTable[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
                                 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
@@ -1513,15 +1512,22 @@ char * buildDecodingTable() {
                                 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
                                 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
                                 'w', 'x', 'y', 'z', '0', '1', '2', '3',
-                                '4', '5', '6', '7', '8', '9', '+', '/'};
+                                '4', '5', '6', '7', '8', '9', '+', '/', '='};
 
-	char *decoding;
+	unsigned char *decoding;
 	decoding = malloc(256);
 
 	for (i = 0; i < 64; i++){
         	decoding[(unsigned char) encodingTable[i]] = (unsigned char) i;
 	}
 	return decoding;
+}
+
+void char4ToByte3(unsigned char charArr[], unsigned char byteArr[]){
+
+	byteArr[0] = ((charArr[0] << 2) | (charArr[1] >> 4));
+	byteArr[1] = ((charArr[1] << 4) | (charArr[2] >> 2));
+	byteArr[2] = ((charArr[2] << 6) | charArr[3]);
 }
 
 void download_image(http_conn* conn){
@@ -1554,7 +1560,7 @@ void download_image(http_conn* conn){
   if(strstr(image_string, "==")){
 	  printf("Success\n");
 
-	  char decode;
+	  unsigned char workBytes[4];
 	  char *decodingTable;
 
 	  int i=0;
@@ -1576,12 +1582,23 @@ void download_image(http_conn* conn){
 		  header++;
 	  }
 
+	  //set up byte array to manipulate the bits of the base64 values to proper values
+	  unsigned char decodedBytes[3];
 
 	  printf("File handle = %d\n", testFile);
 	  //alt_up_sd_card_set_attributes(testFile,0x001D);
-	  for(i = 0; i < length; i++){
-		  decode = decodingTable[image_string[i]];
-		  alt_up_sd_card_write(testFile, ((unsigned char)decode));
+	  for(i = 0; i < length; i = i + 4){
+		  workBytes[0] = decodingTable[image_string[i]];
+		  workBytes[1] = decodingTable[image_string[i+1]];
+		  workBytes[2] = decodingTable[image_string[i+2]];
+		  workBytes[3] = decodingTable[image_string[i+3]];
+		  if(workBytes[0] == 65 || workBytes[1] == 65 || workBytes[2] == 65 || workBytes[3] == 65){
+			  break;
+		  }
+		  char4ToByte3(workBytes, decodedBytes);
+		  alt_up_sd_card_write(testFile, decodedBytes[0]);
+		  alt_up_sd_card_write(testFile, decodedBytes[1]);
+		  alt_up_sd_card_write(testFile, decodedBytes[2]);
 	  }
 	  printf("\nDone writing to file \n");
 
@@ -1598,6 +1615,8 @@ void download_image(http_conn* conn){
 		    data_array[i] = malloc(480 * sizeof(unsigned char));
 		  }
 
+		  short int file_attributes = alt_up_sd_card_get_attributes(testFile);
+		  printf("File Attributes: %d\n",file_attributes );
 		  load_bmp(testFile, data_array);
 
 		  draw_bitmap(data_array, vga_buffer);
