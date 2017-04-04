@@ -378,6 +378,7 @@ function searchClassCallback(response, status) {
 		var json1 = resp.responseJSON;
 		var o = json1.objects[0];
 		var sections = o.sections;
+    console.log(sections);
 
 		var course = {
     			varname: name.replace(/\s/g,'').toLowerCase(),
@@ -392,7 +393,7 @@ function searchClassCallback(response, status) {
 
 		sections.forEach(function(section) {
 			//parse sections
-			if(/^B/.test(section.section)){
+			if(section.component == "LEC"){
 				course.lectures[section.section] = {
 					start: section.startTime,
 					end: section.endTime,
@@ -400,7 +401,7 @@ function searchClassCallback(response, status) {
 					location: section.location
 				}
 			}
-			else if(/^S/.test(section.section)){
+			else if(section.component == "SEM"){
 				course.seminars[section.section] = {
 					start: section.startTime,
 					end: section.endTime,
@@ -408,7 +409,7 @@ function searchClassCallback(response, status) {
 					location: section.location
 				}
 			}
-			else if(/^H/.test(section.section)){
+			else if(section.component == "LAB"){
 				course.labs[section.section] = {
 					start: section.startTime,
 					end: section.endTime,
@@ -500,7 +501,7 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 
 		sections.forEach(function(section) {
 		//parse sections
-		if(/^B/.test(section.section)){
+		if(section.component == "LEC"){
 			course.lectures[section.section] = {
 				start: section.startTime,
 				end: section.endTime,
@@ -508,7 +509,7 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 				location: section.location
 			}
 		}
-		else if(/^S/.test(section.section)){
+		else if(section.component == "SEM"){
 			course.seminars[section.section] = {
 				start: section.startTime,
 				end: section.endTime,
@@ -516,7 +517,7 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 				location: section.location
 			}
 		}
-		else if(/^H/.test(section.section)){
+		else if(section.component == "LAB"){
 			course.labs[section.section] = {
 				start: section.startTime,
 				end: section.endTime,
