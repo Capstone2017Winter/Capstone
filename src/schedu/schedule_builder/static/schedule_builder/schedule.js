@@ -96,12 +96,12 @@ $(document).ready(function(){
 
   	$('.search-returns').on('click', '.plus-button', function() {
     	var course = window.searched_courses[$(this).closest('div[class^="search-return"]').attr('id')];
-		  addClassToSchedule(course);
 
-		  colorSyncPlace(course);
+      if(!window.added_courses[course.varname]) {
+        addClassToSchedule(course);
+        colorSyncPlace(course);
+      } 
   	});
-
-  	
 
   	function checkResize() {
     window.objSchedulesPlan.forEach(function(element) {
@@ -336,19 +336,18 @@ function timeTo24(time) {
 }
 
 function addClassToSchedule(course) {
-
    	if (!window.added_courses[course.varname]) {
   		window.added_courses[course.varname] = course;
    	} 
     else {
-      	return;
-    }
+      return;
+    } 
 
     var event_color = window.event_colors.pop();
     var added_course = buildAddedClassBlock(course);
 
     $(".class-column").append(added_course);
-    $(".class-column").find('#' + course.varname).attr('data-event', event_color);    
+    $(".class-column").find('#' + course.varname).attr('data-event', event_color); 
 }
 
 function colorSyncPlace(course, type_changed=null){
@@ -378,7 +377,6 @@ function searchClassCallback(response, status) {
 		var json1 = resp.responseJSON;
 		var o = json1.objects[0];
 		var sections = o.sections;
-    console.log(sections);
 
 		var course = {
     			varname: name.replace(/\s/g,'').toLowerCase(),
@@ -551,7 +549,7 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 }
 
 function loadScheduleCallback(response, status) {
-    if (status != "success") {
+  if (status != "success") {
 		alert("loadScheduleCallback got back a bad status");
 		return;
 	}
