@@ -26,7 +26,8 @@ class ElectiveList(models.Model):
 	model representing a group of electives for a certain degree track
 	"""
 	degree = models.ForeignKey(Degree, null=True)
-	classList = ManyToManyField(MyClass)
+	name = models.CharField(max_length=50, primary_key=True)
+	classList = models.ManyToManyField(MyClass)
 
 class User(models.Model):
 	"""
