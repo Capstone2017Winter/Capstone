@@ -17,7 +17,6 @@ class Degree(models.Model):
 	model representing a user's degree. ie: Computer Engineering
 	"""
 	name = models.CharField(max_length=50, primary_key=True)
-	classes = models.ManyToManyField(MyClass)
 	def __str__(self):
 		return self.name
 
@@ -28,6 +27,7 @@ class ElectiveList(models.Model):
 	degree = models.ForeignKey(Degree, null=True)
 	name = models.CharField(max_length=50, primary_key=True)
 	classList = models.ManyToManyField(MyClass)
+
 
 class User(models.Model):
 	"""
