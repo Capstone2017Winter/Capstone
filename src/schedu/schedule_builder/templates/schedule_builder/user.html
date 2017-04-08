@@ -88,17 +88,17 @@
 </td></tr>
     </table>
     {% for schedule in user.schedule_set.all %}
-      {% for class in schedule.ClassSection}
+      {% for classes in schedule.ClassSection %}
       <script type="text/javascript">
         required_classes = document.getElementsByClassName("charttext");
         for (item in required_classes){
-          if ({{% class.course_code %}} == item.text()){
+          if ({classes.course_code} === item.text()){
             item.style.background = "yellow";
           }
         }
       </script>
-      {% end for %}
-    {% end for %}
+      {% endfor %}
+    {% endfor %}
   </div>
 </div>
 
