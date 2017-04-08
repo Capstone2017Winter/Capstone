@@ -1,7 +1,7 @@
-<table border="0" cellpadding="0" cellspacing="0" class="chart"><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Chemical</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" class="chart"><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Chemical</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CH E 243 (3-1s-0)</p>
 <p class="charttext">CHEM 261 (3-0-3)</p>
@@ -44,12 +44,12 @@
 <p class="charttext">Program Elective (3-1s-0)</p>
 <p class="charttext">Program Elective (3-1s-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
-<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="Chartnotes">(1)</p></td><td id="listRight"><p class="Chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1">84.5.1</a> for restrictions on the four program electives.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(2)</p></td><td id="listRight"><p class="Chartnotes">Students who are interested in taking Nanoscale Engineering, Mineral Processing and Extractive Metallurgy, or Polymer Materials Elective Streams should consult the Department for course schedules.</p>
-</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Chemical: Biomedical Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotes">(1)</p></td><td id="listRight"><p class="chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1">84.5.1</a> for restrictions on the four program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">Students who are interested in taking Nanoscale Engineering, Mineral Processing and Extractive Metallurgy, or Polymer Materials Elective Streams should consult the Department for course schedules.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Chemical: Biomedical Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">BIOL 107 (3-1s-3)</p>
 <p class="charttext">CH E 243 (3-1s-0)</p>
@@ -93,13 +93,13 @@
 <p class="charttext">Program Elective (3-1s-0)</p>
 <p class="charttext">Program Elective (3-1s-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
-<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="Chartnotesrestart">(1)</p></td><td id="listRight"><p class="Chartnotesrestart">Students who are interested in applying for admission into the Faculty of Medicine and Dentistry MD program should refer to §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.1">84.5.1.1</a>.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(2)</p></td><td id="listRight"><p class="Chartnotes">WKEXP 906 is required for this program. WKEXP 906 can be taken after Term 4, 6 or 8.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(3)</p></td><td id="listRight"><p class="Chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.1">84.5.1.1</a> for restrictions on the two program electives.</p>
-</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Chemical: Computer Process Control Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">Students who are interested in applying for admission into the Faculty of Medicine and Dentistry MD program should refer to §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.1">84.5.1.1</a>.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">WKEXP 906 is required for this program. WKEXP 906 can be taken after Term 4, 6 or 8.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(3)</p></td><td id="listRight"><p class="chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.1">84.5.1.1</a> for restrictions on the two program electives.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Chemical: Computer Process Control Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CHEM 261 (3-0-3)</p>
 <p class="charttext">CME 200 (1 day)</p>
@@ -143,12 +143,12 @@
 <p class="charttext">CME 483 (1-0-0)</p>
 <p class="charttext">ENGG 400 (1-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
-<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="Chartnotesrestart">(1)</p></td><td id="listRight"><p class="Chartnotesrestart">MATH 201 must be taken in either Term 3 or 4.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(2)</p></td><td id="listRight"><p class="Chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.2">84.5.1.2</a> for restrictions on the program electives.</p>
-</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Chemical: Oil Sands Elective</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">MATH 201 must be taken in either Term 3 or 4.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.2">84.5.1.2</a> for restrictions on the program electives.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Chemical: Oil Sands Elective</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CH E 243 (3-1s-0)</p>
 <p class="charttext">CME 200 (1 day)</p>
@@ -191,10 +191,10 @@
 <p class="charttext">ENGG 400 (1-0-0)</p>
 <p class="charttext">Program Elective (3-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.3">84.5.1.3</a> for restrictions on the program electives.</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Civil</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Civil</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CIV E 265 (2-0-3)</p>
 <p class="charttext">CIV E 270 (3-0-3)</p>
@@ -238,10 +238,10 @@
 <p class="charttext">Program Elective (See Note)</p>
 <p class="charttext">ITS Elective (3-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.2">84.5.2</a> for restrictions on the program electives.</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Civil: Biomedical Engineering Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Civil: Biomedical Engineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="term">Term 3</p>
 <p class="charttext">CHEM 261 (3-0-3)</p>
 <p class="charttext">CIV E 265 (2-0-3)</p>
@@ -285,10 +285,10 @@
 <p class="charttext">Program Elective (See Note)</p>
 <p class="charttext">Program Elective (See Note)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.2.1">84.5.2.1</a> for restrictions on the program electives and information for students interested in applying for admission into the Faculty of Medicine and Dentistry MD program.</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Civil: Environmental Engineering Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Civil: Environmental Engineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="term">Term 3</p>
 <p class="charttext">CIV E 265 (2-0-3)</p>
 <p class="charttext">CIV E 270 (3-0-3)</p>
@@ -333,10 +333,10 @@
 <p class="charttext">LAW 399 (3-0-0)</p>
 <p class="charttext">ITS Elective (3-0-0)</p>
 <p class="charttext">One of ECE 209, MEC E 250 or MAT E 202</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Computer</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Computer</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CMPUT 274 (3-0-3)</p>
 <p class="charttext">ECE 201 (1 day)</p>
@@ -382,10 +382,10 @@
 <p class="charttext">Group II Program Elective</p>
 <p class="charttext">Group II Program Elective</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.3">84.5.3</a> for restrictions on the six program electives.</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Computer: Nanoscale System Design Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Computer: Nanoscale System Design Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CMPUT 274 (3-0-3)</p>
 <p class="charttext">ECE 201 (1 day)</p>
@@ -431,10 +431,10 @@
 <p class="charttext">Group II Program Elective</p>
 <p class="charttext">Group II Program Elective</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.3.1">84.5.3.1</a> for restrictions on the program electives.</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Electrical</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Electrical</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">ECE 201 (1 day)</p>
 <p class="charttext">ECE 202 (3-1s-3/2)</p>
@@ -480,10 +480,10 @@
 <p class="charttext">Group II Program Elective</p>
 <p class="charttext">ITS Elective (3-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.4">84.5.4</a> for restrictions on the nine program electives.</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Electrical: Biomedical Engineering Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Electrical: Biomedical Engineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">ECE 201 (1 day)</p>
 <p class="charttext">ECE 202 (3-1s-3/2)</p>
@@ -529,10 +529,10 @@
 <p class="charttext">ENGG 400 (1-0-0)</p>
 <p class="charttext">PHYSL 210B</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.4.1">84.5.4.1</a> for restrictions on the program electives and information for students interested in applying for admission into the Faculty of Medicine and Dentistry MD program</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Electrical: Nanoengineering Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Electrical: Nanoengineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">ECE 201 (1 day)</p>
 <p class="charttext">ECE 202 (3-1s-3/2)</p>
@@ -578,10 +578,10 @@
 <p class="charttext">Group II Program Elective</p>
 <p class="charttext">Group II Program Elective</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.4.2">84.5.4.2</a> for restrictions on the program electives</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Engineering Physics</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Engineering Physics</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">ECE 201 (1 day)</p>
 <p class="charttext">ECE 202 (3-1s-3/2)</p>
@@ -630,12 +630,12 @@
 <p class="charttext">Program Elective</p>
 <p class="charttext">Complementary Studies Elective (3-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
-<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="Chartnotesrestart">(1)</p></td><td id="listRight"><p class="Chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.5">84.5.5</a> for restrictions on the five program electives.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(2)</p></td><td id="listRight"><p class="Chartnotes">Students may take an extra course per term if their GPA is at least 3.3.</p>
-</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Engineering Physics: Nanoengineering Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.5">84.5.5</a> for restrictions on the five program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">Students may take an extra course per term if their GPA is at least 3.3.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Engineering Physics: Nanoengineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">ECE 201 (1 day)</p>
 <p class="charttext">ECE 202 (3-1s-3/2)</p>
@@ -684,12 +684,12 @@
 <p class="charttext">Program Elective</p>
 <p class="charttext">Complementary Studies Elective (3-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
-<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="Chartnotesrestart">(1)</p></td><td id="listRight"><p class="Chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.5.1">84.5.5.1</a> for restrictions on the program electives.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(2)</p></td><td id="listRight"><p class="Chartnotes">Students may take an extra course per term if their GPA is at least 3.3</p>
-</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Materials</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.5.1">84.5.5.1</a> for restrictions on the program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">Students may take an extra course per term if their GPA is at least 3.3</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Materials</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CH E 243 (3-1s-0)</p>
 <p class="charttext">CHEM 261 (3-0-3)</p>
@@ -734,12 +734,12 @@
 <p class="charttext">Program Elective (3-0-0)</p>
 <p class="charttext">Program Elective (3-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
-<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="Chartnotesrestart">(1)</p></td><td id="listRight"><p class="Chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.6">84.5.6</a> for restrictions on the five program electives.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(2)</p></td><td id="listRight"><p class="Chartnotes">Students who are interested in Structural Materials, Mineral Processing and Extractive Metallurgy or Polymer Materials Elective Streams should consult the Department for course schedules.</p>
-</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Materials: Biomedical Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.6">84.5.6</a> for restrictions on the five program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">Students who are interested in Structural Materials, Mineral Processing and Extractive Metallurgy or Polymer Materials Elective Streams should consult the Department for course schedules.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Materials: Biomedical Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CH E 243 (3-1s-0)</p>
 <p class="charttext">CHEM 261 (3-0-3)</p>
@@ -784,12 +784,12 @@
 <p class="charttext">MAT E 465 (3-1s-3)</p>
 <p class="charttext">ITS Elective (3-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
-<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="Chartnotesrestart">(1)</p></td><td id="listRight"><p class="Chartnotesrestart">Students who are interested in applying for admission into the Faculty of Medicine and Dentistry MD program should refer to §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.6.1">84.5.6.1</a>.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(2)</p></td><td id="listRight"><p class="Chartnotes">WKEXP 906 is required for this program. WKEXP 906 can be taken after Term 4, 6 or 8.</p>
-</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Materials: Nano and Functional Materials Option</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">Students who are interested in applying for admission into the Faculty of Medicine and Dentistry MD program should refer to §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.6.1">84.5.6.1</a>.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">WKEXP 906 is required for this program. WKEXP 906 can be taken after Term 4, 6 or 8.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Materials: Nano and Functional Materials Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CH E 243 (3-1s-0)</p>
 <p class="charttext">CHEM 261 (3-0-3)</p>
@@ -833,10 +833,10 @@
 <p class="charttext">MAT E 465 (3-1s-3)</p>
 <p class="charttext">MAT E 494 (3-0-3/2)</p>
 <p class="charttext">ITS Elective (3-0-0)</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Mechanical</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Mechanical</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CIV E 270 (3-0-3)</p>
 <p class="charttext">MATH 209 (3-0-1)</p>
@@ -925,12 +925,12 @@
 <p class="charttext">MEC E 460 (2-1s-4)</p>
 <p class="charttext">ITS Elective (3-0-0)</p>
 </td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
-<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="Chartnotesrestart">(1)</p></td><td id="listRight"><p class="Chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.7">84.5.7</a> for restrictions on the four program electives.</p>
-</td></tr><tr valign="top"><td id="listLeft"><p class="Chartnotes">(2)</p></td><td id="listRight"><p class="Chartnotes">In each year, students take either (Group A in Fall, Group B in Winter) or (Group B in Fall, Group A in Winter).</p>
-</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Mining</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.7">84.5.7</a> for restrictions on the four program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">In each year, students take either (Group A in Fall, Group B in Winter) or (Group B in Fall, Group A in Winter).</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Mining</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CIV E 265 (2-0-3)</p>
 <p class="charttext">EAS 210 (3-0-3)</p>
@@ -973,10 +973,10 @@
 <p class="charttext">MIN E 408 (2-0-2)</p>
 <p class="charttext">MIN E 420 (3-0-0)</p>
 <p class="charttext">MIN E 422 (2-1s-0)</p>
-</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="Charthead">Petroleum</p>
-</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 2</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 3</p>
-</td><td align="center" class="chart-reverse" colspan="2"><p class="Chartyear">Year 4</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Petroleum</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
 </td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
 <p class="charttext">CH E 243 (3-1s-0)</p>
 <p class="charttext">EAS 210 (3-0-3)</p>

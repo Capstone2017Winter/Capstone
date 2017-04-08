@@ -1,7 +1,9 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import models 
-import sys, re
+from django.db import models
+import sys
+import re
+
 class tempDegree:
 	def __init__(self):
 		self.coreClasses = []
@@ -16,7 +18,7 @@ def determineClass(string, degree):
 			continue
 		if line is "":
 			continue
-		if re.match(r'^\*[a-zA-Z]', line) is not None:
+		if re.match(r'^\*[a-zA-Z]',line) is not None:
 			continue
 		#Parsing out Elective Lists
 		if ("Complementary" in line) or ("or" in line) or ("Elective" in line) or ("Group" in line) or (len(line.split(',')) > 1):

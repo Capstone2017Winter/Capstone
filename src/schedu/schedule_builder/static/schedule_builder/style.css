@@ -155,6 +155,21 @@ html body .page-wrap .body-content .user .schedule-row .form-div {
 html body .page-wrap .body-content .user .schedule-row .form-div form input {
   margin-bottom: 10px;
 }
+html body .page-wrap .body-content .user .degree-requirements{
+  background: #FFFFFF;
+}
+html body .page-wrap .body-content .user .degree-requirements .charthead{
+  padding: 2px 5px ;
+  color: white;
+  font-weight: bold;
+  background: #007c41;
+}
+
+html body .page-wrap .body-content .user .degree-requirements .charttext{
+  padding-right: 20px;
+  padding-left: 5px;
+}
+
 /*CSS for schedule.html*/
 html body .page-wrap .body-content .schedule {
   min-height: 800px;
