@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^save/$', views.save_schedule, name='save'),
     url(r'^load/$', views.load_schedule, name = 'load'),
     url(r'^image/$', views.image, name='image'),
+    url(r'^completedclasses/$', views.completed_classes, name='completedclasses'),
     url(r'^(?P<username>' + models.User.name_regex + r')/$', views.user, name='user'),
     url(r'^(?P<username>' + models.User.name_regex + r')/(?P<schedule_id>[0-9]+)/$', views.schedule, name='schedule'),
     url(r'^test-image/$', views.image, name='image'),

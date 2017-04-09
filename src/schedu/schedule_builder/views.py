@@ -198,7 +198,7 @@ def load_schedule(request):
     if request.method == "GET":
         get = request.GET.copy()
         if not 'scheduleId' in get:
-            return HttpResponseBadRequest('Missing "scheduleId" paramter')
+            return HttpResponseBadRequest('Missing "scheduleId" parameter')
         scheduleId = get['scheduleId']
         schedule = get_object_or_404(Schedule, pk=scheduleId)
         
@@ -220,3 +220,23 @@ def load_schedule(request):
 
         return HttpResponse(json.dumps(class_list), 
                                 content_type="application/json")
+
+def completed_classes(request):
+    """
+    handle request to get all completed classes for a user
+    """
+    if request.method == "GET":
+        get = request.GET.copy()
+        if not 'username' in get:
+            return HttpResponseBadRequest('Missing "username" parameter')
+        username = get['username']
+        completed_classes = []
+        schedule_set = Schedule.objects.filter(user__name=username)
+        for schedule in schedule_set:
+            #schedule = schedule_set[key]
+            for section in schedule.classsection_set.all():
+                completed_classes.append(section.myclass.class_code)
+        return HttpResponse(json.dumps(completed_classes), content_type="application/json")
+    return HttpResponseBadRequest('This method only handles GET requests')
+
+

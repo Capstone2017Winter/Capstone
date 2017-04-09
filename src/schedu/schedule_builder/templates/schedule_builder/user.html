@@ -1,6 +1,7 @@
 {% extends "schedule_builder/base.html" %}
-
+{% load static %}
 {% block content %}
+<script type="text/javascript" src="{% static 'schedule_builder/user.js' %}"></script>
 <div class="body-content">
   	<div class="user container">
     	<div class="col-lg-4">
@@ -76,7 +77,7 @@
 <p class="charttext">ECE 342</p>
 <p class="charttext">ECE 410</p>
 <p class="charttext">Group II Program Elective</p>
-<p class="charttext">Complementary Studies Elective </p>
+<p class="charttext">Complementary Studies Elective</p>
 </td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
 <p class="charttext">ECE 420</p>
 <p class="charttext">ECE 492</p>
@@ -87,18 +88,7 @@
 <p class="charttext">Group II Program Elective</p>
 </td></tr>
     </table>
-    {% for schedule in user.schedule_set.all %}
-      {% for classes in schedule.ClassSection %}
-      <script type="text/javascript">
-        required_classes = document.getElementsByClassName("charttext");
-        for (item in required_classes){
-          if ({classes.course_code} === item.text()){
-            item.style.background = "yellow";
-          }
-        }
-      </script>
-      {% endfor %}
-    {% endfor %}
+
   </div>
 </div>
 
