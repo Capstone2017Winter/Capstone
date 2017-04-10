@@ -1,4 +1,5 @@
 import requests
+from .get_sections import *
 
 def ct_get_class_info(className):
 	"""
@@ -7,15 +8,17 @@ def ct_get_class_info(className):
 	r = requests.get('https://classtime.herokuapp.com/api/v1/courses?q={"filters":[{"name":"asString","op":"equals","val":"'+className+'"}]}')
 	return r.json()
 
-def ct_get_class_sections(classId, termName):
+def ct_get_class_sections(class_name, termName):
 	"""
 	Get class sections from the sections endpoint in classtime
 	"""
 	term_code = ct_term_to_code_map(termName)
 	#python multi-line strings with replacement sucks... its going on one line
-	q = '{"institution": "ualberta","term": "'+term_code +'","courses": ["'+classId+'"],"busy-times":[],"electives": [],"preferences": {"start-early": 0,"no-marathons": 0,"day-classes": 0,"current-status": false,"obey-status": true}}'
-	r = requests.get('https://classtime.herokuapp.com/api/v1/generate-schedules?q='+q)
-	return r.json()
+	#q = '{"institution": "ualberta","term": "'+term_code +'","courses": ["'+classId+'"],"busy-times":[],"electives": [],"preferences": {"start-early": 0,"no-marathons": 0,"day-classes": 0,"current-status": false,"obey-status": true}}'
+	#r = requests.get('https://classtime.herokuapp.com/api/v1/generate-schedules?q='+q)
+	sections = getSections(term_code, class_name)
+	#return r.json()
+	return sections
 
 #this is a necessary evil, there is no easy way to convert from term to code
 def ct_term_to_code_map(termName):

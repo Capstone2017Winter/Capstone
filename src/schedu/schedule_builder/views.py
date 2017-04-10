@@ -89,10 +89,11 @@ def course_sections(request):
     """
     if request.method == "GET":
         get = request.GET.copy()
-        if 'courseId' in get and 'termName' in get:
-            course_id = get['courseId'] #six digit course identifier used with classtime
+        if 'name' in get and 'termName' in get:
+            #course_id = get['courseId'] #six digit course identifier used with classtime
+            name = get['name']
             term_name = get['termName'] #i.e FALL 2016
-            params = ct_get_class_sections(course_id, term_name)
+            params = ct_get_class_sections(name, term_name)
             return HttpResponse(json.dumps(params), 
                                 content_type="application/json")
     return HttpResponseBadRequest('Invalid GET Parameters')

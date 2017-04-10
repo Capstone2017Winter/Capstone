@@ -369,14 +369,15 @@ function searchClassCallback(response, status) {
 	var courseTitle = first.courseTitle;
 	var courseId = first.course;
 	var termName = term + " " + year;
+  console.log(name, termName)
 
 
-	var data = { courseId:courseId, termName:termName, csrfmiddlewaretoken:window.CSRF_TOKEN};
+	var data = { courseId:courseId, termName:termName, name:name,csrfmiddlewaretoken:window.CSRF_TOKEN};
 	var args = { type:"GET", url:"/builder/section/", data:data, complete:
 	function(resp){
 		var json1 = resp.responseJSON;
-		var o = json1.objects[0];
-		var sections = o.sections;
+		//var o = json1.objects[0];
+    var sections = JSON.parse(json1);
 
 		var course = {
     			varname: name.replace(/\s/g,'').toLowerCase(),
@@ -389,41 +390,44 @@ function searchClassCallback(response, status) {
     			long: description
     		}
 
-		sections.forEach(function(section) {
-			//parse sections
-			if(section.component == "LEC"){
-				course.lectures[section.section] = {
-					start: section.startTime,
-					end: section.endTime,
-					days: section.day,
-					location: section.location
-				}
-			}
-			else if(section.component == "SEM"){
-				course.seminars[section.section] = {
-					start: section.startTime,
-					end: section.endTime,
-					days: section.day,
-					location: section.location
-				}
-			}
-			else if(section.component == "LAB"){
-				course.labs[section.section] = {
-					start: section.startTime,
-					end: section.endTime,
-					days: section.day,
-					location: section.location
-				}
-			}
-			else{
-				course.lectures[section.section] = {
-					start: section.startTime,
-					end: section.endTime,
-					days: section.day,
-					location: section.location
-				}
-			}	
-		});
+
+    for(var i in sections){
+      //parse sections
+      var section = sections[i];
+
+      if(section.component == "LEC"){
+        course.lectures[section.section] = {
+          start: section.startTime,
+          end: section.endTime,
+          days: section.day,
+          location: section.location
+        }
+      }
+      else if(section.component == "SEM"){
+        course.seminars[section.section] = {
+          start: section.startTime,
+          end: section.endTime,
+          days: section.day,
+          location: section.location
+        }
+      }
+      else if(section.component == "LAB"){
+        course.labs[section.section] = {
+          start: section.startTime,
+          end: section.endTime,
+          days: section.day,
+          location: section.location
+        }
+      }
+      else{
+        course.lectures[section.section] = {
+          start: section.startTime,
+          end: section.endTime,
+          days: section.day,
+          location: section.location
+        }
+      }
+    }
 
 		window.searched_courses[course.varname] = course
 
@@ -479,12 +483,12 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 	var courseId = first.course;
 	var termName = term + " " + year;
 
-	var data = { courseId:courseId, termName:termName, csrfmiddlewaretoken:window.CSRF_TOKEN};
+	var data = { courseId:courseId, termName:termName, name:name, csrfmiddlewaretoken:window.CSRF_TOKEN};
 	var args = { type:"GET", url:"/builder/section/", data:data, complete:
 	function(resp){
 		var json1 = resp.responseJSON;
-		var o = json1.objects[0];
-		var sections = o.sections;
+    //var o = json1.objects[0];
+    var sections = JSON.parse(json1);
 
 		var course = {
 			varname: name.replace(/\s/g,'').toLowerCase(),
@@ -497,41 +501,43 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 			long: description
 		}
 
-		sections.forEach(function(section) {
-		//parse sections
-		if(section.component == "LEC"){
-			course.lectures[section.section] = {
-				start: section.startTime,
-				end: section.endTime,
-				days: section.day,
-				location: section.location
-			}
-		}
-		else if(section.component == "SEM"){
-			course.seminars[section.section] = {
-				start: section.startTime,
-				end: section.endTime,
-				days: section.day,
-				location: section.location
-			}
-		}
-		else if(section.component == "LAB"){
-			course.labs[section.section] = {
-				start: section.startTime,
-				end: section.endTime,
-				days: section.day,
-				location: section.location
-			}
-		}
-		else{
-			course.lectures[section.section] = {
-				start: section.startTime,
-				end: section.endTime,
-				days: section.day,
-				location: section.location
-			}
-		}	
-		});
+    for(var i in sections){
+      //parse sections
+      var section = sections[i];
+
+      if(section.component == "LEC"){
+        course.lectures[section.section] = {
+          start: section.startTime,
+          end: section.endTime,
+          days: section.day,
+          location: section.location
+        }
+      }
+      else if(section.component == "SEM"){
+        course.seminars[section.section] = {
+          start: section.startTime,
+          end: section.endTime,
+          days: section.day,
+          location: section.location
+        }
+      }
+      else if(section.component == "LAB"){
+        course.labs[section.section] = {
+          start: section.startTime,
+          end: section.endTime,
+          days: section.day,
+          location: section.location
+        }
+      }
+      else{
+        course.lectures[section.section] = {
+          start: section.startTime,
+          end: section.endTime,
+          days: section.day,
+          location: section.location
+        }
+      }
+    }
 
 		window.searched_courses[course.varname] = course
 		addClassToSchedule(course);
