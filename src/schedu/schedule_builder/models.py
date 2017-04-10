@@ -17,9 +17,29 @@ class Degree(models.Model):
 	model representing a user's degree. ie: Computer Engineering
 	"""
 	name = models.CharField(max_length=50, primary_key=True)
-
 	def __str__(self):
 		return self.name
+
+class MyClass(models.Model):
+	"""
+	model representing a class. A class can be associated with a degree
+	"""
+	degree = models.ManyToManyField(Degree)
+	class_code = models.CharField(max_length=10, primary_key=True)
+	short_description = models.CharField(max_length=100, default="")
+	long_description = models.CharField(max_length=500, default="")
+
+	def __str__(self):
+		return self.class_code
+
+class ElectiveList(models.Model):
+	"""
+	model representing a group of electives for a certain degree track
+	"""
+	degree = models.ForeignKey(Degree, null=True)
+	name = models.CharField(max_length=50, primary_key=True)
+	classList = models.ManyToManyField(MyClass)
+
 
 class User(models.Model):
 	"""
@@ -51,17 +71,7 @@ class Schedule(models.Model):
 	def __str__(self):
 		return 'user:{}, year:{}, term:{}'.format(self.user, self.year, self.term)
 
-class MyClass(models.Model):
-	"""
-	model representing a class. A class can be associated with a degree
-	"""
-	degree = models.ManyToManyField(Degree)
-	class_code = models.CharField(max_length=10, primary_key=True)
-	short_description = models.CharField(max_length=100, default="")
-	long_description = models.CharField(max_length=500, default="")
 
-	def __str__(self):
-		return self.class_code
 
 class ClassSection(models.Model):
 	"""

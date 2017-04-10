@@ -1,0 +1,1021 @@
+<table border="0" cellpadding="0" cellspacing="0" class="chart"><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Chemical</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">CME 200 (1 day)</p>
+<p class="charttext">CME 265 (3-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">ECE 209 (3-0-3/2)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">CH E 312 (3-1s-0)</p>
+<p class="charttext">CH E 343 (3-1s-0)</p>
+<p class="charttext">CH E 351 (2-0-3)</p>
+<p class="charttext">CH E 374 (3-1s-0)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">CH E 314 (3-1s-0)</p>
+<p class="charttext">CH E 318 (3-0-2)</p>
+<p class="charttext">CH E 345 (3-1s-0)</p>
+<p class="charttext">CH E 358 (3-0-4)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CH E 416 (3-0-2)</p>
+<p class="charttext">CH E 445 (3-1s-0)</p>
+<p class="charttext">CH E 446 (3-1s-3/3)</p>
+<p class="charttext">CH E 464 (3-0-3)</p>
+<p class="charttext">CME 481 (1-0-0)</p>
+<p class="charttext">Program Elective (3-1s-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">CH E 454 (1-0-4)</p>
+<p class="charttext">CH E 465 (4-0-4)</p>
+<p class="charttext">CME 483 (1-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Program Elective (3-1s-0)</p>
+<p class="charttext">Program Elective (3-1s-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotes">(1)</p></td><td id="listRight"><p class="chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1">84.5.1</a> for restrictions on the four program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">Students who are interested in taking Nanoscale Engineering, Mineral Processing and Extractive Metallurgy, or Polymer Materials Elective Streams should consult the Department for course schedules.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Chemical: Biomedical Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">BIOL 107 (3-1s-3)</p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CME 200 (1 day)</p>
+<p class="charttext">CME 265 (3-0-3)</p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">BIOCH 200, BIOL 201, or CELL 201 (3-0-0)</p>
+<p class="charttext">ECE 209 (3-0-3/2)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">BME 320 (3-0-0)</p>
+<p class="charttext">CH E 312 (3-1s-0)</p>
+<p class="charttext">CH E 343 (3-1s-0)</p>
+<p class="charttext">CH E 351 (2-0-3)</p>
+<p class="charttext">CH E 374 (3-1s-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">BME 321 (3-0-0)</p>
+<p class="charttext">CH E 314 (3-1s-0)</p>
+<p class="charttext">CH E 318 (3-0-2)</p>
+<p class="charttext">CH E 345 (3-1s-0)</p>
+<p class="charttext">CH E 358 (3-0-4)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CH E 446 (3-1s-3/3)</p>
+<p class="charttext">CH E 464 (3-0-3)</p>
+<p class="charttext">CH E 416 (3-0-2)</p>
+<p class="charttext">CME 481 (1-0-0)</p>
+<p class="charttext">PHIL 386 (3-0-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">CH E 454 (1-0-4)</p>
+<p class="charttext">CH E 465 (4-0-4)</p>
+<p class="charttext">CME 483 (1-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Program Elective (3-1s-0)</p>
+<p class="charttext">Program Elective (3-1s-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">Students who are interested in applying for admission into the Faculty of Medicine and Dentistry MD program should refer to §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.1">84.5.1.1</a>.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">WKEXP 906 is required for this program. WKEXP 906 can be taken after Term 4, 6 or 8.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(3)</p></td><td id="listRight"><p class="chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.1">84.5.1.1</a> for restrictions on the two program electives.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Chemical: Computer Process Control Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">CME 200 (1 day)</p>
+<p class="charttext">ECE 202 (3-1s-3/2)</p>
+<p class="charttext">ECE 210 (3-0-3/2)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CME 265 (3-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">CH E 312 (3-1s-0)</p>
+<p class="charttext">CH E 343 (3-1s-0)</p>
+<p class="charttext">CH E 351 (2-0-3)</p>
+<p class="charttext">CH E 374 (3-1s-0)</p>
+<p class="charttext">CH E 446 (3-1s-3/3)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">CH E 314 (3-1s-0)</p>
+<p class="charttext">CH E 318 (3-0-2)</p>
+<p class="charttext">CH E 345 (3-1s-0)</p>
+<p class="charttext">CH E 358 (3-0-4)</p>
+<p class="charttext">CH E 472 (3-1s-3/3)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CH E 416 (3-0-2)</p>
+<p class="charttext">CH E 464 (3-0-3)</p>
+<p class="charttext">CME 481 (1-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+<p class="charttext">Program Elective (3-1s-0)</p>
+<p class="charttext">Program Elective (3-1s-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">CH E 454 (1-0-4)</p>
+<p class="charttext">CH E 465 (4-0-4)</p>
+<p class="charttext">CH E 573 (3-0-3/2)</p>
+<p class="charttext">CH E 576 (3-0-3/2)</p>
+<p class="charttext">CME 483 (1-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">MATH 201 must be taken in either Term 3 or 4.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.2">84.5.1.2</a> for restrictions on the program electives.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Chemical: Oil Sands Elective</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CME 200 (1 day)</p>
+<p class="charttext">CME 265 (3-0-3)</p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="charttext">ECE 209 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">CH E 312 (3-1s-0)</p>
+<p class="charttext">CH E 343 (3-1s-0)</p>
+<p class="charttext">CH E 351 (2-0-3)</p>
+<p class="charttext">CH E 374 (3-1s-0)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">CH E 314 (3-1s-0)</p>
+<p class="charttext">CH E 318 (3-0-2)</p>
+<p class="charttext">CH E 345 (3-1s-0)</p>
+<p class="charttext">CH E 358 (3-0-4)</p>
+<p class="charttext">CH E 522 (3-1s-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CH E 416 (3-0-2)</p>
+<p class="charttext">CH E 445 (3-1s-0)</p>
+<p class="charttext">CH E 446 (3-1s-3/3)</p>
+<p class="charttext">CH E 464 (3-0-3)</p>
+<p class="charttext">CME 481 (1-0-2)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">CH E 435 (4-0-4)</p>
+<p class="charttext">CH E 454 (1-0-4)</p>
+<p class="charttext">CH E 534 (3-1s-3/3)</p>
+<p class="charttext">CME 483 (1-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.1.3">84.5.1.3</a> for restrictions on the program electives.</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Civil</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CIV E 265 (2-0-3)</p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">EAS 210 (3-0-3)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CIV E 221 (3-0-3/2)</p>
+<p class="charttext">CIV E 240 (1-2s-0)</p>
+<p class="charttext">CIV E 250 (3-0-3)</p>
+<p class="charttext">CIV E 251 (1 week)*</p>
+<p class="charttext">CIV E 295 (3-0-2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+<p class="charttext">*Held in Spring/Summer (Spring Term)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">CIV E 330 (3-ls-0)</p>
+<p class="charttext">CIV E 372 (3-2s-0)</p>
+<p class="charttext">CIV E 391 (3-0-3)</p>
+<p class="charttext">CIV E 395 (3-0-2/2)</p>
+<p class="charttext">CIV E 398 (3-1s-0)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">CIV E 303 (3-0-3/2)</p>
+<p class="charttext">CIV E 315 (3-0-2)</p>
+<p class="charttext">CIV E 321 (3-0-3/2)</p>
+<p class="charttext">CIV E 331 (3-0-3/2)</p>
+<p class="charttext">CIV E 374 (3-0-3)</p>
+<p class="charttext">CIV E 381 (3-0-3)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">Program Elective (See Note)</p>
+<p class="charttext">Program Elective (See Note)</p>
+<p class="charttext">Program Elective (See Note)</p>
+<p class="charttext">One of ECE 209, MEC E 250 or CH E 243</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">ENGG 420 (3-0-0)</p>
+<p class="charttext">Program Elective (See Note)</p>
+<p class="charttext">Program Elective (See Note)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.2">84.5.2</a> for restrictions on the program electives.</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Civil: Biomedical Engineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="term">Term 3</p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">CIV E 265 (2-0-3)</p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">EAS 210 (3-0-3)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+</td><td><p class="term">Term 4</p>
+<p class="charttext">BIOL 107 (3-1s-3)</p>
+<p class="charttext">CIV E 221 (3-0-3/2)</p>
+<p class="charttext">CIV E 240 (1-2s-0)</p>
+<p class="charttext">CIV E 295 (3-0-2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+</td><td><p class="term">Term 5</p>
+<p class="charttext">BME 320 (3-0-0)</p>
+<p class="charttext">CIV E 330 (3-1s-0)</p>
+<p class="charttext">CIV E 372 (3-2s-0)</p>
+<p class="charttext">CIV E 395 (3-0-2/2)</p>
+<p class="charttext">CIV E 398 (3-1s-0)</p>
+<p class="charttext">English Elective</p>
+</td><td><p class="term">Term 6</p>
+<p class="charttext">BME 321 (3-0-0)</p>
+<p class="charttext">CIV E 321 (3-0-3/2)</p>
+<p class="charttext">CIV E 331 (3-0-3/2)</p>
+<p class="charttext">CIV E 374 (3-0-3)</p>
+<p class="charttext">CIV E 381 (3-0-3)</p>
+<p class="charttext">ENV E 251 (3-0-3/2)</p>
+</td><td><p class="term">Term 7</p>
+<p class="charttext">BIOCH 200 (3-0-0)</p>
+<p class="charttext">One of ECE 209, MEC E 250 or CH E 243</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+<p class="charttext">Program Elective (See Note)</p>
+</td><td><p class="term">Term 8</p>
+<p class="charttext">CIV E 459 (3-0-3)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">MEC E 485 (3-0-0)</p>
+<p class="charttext">PEDS 306 (3-0-2)</p>
+<p class="charttext">Program Elective (See Note)</p>
+<p class="charttext">Program Elective (See Note)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.2.1">84.5.2.1</a> for restrictions on the program electives and information for students interested in applying for admission into the Faculty of Medicine and Dentistry MD program.</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Civil: Environmental Engineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="term">Term 3</p>
+<p class="charttext">CIV E 265 (2-0-3)</p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">EAS 210 (3-0-3)</p>
+<p class="charttext">ENV E 220 (3-0-3/2)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+</td><td><p class="term">Term 4</p>
+<p class="charttext">CIV E 240 (1-2s-0)</p>
+<p class="charttext">CIV E 250 (3-0-3)</p>
+<p class="charttext">CIV E 251 (1 week)*</p>
+<p class="charttext">CIV E 295 (3-0-2)</p>
+<p class="charttext">ENV E 251 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+<p class="charttext">*Held in Spring/Summer (Spring Term)</p>
+</td><td><p class="term">Term 5</p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CIV E 330 (3-1s-0)</p>
+<p class="charttext">CIV E 372 (3-2s-0)</p>
+<p class="charttext">CIV E 395 (3-0-2/2)</p>
+<p class="charttext">ENV E 322 (3-0-0)</p>
+<p class="charttext">ENV E 324 (3-0-3/2)</p>
+</td><td><p class="term">Term 6</p>
+<p class="charttext">CIV E 331 (3-0-3/2)</p>
+<p class="charttext">CIV E 381 (3-0-3)</p>
+<p class="charttext">ENV E 302 (2-1s-0)</p>
+<p class="charttext">ENV E 325 (3-0-3/2)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="term">Term 7</p>
+<p class="charttext">CIV E 374 (3-0-3)</p>
+<p class="charttext">ENV E 320 (3-0-3/2)</p>
+<p class="charttext">ENV E 421 (3-0-3/2)</p>
+<p class="charttext">ENV E 423 (3-0-0)</p>
+<p class="charttext">ENV E 432 (3-0-0)</p>
+<p class="charttext">One of CIV E 524 (3-0-0), CIV E 526 (3-0-0), CIV E 558 (3-0-0), ENV E 400 (3-0-0) or ENV E 401 (3-0-0)* </p>
+<p class="charttext">*All courses may not be offered every year.</p>
+</td><td><p class="term">Winter Term 8</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">ENV E 434 (3-0-0)</p>
+<p class="charttext">ENV E 440 (3-0-3)</p>
+<p class="charttext">LAW 399 (3-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+<p class="charttext">One of ECE 209, MEC E 250 or MAT E 202</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Computer</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CMPUT 274 (3-0-3)</p>
+<p class="charttext">ECE 201 (1 day)</p>
+<p class="charttext">ECE 202 (3-1s-3/2)</p>
+<p class="charttext">ECE 210 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">English Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CMPUT 272 (3-1s-3)</p>
+<p class="charttext">CMPUT 275 (3-0-3)</p>
+<p class="charttext">ECE 203 (3-1s-3/2)</p>
+<p class="charttext">ECE 212 (3-0-3/2)</p>
+<p class="charttext">ECE 240 (3-1s-0)</p>
+<p class="charttext">PHYS 230 (3-0-3/2)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">ECE 302 (3-1s-3/2)</p>
+<p class="charttext">ECE 311 (3-0-0)</p>
+<p class="charttext">ECE 325 (3-0-3/2)</p>
+<p class="charttext">ECE 340 (3-0-3/2)</p>
+<p class="charttext">Group I Program Elective</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">CMPUT 291 (3-0-3)</p>
+<p class="charttext">CMPUT 379 (3-0-3)</p>
+<p class="charttext">ECE 315 (3-0-3/2)</p>
+<p class="charttext">ECE 487 (3-0-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CMPUT 301 (3-0-3)</p>
+<p class="charttext">ECE 304 (3-1s-3/2)</p>
+<p class="charttext">ECE 342 (3-1s-0)</p>
+<p class="charttext">ECE 410 (3-0-3/2)</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ECE 420 (3-0-3/2)</p>
+<p class="charttext">ECE 492 (1-0-6)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Group I Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.3">84.5.3</a> for restrictions on the six program electives.</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Computer: Nanoscale System Design Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CMPUT 274 (3-0-3)</p>
+<p class="charttext">ECE 201 (1 day)</p>
+<p class="charttext">ECE 202 (3-1s-3/2)</p>
+<p class="charttext">ECE 210 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">English Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CMPUT 272 (3-1s-3)</p>
+<p class="charttext">CMPUT 275 (3-0-3)</p>
+<p class="charttext">ECE 203 (3-1s-3/2)</p>
+<p class="charttext">ECE 212 (3-0-3/2)</p>
+<p class="charttext">ECE 240 (3-1s-0)</p>
+<p class="charttext">PHYS 230 (3-0-3/2)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">ECE 302 (3-1s-3/2)</p>
+<p class="charttext">ECE 311 (3-0-0)</p>
+<p class="charttext">ECE 325 (3-0-3/2)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">Group I Program Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">CMPUT 291 (3-0-3)</p>
+<p class="charttext">ECE 315 (3-0-3/2)</p>
+<p class="charttext">ECE 412 (3-0-0)</p>
+<p class="charttext">ECE 450 (3-0-3/2)</p>
+<p class="charttext">ECE 475 (3-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CMPUT 301 (3-0-3)</p>
+<p class="charttext">ECE 304 (3-1s-3/2)</p>
+<p class="charttext">ECE 342 (3-1s-0)</p>
+<p class="charttext">ECE 410 (3-0-3/2)</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ECE 403 (3-0-3/2) </p>
+<p class="charttext">ECE 457 (3-0-2) </p>
+<p class="charttext">ECE 492 (1-0-6)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Group I Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.3.1">84.5.3.1</a> for restrictions on the program electives.</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Electrical</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">ECE 201 (1 day)</p>
+<p class="charttext">ECE 202 (3-1s-3/2)</p>
+<p class="charttext">ECE 210 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">Group I Program Elective</p>
+<p class="charttext">English Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">ECE 203 (3-1s-3/2)</p>
+<p class="charttext">ECE 212 (3-0-3/2)</p>
+<p class="charttext">ECE 220 (3-0-3/2)</p>
+<p class="charttext">ECE 240 (3-1s-0)</p>
+<p class="charttext">PHYS 230 (3-0-3/2)</p>
+<p class="charttext">Complementary Studies Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">ECE 302 (3-1s-3/2)</p>
+<p class="charttext">ECE 340 (3-0-3/2)</p>
+<p class="charttext">ECE 342 (3-1s-0)</p>
+<p class="charttext">ECE 360 (3-0-3/2)</p>
+<p class="charttext">ECE 370 (3-1s-0)</p>
+<p class="charttext">MATH 309 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">ECE 303 (3-1s-3/2)</p>
+<p class="charttext">ECE 312 (3-0-3/2)</p>
+<p class="charttext">ECE 330 (3-0-0)</p>
+<p class="charttext">ECE 380 (3-0-3/2)</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">ECE 332 (3-0-3/2)</p>
+<p class="charttext">ECE 490 (1-0-3)</p>
+<p class="charttext">Group I Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ECE 491 (1-0-3)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.4">84.5.4</a> for restrictions on the nine program electives.</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Electrical: Biomedical Engineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">ECE 201 (1 day)</p>
+<p class="charttext">ECE 202 (3-1s-3/2)</p>
+<p class="charttext">ECE 210 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">Group I Program Elective</p>
+<p class="charttext">English Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">ECE 203 (3-1s-3/2)</p>
+<p class="charttext">ECE 212 (3-0-3/2)</p>
+<p class="charttext">ECE 220 (3-0-3/2)</p>
+<p class="charttext">ECE 240 (3-1s-0)</p>
+<p class="charttext">PHYS 230 (3-0-3/2)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">BIOL 107 (3-1s-3)</p>
+<p class="charttext">ECE 302 (3-1s-3/2)</p>
+<p class="charttext">ECE 312 (3-0-3/2)</p>
+<p class="charttext">ECE 340 (3-0-3/2)</p>
+<p class="charttext">ECE 370 (3-1s-0)</p>
+<p class="charttext">MATH 309 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">ECE 303 (3-1s-3/2)</p>
+<p class="charttext">ECE 342 (3-1s-0)</p>
+<p class="charttext">ECE 360 (3-0-3/2)</p>
+<p class="charttext">ECE 380 (3-0-3/2)</p>
+<p class="charttext">Group I Program Elective</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">ECE 405 (3-0-0)</p>
+<p class="charttext">ECE 440 (3-0-3/2)</p>
+<p class="charttext">ECE 490 (1-0-3)</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">PHYSL 210A</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ECE 491 (1-0-3)</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">PHYSL 210B</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.4.1">84.5.4.1</a> for restrictions on the program electives and information for students interested in applying for admission into the Faculty of Medicine and Dentistry MD program</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Electrical: Nanoengineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">ECE 201 (1 day)</p>
+<p class="charttext">ECE 202 (3-1s-3/2)</p>
+<p class="charttext">ECE 210 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">Group I Program Elective</p>
+<p class="charttext">English Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">ECE 203 (3-1s-3/2)</p>
+<p class="charttext">ECE 212 (3-0-3/2)</p>
+<p class="charttext">ECE 220 (3-0-3/2)</p>
+<p class="charttext">ECE 240 (3-1s-0)</p>
+<p class="charttext">PHYS 230 (3-0-3/2)</p>
+<p class="charttext">Group I Program Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">ECE 302 (3-1s-3/2)</p>
+<p class="charttext">ECE 340 (3-0-3/2)</p>
+<p class="charttext">ECE 342 (3-1s-0)</p>
+<p class="charttext">ECE 360 (3-0-3/2)</p>
+<p class="charttext">ECE 370 (3-1s-0)</p>
+<p class="charttext">MATH 309 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">ECE 303 (3-1s-3/2)</p>
+<p class="charttext">ECE 312 (3-0-3/2)</p>
+<p class="charttext">ECE 341 (3-1s-0)</p>
+<p class="charttext">ECE 450 (3-0-3/2)</p>
+<p class="charttext">ECE 456 (3-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">ECE 457 (3-0-2)</p>
+<p class="charttext">ECE 471 (3-0-3/2)</p>
+<p class="charttext">ECE 490 (1-0-3)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ECE 475 (3-0-0)</p>
+<p class="charttext">ECE 491 (1-0-3)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">Group II Program Elective</p>
+<p class="charttext">Group II Program Elective</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Note</span>: See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.4.2">84.5.4.2</a> for restrictions on the program electives</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Engineering Physics</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">ECE 201 (1 day)</p>
+<p class="charttext">ECE 202 (3-1s-3/2)</p>
+<p class="charttext">MAT E 201 (3-0-0)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">PHYS 281 (3-0-0)</p>
+<p class="charttext">PHYS 292 (0-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">ECE 203 (3-1s-3/2)</p>
+<p class="charttext">ECE 240 (3-1s-0)</p>
+<p class="charttext">PHYS 244 (3-0-0)</p>
+<p class="charttext">PHYS 271 (3-0-0)</p>
+<p class="charttext">PHYS 292 (0-0-3)</p>
+<p class="charttext">ITS Elective </p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">ECE 210 (3-0-3/2)</p>
+<p class="charttext">ECE 302 (3-1s-3/2)</p>
+<p class="charttext">ECE 340 (3-0-3/2)</p>
+<p class="charttext">ECE 471 (3-0-0)</p>
+<p class="charttext">MATH 311 (3-0-0)</p>
+<p class="charttext">PHYS 381 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">ECE 220 (3-0-3/2)</p>
+<p class="charttext">ECE 303 (3-1s-3/2)</p>
+<p class="charttext">ECE 341 (3-1s-0)</p>
+<p class="charttext">PHYS 311 (3-0-0)</p>
+<p class="charttext">PHYS 372 (3-0-0)</p>
+<p class="charttext">PHYS 397 (0-0-6)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">ECE 494 (1-0-3)</p>
+<p class="charttext">PHYS 415 (3-0-0)</p>
+<p class="charttext">PHYS 481 (3-0-0)</p>
+<p class="charttext">Program Elective</p>
+<p class="charttext">Program Elective</p>
+<p class="charttext">Program Elective</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ECE 360 (3-0-3/2)</p>
+<p class="charttext">ECE 495 (1-0-6)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Program Elective</p>
+<p class="charttext">Program Elective</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.5">84.5.5</a> for restrictions on the five program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">Students may take an extra course per term if their GPA is at least 3.3.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Engineering Physics: Nanoengineering Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">ECE 201 (1 day)</p>
+<p class="charttext">ECE 202 (3-1s-3/2)</p>
+<p class="charttext">MAT E 201 (3-0-0)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">PHYS 281 (3-0-0)</p>
+<p class="charttext">PHYS 292 (0-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">ECE 203 (3-1s-3/2)</p>
+<p class="charttext">ECE 240 (3-1s-0)</p>
+<p class="charttext">PHYS 244 (3-0-0)</p>
+<p class="charttext">PHYS 271 (3-0-0)</p>
+<p class="charttext">PHYS 292 (0-0-3)</p>
+<p class="charttext">ITS Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">ECE 210 (3-0-3/2)</p>
+<p class="charttext">ECE 302 (3-1s-3/2)</p>
+<p class="charttext">ECE 457 (3-0-2)</p>
+<p class="charttext">ECE 471 (3-0-0)</p>
+<p class="charttext">MATH 311 (3-0-0)</p>
+<p class="charttext">PHYS 381 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">ECE 303 (3-1s-3/2)</p>
+<p class="charttext">ECE 341 (3-1s-0)</p>
+<p class="charttext">ECE 360 (3-0-3/2)</p>
+<p class="charttext">ECE 456 (3-0-0)</p>
+<p class="charttext">PHYS 311 (3-0-0)</p>
+<p class="charttext">PHYS 372 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">ECE 494 (1-0-3)</p>
+<p class="charttext">PHYS 415 (3-0-0)</p>
+<p class="charttext">PHYS 481 (3-0-0)</p>
+<p class="charttext">Program Elective </p>
+<p class="charttext">Program Elective</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">BIOCH 200 (3-0-0)</p>
+<p class="charttext">ECE 455 (3-0-0)</p>
+<p class="charttext">ECE 495 (1-0-6)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Program Elective</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.5.1">84.5.5.1</a> for restrictions on the program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">Students may take an extra course per term if their GPA is at least 3.3</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Materials</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">CME 200 (1 day)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">CME 265 (3-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MAT E 211 (3-1s-3/4)</p>
+<p class="charttext">MAT E 221 (3-1s-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">CH E 312 (3-1s-0)</p>
+<p class="charttext">CH E 374 (3-1s-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">MAT E 335 (3-1s-0)</p>
+<p class="charttext">MAT E 301 (3-0-0)</p>
+<p class="charttext">MAT E 361 (1-1s-3/2)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">MAT E 336 (3-1s-0)</p>
+<p class="charttext">MAT E 341 (3-1s-0)</p>
+<p class="charttext">MAT E 351 (3-1s-0)</p>
+<p class="charttext">MAT E 362 (1-1s-3/2)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CH E 314 (3-1s-0)</p>
+<p class="charttext">CME 481 (1-0-0)</p>
+<p class="charttext">MAT E 464 (3-0-3)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">CME 483 (1-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">MAT E 461 (1-1s-4)</p>
+<p class="charttext">MAT E 465 (3-1s-3)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.6">84.5.6</a> for restrictions on the five program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">Students who are interested in Structural Materials, Mineral Processing and Extractive Metallurgy or Polymer Materials Elective Streams should consult the Department for course schedules.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Materials: Biomedical Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">CME 200 (1 day)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">CME 265 (3-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MAT E 211 (3-1s-3/4)</p>
+<p class="charttext">MAT E 221 (3-1s-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">BIOL 107 (3-1s-3)</p>
+<p class="charttext">CH E 312 (3-1s-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">MAT E 301 (3-0-0)</p>
+<p class="charttext">MAT E 335 (3-1s-0)</p>
+<p class="charttext">MAT E 361 (1-1s-3/2)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">BIOCH 200, or BIOL 201, or CELL 201 (3-0-0)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">MAT E 336 (3-1s-0)</p>
+<p class="charttext">MAT E 341 (3-1s-0)</p>
+<p class="charttext">MAT E 351 (3-1s-0)</p>
+<p class="charttext">MAT E 362 (1-1s-3/2)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">BME 320 (3-0-0)</p>
+<p class="charttext">CH E 314 (3-1s-0)</p>
+<p class="charttext">CH E 374 (3-1s-0)</p>
+<p class="charttext">CME 481 (1-0-0)</p>
+<p class="charttext">MAT E 464 (3-0-3)</p>
+<p class="charttext">PHIL 386 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">BME 321 (3-0-0)</p>
+<p class="charttext">CH E 582 (3-1s-0) or MAT E 495 (3-1s-0)</p>
+<p class="charttext">CME 483 (1-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">MAT E 461 (1-1s-4)</p>
+<p class="charttext">MAT E 465 (3-1s-3)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">Students who are interested in applying for admission into the Faculty of Medicine and Dentistry MD program should refer to §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.6.1">84.5.6.1</a>.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">WKEXP 906 is required for this program. WKEXP 906 can be taken after Term 4, 6 or 8.</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Materials: Nano and Functional Materials Option</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CHEM 261 (3-0-3)</p>
+<p class="charttext">CME 200 (1 day)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">CME 265 (3-0-3)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MAT E 211 (3-1s-3/4)</p>
+<p class="charttext">MAT E 221 (3-1s-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">CH E 312 (3-1s-0)</p>
+<p class="charttext">CH E 374 (3-1s-0)</p>
+<p class="charttext">MAT E 335 (3-1s-0)</p>
+<p class="charttext">MAT E 301 (3-0-0)</p>
+<p class="charttext">MAT E 361 (1-1-3/2)</p>
+<p class="charttext">MAT E 390 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">MAT E 336 (3-1s-0)</p>
+<p class="charttext">MAT E 341 (3-1s-0)</p>
+<p class="charttext">MAT E 351 (3-1s-0)</p>
+<p class="charttext">MAT E 362 (1-1s-3/2)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CH E 314 (3-1s-0)</p>
+<p class="charttext">CME 481 (1-0-0)</p>
+<p class="charttext">ECE 457 (3-0-2)</p>
+<p class="charttext">MAT E 464 (3-0-3)</p>
+<p class="charttext">MAT E 491 (3-1s-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">CME 458 (2-0-3) or MAT E 495 (3-1s-0) </p>
+<p class="charttext">CME 483 (1-0-0)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">MAT E 461 (1-1s-4)</p>
+<p class="charttext">MAT E 465 (3-1s-3)</p>
+<p class="charttext">MAT E 494 (3-0-3/2)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Mechanical</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+<p class="term">Course Group 2A</p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">MEC E 200 (1-2s-0)</p>
+<p class="charttext">MEC E 250 (3-1s-0)</p>
+<p class="term">or</p>
+<p class="term">Course Group 2B</p>
+<p class="charttext">MEC E 230 (3-1s-0)</p>
+<p class="charttext">MEC E 260 (2-0-3)</p>
+<p class="charttext">MEC E 265 (2-0-3)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">ECE 209 (3-0-3/2)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="term">Course Group 2A</p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">MEC E 200 (1-2s-0)</p>
+<p class="charttext">MEC E 250 (3-1s-0)</p>
+<p class="term">or</p>
+<p class="term">Course Group 2B</p>
+<p class="charttext">MEC E 230 (3-1s-0)</p>
+<p class="charttext">MEC E 260 (2-0-3)</p>
+<p class="charttext">MEC E 265 (2-0-3)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="term">Course Group 3A</p>
+<p class="charttext">MATH 300 (3-0-0)</p>
+<p class="charttext">MEC E 300 (3-1s-0)</p>
+<p class="charttext">MEC E 301 (1-0-3)</p>
+<p class="charttext">MEC E 331 (3-0-1)</p>
+<p class="charttext">MEC E 371 (3-1s-0)</p>
+<p class="charttext">MEC E 380 (3-1s-0)</p>
+<p class="term">or</p>
+<p class="term">Course Group 3B</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MEC E 340 (3-0-0)</p>
+<p class="charttext">MEC E 360 (3-0-3/2)</p>
+<p class="charttext">MEC E 362 (3-0-3/2)</p>
+<p class="charttext">MEC E 390 (3-0-1)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="term">Course Group 3A</p>
+<p class="charttext">MATH 300 (3-0-0)</p>
+<p class="charttext">MEC E 300 (3-1s-0)</p>
+<p class="charttext">MEC E 301 (1-0-3)</p>
+<p class="charttext">MEC E 331 (3-0-1)</p>
+<p class="charttext">MEC E 371 (3-1s-0)</p>
+<p class="charttext">MEC E 380 (3-1s-0)</p>
+<p class="term">or</p>
+<p class="term">Course Group 3B</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">MEC E 340 (3-0-0)</p>
+<p class="charttext">MEC E 360 (3-0-3/2)</p>
+<p class="charttext">MEC E 362 (3-0-3/2)</p>
+<p class="charttext">MEC E 390 (3-0-1)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">Program Elective (3-0-0)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+<p class="term">Course Group 4A</p>
+<p class="charttext">MEC E 430 (3-0-0) or 480 (3-0-0)</p>
+<p class="charttext">MEC E 463 (3-0-2)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="term">or</p>
+<p class="term">Course Group 4B</p>
+<p class="charttext">MEC E 403 (1-0-3)</p>
+<p class="charttext">MEC E 451 (3-0-1)</p>
+<p class="charttext">MEC E 460 (2-1s-4)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">CH E 448 (3-1s-3/3) or ECE 362 (3-0-3/2) or MEC E 420 (3-0-3/2)</p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+<p class="term">Course Group 4A</p>
+<p class="charttext">MEC E 430 (3-0-0) or 480 (3-0-0)</p>
+<p class="charttext">MEC E 463 (3-0-2)</p>
+<p class="charttext">Program Elective (3-0-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0)</p>
+<p class="term">or</p>
+<p class="term">Course Group 4B</p>
+<p class="charttext">MEC E 403 (1-0-3)</p>
+<p class="charttext">MEC E 451 (3-0-1)</p>
+<p class="charttext">MEC E 460 (2-1s-4)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td></tr><tr valign="top"><td colspan="6"><p class="charttext"><span style="font-weight: bold;">Notes</span></p>
+<table border="0" cellpadding="0" cellspacing="0" id="listMain" width="100%"><tr valign="top"><td id="listLeft"><p class="chartnotesrestart">(1)</p></td><td id="listRight"><p class="chartnotesrestart">See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.7">84.5.7</a> for restrictions on the four program electives.</p>
+</td></tr><tr valign="top"><td id="listLeft"><p class="chartnotes">(2)</p></td><td id="listRight"><p class="chartnotes">In each year, students take either (Group A in Fall, Group B in Winter) or (Group B in Fall, Group A in Winter).</p>
+</td></tr></table></td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Mining</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CIV E 265 (2-0-3)</p>
+<p class="charttext">EAS 210 (3-0-3)</p>
+<p class="charttext">ECE 209 (3-0-3/2)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">MIN E 295 (3-0-3/2)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">CIV E 250 (3-0-3)</p>
+<p class="charttext">CIV E 251 (1 week)*</p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">MIN E 310 (3-0-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+<p class="charttext">*Held in Spring/Summer (Spring Term)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">CIV E 330 (3-1s-0) or CH E 312 (3-1s-0)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">MIN E 323 (3-0-3)</p>
+<p class="charttext">MIN E 325 (3-0-3)</p>
+<p class="charttext">Program Elective (3-0-0) (See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.8">84.5.8</a>)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">CIV E 381 (3-0-3)</p>
+<p class="charttext">MIN E 324 (3-0-0)</p>
+<p class="charttext">MIN E 330 (3-3s/2-0)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+<p class="charttext">Complementary Studies Elective (3-0-0) (See §<a href="../../Undergrad/Engineering/Programs/84.6.html#84.6">84.6</a>)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CME 421 (3-0-3/2)</p>
+<p class="charttext">ENGG 404 (3-3s/2-0)</p>
+<p class="charttext">MIN E 402 (1-0-6)</p>
+<p class="charttext">MIN E 413 (3-0-3/2)</p>
+<p class="charttext">MIN E 414 (3-3s/2-0)</p>
+<p class="charttext">Program Elective (3-0-0) (See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.8">84.5.8</a>)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">MIN E 403 (1-0-6)</p>
+<p class="charttext">MIN E 407 (3-0-3/2)</p>
+<p class="charttext">MIN E 408 (2-0-2)</p>
+<p class="charttext">MIN E 420 (3-0-0)</p>
+<p class="charttext">MIN E 422 (2-1s-0)</p>
+</td></tr><tr valign="top"><td class="chart-grey" colspan="6"><p class="charthead">Petroleum</p>
+</td></tr><tr valign="top"><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 2</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 3</p>
+</td><td align="center" class="chart-reverse" colspan="2"><p class="chartyear">Year 4</p>
+</td></tr><tr valign="top"><td><p class="charttext"><span style="font-weight: bold;">Term 3</span></p>
+<p class="charttext">CH E 243 (3-1s-0)</p>
+<p class="charttext">EAS 210 (3-0-3)</p>
+<p class="charttext">ECE 209 (3-0-3/2)</p>
+<p class="charttext">MAT E 202 (3-0-3/2)</p>
+<p class="charttext">MATH 209 (3-0-1)</p>
+<p class="charttext">English Elective (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 4</span></p>
+<p class="charttext">CH E 312 (3-1s-0)</p>
+<p class="charttext">CIV E 270 (3-0-3)</p>
+<p class="charttext">MATH 201 (3-0-1)</p>
+<p class="charttext">PET E 275 (3-0-3/2)</p>
+<p class="charttext">STAT 235 (3-0-1.5)</p>
+<p class="charttext">Complementary Studies (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 5</span></p>
+<p class="charttext">CHEM 371 (3-0-3)</p>
+<p class="charttext">ENG M 310 (3-0-0) or 401 (3-0-0)</p>
+<p class="charttext">PET E 364 (3-1s-3/2)</p>
+<p class="charttext">PET E 373 (3-0-3/2)</p>
+<p class="charttext">Program Elective (3-0-0) (See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.9">84.5.9</a>)</p>
+<p class="charttext">Complementary Studies (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 6</span></p>
+<p class="charttext">CH E 374 (3-1s-0)</p>
+<p class="charttext">EAS 222 (3-0-3)</p>
+<p class="charttext">PET E 365 (3-1s-0)</p>
+<p class="charttext">PET E 366 (3-0-0)</p>
+<p class="charttext">Program Elective (3-0-0) (See §<a href="../../Undergrad/Engineering/Programs/84.5.html#84.5.9">84.5.9</a>)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 7</span></p>
+<p class="charttext">CH E 314 (3-1s-0)</p>
+<p class="charttext">ENGG 404 (3-3s/2-0)</p>
+<p class="charttext">PET E 444 (3-0-0)</p>
+<p class="charttext">PET E 475 (3-0-3/2)</p>
+<p class="charttext">PET E 476 (3-0-0)</p>
+<p class="charttext">PET E 484 (3-0-0)</p>
+</td><td><p class="charttext"><span style="font-weight: bold;">Term 8</span></p>
+<p class="charttext">ENGG 400 (1-0-0)</p>
+<p class="charttext">PET E 471 (3-0-0)</p>
+<p class="charttext">PET E 477 (3-0-0)</p>
+<p class="charttext">PET E 478 (3-0-0)</p>
+<p class="charttext">PET E 496 (1-6s-0)</p>
+<p class="charttext">ITS Elective (3-0-0)</p>
+</td></tr></table>
