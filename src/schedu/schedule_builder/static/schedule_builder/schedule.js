@@ -369,14 +369,11 @@ function searchClassCallback(response, status) {
 	var courseTitle = first.courseTitle;
 	var courseId = first.course;
 	var termName = term + " " + year;
-  console.log(name, termName)
-
 
 	var data = { courseId:courseId, termName:termName, name:name,csrfmiddlewaretoken:window.CSRF_TOKEN};
 	var args = { type:"GET", url:"/builder/section/", data:data, complete:
 	function(resp){
 		var json1 = resp.responseJSON;
-		//var o = json1.objects[0];
     var sections = JSON.parse(json1);
 
 		var course = {
@@ -487,7 +484,6 @@ function searchClassLoadCallback(response, status, lecture, seminar, lab) {
 	var args = { type:"GET", url:"/builder/section/", data:data, complete:
 	function(resp){
 		var json1 = resp.responseJSON;
-    //var o = json1.objects[0];
     var sections = JSON.parse(json1);
 
 		var course = {
